@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#cadeda","on-secondary":"#ffffff","status-perbaikan-text":"#B45309","tertiary":"#5e4300","primary-fixed":"#a5f1dd","surface-bright":"#e9fef9","on-primary-container":"#9ce9d4","on-primary":"#ffffff","on-surface":"#0c1f1c","status-menunggu-text":"#9A6100","secondary-fixed":"#beebeb","mint-tag":"#E8F1ED","primary-container":"#176b5b","tertiary-container":"#7c5900","on-tertiary":"#ffffff","status-diverifikasi-bg":"#E3EEFB","on-secondary-fixed":"#002020","status-disetujui-text":"#176B5B","surface":"#e9fef9","surface-container-high":"#d8ede8","status-perbaikan-bg":"#FDEBD3","secondary":"#3b6566","surface-container":"#def2ed","surface-variant":"#d2e7e2","surface-container-lowest":"#ffffff","surface-tint":"#166a5a","on-background":"#0c1f1c","primary":"#005144","outline":"#6f7975","on-secondary-fixed-variant":"#224d4e","on-surface-variant":"#3f4945","on-error-container":"#93000a","error":"#ba1a1a","background":"#e9fef9","status-menunggu-bg":"#FFF3DC","surface-container-low":"#e3f8f3","outline-variant":"#bec9c4","status-ditolak-bg":"#FBE4E4","status-selesai-bg":"#E1F3EC","tertiary-fixed-dim":"#efbf61","tertiary-fixed":"#ffdea4","secondary-container":"#beebeb","border-line":"#E7ECE8","on-error":"#ffffff","primary-fixed-dim":"#89d5c1","inverse-primary":"#89d5c1","on-secondary-container":"#426b6c","on-tertiary-fixed-variant":"#5d4200","on-tertiary-fixed":"#261900","surface-container-highest":"#d2e7e2","status-diverifikasi-text":"#245A9E","on-primary-fixed":"#00201a","status-ditolak-text":"#B02A2A","status-disetujui-bg":"#E1F3EC","inverse-on-surface":"#e0f5f0","inverse-surface":"#223431","status-selesai-text":"#0F5B49","secondary-fixed-dim":"#a3cfcf","bg-ivory":"#F7F8F5","on-tertiary-container":"#ffd481","surface-card":"#FFFFFF","on-primary-fixed-variant":"#005143","error-container":"#ffdad6","text-muted":"#74817D"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","space-xl":"1.75rem","gutter-desktop":"1rem","space-xs":"0.25rem","space-md":"0.875rem","space-lg":"1.125rem","margin-tablet":"1.5rem","margin-desktop":"1.75rem","margin":"1rem","gutter":"0.875rem"},fontFamily:{"headline-lg":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-xl-mobile":["Inter"],"headline-xl":["Inter"],"letter-legal-body":["Georgia"],"body-md":["Inter"],"headline-sm":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"letter-legal-title":["Georgia"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"label-eyebrow":["Inter"],"label-lg":["Inter"]},fontSize:{"headline-lg":["26px",{lineHeight:"34px",letterSpacing:"-0.023em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"letter-legal-body":["12px",{lineHeight:"22px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"letter-legal-title":["14px",{lineHeight:"20px",fontWeight:"700"}],"headline-md":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-lg-mobile":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-eyebrow":["10px",{lineHeight:"12px",letterSpacing:"0.15em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}]}}}};</script></head><body class="bg-bg-ivory font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-card z-50 flex flex-col justify-between shadow-[0_8px_28px_rgba(20,55,47,0.06)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-primary truncate leading-tight">Kecamatan Susukan</span><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider truncate">Sistem Loket Warga</span></div></div><div class="px-space-md py-space-sm"><div class="bg-mint-tag rounded-xl p-space-sm flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-primary">LOKET 02</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary mr-1 animate-pulse"></span>Aktif Melayani</span></div><span class="font-label-md text-label-md text-on-surface truncate">Cetak e-KTP &amp; IKD</span></div></div><nav class="flex flex-col gap-1 px-space-md mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary font-label-md shadow-[0_4px_16px_rgba(20,55,47,0.08)]" data-path="panel-pemanggilan" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span>Panel Pemanggilan</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="antrean-hari-ini" href="#"><span class="material-symbols-outlined text-[20px]">format_list_numbered</span><span>Antrean Hari Ini</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="riwayat-pelayanan" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Riwayat Pelayanan</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="monitoring-blangko" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Monitoring Blangko</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="bantuan" href="#"><span class="material-symbols-outlined text-[20px]">help_outline</span><span>Bantuan</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between bg-surface-card rounded-lg p-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-text-muted text-[18px]">dns</span><span class="font-label-sm text-label-sm text-on-surface-variant">Server IP Disdukcapil</span></div><span class="w-2 h-2 rounded-full bg-primary"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-card/95 backdrop-blur-md z-40 flex items-center justify-between px-space-xl shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-bg-ivory px-space-md py-1.5 rounded-lg"><span class="material-symbols-outlined text-primary text-[20px]">badge</span><div class="flex flex-col"><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Operator Tugas</span><span class="font-label-md text-label-md text-on-surface font-semibold">Siti Rohmah, S.AP</span></div></div><div class="h-8 w-px bg-surface-container-high hidden md:block"></div><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">credit_card</span><span class="font-body-sm text-body-sm text-on-surface-variant">Loket 2 — Cetak e-KTP &amp; IKD</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-bg-ivory rounded-lg p-1 gap-1"><button class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-card text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-sm text-label-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]" title="Test Bel Pemanggilan" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-container">notifications_active</span><span>Tes Bel</span></button><button class="flex items-center gap-1 px-space-sm py-1 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-sm text-label-sm" title="Pengaturan Audio Loket" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">volume_up</span><span>Audio: Speaker 1</span><span class="material-symbols-outlined text-[14px]">expand_more</span></button></div><div class="flex items-center gap-space-xs pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Siti Rohmah</span><span class="font-label-eyebrow text-label-eyebrow text-text-muted">NIP. 19880412...</span></div></div></div></header><main class="w-full pt-16 bg-bg-ivory min-h-screen"><div class="flex flex-col w-full px-space-md sm:px-margin-tablet lg:px-margin-desktop py-space-md gap-space-lg max-w-[1360px] mx-auto">
+<!-- Top Operational Banner & Control Bar -->
+<div class="w-full bg-surface-card rounded-xl p-space-md lg:p-space-lg shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-primary">Loket 2 — Cetak e-KTP &amp; IKD</span>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary mr-1.5 animate-pulse"></span>Aktif Melayani
+          </span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Paten Terpadu Kependudukan • Kantor Camat Susukan, Kab. Cirebon</span>
+</div>
+</div>
+<!-- Toggle & Audio Quick Control -->
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end flex-wrap">
+<div class="flex items-center gap-space-xs bg-bg-ivory px-3 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-primary">volume_up</span>
+<span class="font-label-sm text-label-sm text-on-surface">Speaker 01 (90%)</span>
+<button class="ml-1 px-2.5 py-1 rounded bg-surface-card text-primary hover:bg-surface-container transition shadow-sm font-label-sm text-label-sm flex items-center gap-1 active:scale-95" id="btn-sound-test" type="button">
+<span class="material-symbols-outlined text-[15px] text-tertiary">notifications_active</span>
+<span>Tes Nada Bel</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 bg-bg-ivory p-1 rounded-lg">
+<button class="px-3 py-1.5 rounded bg-primary text-on-primary font-label-sm text-label-sm shadow-sm flex items-center gap-1.5" id="status-toggle-active" type="button">
+<span class="w-2 h-2 rounded-full bg-on-primary"></span>
+<span>Siaga Melayani</span>
+</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm flex items-center gap-1 transition" id="status-toggle-break" type="button">
+<span class="material-symbols-outlined text-[16px] text-status-perbaikan-text">coffee</span>
+<span>Jeda Istirahat</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Calling Command Center (Hero Calling Panel) -->
+<div class="w-full bg-surface-card rounded-xl p-space-lg lg:p-space-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-96 bg-gradient-to-l from-primary/5 via-mint-tag/40 to-transparent pointer-events-none hidden lg:block"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-lg">
+<!-- Left: Ticket In-Progress Display -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-lg">
+<div class="bg-primary text-on-primary rounded-xl p-5 sm:p-6 flex flex-col items-center justify-center min-w-[170px] shadow-[0_4px_20px_rgba(0,81,68,0.25)]">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-on-primary-container tracking-widest mb-1">Tiket Loket 2</span>
+<span class="font-headline-xl text-[44px] leading-tight font-black tracking-tight text-on-primary" id="current-ticket-number">A-038</span>
+<span class="mt-2 px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">SEDANG DI LOKET</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-sm text-label-sm">F-1.02 Rusak</span>
+<span class="font-label-sm text-label-sm text-text-muted">Waktu di Loket: <strong class="text-on-surface font-mono" id="session-timer">02:44</strong></span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight" id="current-citizen-name">Bapak Budi Santoso</h2>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-text-muted">location_on</span> Dusun Karanganyar RT 03 / RW 01, Desa Susukan</span>
+<span class="text-text-muted">•</span>
+<span class="font-label-md text-label-md text-secondary">Kedatangan: 09:12 WIB</span>
+</div>
+<div class="hidden items-center gap-2 mt-1 px-3 py-1 bg-status-menunggu-bg rounded-lg text-status-menunggu-text font-label-sm text-label-sm w-fit animate-pulse" id="audio-call-indicator">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+<span>Memanggil ke Pengeras Suara Ruang Tunggu...</span>
+</div>
+</div>
+</div>
+<!-- Right: Main Call Action Command Grid -->
+<div class="flex flex-wrap items-center gap-space-sm xl:justify-end">
+<button class="h-11 px-4 rounded-lg bg-bg-ivory hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition flex items-center gap-2 shadow-sm active:scale-95" id="btn-recall" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">volume_up</span>
+<span>Panggil Ulang</span>
+</button>
+<button class="h-11 px-4 rounded-lg bg-status-perbaikan-bg text-status-perbaikan-text hover:opacity-90 font-label-lg text-label-lg transition flex items-center gap-2 shadow-sm active:scale-95" id="btn-skip" type="button">
+<span class="material-symbols-outlined text-[20px]">person_off</span>
+<span>Lewati (Skip)</span>
+</button>
+<button class="h-11 px-4 rounded-lg bg-bg-ivory hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition flex items-center gap-2 shadow-sm active:scale-95" id="btn-transfer" type="button">
+<span class="material-symbols-outlined text-secondary text-[20px]">swap_horiz</span>
+<span>Alihkan Loket</span>
+</button>
+<button class="h-11 px-5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg transition flex items-center gap-2 shadow-md active:scale-95" id="btn-finish-doc" type="button">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span>Selesai &amp; Cetak</span>
+</button>
+<button class="h-11 px-6 rounded-lg bg-primary text-on-primary hover:bg-[#003e34] font-label-lg text-label-lg transition flex items-center gap-2 shadow-[0_4px_16px_rgba(0,81,68,0.35)] active:scale-95 ring-2 ring-primary-fixed" id="btn-call-next" type="button">
+<span class="material-symbols-outlined text-[22px]">play_circle</span>
+<div class="flex flex-col text-left">
+<span class="leading-none text-xs text-on-primary-container font-normal">Berikutnya: A-039</span>
+<span class="leading-tight font-bold">Panggil Antrean</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+<!-- Operational Work Area (Split Panel): Citizen Data SIAK & Active Hardware Integrations -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Citizen Case & Verification Verification Form (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="bg-surface-card rounded-xl p-space-lg shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">contact_page</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Data SIAK Pemohon di Loket</h3>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">SIAK TERPADU DISDUKCAPIL</span>
+</div>
+<!-- Identity Data Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm bg-bg-ivory p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Nomor Induk Kependudukan (NIK)</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-body-md text-body-md font-semibold text-on-surface font-mono" id="nik-display">320901••••••0012</span>
+<button class="text-text-muted hover:text-primary transition" id="toggle-nik" title="Tampilkan NIK" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Nomor Kartu Keluarga (KK)</span>
+<span class="font-body-md text-body-md font-semibold text-on-surface font-mono mt-0.5">320901••••••0045</span>
+</div>
+<div class="flex flex-col sm:col-span-2">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Alamat Domisili KTP</span>
+<span class="font-body-md text-body-md text-on-surface mt-0.5">Dusun Karanganyar RT 03 / RW 01, Desa Susukan, Kec. Susukan, Kab. Cirebon</span>
+</div>
+<div class="flex flex-col sm:col-span-2">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Nomor &amp; Legalitas Surat Pengantar Desa</span>
+<div class="flex items-center justify-between mt-1 flex-wrap gap-1">
+<span class="font-body-sm text-body-sm font-mono text-on-surface">474.2/048/Pelayanan/IV/2025</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] mr-1 text-primary">verified_user</span>TTE Sah Kuwu: H. Ma'ruf, S.Sos.
+              </span>
+</div>
+</div>
+</div>
+<!-- Damaged ID Visual Evidence & Physical Verification Checklist -->
+<div class="flex flex-col sm:flex-row gap-space-md items-center sm:items-stretch bg-surface-container-low p-space-md rounded-xl">
+<div class="w-44 h-28 shrink-0 bg-surface-card rounded-lg overflow-hidden relative shadow-sm flex flex-col items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Close up archival inspection photograph of a degraded chipped Indonesian national identity card e-KTP on official green archival counter desk with peeling laminate and scratched chip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCALrCD65ZokghlW-rk1oDavbOld5TwTEqUwXUXkeDkjDYJmCViYZ9hyirK3kvPK1EfCWHBfmM11BNle9_-ai2_R5bcbC1k7ZsAwJ5pA1SMu3wmhChNl8-HO527lYIj4z5idVYUjK_rZSJSsdOaBPSxHrigOIsHvp5OzLggbE9b7QM-qRvoh4hMhQVuf8TLLhCWxxmSM0TmPoNiaz9h2D1HQc_ELJoCswQlZRZCbZA"/>
+<span class="absolute bottom-1 right-1 bg-on-surface/80 text-on-primary font-label-eyebrow text-[9px] px-1.5 py-0.5 rounded">Fisik KTP Aus</span>
+</div>
+<div class="flex flex-col justify-between flex-1 gap-2 w-full">
+<span class="font-label-md text-label-md text-primary">Pemeriksaan Berkas Fisik Pemohon:</span>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+<span>Fisik e-KTP lama yang rusak diserahkan &amp; ditarik</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+<span>Kartu Keluarga Asli / Salinan Sah sesuai NIK</span>
+</label>
+<label class="flex items-center gap-2 text-on-surface font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+<span>Barcode Pengantar Desa tervalidasi BSrE &amp; SIAK</span>
+</label>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">Seluruh berkas persyaratan dinyatakan LENGKAP</span>
+</div>
+</div>
+<!-- Document Printing & IKD Activation Hardware Action -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<button class="p-3 rounded-xl bg-primary text-on-primary hover:bg-[#003e34] transition flex items-center justify-between shadow-[0_4px_16px_rgba(20,55,47,0.18)] active:scale-95" id="btn-print-fargo" type="button">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md leading-tight">Cetak ke Fargo HDP5000</span>
+<span class="font-label-eyebrow text-[10px] text-on-primary-container">Kirim Payload SIAK 1 Keping</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="p-3 rounded-xl bg-mint-tag hover:bg-surface-container text-primary transition flex items-center justify-between shadow-sm active:scale-95" id="btn-ikd-activate" type="button">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-surface-card flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md leading-tight text-on-surface">Aktivasi IKD Digital</span>
+<span class="font-label-eyebrow text-[10px] text-text-muted">Sinkronisasi QR Identitas HP</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary">phonelink_setup</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Hardware Health & Daily Work Operator Performance (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Hardware Telemetry: Fargo HDP5000 -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">devices</span>
+<h4 class="font-label-lg text-label-lg text-on-surface">Telemetri Printer Fargo HDP5000</h4>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mr-1"></span>Siap Cetak
+          </span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs pt-1">
+<div class="bg-bg-ivory rounded-lg p-2.5 flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Suhu Roll</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">42°C</span>
+<span class="font-label-eyebrow text-[10px] text-status-selesai-text">Optimal</span>
+</div>
+<div class="bg-bg-ivory rounded-lg p-2.5 flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Ribbon YMCK</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-0.5">74%</span>
+<span class="font-label-eyebrow text-[10px] text-text-muted">Film Utuh</span>
+</div>
+<div class="bg-bg-ivory rounded-lg p-2.5 flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Slot Blangko</span>
+<span class="font-headline-sm text-headline-sm text-primary mt-0.5">84 Kpg</span>
+<span class="font-label-eyebrow text-[10px] text-status-disetujui-text">Aman</span>
+</div>
+</div>
+<div class="bg-mint-tag rounded-lg p-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">lan</span>
+<span class="font-body-sm text-body-sm text-on-surface font-mono">IP: 192.168.10.42 (Loket 2 USB Host)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium">Ping 2ms</span>
+</div>
+</div>
+<!-- Operator Daily Productivity KPI Cards -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">query_stats</span>
+<h4 class="font-label-lg text-label-lg text-on-surface">Kinerja Operator Hari Ini (Loket 2)</h4>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">Shift Pagi</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-bg-ivory rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Total Terlayani</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary">29</span>
+<span class="font-body-sm text-body-sm text-text-muted">Pemohon</span>
+</div>
+<div class="w-full bg-surface-variant h-1.5 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 76%"></div>
+</div>
+</div>
+<div class="bg-bg-ivory rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Rata-Rata Waktu</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">03:14</span>
+<span class="font-body-sm text-body-sm text-text-muted">Mnt/Orang</span>
+</div>
+<span class="font-label-eyebrow text-[10px] text-status-selesai-text mt-2">↑ Lebih cepat 46 dtk dr SLA</span>
+</div>
+<div class="bg-bg-ivory rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Sisa Antrean Loket</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-tertiary-container">9</span>
+<span class="font-body-sm text-body-sm text-text-muted">Orang</span>
+</div>
+<span class="font-label-eyebrow text-[10px] text-text-muted mt-2">Est. selesai 11:35 WIB</span>
+</div>
+<div class="bg-bg-ivory rounded-xl p-3 flex flex-col justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Blangko Terpakai</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg text-headline-lg text-primary">29</span>
+<span class="font-body-sm text-body-sm text-text-muted">/ 113 Total</span>
+</div>
+<span class="font-label-eyebrow text-[10px] text-text-muted mt-2">Sisa stok aman di brankas</span>
+</div>
+</div>
+<!-- Inline Visual Productivity Chart (SVG Bar Distribution) -->
+<div class="bg-bg-ivory p-3 rounded-xl flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface">Distribusi Ritme Layanan (08:00 - 10:30)</span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">Per 30 Menit</span>
+</div>
+<div class="h-16 w-full flex items-end justify-between gap-2 pt-2 px-2">
+<div class="flex-1 flex flex-col items-center gap-1">
+<div class="w-full bg-primary/40 rounded-t h-8"></div>
+<span class="font-label-eyebrow text-[9px] text-text-muted">08.00</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1">
+<div class="w-full bg-primary/70 rounded-t h-12"></div>
+<span class="font-label-eyebrow text-[9px] text-text-muted">08.30</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1">
+<div class="w-full bg-primary rounded-t h-14"></div>
+<span class="font-label-eyebrow text-[9px] text-text-muted">09.00</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1">
+<div class="w-full bg-primary rounded-t h-11"></div>
+<span class="font-label-eyebrow text-[9px] text-text-muted">09.30</span>
+</div>
+<div class="flex-1 flex flex-col items-center gap-1">
+<div class="w-full bg-primary-fixed-dim rounded-t h-9"></div>
+<span class="font-label-eyebrow text-[9px] text-text-muted">10.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Queue List in Counter 2 -->
+<div class="w-full bg-surface-card rounded-xl p-space-md lg:p-space-lg shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">format_list_numbered</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Urutan Antrean Berikutnya di Loket 2</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Estimasi waktu tunggu rata-rata: ~3.5 menit per pemohon</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<input class="h-9 px-3 pl-8 rounded-lg bg-bg-ivory text-body-sm placeholder:text-text-muted focus:outline-none focus:ring-1 focus:ring-primary w-48 sm:w-60" placeholder="Cari pemohon / NIK..." type="text"/>
+<span class="material-symbols-outlined text-[16px] text-text-muted absolute left-2.5 top-2.5">search</span>
+</div>
+<button class="h-9 px-3 rounded-lg bg-bg-ivory hover:bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Perbarui</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table Track -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="bg-bg-ivory text-text-muted font-label-eyebrow text-label-eyebrow uppercase">
+<th class="py-2.5 px-3 rounded-l-lg">No. Antrean</th>
+<th class="py-2.5 px-3">Jam Ambil</th>
+<th class="py-2.5 px-3">Nama Pemohon</th>
+<th class="py-2.5 px-3">Asal Desa</th>
+<th class="py-2.5 px-3">Jenis Dokumen</th>
+<th class="py-2.5 px-3">Status</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg">Aksi Cepat</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-line font-body-sm text-body-sm">
+<!-- Next in Line (A-039) -->
+<tr class="hover:bg-mint-tag/60 transition-colors bg-surface-container-low/40">
+<td class="py-3 px-3">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">A-039</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-mono">09:18 WIB</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ny. Maryati</span>
+<span class="font-label-eyebrow text-[10px] text-text-muted">NIK: 320901••••••0089</span>
+</div>
+</td>
+<td class="py-3 px-3 text-on-surface">Desa Susukan</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-bg-ivory text-on-surface-variant text-label-sm font-label-sm">
+                Cetak KTP Rusak (F-1.02)
+              </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-medium">
+                Siap Dipanggil
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="btn-quick-call px-3 py-1 rounded-lg bg-primary text-on-primary hover:bg-[#003e34] transition font-label-sm text-label-sm shadow-sm" data-doc="Cetak KTP Rusak (F-1.02)" data-name="Ny. Maryati" data-ticket="A-039" data-village="Desa Susukan" type="button">
+                Panggil Sekarang
+              </button>
+</td>
+</tr>
+<!-- A-040 -->
+<tr class="hover:bg-mint-tag/60 transition-colors">
+<td class="py-3 px-3">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">A-040</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-mono">09:22 WIB</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sdr. Ridwan</span>
+<span class="font-label-eyebrow text-[10px] text-text-muted">NIK: 320901••••••0102</span>
+</div>
+</td>
+<td class="py-3 px-3 text-on-surface">Desa Bojong Kulon</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-bg-ivory text-on-surface-variant text-label-sm font-label-sm">
+                Penggantian KTP Hilang
+              </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm">
+                Menunggu
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="btn-quick-call px-2.5 py-1 rounded bg-bg-ivory hover:bg-surface-container text-on-surface transition font-label-sm text-label-sm" data-doc="Penggantian KTP Hilang" data-name="Sdr. Ridwan" data-ticket="A-040" data-village="Desa Bojong Kulon" type="button">
+                Prioritas
+              </button>
+</td>
+</tr>
+<!-- A-041 -->
+<tr class="hover:bg-mint-tag/60 transition-colors">
+<td class="py-3 px-3">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">A-041</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-mono">09:25 WIB</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ibu Sunarti</span>
+<span class="font-label-eyebrow text-[10px] text-text-muted">NIK: 320901••••••0214</span>
+</div>
+</td>
+<td class="py-3 px-3 text-on-surface">Desa Kedondong</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-bg-ivory text-on-surface-variant text-label-sm font-label-sm">
+                Cetak e-KTP Pemula (Baru)
+              </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm">
+                Menunggu
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="btn-quick-call px-2.5 py-1 rounded bg-bg-ivory hover:bg-surface-container text-on-surface transition font-label-sm text-label-sm" data-doc="Cetak e-KTP Pemula (Baru)" data-name="Ibu Sunarti" data-ticket="A-041" data-village="Desa Kedondong" type="button">
+                Prioritas
+              </button>
+</td>
+</tr>
+<!-- A-042 -->
+<tr class="hover:bg-mint-tag/60 transition-colors">
+<td class="py-3 px-3">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">A-042</span>
+</td>
+<td class="py-3 px-3 text-on-surface-variant font-mono">09:31 WIB</td>
+<td class="py-3 px-3">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Bpk. Karnadi</span>
+<span class="font-label-eyebrow text-[10px] text-text-muted">NIK: 320901••••••0331</span>
+</div>
+</td>
+<td class="py-3 px-3 text-on-surface">Desa Susukan</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-bg-ivory text-on-surface-variant text-label-sm font-label-sm">
+                Perubahan Elemen Data KTP
+              </span>
+</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm">
+                Menunggu
+              </span>
+</td>
+<td class="py-3 px-3 text-right">
+<button class="btn-quick-call px-2.5 py-1 rounded bg-bg-ivory hover:bg-surface-container text-on-surface transition font-label-sm text-label-sm" data-doc="Perubahan Elemen Data KTP" data-name="Bpk. Karnadi" data-ticket="A-042" data-village="Desa Susukan" type="button">
+                Prioritas
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Notification Toast Modal Container (Dynamic micro-interactions) -->
+<!-- Modal Konfirmasi Lewati (Skip) Antrean -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" id="modal-skip-confirm">
+<div class="bg-surface-card w-full max-w-[520px] rounded-2xl shadow-2xl border border-border-line overflow-hidden flex flex-col animate-in fade-in zoom-in-95 duration-200">
+<!-- Header Modal -->
+<div class="p-6 pb-4 flex items-start justify-between border-b border-border-line">
+<div class="flex items-start gap-3.5">
+<div class="w-11 h-11 rounded-xl bg-status-perbaikan-bg border border-tertiary-fixed-dim/60 flex items-center justify-center text-status-perbaikan-text shrink-0 mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">person_off</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-[18px] font-bold text-on-surface leading-tight">Lewati Nomor Antrean A-038?</h3>
+<span class="px-2 py-0.5 rounded-full bg-status-perbaikan-bg text-status-perbaikan-text font-label-sm text-[11px] font-bold">Loket 2</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-1 leading-snug">
+            Pemohon: <span class="font-semibold text-on-surface">Bapak Budi Santoso</span> (KTP Rusak / Aus • Dusun Karanganyar RT 03/RW 01)
+          </p>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-text-muted hover:text-on-surface hover:bg-surface-container transition-colors shrink-0" onclick="document.getElementById('modal-skip-confirm').style.display='none'" title="Tutup Dialog" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Isi / Body Modal -->
+<div class="p-6 flex flex-col gap-4 bg-bg-ivory/40">
+<!-- Ringkasan Panggilan & Status Terakhir -->
+<div class="bg-surface-container-low/70 border border-surface-container-high rounded-xl p-3.5 flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 shrink-0">volume_up</span>
+<div class="flex flex-col text-body-sm text-on-surface">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-semibold text-primary font-label-md text-label-md">Sudah dipanggil 3 kali</span>
+<span class="text-[11px] px-2 py-0.5 rounded bg-surface-card font-mono text-text-muted border border-border-line">Terakhir: 09:14 WIB • Speaker Ruang Tunggu</span>
+</div>
+<span class="text-text-muted text-[12px] mt-1">Pemohon belum merespons panggilan bel dan belum berada di meja loket pelayanan.</span>
+</div>
+</div>
+<!-- Pilihan Tindakan Alur (Radio Options) -->
+<div class="flex flex-col gap-2.5">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted tracking-wider">Pilih Kebijakan Tindakan Alur:</span>
+<!-- Opsi 1 (Selected Default) -->
+<label class="relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-primary bg-mint-tag/40 cursor-pointer shadow-sm transition hover:bg-mint-tag/60">
+<input checked="" class="w-4 h-4 mt-1 accent-primary text-primary focus:ring-primary cursor-pointer" name="skip_action" type="radio" value="defer"/>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-primary flex items-center gap-1.5">
+                Tunda ke Urutan Akhir Sesi Ini
+                <span class="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded bg-status-disetujui-bg text-status-disetujui-text">Rekomendasi</span>
+</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-1 leading-normal">
+              Nomor A-038 akan otomatis dijadwalkan kembali setelah nomor <strong>A-042</strong> selesai dilayani. Mengirim WhatsApp pengingat otomatis ke pemohon (<span class="font-mono">0812-3456-7890</span>).
+            </p>
+</div>
+</label>
+<!-- Opsi 2 -->
+<label class="relative flex items-start gap-3 p-3.5 rounded-xl border border-border-line bg-surface-card hover:border-outline-variant cursor-pointer transition">
+<input class="w-4 h-4 mt-1 accent-primary text-primary focus:ring-primary cursor-pointer" name="skip_action" type="radio" value="cancel"/>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Batalkan Tiket / Tidak Hadir (Expired)</span>
+</div>
+<p class="font-body-sm text-[12px] text-text-muted mt-0.5 leading-normal">
+              Warga dinyatakan tidak hadir. Tiket akan kedaluwarsa dan pemohon harus mengambil nomor antrean baru melalui mesin KiosK.
+            </p>
+</div>
+</label>
+</div>
+<!-- Alasan Petugas & Checkbox WhatsApp -->
+<div class="flex flex-col gap-2.5 pt-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted tracking-wider">Alasan Petugas Loket:</label>
+<div class="flex items-center justify-between bg-surface-card border border-border-line rounded-lg px-3 py-2 text-body-sm text-on-surface shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-text-muted">assignment_late</span>
+<span class="text-[13px]">Pemohon tidak di ruang tunggu / belum merespons bel</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-text-muted">expand_more</span>
+</div>
+</div>
+<label class="flex items-center gap-2.5 pt-1 text-on-surface cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-[12.5px] text-on-surface-variant">
+            Kirim notifikasi otomatis via WhatsApp: <em class="text-on-surface not-italic font-medium">"Nomor Anda dilewati karena belum hadir di loket"</em>
+</span>
+</label>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="p-4 px-6 bg-surface-card border-t border-border-line flex items-center justify-end gap-3">
+<button class="px-4 py-2.5 rounded-xl border border-border-line hover:bg-bg-ivory text-on-surface font-label-md text-label-md transition shadow-sm active:scale-95" onclick="document.getElementById('modal-skip-confirm').style.display='none'" type="button">
+        Kembali / Batalkan Aksi
+      </button>
+<button class="px-5 py-2.5 rounded-xl bg-status-perbaikan-text hover:opacity-95 text-white font-label-md text-label-md font-semibold transition flex items-center gap-2 shadow-sm active:scale-95" onclick="document.getElementById('modal-skip-confirm').style.display='none'; document.getElementById('toast-notification').classList.remove('translate-y-24', 'opacity-0'); document.getElementById('toast-notification').classList.add('translate-y-0', 'opacity-100'); document.getElementById('toast-text').textContent='Nomor A-038 ditunda ke urutan akhir sesi';" type="button">
+<span class="material-symbols-outlined text-[18px]">fast_forward</span>
+<span>Ya, Lewati Antrean Ini</span>
+</button>
+</div>
+</div>
+</div><div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-[#0F3D3E] text-on-primary px-4 py-3 rounded-xl shadow-[0_12px_32px_rgba(0,0,0,0.22)] border-l-4 border-tertiary-fixed" id="toast-notification">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed" id="toast-icon">info</span>
+<span class="font-body-sm text-body-sm font-medium" id="toast-text">Instruksi terkirim</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Session stopwatch simulation
+    let seconds = 164;
+    const timerEl = document.getElementById('session-timer');
+    if (timerEl) {
+      setInterval(() => {
+        seconds++;
+        const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+        const secs = (seconds % 60).toString().padStart(2, '0');
+        timerEl.textContent = `${mins}:${secs}`;
+      }, 1000);
+    }
+
+    // Helper Toast
+    const toast = document.getElementById('toast-notification');
+    const toastText = document.getElementById('toast-text');
+    const toastIcon = document.getElementById('toast-icon');
+    let toastTimeout;
+
+    function showToast(message, icon = 'check_circle') {
+      if (!toast) return;
+      clearTimeout(toastTimeout);
+      toastText.textContent = message;
+      toastIcon.textContent = icon;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3200);
+    }
+
+    // Sound Bell Simulator
+    const btnSoundTest = document.getElementById('btn-sound-test');
+    if (btnSoundTest) {
+      btnSoundTest.addEventListener('click', () => {
+        showToast('Memutar bel panggilan: "Ding-Dong... Nada Loket 2"', 'volume_up');
+      });
+    }
+
+    // Operator Status Toggle
+    const statusActive = document.getElementById('status-toggle-active');
+    const statusBreak = document.getElementById('status-toggle-break');
+    if (statusActive && statusBreak) {
+      statusBreak.addEventListener('click', () => {
+        statusBreak.classList.add('bg-status-perbaikan-bg', 'text-status-perbaikan-text');
+        statusActive.classList.remove('bg-primary', 'text-on-primary');
+        statusActive.classList.add('text-on-surface-variant');
+        showToast('Status loket diubah: Jeda Istirahat (Antrean ditahan sementara)', 'pause_circle');
+      });
+      statusActive.addEventListener('click', () => {
+        statusActive.classList.add('bg-primary', 'text-on-primary');
+        statusActive.classList.remove('text-on-surface-variant');
+        statusBreak.classList.remove('bg-status-perbaikan-bg', 'text-status-perbaikan-text');
+        showToast('Status loket aktif melayani kembali', 'play_circle');
+      });
+    }
+
+    // Recall Button
+    const btnRecall = document.getElementById('btn-recall');
+    const audioCallIndicator = document.getElementById('audio-call-indicator');
+    if (btnRecall) {
+      btnRecall.addEventListener('click', () => {
+        if (audioCallIndicator) audioCallIndicator.classList.remove('hidden');
+        showToast('Pengeras suara: "Nomor Antrean A-038 silakan menuju Loket 2"', 'campaign');
+        setTimeout(() => {
+          if (audioCallIndicator) audioCallIndicator.classList.add('hidden');
+        }, 3500);
+      });
+    }
+
+    // Skip Button
+    const btnSkip = document.getElementById('btn-skip');
+    if (btnSkip) {
+      btnSkip.addEventListener('click', () => {
+        if (confirm('Lewati pemohon A-038 (Bapak Budi Santoso)? Antrean akan dipindahkan ke penundaan.')) {
+          showToast('Nomor A-038 ditandai tidak hadir/dilewati', 'person_off');
+        }
+      });
+    }
+
+    // Transfer Counter Button
+    const btnTransfer = document.getElementById('btn-transfer');
+    if (btnTransfer) {
+      btnTransfer.addEventListener('click', () => {
+        showToast('Pilih tujuan pengalihan: Berkas dipindah ke Loket 1 (Perekaman) atau Loket 3 (Kependudukan Umum)', 'swap_horiz');
+      });
+    }
+
+    // Complete Document Button
+    const btnFinish = document.getElementById('btn-finish-doc');
+    if (btnFinish) {
+      btnFinish.addEventListener('click', () => {
+        showToast('Dokumen e-KTP diverifikasi & status pengajuan dinyatakan Selesai', 'verified');
+      });
+    }
+
+    // Hardware Actions
+    const btnPrint = document.getElementById('btn-print-fargo');
+    if (btnPrint) {
+      btnPrint.addEventListener('click', () => {
+        showToast('Data NIK 320901 terkirim ke Printer Fargo HDP5000. Sedang mencetak blangko...', 'print');
+      });
+    }
+
+    const btnIkd = document.getElementById('btn-ikd-activate');
+    if (btnIkd) {
+      btnIkd.addEventListener('click', () => {
+        showToast('QR Code Aktivasi IKD di ponsel pemohon telah diverifikasi Disdukcapil', 'qr_code_scanner');
+      });
+    }
+
+    // Toggle Masked NIK
+    const btnToggleNik = document.getElementById('toggle-nik');
+    const nikDisplay = document.getElementById('nik-display');
+    let isMasked = true;
+    if (btnToggleNik && nikDisplay) {
+      btnToggleNik.addEventListener('click', () => {
+        isMasked = !isMasked;
+        nikDisplay.textContent = isMasked ? '320901••••••0012' : '3209012408790012';
+        btnToggleNik.innerHTML = `<span class="material-symbols-outlined text-[16px]">${isMasked ? 'visibility' : 'visibility_off'}</span>`;
+      });
+    }
+
+    // Call Next & Quick Call Queue Handlers
+    const btnNext = document.getElementById('btn-call-next');
+    const ticketDisplay = document.getElementById('current-ticket-number');
+    const citizenNameDisplay = document.getElementById('current-citizen-name');
+
+    function advanceTo(ticket, name) {
+      if (ticketDisplay) ticketDisplay.textContent = ticket;
+      if (citizenNameDisplay) citizenNameDisplay.textContent = name;
+      seconds = 0;
+      showToast(`Memanggil nomor ${ticket} (${name}) menuju Loket 2`, 'campaign');
+    }
+
+    if (btnNext) {
+      btnNext.addEventListener('click', () => {
+        advanceTo('A-039', 'Ny. Maryati');
+      });
+    }
+
+    const quickCallBtns = document.querySelectorAll('.btn-quick-call');
+    quickCallBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const t = e.currentTarget.getAttribute('data-ticket');
+        const n = e.currentTarget.getAttribute('data-name');
+        advanceTo(t, n);
+      });
+    });
+  })();
+</script></main></div></body></html>

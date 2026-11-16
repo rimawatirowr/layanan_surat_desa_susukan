@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#F7F8F5;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-on-surface": "#e0f5f0",
+        "surface-container": "#def2ed",
+        "on-primary-fixed-variant": "#005143",
+        "on-tertiary-fixed": "#261900",
+        "error": "#ba1a1a",
+        "primary": "#005144",
+        "status-selesai-bg": "#E1F3EC",
+        "surface-container-high": "#d8ede8",
+        "on-background": "#0c1f1c",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary": "#ffffff",
+        "mint-tag": "#E8F1ED",
+        "surface-variant": "#d2e7e2",
+        "tertiary": "#5e4300",
+        "text-muted": "#74817D",
+        "surface-tint": "#166a5a",
+        "border-line": "#E7ECE8",
+        "status-selesai-text": "#0F5B49",
+        "tertiary-fixed-dim": "#efbf61",
+        "on-secondary-fixed-variant": "#224d4e",
+        "error-container": "#ffdad6",
+        "surface-bright": "#e9fef9",
+        "on-surface-variant": "#3f4945",
+        "primary-container": "#176b5b",
+        "status-perbaikan-bg": "#FDEBD3",
+        "on-tertiary-container": "#ffd481",
+        "on-tertiary": "#ffffff",
+        "status-menunggu-text": "#9A6100",
+        "inverse-primary": "#89d5c1",
+        "status-disetujui-bg": "#E1F3EC",
+        "outline": "#6f7975",
+        "surface-card": "#FFFFFF",
+        "primary-fixed": "#a5f1dd",
+        "on-tertiary-fixed-variant": "#5d4200",
+        "tertiary-container": "#7c5900",
+        "surface-container-low": "#e3f8f3",
+        "secondary-fixed": "#beebeb",
+        "on-secondary-container": "#426b6c",
+        "tertiary-fixed": "#ffdea4",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#9ce9d4",
+        "secondary": "#3b6566",
+        "on-primary-fixed": "#00201a",
+        "status-diverifikasi-bg": "#E3EEFB",
+        "surface-container-highest": "#d2e7e2",
+        "on-secondary-fixed": "#002020",
+        "surface-dim": "#cadeda",
+        "on-error-container": "#93000a",
+        "inverse-surface": "#223431",
+        "on-surface": "#0c1f1c",
+        "bg-ivory": "#F7F8F5",
+        "status-ditolak-bg": "#FBE4E4",
+        "outline-variant": "#bec9c4",
+        "status-ditolak-text": "#B02A2A",
+        "status-diverifikasi-text": "#245A9E",
+        "status-perbaikan-text": "#B45309",
+        "status-disetujui-text": "#176B5B",
+        "surface": "#e9fef9",
+        "primary-fixed-dim": "#89d5c1",
+        "on-error": "#ffffff",
+        "secondary-container": "#beebeb",
+        "status-menunggu-bg": "#FFF3DC",
+        "secondary-fixed-dim": "#a3cfcf",
+        "background": "#e9fef9"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-lg": "1.125rem",
+        "space-xl": "1.75rem",
+        "space-sm": "0.5rem",
+        "gutter": "0.875rem",
+        "space-xs": "0.25rem",
+        "gutter-desktop": "1rem",
+        "margin-tablet": "1.5rem",
+        "margin": "1rem",
+        "margin-desktop": "1.75rem",
+        "space-md": "0.875rem"
+      },
+      "fontFamily": {
+        "letter-legal-title": ["Georgia"],
+        "headline-lg-mobile": ["Inter"],
+        "label-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "headline-xl": ["Inter"],
+        "letter-legal-body": ["Georgia"],
+        "label-lg": ["Inter"],
+        "body-lg": ["Inter"],
+        "label-eyebrow": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "headline-lg": ["Inter"],
+        "body-sm": ["Inter"],
+        "label-md": ["Inter"],
+        "headline-sm": ["Inter"],
+        "headline-md": ["Inter"]
+      },
+      "fontSize": {
+        "letter-legal-title": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+        "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "letter-legal-body": ["12px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "label-eyebrow": ["10px", {"lineHeight": "12px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+        "headline-xl-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.023em", "fontWeight": "700"}],
+        "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+        "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+        "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+        "headline-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-ivory font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,55,47,0.06)] pt-safe"><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">account_balance</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">KAB. CIREBON</span><span class="w-1 h-1 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-sm text-label-sm text-primary font-bold">DESA SUSUKAN</span></div><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Portal Warga</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pemberitahuan" class="relative w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface-card"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin pt-20 pb-28 bg-bg-ivory"><div class="flex flex-col w-full pb-8">
+<!-- Top App Bar Navigation & Civic Badge -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<button aria-label="Kembali ke portal atau riwayat" class="w-11 h-11 rounded-xl bg-surface-card shadow-sm flex items-center justify-center text-on-surface hover:text-primary transition-all active:scale-95" type="button">
+<span class="material-symbols-outlined text-[22px]">arrow_back</span>
+</button>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Kecamatan Susukan • Bebas Biaya (Rp0)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">LAYANAN ADMINISTRASI KEPENDUDUKAN</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Pengantar Cetak Ulang KTP</h1>
+</div>
+</div>
+<!-- Stepper 3 Tahap Responsif -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm mb-space-md">
+<div class="flex items-center justify-between relative">
+<!-- Track Background Bars -->
+<div class="absolute left-6 right-6 top-3.5 h-0.5 bg-mint-tag -z-0"></div>
+<div class="absolute left-6 w-1/2 top-3.5 h-0.5 bg-primary -z-0"></div>
+<!-- Step 1: Selesai -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Data Pemohon</span>
+</div>
+<!-- Step 2: Aktif -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md ring-4 ring-mint-tag">
+<span class="font-label-sm text-label-sm">2</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Kondisi &amp; Foto</span>
+</div>
+<!-- Step 3: Belum -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-7 h-7 rounded-full bg-mint-tag text-text-muted flex items-center justify-center">
+<span class="font-label-sm text-label-sm">3</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Ambil KTP</span>
+</div>
+</div>
+</div>
+<!-- Information Callout Box -->
+<div class="flex items-start gap-space-sm p-space-md rounded-2xl bg-status-menunggu-bg text-status-menunggu-text mb-space-md shadow-sm">
+<div class="w-9 h-9 rounded-xl bg-tertiary-fixed-dim/40 flex items-center justify-center flex-shrink-0 text-status-menunggu-text">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">info</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold mb-0.5">Syarat Wajib Dukcapil Kab. Cirebon</span>
+<p class="font-body-sm text-body-sm leading-snug">
+        Fisik e-KTP lama <strong class="font-bold underline">wajib diserahkan</strong> saat penukaran fisik baru di Kantor Camat Susukan atau mobil keliling Dukcapil. Seluruh proses pengurusan adalah <strong class="font-bold">GRATIS (Rp0)</strong>.
+      </p>
+</div>
+</div>
+<!-- Citizen Profile Snapshot (SIAK Auto-fill) -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-mint-tag text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Data Identitas SIAK</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Terverifikasi</span>
+</span>
+</div>
+<div class="grid grid-cols-2 gap-y-3 gap-x-2 p-3 rounded-xl bg-bg-ivory text-body-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Nama Lengkap</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Budi Santoso</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Nomor KK</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">320901••••••0045</span>
+</div>
+<div class="flex flex-col col-span-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">NIK (Nomor Induk Kependudukan)</span>
+<button class="text-primary font-label-sm text-label-sm flex items-center gap-0.5" id="nik-toggle" type="button">
+<span class="material-symbols-outlined text-[14px]" id="nik-icon">visibility</span>
+<span id="nik-label">Lihat</span>
+</button>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold tracking-wider" id="nik-value">320901••••••0012</span>
+</div>
+<div class="flex flex-col col-span-2 pt-1">
+<span class="font-label-sm text-label-sm text-text-muted">Alamat Domisili Terdaftar</span>
+<span class="font-body-sm text-body-sm text-on-surface">Dusun Karanganyar RT 03 / RW 01, Desa Susukan</span>
+</div>
+</div>
+</div>
+<!-- Form Interaktif Pengajuan -->
+<form class="flex flex-col gap-space-md" id="form-cetak-ktp" onsubmit="event.preventDefault();">
+<!-- Field 1: Kategori Kerusakan KTP -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">broken_image</span>
+<span>Kategori Kerusakan e-KTP</span>
+</label>
+<span class="font-body-sm text-body-sm text-text-muted">Pilih satu kondisi yang paling menggambarkan fisik KTP saat ini</span>
+</div>
+<div class="grid grid-cols-1 gap-2.5" id="damage-category-group">
+<!-- Option 1: Selected by default -->
+<label class="damage-card relative flex items-center gap-3 p-3.5 rounded-xl bg-status-disetujui-bg text-on-surface cursor-pointer transition-all shadow-sm">
+<input checked="" class="sr-only" name="damage_category" type="radio" value="pudar"/>
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">font_download_off</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold">Huruf / NIK Pudar &amp; Terkelupas</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Teks buram, foto luntur, atau angka NIK sulit dibaca</span>
+</div>
+<div class="radio-indicator w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="damage-card relative flex items-center gap-3 p-3.5 rounded-xl bg-bg-ivory text-on-surface cursor-pointer transition-all">
+<input class="sr-only" name="damage_category" type="radio" value="patah"/>
+<div class="w-10 h-10 rounded-xl bg-mint-tag text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">splitscreen</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">Fisik Patah / Retak / Cuil</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Kartu terbelah dua atau sudut patah</span>
+</div>
+<div class="radio-indicator w-5 h-5 rounded-full bg-mint-tag flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="damage-card relative flex items-center gap-3 p-3.5 rounded-xl bg-bg-ivory text-on-surface cursor-pointer transition-all">
+<input class="sr-only" name="damage_category" type="radio" value="chip"/>
+<div class="w-10 h-10 rounded-xl bg-mint-tag text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">contactless_off</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">Chip Rusak / Tak Terbaca Mesin</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Gagal tap di card reader perbankan / instansi</span>
+</div>
+<div class="radio-indicator w-5 h-5 rounded-full bg-mint-tag flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="damage-card relative flex items-center gap-3 p-3.5 rounded-xl bg-bg-ivory text-on-surface cursor-pointer transition-all">
+<input class="sr-only" name="damage_category" type="radio" value="laminasi"/>
+<div class="w-10 h-10 rounded-xl bg-mint-tag text-on-surface flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">water_damage</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold">Laminasi Lepas / Terkena Air</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Plastik pelindung terkelupas atau lembab</span>
+</div>
+<div class="radio-indicator w-5 h-5 rounded-full bg-mint-tag flex items-center justify-center text-transparent">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Field 2: Keterangan Tambahan / Alasan Cetak Ulang -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5" for="alasan-field">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+<span>Alasan &amp; Keterangan Pengajuan</span>
+</label>
+<span class="font-label-sm text-label-sm text-text-muted" id="char-count">112/200</span>
+</div>
+<div class="relative">
+<textarea class="w-full p-3.5 rounded-xl bg-bg-ivory text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary placeholder-text-muted transition-all resize-none shadow-inner" id="alasan-field" maxlength="200" placeholder="Contoh: Huruf nama dan 4 angka NIK di bagian tengah sudah pudar tergesek dompet, dibutuhkan segera untuk urusan perbankan." rows="3">Huruf nama dan 4 angka NIK di bagian tengah sudah pudar tergesek dompet, dibutuhkan segera untuk urusan perbankan.</textarea>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted">Keterangan ini akan langsung dicetak pada format surat resmi pengantar desa.</span>
+</div>
+<!-- Field 3: Unggah Foto Fisik e-KTP yang Rusak -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">photo_camera</span>
+<span>Foto Fisik e-KTP yang Rusak</span>
+</label>
+<span class="font-body-sm text-body-sm text-text-muted">Pastikan kondisi rusak atau pudar terlihat jelas</span>
+</div>
+<!-- Preview Card with Verified Attachment -->
+<div class="relative rounded-2xl overflow-hidden bg-bg-ivory p-3 shadow-inner flex flex-col gap-3">
+<div class="relative w-full h-44 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close-up photograph of an Indonesian e-KTP identity card lying on a clean rustic wooden desk with natural morning light. The card shows surface friction wear, the national Garuda emblem slightly scratched, and the laminated holographic layer peeling slightly at the top-right corner to demonstrate legitimate card damage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw9Ircs1bLGywQni30shscd8BC69nfTcKlhnGUaVInClbt30zHxMPzrTTj5f5Vk5Vixditnmj88zO7ZWaydjwK3Hc4UjoKjPtBNECJ0KZbi4uH8wqeVPv4wZtA751sv-eo32m5d8YAXgrlebQrt-AmO1GPSz4tb-d0FpjjPSBwUiVjVDI8xw2C6vikYC0dPz5mNoKEGWQkF9RQvMzTs6vAS56_h0htKmd8nufdeJY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-selesai-bg/95 text-status-selesai-text font-label-sm text-label-sm backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">task_alt</span>
+<span>Terlampir (1.4 MB)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary/90 bg-inverse-surface/60 px-2 py-0.5 rounded-md backdrop-blur-sm">Kamera • 10:42 WIB</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex-1 py-2.5 px-3 rounded-xl bg-surface-card text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">sync</span>
+<span>Ganti / Foto Ulang</span>
+</button>
+<button class="py-2.5 px-3.5 rounded-xl bg-status-disetujui-bg text-status-disetujui-text font-label-md text-label-md flex items-center justify-center gap-1 shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+<span>Perbesar</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Field 4: Dokumen Pendukung (Pilih Salah Satu) -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">folder_shared</span>
+<span>Dokumen Pendukung Verifikasi</span>
+</label>
+<span class="font-body-sm text-body-sm text-text-muted">Data pembanding untuk validasi data NIK di database</span>
+</div>
+<div class="flex flex-col gap-2">
+<label class="flex items-start gap-3 p-3 rounded-xl bg-status-disetujui-bg text-on-surface cursor-pointer transition-all">
+<input checked="" class="mt-1 w-4 h-4 text-primary accent-primary" name="doc_type" type="radio" value="kk"/>
+<div class="flex flex-col flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-primary font-bold">Kartu Keluarga (KK) Asli</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-primary text-on-primary">Tersimpan</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Menggunakan arsip digital KK No. 320901••••0045 yang sudah tervalidasi di portal desa.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-xl bg-bg-ivory text-on-surface cursor-pointer transition-all opacity-80">
+<input class="mt-1 w-4 h-4 text-primary accent-primary" name="doc_type" type="radio" value="ijazah"/>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">Ijazah Terakhir</span>
+<span class="font-body-sm text-body-sm text-text-muted">Unggah scan lembar ijazah baru (format PDF/JPG)</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-xl bg-bg-ivory text-on-surface cursor-pointer transition-all opacity-80">
+<input class="mt-1 w-4 h-4 text-primary accent-primary" name="doc_type" type="radio" value="akta"/>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">Akta Kelahiran</span>
+<span class="font-body-sm text-body-sm text-text-muted">Unggah scan akta kelahiran baru</span>
+</div>
+</label>
+</div>
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-mint-tag text-status-disetujui-text font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">cloud_done</span>
+<span>Arsip KK digital aktif di database Desa Susukan. Tidak perlu upload ulang.</span>
+</div>
+</div>
+<!-- Field 5: Pilihan Lokasi Pengambilan e-KTP Baru -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">near_me</span>
+<span>Pilihan Lokasi Pengambilan KTP Baru</span>
+</label>
+<span class="font-body-sm text-body-sm text-text-muted">Tentukan tempat penukaran fisik KTP yang paling mudah bagi Anda</span>
+</div>
+<div class="flex flex-col gap-2.5" id="pickup-locations">
+<!-- Option A (Default) -->
+<label class="location-card relative flex items-start gap-3 p-3.5 rounded-xl bg-status-disetujui-bg text-on-surface cursor-pointer transition-all shadow-sm">
+<input checked="" class="sr-only" name="pickup_location" type="radio" value="kecamatan"/>
+<div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md text-primary font-bold">Loket Kecamatan Susukan</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-0.5">Pelayanan Reguler Cepat (Senin - Jumat, 08.00 - 14.30 WIB)</span>
+<div class="flex items-center gap-2 mt-1.5 font-label-sm text-label-sm text-text-muted">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">pin_drop</span> Jarak: ~2.1 km</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-status-selesai-text font-bold">Paling Direkomendasikan</span>
+</div>
+</div>
+<div class="loc-check w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</label>
+<!-- Option B -->
+<label class="location-card relative flex items-start gap-3 p-3.5 rounded-xl bg-bg-ivory text-on-surface cursor-pointer transition-all">
+<input class="sr-only" name="pickup_location" type="radio" value="mobil_keliling"/>
+<div class="w-9 h-9 rounded-xl bg-mint-tag text-on-surface flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">directions_bus</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">Mobil Keliling Dukcapil di Balai Desa</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Jadwal Mingguan Terpadu (Tiap Hari Kamis, 09.00 - 12.00 WIB)</span>
+<div class="flex items-center gap-2 mt-1.5 font-label-sm text-label-sm text-text-muted">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">place</span> Balai Desa Susukan</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-tertiary font-bold">Kuota Terbatas 50/hari</span>
+</div>
+</div>
+<div class="loc-check w-5 h-5 rounded-full bg-mint-tag text-transparent flex items-center justify-center flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Field 6: Notifikasi Progres via WhatsApp -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-status-disetujui-bg text-status-disetujui-text flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Notifikasi Otomatis WhatsApp</span>
+<span class="font-body-sm text-body-sm text-text-muted">Kirim progres surat &amp; alert cetak jadi ke <strong>0812-3456-7890</strong></span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer" id="wa-toggle" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-mint-tag peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-card after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Legal Declaration & Checkbox -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-2">
+<label class="flex items-start gap-3 cursor-pointer">
+<div class="relative flex items-center justify-center mt-0.5">
+<input checked="" class="w-5 h-5 text-primary accent-primary rounded cursor-pointer" id="declaration-check" type="checkbox"/>
+</div>
+<div class="flex flex-col text-on-surface">
+<span class="font-label-md text-label-md font-bold text-on-surface">Pernyataan Kesanggupan Fisik KTP</span>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5 leading-relaxed">
+            Saya menyatakan bahwa fisik e-KTP lama <strong class="text-on-surface font-bold">masih ada dan tidak hilang</strong>, serta sanggup menyerahkannya saat pengambilan fisik e-KTP baru sesuai peraturan Ditjen Dukcapil RI.
+          </p>
+</div>
+</label>
+</div>
+<!-- Preview Dokumen Digital Ringkas -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Pratinjau Lembar Surat Desa</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Format F-1.02 Resmi</span>
+</div>
+<!-- Virtual Paper Container -->
+<div class="p-4 rounded-xl bg-bg-ivory shadow-inner flex flex-col gap-2">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">assured_workload</span>
+</div>
+<div class="flex flex-col">
+<span class="font-letter-legal-title text-[11px] leading-tight text-on-surface">PEMERINTAH DESA SUSUKAN</span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">KECAMATAN SUSUKAN • KABUPATEN CIREBON</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-mint-tag text-status-disetujui-text font-mono">DRAF-047/REG</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-card shadow-sm flex flex-col gap-1 text-on-surface">
+<span class="font-label-sm text-label-sm font-bold text-center text-primary uppercase">SURAT KETERANGAN PENGANTAR CETAK ULANG KTP-EL</span>
+<p class="font-letter-legal-body text-[11px] leading-relaxed text-center text-text-muted">
+            Menerangkan bahwa nama <strong>BUDI SANTOSO</strong> (NIK: 320901••••••0012) benar penduduk Desa Susukan dan mengajukan cetak ulang karena e-KTP dalam kondisi rusak/pudar.
+          </p>
+<div class="flex items-center justify-between pt-2 text-[10px] text-text-muted">
+<span class="font-mono">TTE Kades: Digital Siap Validasi</span>
+<span class="flex items-center gap-1 text-primary font-bold"><span class="material-symbols-outlined text-[12px]">qr_code_2</span> QR Code Dukcapil</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions Section -->
+<div class="flex flex-col gap-3 pt-2">
+<!-- Big Primary Button -->
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.98] transition-all" id="btn-submit" type="button">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Kirim Permohonan &amp; Terbitkan Surat</span>
+</button>
+<!-- Secondary Action -->
+<button class="w-full h-11 rounded-xl bg-surface-card text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm hover:bg-bg-ivory active:scale-[0.98] transition-all" id="btn-draft" type="button">
+<span class="material-symbols-outlined text-text-muted text-[18px]">bookmark_border</span>
+<span>Simpan sebagai Draf Pengajuan</span>
+</button>
+<!-- Microcopy Helper -->
+<div class="flex items-center justify-center gap-1.5 text-text-muted font-body-sm text-body-sm py-1">
+<span class="material-symbols-outlined text-status-selesai-text text-[16px]">bolt</span>
+<span>Proses verifikasi otomatis oleh sistem desa dalam <strong>5-15 menit</strong></span>
+</div>
+</div>
+</form>
+<!-- Interactive Modal Dialog Toast Feedback (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-margin bg-on-surface/40 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300" id="success-sheet">
+<div class="w-full max-w-sm rounded-3xl bg-surface-card p-space-lg shadow-2xl flex flex-col items-center text-center transform translate-y-8 transition-transform duration-300">
+<div class="w-16 h-16 rounded-2xl bg-status-disetujui-bg text-status-disetujui-text flex items-center justify-center mb-space-sm shadow-inner">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface mb-1">Permohonan Berhasil Terkirim!</span>
+<p class="font-body-md text-body-md text-text-muted mb-space-md">
+        Nomor Register Surat: <strong class="text-primary font-mono">REG-KTP/2025/0821</strong>. Notifikasi dan tautan berkas resmi telah dikirim ke WhatsApp Budi Santoso.
+      </p>
+<div class="w-full flex flex-col gap-2">
+<button class="w-full h-11 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all" id="close-sheet" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Buka Lembar Pengantar Digital</span>
+</button>
+<button class="w-full h-10 rounded-xl bg-bg-ivory text-on-surface font-label-md text-label-md flex items-center justify-center" id="back-home-btn" type="button">
+          Kembali ke Beranda Desa
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Script micro-interaction for citizen form
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. NIK Obfuscation Toggle
+    const nikToggle = document.getElementById('nik-toggle');
+    const nikValue = document.getElementById('nik-value');
+    const nikIcon = document.getElementById('nik-icon');
+    const nikLabel = document.getElementById('nik-label');
+    let isMasked = true;
+
+    if (nikToggle) {
+      nikToggle.addEventListener('click', () => {
+        isMasked = !isMasked;
+        if (isMasked) {
+          nikValue.textContent = '320901••••••0012';
+          nikIcon.textContent = 'visibility';
+          nikLabel.textContent = 'Lihat';
+        } else {
+          nikValue.textContent = '3209011405880012';
+          nikIcon.textContent = 'visibility_off';
+          nikLabel.textContent = 'Sembunyikan';
+        }
+      });
+    }
+
+    // 2. Damage Category Radio Selection Style Handler
+    const damageCards = document.querySelectorAll('#damage-category-group .damage-card');
+    damageCards.forEach(card => {
+      card.addEventListener('click', () => {
+        damageCards.forEach(c => {
+          c.classList.remove('bg-status-disetujui-bg', 'shadow-sm');
+          c.classList.add('bg-bg-ivory');
+          const title = c.querySelector('.font-label-md');
+          if (title) {
+            title.classList.remove('text-primary');
+            title.classList.add('text-on-surface');
+          }
+          const iconBox = c.querySelector('div:first-of-type');
+          if (iconBox) {
+            iconBox.classList.remove('bg-primary', 'text-on-primary');
+            iconBox.classList.add('bg-mint-tag', 'text-on-surface');
+          }
+          const indicator = c.querySelector('.radio-indicator');
+          if (indicator) {
+            indicator.classList.remove('bg-primary', 'text-on-primary');
+            indicator.classList.add('bg-mint-tag', 'text-transparent');
+          }
+        });
+
+        // Activate clicked card
+        card.classList.remove('bg-bg-ivory');
+        card.classList.add('bg-status-disetujui-bg', 'shadow-sm');
+        const title = card.querySelector('.font-label-md');
+        if (title) {
+          title.classList.remove('text-on-surface');
+          title.classList.add('text-primary');
+        }
+        const iconBox = card.querySelector('div:first-of-type');
+        if (iconBox) {
+          iconBox.classList.remove('bg-mint-tag', 'text-on-surface');
+          iconBox.classList.add('bg-primary', 'text-on-primary');
+        }
+        const indicator = card.querySelector('.radio-indicator');
+        if (indicator) {
+          indicator.classList.remove('bg-mint-tag', 'text-transparent');
+          indicator.classList.add('bg-primary', 'text-on-primary');
+        }
+      });
+    });
+
+    // 3. Location Radio Selection Style Handler
+    const locCards = document.querySelectorAll('#pickup-locations .location-card');
+    locCards.forEach(card => {
+      card.addEventListener('click', () => {
+        locCards.forEach(c => {
+          c.classList.remove('bg-status-disetujui-bg', 'shadow-sm');
+          c.classList.add('bg-bg-ivory');
+          const title = c.querySelector('.font-label-md');
+          if (title) {
+            title.classList.remove('text-primary');
+            title.classList.add('text-on-surface');
+          }
+          const iconBox = c.querySelector('div:first-of-type');
+          if (iconBox) {
+            iconBox.classList.remove('bg-primary', 'text-on-primary');
+            iconBox.classList.add('bg-mint-tag', 'text-on-surface');
+          }
+          const indicator = c.querySelector('.loc-check');
+          if (indicator) {
+            indicator.classList.remove('bg-primary', 'text-on-primary');
+            indicator.classList.add('bg-mint-tag', 'text-transparent');
+          }
+        });
+
+        card.classList.remove('bg-bg-ivory');
+        card.classList.add('bg-status-disetujui-bg', 'shadow-sm');
+        const title = card.querySelector('.font-label-md');
+        if (title) {
+          title.classList.remove('text-on-surface');
+          title.classList.add('text-primary');
+        }
+        const iconBox = card.querySelector('div:first-of-type');
+        if (iconBox) {
+          iconBox.classList.remove('bg-mint-tag', 'text-on-surface');
+          iconBox.classList.add('bg-primary', 'text-on-primary');
+        }
+        const indicator = card.querySelector('.loc-check');
+        if (indicator) {
+          indicator.classList.remove('bg-mint-tag', 'text-transparent');
+          indicator.classList.add('bg-primary', 'text-on-primary');
+        }
+      });
+    });
+
+    // 4. Textarea Character Count
+    const textarea = document.getElementById('alasan-field');
+    const charCount = document.getElementById('char-count');
+    if (textarea && charCount) {
+      textarea.addEventListener('input', () => {
+        charCount.textContent = `${textarea.value.length}/200`;
+      });
+    }
+
+    // 5. Submit Microinteraction & Success Sheet
+    const submitBtn = document.getElementById('btn-submit');
+    const successSheet = document.getElementById('success-sheet');
+    const closeSheet = document.getElementById('close-sheet');
+    const backHomeBtn = document.getElementById('back-home-btn');
+
+    if (submitBtn && successSheet) {
+      submitBtn.addEventListener('click', () => {
+        const declCheck = document.getElementById('declaration-check');
+        if (declCheck && !declCheck.checked) {
+          alert('Mohon centang pernyataan kesanggupan fisik e-KTP terlebih dahulu.');
+          declCheck.focus();
+          return;
+        }
+
+        // Animated button state
+        const originalContent = submitBtn.innerHTML;
+        submitBtn.innerHTML = `
+          <span class="inline-block w-5 h-5 border-2 border-on-primary border-t-transparent rounded-full animate-spin"></span>
+          <span>Menerbitkan Surat...</span>
+        `;
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+          submitBtn.innerHTML = originalContent;
+          submitBtn.disabled = false;
+          
+          // Show sheet
+          successSheet.classList.remove('opacity-0', 'pointer-events-none');
+          const sheetCard = successSheet.querySelector('div');
+          if (sheetCard) {
+            sheetCard.classList.remove('translate-y-8');
+          }
+        }, 800);
+      });
+    }
+
+    const hideSheet = () => {
+      if (successSheet) {
+        successSheet.classList.add('opacity-0', 'pointer-events-none');
+        const sheetCard = successSheet.querySelector('div');
+        if (sheetCard) {
+          sheetCard.classList.add('translate-y-8');
+        }
+      }
+    };
+
+    if (closeSheet) closeSheet.addEventListener('click', hideSheet);
+    if (backHomeBtn) backHomeBtn.addEventListener('click', hideSheet);
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-card/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(20,55,47,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="ajukan-surat" href="#"><span class="material-symbols-outlined text-[24px]">post_add</span><span class="font-label-sm text-label-sm">Ajukan</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="riwayat" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm">Riwayat</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Akun</span></a></div></nav></body></html>

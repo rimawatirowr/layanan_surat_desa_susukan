@@ -1,0 +1,460 @@
+{
+  "desaConfig": {
+    "namaDesa": "Desa Susukan",
+    "kecamatan": "Kecamatan Susukan",
+    "kabupaten": "Kabupaten Cirebon",
+    "provinsi": "Jawa Barat",
+    "kodePos": "45166",
+    "alamat": "Jalan Raya Susukan No. 01 Kode Pos 45166",
+    "email": "pemdes@susukan.desa.id",
+    "telepon": "0812-3456-7890",
+    "namaKuwu": "H. MA'RUF, S.Sos.",
+    "nipKuwu": "19740512 199903 1 004",
+    "namaSekdes": "Drs. H. Suhendar, M.Si.",
+    "nipSekdes": "19780814 200501 1 009",
+    "formatNomor": "{kode} / {urut} / {seksi} / {romawi} / {tahun}",
+    "nomorUrutBerikutnya": 145
+  },
+  "users": [
+    {
+      "id": "USR-001",
+      "identifier": "3209010101010001",
+      "nik": "3209010101010001",
+      "nama": "Siti Aminah",
+      "role": "warga",
+      "password": "warga123",
+      "noHp": "6281234568891",
+      "alamat": "RT 02 / RW 01, Dusun II, Desa Susukan",
+      "statusVerifikasi": "Aktif",
+      "setujuPrivasi": true
+    },
+    {
+      "id": "USR-002",
+      "identifier": "admin",
+      "nik": "3209011503850002",
+      "nama": "Bpk. Agus Setiawan",
+      "jabatan": "Kasi Pelayanan Desa",
+      "role": "admin",
+      "password": "admin123",
+      "noHp": "6281234567890",
+      "alamat": "Kantor Kuwu Desa Susukan",
+      "statusVerifikasi": "Aktif",
+      "setujuPrivasi": true
+    },
+    {
+      "id": "USR-003",
+      "identifier": "kades",
+      "nik": "3209011205740001",
+      "nama": "H. Ma'ruf, S.Sos.",
+      "jabatan": "Kuwu / Kepala Desa Susukan",
+      "role": "kades",
+      "password": "kades123",
+      "noHp": "6281122334455",
+      "alamat": "Kantor Kuwu Desa Susukan",
+      "statusVerifikasi": "Aktif",
+      "setujuPrivasi": true
+    }
+  ],
+  "warga": [
+    {
+      "id": "WRG-001",
+      "nik": "3209010101010004",
+      "nama": "Siti Aminah",
+      "noKk": "3209012304000004",
+      "hubungan": "Kepala KK",
+      "jk": "Perempuan",
+      "usia": 28,
+      "ttl": "Cirebon, 14 Mei 1997",
+      "pekerjaan": "Wiraswasta",
+      "alamat": "RT 02 / RW 01 Dusun II",
+      "dusun": "dusun2",
+      "noWa": "6281234568891",
+      "statusAkun": "Aktif"
+    },
+    {
+      "id": "WRG-002",
+      "nik": "3209012408010012",
+      "nama": "Budi Santoso",
+      "noKk": "3209012304000012",
+      "hubungan": "Kepala KK",
+      "jk": "Laki-laki",
+      "usia": 34,
+      "ttl": "Cirebon, 24 Agustus 1991",
+      "pekerjaan": "Mahasiswa / Buruh Harian",
+      "alamat": "RT 01 / RW 03 Dusun I",
+      "dusun": "dusun1",
+      "noWa": "6285712344211",
+      "statusAkun": "Menunggu Verifikasi"
+    },
+    {
+      "id": "WRG-003",
+      "nik": "3209011002730089",
+      "nama": "H. Ahmad Dahlan",
+      "noKk": "3209012304000089",
+      "hubungan": "Kepala KK",
+      "jk": "Laki-laki",
+      "usia": 52,
+      "ttl": "Cirebon, 10 Februari 1973",
+      "pekerjaan": "Petani / Pekebun",
+      "alamat": "RT 04 / RW 02 Dusun III",
+      "dusun": "dusun3",
+      "noWa": "6282188999012",
+      "statusAkun": "Aktif"
+    },
+    {
+      "id": "WRG-004",
+      "nik": "3209011809060294",
+      "nama": "Dewi Kurniasih",
+      "noKk": "3209012304000004",
+      "hubungan": "Anggota",
+      "jk": "Perempuan",
+      "usia": 19,
+      "ttl": "Cirebon, 18 September 2006",
+      "pekerjaan": "Pelajar / Mahasiswa",
+      "alamat": "RT 02 / RW 01 Dusun II",
+      "dusun": "dusun2",
+      "noWa": "-",
+      "statusAkun": "Data Saja"
+    },
+    {
+      "id": "WRG-005",
+      "nik": "3209010511840091",
+      "nama": "Rudi Hermawan",
+      "noKk": "3209012304000091",
+      "hubungan": "Kepala KK",
+      "jk": "Laki-laki",
+      "usia": 41,
+      "ttl": "Cirebon, 05 November 1984",
+      "pekerjaan": "Karyawan Swasta",
+      "alamat": "RT 03 / RW 01 Dusun I",
+      "dusun": "dusun1",
+      "noWa": "6281377882109",
+      "statusAkun": "Aktif"
+    }
+  ],
+  "jenisSurat": [
+    {
+      "id": "domisili",
+      "kode": "474",
+      "singkatan": "SKD",
+      "nama": "Surat Keterangan Domisili (SKD)",
+      "kategori": "Kependudukan",
+      "seksi": "Pemdes",
+      "sla": "1 Hari Kerja",
+      "penandatangan": "Kuwu / Kepala Desa",
+      "syarat": [
+        "Fotokopi / Scan e-KTP Pemohon",
+        "Kartu Keluarga (KK) Desa Susukan",
+        "Surat Pengantar RT / RW Setempat"
+      ],
+      "aktif": true
+    },
+    {
+      "id": "sktm",
+      "kode": "470",
+      "singkatan": "SKTM",
+      "nama": "Surat Keterangan Tidak Mampu (SKTM)",
+      "kategori": "Kesejahteraan",
+      "seksi": "Kesra",
+      "sla": "1 Hari Kerja",
+      "penandatangan": "Kuwu / Kepala Desa",
+      "syarat": [
+        "Fotokopi / Scan e-KTP Pemohon",
+        "Kartu Keluarga (KK) Desa Susukan",
+        "Foto Rumah (Tampak Depan) & Surat Pernyataan"
+      ],
+      "aktif": true
+    },
+    {
+      "id": "skck",
+      "kode": "300",
+      "singkatan": "SKCK",
+      "nama": "Surat Pengantar SKCK",
+      "kategori": "Hukum & Umum",
+      "seksi": "Trantib",
+      "sla": "Sama Hari",
+      "penandatangan": "Kuwu / Sekdes",
+      "syarat": [
+        "Fotokopi / Scan e-KTP Pemohon",
+        "Kartu Keluarga (KK) Desa Susukan",
+        "Pas Foto Formal 4x6 (Latar Merah) & Pengantar RT"
+      ],
+      "aktif": true
+    },
+    {
+      "id": "sku",
+      "kode": "510",
+      "singkatan": "SKU",
+      "nama": "Surat Keterangan Usaha (SKU)",
+      "kategori": "Usaha & Ekonomi",
+      "seksi": "Ekbang",
+      "sla": "1 Hari Kerja",
+      "penandatangan": "Kuwu / Kepala Desa",
+      "syarat": [
+        "Fotokopi / Scan e-KTP Pemohon",
+        "Kartu Keluarga (KK) Desa Susukan",
+        "Foto Tempat Usaha & Surat Keterangan RT/RW"
+      ],
+      "aktif": true
+    },
+    {
+      "id": "ktp",
+      "kode": "471",
+      "singkatan": "SP-KTP",
+      "nama": "Surat Pengantar Cetak Ulang e-KTP",
+      "kategori": "Kependudukan",
+      "seksi": "Pemdes",
+      "sla": "Sama Hari",
+      "penandatangan": "Kuwu / Kepala Desa",
+      "syarat": [
+        "Foto Fisik e-KTP Rusak / Surat Kehilangan",
+        "Kartu Keluarga (KK) Terbaru"
+      ],
+      "aktif": true
+    }
+  ],
+  "pengajuan": [
+    {
+      "id": "SKT-0411",
+      "jenisId": "sktm",
+      "jenisNama": "Surat Keterangan Tidak Mampu (SKTM)",
+      "singkatan": "SKTM",
+      "nik": "3209012408010012",
+      "nama": "Budi Santoso",
+      "ttl": "Cirebon, 24 Agustus 2001",
+      "pekerjaan": "Mahasiswa / Belum Bekerja",
+      "noWa": "0812-3498-7712",
+      "alamat": "RT 02 / RW 01, Dusun II, Desa Susukan",
+      "tanggal": "19 Apr 2025",
+      "waktu": "09:20 WIB",
+      "keperluan": "Pengajuan Beasiswa Kuliah Kartu Indonesia Pintar (KIP-K) Semester Gasal 2025/2026 di Universitas Swadaya Gunung Jati.",
+      "status": "Menunggu",
+      "catatan": "Berkas KTP sudah sesuai. Pastikan tanda tangan RT/RW pada surat pengantar terbaca jelas.",
+      "berkas": [
+        "KTP_Budi.pdf",
+        "Pengantar_RT02.jpg"
+      ],
+      "nomorResmi": "470 / 0411 / Kesra / IV / 2025",
+      "qrToken": "BSrE-SSK-2025-0411-9F2"
+    },
+    {
+      "id": "SKU-0398",
+      "jenisId": "sku",
+      "jenisNama": "Surat Keterangan Usaha (SKU)",
+      "singkatan": "SKU",
+      "nik": "3209010101010004",
+      "nama": "Siti Aminah",
+      "ttl": "Cirebon, 14 Mei 1997",
+      "pekerjaan": "Wiraswasta / Pedagang",
+      "noWa": "0812-3456-8891",
+      "alamat": "RT 02 / RW 01, Dusun II, Desa Susukan",
+      "tanggal": "18 Apr 2025",
+      "waktu": "14:10 WIB",
+      "keperluan": "Pengajuan KUR Mikro BRI untuk Toko Sembako berkah Susukan",
+      "status": "Perlu Perbaikan",
+      "catatan": "Foto KTP agak buram di bagian NIK. Mohon unggah ulang foto e-KTP dengan pencahayaan terang.",
+      "berkas": [
+        "KTP_SitiAminah.jpg",
+        "Foto_Warung.jpg"
+      ],
+      "nomorResmi": "-",
+      "qrToken": "-"
+    },
+    {
+      "id": "SKU-0294",
+      "jenisId": "sku",
+      "jenisNama": "Surat Keterangan Usaha (SKU)",
+      "singkatan": "Ket. Usaha",
+      "nik": "3209011809060294",
+      "nama": "Dewi Kurniasih",
+      "ttl": "Cirebon, 18 September 2006",
+      "pekerjaan": "Wiraswasta Kuliner",
+      "noWa": "0857-9911-2233",
+      "alamat": "RT 02 / RW 01, Dusun II, Desa Susukan",
+      "tanggal": "19 Apr 2025",
+      "waktu": "08:45 WIB",
+      "keperluan": "Persyaratan Kredit Usaha Rakyat (KUR) Bank BJB KCP Susukan",
+      "status": "Menunggu",
+      "catatan": "Menunggu pemeriksaan kelengkapan foto tempat usaha oleh Kasi Ekbang.",
+      "berkas": [
+        "KTP_Dewi.jpg",
+        "SKU_PengantarRT.pdf"
+      ],
+      "nomorResmi": "510 / 0294 / Ekbang / IV / 2025",
+      "qrToken": "BSrE-SSK-2025-0294-3A1"
+    },
+    {
+      "id": "SKD-0182",
+      "jenisId": "domisili",
+      "jenisNama": "Surat Keterangan Domisili (SKD)",
+      "singkatan": "Ket. Domisili",
+      "nik": "3209011002730089",
+      "nama": "Ahmad Suhendra",
+      "ttl": "Cirebon, 10 Februari 1973",
+      "pekerjaan": "Petani",
+      "noWa": "0821-8899-9012",
+      "alamat": "RT 04 / RW 02, Dusun III, Desa Susukan",
+      "tanggal": "18 Apr 2025",
+      "waktu": "16:10 WIB",
+      "keperluan": "Persyaratan Pembukaan Rekening Bank BRI Unit Susukan & Perpanjangan KTP",
+      "status": "Disetujui",
+      "catatan": "Telah diverifikasi oleh Bpk. Agus Setiawan (Kasi Pelayanan). Menunggu TTE Kuwu.",
+      "berkas": [
+        "KTP_Ahmad.pdf",
+        "KK_Ahmad.pdf"
+      ],
+      "nomorResmi": "474 / 0182 / Pemdes / IV / 2025",
+      "qrToken": "BSrE-SSK-2025-0182-7C4"
+    },
+    {
+      "id": "SKK-0091",
+      "jenisId": "domisili",
+      "jenisNama": "Surat Keterangan Kematian",
+      "singkatan": "Ket. Kematian",
+      "nik": "3209010511840091",
+      "nama": "Rudi Hermawan",
+      "ttl": "Cirebon, 05 November 1984",
+      "pekerjaan": "Karyawan Swasta",
+      "noWa": "0813-7788-2109",
+      "alamat": "RT 03 / RW 01, Dusun I, Desa Susukan",
+      "tanggal": "18 Apr 2025",
+      "waktu": "11:00 WIB",
+      "keperluan": "Pengurusan Akta Kematian Disdukcapil Kabupaten Cirebon",
+      "status": "Perlu Perbaikan",
+      "catatan": "Surat keterangan visum rumah sakit / puskesmas belum terlampir.",
+      "berkas": [
+        "KTP_Pelapor.jpg"
+      ],
+      "nomorResmi": "-",
+      "qrToken": "-"
+    },
+    {
+      "id": "SKTM-0344",
+      "jenisId": "sktm",
+      "jenisNama": "Surat Keterangan Tidak Mampu (SKTM)",
+      "singkatan": "SKTM",
+      "nik": "3209010101010004",
+      "nama": "Siti Aminah",
+      "ttl": "Cirebon, 14 Mei 1997",
+      "pekerjaan": "Ibu Rumah Tangga",
+      "noWa": "0812-3456-8891",
+      "alamat": "RT 02 / RW 01, Dusun II, Desa Susukan",
+      "tanggal": "15 Apr 2025",
+      "waktu": "10:30 WIB",
+      "keperluan": "Beasiswa Pendidikan Anak SMKN 1 Susukan",
+      "status": "Selesai",
+      "catatan": "Telah ditandatangani secara elektronik (TTE BSrE) oleh Kuwu Desa Susukan.",
+      "berkas": [
+        "KTP_SitiAminah.jpg",
+        "KK_SitiAminah.pdf"
+      ],
+      "nomorResmi": "470 / 0082 / Kesra / IV / 2025",
+      "qrToken": "BSrE-SSK-2025-0082-8F2A"
+    }
+  ],
+  "bukuRegister": [
+    {
+      "urut": "#0142",
+      "tanggal": "19 Apr 2025 • 14:15",
+      "nomorSurat": "470 / 0142 / Kesra / IV / 2025",
+      "kodeKlasifikasi": "470 (Kesejahteraan Rakyat)",
+      "singkatan": "SKTM",
+      "jenisNama": "Keterangan Tidak Mampu",
+      "seksi": "Seksi Kesra",
+      "seksiKey": "kesra",
+      "pemohon": "Budi Santoso",
+      "nik": "320901••••••0012",
+      "alamat": "RT 01 / RW 03, Dusun I",
+      "perihal": "Persyaratan administrasi pengajuan beasiswa KIP-Kuliah Semester Gasal TA 2025/2026.",
+      "penandatangan": "H. Ma'ruf, S.Sos.",
+      "jabatan": "Kuwu",
+      "legalitas": "BSrE Terverifikasi",
+      "statusKey": "tte"
+    },
+    {
+      "urut": "#0141",
+      "tanggal": "19 Apr 2025 • 11:30",
+      "nomorSurat": "510 / 0141 / Ekbang / IV / 2025",
+      "kodeKlasifikasi": "510 (Perdagangan & UMKM)",
+      "singkatan": "SKU",
+      "jenisNama": "Keterangan Usaha",
+      "seksi": "Seksi Ekbang",
+      "seksiKey": "ekbang",
+      "pemohon": "Siti Nurjanah",
+      "nik": "320901••••••0028",
+      "alamat": "RT 04 / RW 01, Dusun II",
+      "perihal": "Pengajuan modal usaha mikro warung kelontong ke Bank BRI Unit Susukan.",
+      "penandatangan": "H. Ma'ruf, S.Sos.",
+      "jabatan": "Kuwu",
+      "legalitas": "BSrE Terverifikasi",
+      "statusKey": "tte"
+    }
+  ],
+  "waLogs": [
+    {
+      "id": "LOG-8822",
+      "waktu": "Hari ini, 10:15 WIB",
+      "penerima": "Siti Aminah",
+      "noWa": "62812****8891",
+      "kategori": "Surat Selesai (TTE)",
+      "status": "Terkirim",
+      "pesan": "Halo Siti Aminah, Surat Keterangan Tidak Mampu (SKTM) Anda telah selesai dan ditandatangani elektronik (TTE)."
+    },
+    {
+      "id": "LOG-8821",
+      "waktu": "Hari ini, 09:40 WIB",
+      "penerima": "Budi Santoso",
+      "noWa": "62857****4211",
+      "kategori": "Lolos Validasi",
+      "status": "Terkirim",
+      "pesan": "Halo Budi Santoso, berkas pengajuan SKT-0411 telah diverifikasi operator dan diteruskan ke Kuwu Desa Susukan."
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG-29009",
+      "waktu": "2026-11-02 03:08:48",
+      "aktor": "Siti Aminah (WARGA)",
+      "kategori": "Autentikasi & Login",
+      "aksi": "AUTH_LOGIN_SUCCESS",
+      "target": "3209010101010001",
+      "hash": "88426d9b55938fb8"
+    },
+    {
+      "id": "LOG-24583",
+      "waktu": "2025-04-19 10:15:02",
+      "aktor": "Agus Setiawan (Admin)",
+      "kategori": "Verifikasi Surat",
+      "aksi": "VERIFY_SUBMISSION",
+      "target": "SKD-0182",
+      "hash": "a8f9c4e2910b7e12"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOTIF-1",
+      "title": "Surat SKTM-0344 Selesai & Terbit (TTE)",
+      "message": "Surat Keterangan Tidak Mampu Anda telah ditandatangani Kuwu dan siap diunduh dalam format PDF ber-QR.",
+      "time": "15 Menit yang lalu",
+      "unread": true,
+      "targetScreen": "layar_6_riwayat_pengajuan_warga"
+    },
+    {
+      "id": "NOTIF-2",
+      "title": "Perlu Perbaikan Berkas SKU-0398",
+      "message": "Operator meminta unggah ulang foto e-KTP karena bagian NIK kurang jelas.",
+      "time": "1 Jam yang lalu",
+      "unread": true,
+      "targetScreen": "layar_6_riwayat_pengajuan_warga"
+    },
+    {
+      "id": "NOTIF-3",
+      "title": "Antrean Verifikasi Baru (SKT-0411)",
+      "message": "Budi Santoso mengajukan permohonan SKTM baru untuk Beasiswa KIP-Kuliah.",
+      "time": "2 Jam yang lalu",
+      "unread": false,
+      "targetScreen": "layar_12_verifikasi_pengajuan_petugas_admin"
+    }
+  ],
+  "loginAttempts": {}
+}

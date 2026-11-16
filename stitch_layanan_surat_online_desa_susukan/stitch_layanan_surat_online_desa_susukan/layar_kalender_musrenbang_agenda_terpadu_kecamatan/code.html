@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#e9fef9","surface":"#e9fef9","tertiary-container":"#7c5900","surface-tint":"#166a5a","surface-container-lowest":"#ffffff","status-menunggu-bg":"#FFF3DC","surface-dim":"#cadeda","surface-variant":"#d2e7e2","on-error":"#ffffff","outline":"#6f7975","bg-ivory":"#F7F8F5","border-line":"#E7ECE8","tertiary-fixed":"#ffdea4","on-primary-container":"#9ce9d4","on-primary-fixed-variant":"#005143","surface-container-highest":"#d2e7e2","status-selesai-text":"#0F5B49","on-secondary-container":"#426b6c","on-secondary-fixed-variant":"#224d4e","status-ditolak-bg":"#FBE4E4","status-perbaikan-text":"#B45309","on-secondary-fixed":"#002020","on-background":"#0c1f1c","on-secondary":"#ffffff","inverse-on-surface":"#e0f5f0","tertiary":"#5e4300","on-primary":"#ffffff","status-ditolak-text":"#B02A2A","status-diverifikasi-text":"#245A9E","surface-card":"#FFFFFF","primary-fixed-dim":"#89d5c1","primary":"#005144","status-selesai-bg":"#E1F3EC","error-container":"#ffdad6","secondary-fixed":"#beebeb","on-tertiary-container":"#ffd481","status-disetujui-bg":"#E1F3EC","on-surface-variant":"#3f4945","surface-container-low":"#e3f8f3","on-surface":"#0c1f1c","text-muted":"#74817D","status-perbaikan-bg":"#FDEBD3","on-error-container":"#93000a","outline-variant":"#bec9c4","mint-tag":"#E8F1ED","status-diverifikasi-bg":"#E3EEFB","status-disetujui-text":"#176B5B","on-tertiary":"#ffffff","surface-container":"#def2ed","on-tertiary-fixed":"#261900","error":"#ba1a1a","tertiary-fixed-dim":"#efbf61","status-menunggu-text":"#9A6100","secondary-fixed-dim":"#a3cfcf","primary-fixed":"#a5f1dd","inverse-primary":"#89d5c1","surface-container-high":"#d8ede8","secondary-container":"#beebeb","secondary":"#3b6566","on-tertiary-fixed-variant":"#5d4200","primary-container":"#176b5b","inverse-surface":"#223431"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1rem","space-xs":"0.25rem","margin-desktop":"1.75rem","space-md":"0.875rem",margin:"1rem","space-xl":"1.75rem",gutter:"0.875rem","space-lg":"1.125rem","margin-tablet":"1.5rem"},fontFamily:{"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"],"letter-legal-title":["Georgia"],"headline-sm":["Inter"],"label-eyebrow":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"letter-legal-body":["Georgia"],"label-md":["Inter"],"headline-xl-mobile":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"headline-lg-mobile":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["18px",{lineHeight:"26px",fontWeight:"600"}],"letter-legal-title":["14px",{lineHeight:"20px",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"label-eyebrow":["10px",{lineHeight:"12px",letterSpacing:"0.15em",fontWeight:"700"}],"headline-lg":["26px",{lineHeight:"34px",letterSpacing:"-0.023em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"letter-legal-body":["12px",{lineHeight:"22px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}]}}}};</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-[244px] bg-surface-card z-50 flex flex-col justify-between border-r border-border-line shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-border-line"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm font-bold shadow-sm">S</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight leading-none">KEC. SUSUKAN</span><span class="font-label-eyebrow text-label-eyebrow text-text-muted mt-1 uppercase tracking-wider">Portal Administrasi</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Navigasi Utama</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="dashboard-pelayanan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="permohonan-surat" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-lg text-label-lg">Daftar Pengajuan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="verifikasi-berkas" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-lg text-label-lg">Verifikasi Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="arsip-legalisir" href="#"><span class="material-symbols-outlined text-[20px]">folder_shared</span><span class="font-label-lg text-label-lg">Arsip &amp; Legalisir</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="data-penduduk-desa" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-label-lg text-label-lg">Database Warga</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Tata Kelola</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="laporan-statistik" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-lg text-label-lg">Laporan Pelayanan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="pengaturan-sistem" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Konfigurasi Wilayah</span></a></nav></div></div><div class="p-space-md border-t border-border-line"><div class="bg-surface-container-low rounded-lg p-space-sm flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">gavel</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary font-bold">Paten Susukan</span><span class="font-body-sm text-body-sm text-text-muted">Kab. Banjarnegara</span></div></div></div></aside><div class="pl-[244px] flex flex-col min-h-screen"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/95 backdrop-blur-md z-40 border-b border-border-line px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg flex-1"><div class="flex items-center gap-space-xs text-text-muted font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-text-muted">domain</span><span>Kecamatan Susukan</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="font-label-md text-label-md text-primary font-semibold">Pelayanan Administrasi Terpadu</span></div><div class="relative w-full max-w-xs ml-space-md"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span><input class="w-full h-10 pl-9 pr-space-md rounded-lg bg-bg-ivory border border-border-line font-body-sm text-body-sm text-on-surface placeholder:text-text-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Cari NIK, Nama Warga, No. Resi..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-bg-ivory border border-border-line flex items-center justify-center text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="w-9 h-9 rounded-lg bg-bg-ivory border border-border-line flex items-center justify-center text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="h-6 w-px bg-border-line"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Bambang Hermanto</span><span class="font-label-sm text-label-sm text-text-muted">Operator PATEN Reg. 04</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-bg-ivory flex-1 px-space-xl py-space-xl max-w-[1360px] mx-auto"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Banner Section: Institutional Heading & Quick Actions -->
+<div class="relative overflow-hidden rounded-xl bg-surface-card p-space-xl shadow-md">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<div class="absolute right-32 top-8 w-48 h-48 rounded-full bg-tertiary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-mint-tag text-status-disetujui-text font-label-eyebrow text-label-eyebrow uppercase tracking-widest mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-status-disetujui-text animate-pulse"></span>
+          Kalender Perencanaan &amp; Koordinasi Kewilayahan
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+          Musrenbang &amp; Agenda Terpadu Kecamatan Susukan
+        </h1>
+<p class="font-body-md text-body-md text-text-muted mt-space-xs">
+          Tahun Anggaran 2025/2026 — Sinkronisasi RKP Desa 12 Desa, Layanan Adminduk Keliling, Penyaluran Bansos, serta Peninjauan Lapangan Terpadu.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all" id="btnTambahAgenda">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Tambah Agenda Baru</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-low text-primary font-label-lg text-label-lg hover:bg-surface-container transition-all" id="btnExportCal">
+<span class="material-symbols-outlined text-[18px]">calendar_add_on</span>
+<span>Ekspor iCal / Google</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container transition-all" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Cetak Jadwal Camat</span>
+</button>
+</div>
+</div>
+<!-- Active Real-time Alert Banner -->
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-status-disetujui-text flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase font-bold tracking-wider block">Hari Ini Sedang Berjalan:</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Pra-Musrenbang Desa Bojong Kulon &amp; Verifikasi Lapangan Jembatan Usaha Tani Blok Kedung</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-status-disetujui-text font-label-sm text-label-sm px-space-sm py-1 rounded bg-surface-card">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Pukul 09.00 - 15.30 WIB</span>
+</div>
+</div>
+</div>
+<!-- Key Metrics Row (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-status-diverifikasi-bg text-status-diverifikasi-text flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">event_upcoming</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Total Jadwal</span>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold leading-tight">18 Agenda</div>
+<span class="font-body-sm text-body-sm text-text-muted truncate block">Bulan April - Mei 2025</span>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-status-disetujui-bg text-status-disetujui-text flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">apartment</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Kesiapan Pra-Musrenbang</span>
+<div class="font-headline-lg text-headline-lg text-primary font-bold leading-tight">12 / 12 Desa</div>
+<span class="font-body-sm text-body-sm text-status-selesai-text font-medium truncate block">100% Terkonfirmasi</span>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-status-menunggu-bg text-status-menunggu-text flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Musrenbang Kecamatan</span>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold leading-tight">4 Sesi Sidang</div>
+<span class="font-body-sm text-body-sm text-text-muted truncate block">Terjadwal di Sasana Praja</span>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">how_to_reg</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Tingkat Kehadiran Delegasi</span>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold leading-tight">96.5%</div>
+<span class="font-body-sm text-body-sm text-status-selesai-text font-medium truncate block">Kuwu, BPD &amp; Tokoh Masyarakat</span>
+</div>
+</div>
+</div>
+<!-- Legend & Filter Bar -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-sm text-label-sm font-label-sm">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase mr-1">Kategori:</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+        Musrenbang Desa &amp; Kec
+      </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-status-diverifikasi-bg text-status-diverifikasi-text">
+<span class="w-2.5 h-2.5 rounded-full bg-status-diverifikasi-text inline-block"></span>
+        Mobil Adminduk Keliling
+      </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-status-menunggu-bg text-status-menunggu-text">
+<span class="w-2.5 h-2.5 rounded-full bg-status-menunggu-text inline-block"></span>
+        Rakor Kuwu / Kades
+      </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-status-perbaikan-bg text-status-perbaikan-text">
+<span class="w-2.5 h-2.5 rounded-full bg-status-perbaikan-text inline-block"></span>
+        BLT &amp; Bansos Pangan
+      </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-status-ditolak-bg text-status-ditolak-text">
+<span class="w-2.5 h-2.5 rounded-full bg-status-ditolak-text inline-block"></span>
+        Monitoring Infrastruktur
+      </span>
+</div>
+<!-- Month Switcher -->
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="font-headline-sm text-headline-sm text-primary font-bold px-space-sm">April 2025</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Interactive Grid: 12-col layout (8 cols Calendar + 4 cols Event Details) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left 8 Columns: Calendar Month View -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm">
+<!-- Day Names Header -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-eyebrow text-label-eyebrow text-text-muted uppercase mb-space-xs pb-space-xs border-b border-border-line">
+<div>Sen</div>
+<div>Sel</div>
+<div>Rab</div>
+<div>Kam</div>
+<div>Jum</div>
+<div class="text-status-ditolak-text">Sab</div>
+<div class="text-status-ditolak-text">Min</div>
+</div>
+<!-- Calendar Days Grid (5 weeks in April 2025: April 1 is Tuesday) -->
+<div class="grid grid-cols-7 gap-1.5 min-h-[540px]">
+<!-- Prev Month (March 31) -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest/40 opacity-40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">31</span>
+</div>
+<!-- April 1 (Sel) -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col group cursor-pointer">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">1</span>
+</div>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-menunggu-bg text-status-menunggu-text truncate">
+                Rakor Triwulan Kuwu
+              </div>
+</div>
+</div>
+<!-- April 2 (Rab) -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col group cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">2</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-disetujui-bg text-status-disetujui-text truncate">
+                Pra-Musrenbang Jatimerta
+              </div>
+</div>
+</div>
+<!-- April 3 (Kam) -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col group cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">3</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-diverifikasi-bg text-status-diverifikasi-text truncate">
+                Adminduk Keliling Luwungkencana
+              </div>
+</div>
+</div>
+<!-- April 4 (Jum) -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col group cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-perbaikan-bg text-status-perbaikan-text truncate">
+                Penyaluran BLT-DD Gintunglor
+              </div>
+</div>
+</div>
+<!-- April 5 (Sab) -->
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">5</span>
+</div>
+<!-- April 6 (Min) -->
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">6</span>
+</div>
+<!-- Week 2: 7 to 13 -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">7</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-disetujui-bg text-status-disetujui-text truncate">
+                Pra-Musrenbang Wiyong
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">8</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-ditolak-bg text-status-ditolak-text truncate">
+                Monev Saluran Irigasi Tangkil
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">9</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-disetujui-bg text-status-disetujui-text truncate">
+                Pra-Musrenbang Kedungdawa
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">10</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-diverifikasi-bg text-status-diverifikasi-text truncate">
+                Adminduk Jemput Bola Ujunggebang
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">11</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">12</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">13</span>
+</div>
+<!-- Week 3: 14 to 20 -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">14</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-disetujui-bg text-status-disetujui-text truncate">
+                Pra-Musrenbang Susukan
+              </div>
+</div>
+</div>
+<!-- TODAY: 15 April 2025 -->
+<div class="rounded-lg p-1.5 bg-surface-container-high/70 shadow-sm min-h-[96px] flex flex-col cursor-pointer ring-2 ring-primary">
+<div class="flex justify-between items-center">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">15</span>
+<span class="px-1.5 py-0.5 rounded text-[9px] uppercase tracking-wider font-bold bg-primary text-on-primary">Hari Ini</span>
+</div>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-disetujui-bg text-status-disetujui-text truncate">
+                Pra-Musrenbang Bojong Kulon
+              </div>
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-ditolak-bg text-status-ditolak-text truncate">
+                Verifikasi Jembatan Usaha Tani
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">16</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-disetujui-bg text-status-disetujui-text truncate">
+                Pra-Musrenbang Bunder
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">17</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-perbaikan-bg text-status-perbaikan-text truncate">
+                Penyaluran Beras CPP Desa Kejiwan
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">18</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-disetujui-bg text-status-disetujui-text truncate">
+                Pra-Musrenbang Kedondong
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">19</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">20</span>
+</div>
+<!-- Week 4: 21 to 27 -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">21</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-menunggu-bg text-status-menunggu-text truncate">
+                Gladi Bersih Musrenbang RKPD
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">22</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-mint-tag text-primary truncate">
+                Finalisasi Matriks Usulan 12 Desa
+              </div>
+</div>
+</div>
+<!-- SELECTED AGENDA EVENT: 23 April 2025 -->
+<div class="rounded-lg p-1.5 bg-status-selesai-bg/80 border-2 border-primary min-h-[96px] flex flex-col cursor-pointer shadow-sm relative overflow-hidden">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm font-bold text-primary">23</span>
+<span class="material-symbols-outlined text-primary text-[14px]">star</span>
+</div>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-primary text-on-primary truncate shadow-xs">
+                Musrenbang RKPD Kec. Susukan
+              </div>
+<div class="px-1.5 py-0.5 rounded text-[9px] font-medium bg-surface-card text-primary truncate">
+                08.30 - Sasana Praja
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">24</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-diverifikasi-bg text-status-diverifikasi-text truncate">
+                Perekaman KTP-el Pemilih Pemula
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">25</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-ditolak-bg text-status-ditolak-text truncate">
+                Monev Pavingisasi Jalan Usaha Tani
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">26</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-low/40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-status-ditolak-text">27</span>
+</div>
+<!-- Week 5: 28 to 30 -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">28</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-menunggu-bg text-status-menunggu-text truncate">
+                Rakor Pasca-Musrenbang
+              </div>
+</div>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">29</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest hover:bg-mint-tag/40 transition-colors min-h-[96px] flex flex-col cursor-pointer">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">30</span>
+<div class="mt-1 flex flex-col gap-1">
+<div class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-status-diverifikasi-bg text-status-diverifikasi-text truncate">
+                Adminduk Goes to School (SMK)
+              </div>
+</div>
+</div>
+<!-- Next Month fillers -->
+<div class="rounded-lg p-1.5 bg-surface-container-lowest/40 opacity-40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">1 Mei</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest/40 opacity-40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">2 Mei</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest/40 opacity-40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">3 Mei</span>
+</div>
+<div class="rounded-lg p-1.5 bg-surface-container-lowest/40 opacity-40 min-h-[96px] flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">4 Mei</span>
+</div>
+</div>
+</div>
+<!-- Quick Timeline Tracker for Desas in Susukan -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Progres Penjadwalan 12 Desa</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Pemantauan integrasi berkas Pra-Musrenbangdes ke SIPD-RI</p>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-1 rounded bg-status-selesai-bg text-status-selesai-text font-bold">12/12 Tuntas Terjadwal</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-space-sm text-center">
+<div class="p-space-sm rounded-lg bg-mint-tag flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Jatimerta</span>
+<span class="text-[10px] text-status-selesai-text font-semibold flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Selesai
+            </span>
+</div>
+<div class="p-space-sm rounded-lg bg-mint-tag flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Wiyong</span>
+<span class="text-[10px] text-status-selesai-text font-semibold flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Selesai
+            </span>
+</div>
+<div class="p-space-sm rounded-lg bg-mint-tag flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Kedungdawa</span>
+<span class="text-[10px] text-status-selesai-text font-semibold flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Selesai
+            </span>
+</div>
+<div class="p-space-sm rounded-lg bg-status-diverifikasi-bg flex flex-col items-center ring-1 ring-status-diverifikasi-text">
+<span class="font-label-sm text-label-sm font-bold text-primary">Bojong Kulon</span>
+<span class="text-[10px] text-status-diverifikasi-text font-bold flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-[12px]">sync</span> Sedang Sidang
+            </span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Bunder</span>
+<span class="text-[10px] text-text-muted mt-1">16 Apr 2025</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Kedondong</span>
+<span class="text-[10px] text-text-muted mt-1">18 Apr 2025</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Susukan</span>
+<span class="text-[10px] text-text-muted mt-1">14 Apr 2025</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Kejiwan</span>
+<span class="text-[10px] text-text-muted mt-1">21 Apr 2025</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Gintunglor</span>
+<span class="text-[10px] text-text-muted mt-1">22 Apr 2025</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Tangkil</span>
+<span class="text-[10px] text-text-muted mt-1">22 Apr 2025</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Luwungkencana</span>
+<span class="text-[10px] text-text-muted mt-1">24 Apr 2025</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Ujunggebang</span>
+<span class="text-[10px] text-text-muted mt-1">25 Apr 2025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 4 Columns: Selected Event Detail Panel (Official Card) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md sticky top-20">
+<!-- Event Card Container -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-md border-t-4 border-primary flex flex-col gap-space-md">
+<!-- Header Info -->
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<span class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-status-disetujui-bg text-status-disetujui-text font-bold inline-block mb-1">
+              Musrenbang Kecamatan 2025
+            </span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold leading-snug">
+              Musrenbang RKPD Kecamatan Susukan Tahun 2026
+            </h2>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-primary flex items-center justify-center hover:bg-surface-container transition-all" title="Bagikan Tautan Agenda">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+<!-- Venue photo preview -->
+<div class="relative rounded-lg overflow-hidden h-36 w-full">
+<img class="w-full h-full object-cover" data-alt="An Indonesian governmental assembly hall in rural subdistrict office, arranged with clean tables and microphones for public deliberation, soft daytime light streaming through windows with green garden outside, high formal dignity, realistic architectural photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK7ypmRPAWhu92xUDtj5AdKb5_KZHFuLpKYSscX7vAYhvbVz49iIPrYg9cV9Oo2gFkmjzTGX681ErPvXTreCdKZ2OZvZ4_DzaOdtWXqMUV821eXtlY59m5zu70i3AuRhl6lXOOXt3TtHXC6vkz-YXtMpCGXXQHBLbR4fQklRfOqAlMnBWlAsTChHOxcPGLqqyCwaKxSGWcbPlVr0LWGb33UIgFIUa8Gfm3ySsN4pw"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-on-surface/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">meeting_room</span> Sasana Praja Ki Bagus Rangin
+          </div>
+</div>
+<!-- Date & Location Specs -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low/60 p-space-md rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block">Hari &amp; Tanggal</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rabu, 23 April 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block">Waktu Pelaksanaan</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">08.30 – 13.00 WIB (Selesai Ishoma)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">pin_drop</span>
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block">Tempat</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Aula Sasana Praja, Kantor Camat Susukan</span>
+</div>
+</div>
+</div>
+<!-- Narasumber & Tamu Undangan -->
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block mb-space-xs">Narasumber &amp; Tamu Undangan Resmi</span>
+<div class="space-y-1.5 text-body-sm font-body-sm text-on-surface">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span><strong>Camat Susukan</strong> &amp; Jajaran Forkopimcam</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span><strong>Tim Teknis Bappelitbangda</strong> Kab. Cirebon</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span><strong>Komisi I &amp; II DPRD</strong> Kab. Cirebon (Dapil IV)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span><strong>12 Kuwu / Kades</strong> se-Kecamatan Susukan</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+<span>Ketua BPD, PKK, Karang Taruna, LPM &amp; Tokoh Adat</span>
+</div>
+</div>
+</div>
+<!-- Usulan Prioritas Box -->
+<div class="p-space-md rounded-lg bg-surface-container-high/60 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-bold">36 Usulan Prioritas</span>
+<span class="font-label-sm text-label-sm text-status-selesai-text font-bold">SIPD Terverifikasi</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+            Meliputi 22 usulan infrastruktur fisik (drainase, jalan tani, jembatan) dan 14 program pemberdayaan ekonomi UMKM &amp; lumbung pangan.
+          </p>
+<a class="mt-1 inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold hover:underline" href="#">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Unduh Draf Matriks RKP (PDF - 3.8 MB)</span>
+</a>
+</div>
+<!-- Action Buttons in Card -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Konfirmasi Absensi &amp; Ruangan</span>
+</button>
+<button class="w-full py-2.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+<span>Sesuaikan Waktu &amp; Rangkaian</span>
+</button>
+</div>
+</div>
+<!-- Quick Contact Coordinator -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-mint-tag flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Narahubung PATEN Musrenbang</span>
+<span class="font-body-sm text-body-sm text-text-muted">Kasie PMD: H. Ahmad Subandi, S.AP (0812-44xx-xxxx)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Agenda Table Section -->
+<div class="bg-surface-card rounded-xl p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-space-sm pb-space-sm border-b border-border-line">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Daftar Agenda Mendatang &amp; Status Kesiapan</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Jadwal resmi terkoordinasi se-Kecamatan Susukan periode 15 April – 05 Mei 2025</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low text-primary font-label-sm text-label-sm hover:bg-surface-container">
+          Filter Status: Semua (6)
+        </button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">
+<th class="py-space-md px-space-md rounded-l-lg">Tanggal &amp; Waktu</th>
+<th class="py-space-md px-space-md">Nama Kegiatan</th>
+<th class="py-space-md px-space-md">Lokasi / Desa</th>
+<th class="py-space-md px-space-md">Penanggung Jawab</th>
+<th class="py-space-md px-space-md">Ruangan &amp; Sarana</th>
+<th class="py-space-md px-space-md rounded-r-lg">Kesiapan Konsumsi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-line">
+<!-- Row 1 -->
+<tr class="hover:bg-mint-tag/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">15 Apr 2025</div>
+<span class="text-text-muted text-[12px]">09.00 WIB - Selesai</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-primary">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-status-disetujui-text"></span>
+                Pra-Musrenbang Desa Bojong Kulon
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Balaidesa Bojong Kulon</div>
+<span class="text-text-muted text-[12px]">Blok Karang Tengah</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface">Kuwu Bojong Kulon</div>
+<span class="text-text-muted text-[12px]">Pendamping: Tim A Kec.</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-selesai-bg text-status-selesai-text font-semibold">
+                Siap (120 Kursi)
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-selesai-bg text-status-selesai-text font-semibold">
+                Tersedia (Prasmanan)
+              </span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-mint-tag/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">16 Apr 2025</div>
+<span class="text-text-muted text-[12px]">09.30 WIB</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-primary">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-status-disetujui-text"></span>
+                Pra-Musrenbang Desa Bunder
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Pendopo Desa Bunder</div>
+<span class="text-text-muted text-[12px]">Jalan Nyi Ageng Serang</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface">Kuwu Bunder &amp; BPD</div>
+<span class="text-text-muted text-[12px]">Pendamping: Tim B Kec.</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-selesai-bg text-status-selesai-text font-semibold">
+                Siap (Sound/Proyektor)
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-diverifikasi-bg text-status-diverifikasi-text font-semibold">
+                Dipesan (Katering BUMDes)
+              </span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-mint-tag/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">17 Apr 2025</div>
+<span class="text-text-muted text-[12px]">08.00 - 12.00 WIB</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-status-perbaikan-text">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-status-perbaikan-text"></span>
+                Penyaluran Beras CPP &amp; BLT Desa Kejiwan
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Balaidesa Kejiwan</div>
+<span class="text-text-muted text-[12px]">Halaman Terbuka Barat</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface">Kasi Kesos &amp; Pos Indonesia</div>
+<span class="text-text-muted text-[12px]">Babinsa &amp; Bhabinkamtibmas</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-selesai-bg text-status-selesai-text font-semibold">
+                Tenda &amp; Meja Validasi
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-selesai-bg text-status-selesai-text font-semibold">
+                Snack Petugas Siap
+              </span>
+</td>
+</tr>
+<!-- Row 4: Highlight Musrenbang RKPD -->
+<tr class="bg-surface-container-high/40 hover:bg-mint-tag/50 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-bold text-primary">23 Apr 2025</div>
+<span class="text-text-muted text-[12px]">08.30 - 13.00 WIB</span>
+</td>
+<td class="py-space-md px-space-md font-bold text-primary">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+                Musrenbang RKPD Kec. Susukan 2026
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-semibold">Sasana Praja Ki Bagus Rangin</div>
+<span class="text-text-muted text-[12px]">Kantor Camat Susukan</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Camat &amp; Tim Delegasi Bappeda</div>
+<span class="text-text-muted text-[12px]">Koordinator: Sekmat</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-selesai-bg text-status-selesai-text font-bold">
+                Steril &amp; Siap (180 Kursi)
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-selesai-bg text-status-selesai-text font-bold">
+                Katering VIP &amp; Delegasi
+              </span>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-mint-tag/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="font-label-md text-label-md font-semibold text-on-surface">25 Apr 2025</div>
+<span class="text-text-muted text-[12px]">13.30 WIB</span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-status-ditolak-text">
+<span class="inline-flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-status-ditolak-text"></span>
+                Monev Pavingisasi Jalan Usaha Tani
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface font-medium">Desa Luwungkencana</div>
+<span class="text-text-muted text-[12px]">Blok Sawah Lor RT 04</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="text-on-surface">Kasi Ekbang &amp; Inspektorat</div>
+<span class="text-text-muted text-[12px]">TPK Desa Luwungkencana</span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-status-menunggu-bg text-status-menunggu-text font-semibold">
+                Verifikasi Lapangan
+              </span>
+</td>
+<td class="py-space-md px-space-md">
+<span class="px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-text-muted font-medium">
+                Mandiri Tim Lapangan
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Footnote & Legend -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-text-muted text-body-sm font-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">info</span>
+<span>Perubahan jadwal dapat dilakukan maksimal H-2 melalui persetujuan Sekretaris Kecamatan.</span>
+</div>
+<div class="font-label-sm text-label-sm text-primary font-semibold cursor-pointer hover:underline">
+        Lihat Seluruh 18 Arsip Notula Musrenbang Sebelumnya →
+      </div>
+</div>
+</div>
+<!-- Quick Interactive Modal for "Tambah Agenda Baru" -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/40 backdrop-blur-sm p-4" id="modalTambahAgenda">
+<div class="bg-surface-card rounded-2xl w-full max-w-lg p-space-xl shadow-2xl flex flex-col gap-space-md animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-xs border-b border-border-line">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">event_note</span>
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold">Entri Agenda Baru</h4>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-text-muted hover:text-on-surface" id="btnCloseModal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm font-body-sm text-body-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Kategori Agenda</label>
+<select class="w-full h-10 px-3 rounded-lg bg-bg-ivory border border-border-line text-on-surface focus:outline-none focus:border-primary">
+<option>Musrenbang Desa / Pra-Musrenbangdes</option>
+<option>Musrenbang Kecamatan Susukan</option>
+<option>Mobil Adminduk Keliling</option>
+<option>Rapat Koordinasi Kuwu/Kades</option>
+<option>Penyaluran BLT / Bantuan Sosial</option>
+<option>Monitoring Proyek Fisik &amp; Infrastruktur</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Nama Agenda / Kegiatan</label>
+<input class="w-full h-10 px-3 rounded-lg bg-bg-ivory border border-border-line text-on-surface focus:outline-none focus:border-primary" placeholder="Contoh: Pra-Musrenbang Desa Kejiwan RKP 2026" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Tanggal</label>
+<input class="w-full h-10 px-3 rounded-lg bg-bg-ivory border border-border-line text-on-surface focus:outline-none focus:border-primary" type="date" value="2025-04-24"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Waktu Mulai</label>
+<input class="w-full h-10 px-3 rounded-lg bg-bg-ivory border border-border-line text-on-surface focus:outline-none focus:border-primary" type="time" value="09:00"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Lokasi / Desa Sasaran</label>
+<select class="w-full h-10 px-3 rounded-lg bg-bg-ivory border border-border-line text-on-surface focus:outline-none focus:border-primary">
+<option>Aula Sasana Praja Ki Bagus Rangin (Kantor Camat)</option>
+<option>Desa Bojong Kulon</option>
+<option>Desa Bunder</option>
+<option>Desa Gintunglor</option>
+<option>Desa Jatimerta</option>
+<option>Desa Kedondong</option>
+<option>Desa Kedungdawa</option>
+<option>Desa Kejiwan</option>
+<option>Desa Luwungkencana</option>
+<option>Desa Susukan</option>
+<option>Desa Tangkil</option>
+<option>Desa Ujunggebang</option>
+<option>Desa Wiyong</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Pejabat Pendamping / Penanggung Jawab</label>
+<input class="w-full h-10 px-3 rounded-lg bg-bg-ivory border border-border-line text-on-surface focus:outline-none focus:border-primary" placeholder="Misal: Kasi PMD / Tim Verifikasi Bappelitbangda" type="text"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md" id="btnCancelModal">
+          Batal
+        </button>
+<button class="px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-primary-container" id="btnSaveAgenda">
+          Simpan ke Jadwal
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Micro-interactions for Modal & Exports
+    (function() {
+      const modal = document.getElementById('modalTambahAgenda');
+      const openBtn = document.getElementById('btnTambahAgenda');
+      const closeBtn = document.getElementById('btnCloseModal');
+      const cancelBtn = document.getElementById('btnCancelModal');
+      const saveBtn = document.getElementById('btnSaveAgenda');
+      const exportBtn = document.getElementById('btnExportCal');
+
+      if (openBtn && modal) {
+        openBtn.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        });
+      }
+
+      function closeModal() {
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          alert('Agenda berhasil disinkronkan ke kalender Musrenbang Kecamatan Susukan.');
+          closeModal();
+        });
+      }
+
+      if (exportBtn) {
+        exportBtn.addEventListener('click', () => {
+          alert('File .ics Kalender Musrenbang & Agenda Terpadu Kecamatan Susukan berhasil disiapkan untuk diunduh.');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-card border-t border-border-line py-space-md px-space-xl mt-auto"><div class="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-text-muted"><span>© 2025 Pemerintah Kecamatan Susukan. Sistem Informasi Administrasi Desa &amp; Kecamatan (SIADIK).</span><div class="flex items-center gap-space-md font-label-sm text-label-sm"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-status-selesai-text inline-block"></span>Server Pelayanan Terhubung</span><a class="hover:text-primary" href="#">Bantuan Teknis</a><a class="hover:text-primary" href="#">Pedoman SPM</a></div></div></footer></div></body></html>

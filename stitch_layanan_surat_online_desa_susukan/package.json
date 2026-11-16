@@ -1,0 +1,11 @@
+{
+  "name": "layanan-surat-online-desa-susukan",
+  "version": "2.4.0",
+  "description": "Sistem Informasi Pelayanan Administrasi & Surat Online Desa Susukan - Kecamatan Susukan, Kabupaten Cirebon",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
+

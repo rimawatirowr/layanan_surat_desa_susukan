@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#cadeda","on-secondary":"#ffffff","status-perbaikan-text":"#B45309","tertiary":"#5e4300","primary-fixed":"#a5f1dd","surface-bright":"#e9fef9","on-primary-container":"#9ce9d4","on-primary":"#ffffff","on-surface":"#0c1f1c","status-menunggu-text":"#9A6100","secondary-fixed":"#beebeb","mint-tag":"#E8F1ED","primary-container":"#176b5b","tertiary-container":"#7c5900","on-tertiary":"#ffffff","status-diverifikasi-bg":"#E3EEFB","on-secondary-fixed":"#002020","status-disetujui-text":"#176B5B","surface":"#e9fef9","surface-container-high":"#d8ede8","status-perbaikan-bg":"#FDEBD3","secondary":"#3b6566","surface-container":"#def2ed","surface-variant":"#d2e7e2","surface-container-lowest":"#ffffff","surface-tint":"#166a5a","on-background":"#0c1f1c","primary":"#005144","outline":"#6f7975","on-secondary-fixed-variant":"#224d4e","on-surface-variant":"#3f4945","on-error-container":"#93000a","error":"#ba1a1a","background":"#e9fef9","status-menunggu-bg":"#FFF3DC","surface-container-low":"#e3f8f3","outline-variant":"#bec9c4","status-ditolak-bg":"#FBE4E4","status-selesai-bg":"#E1F3EC","tertiary-fixed-dim":"#efbf61","tertiary-fixed":"#ffdea4","secondary-container":"#beebeb","border-line":"#E7ECE8","on-error":"#ffffff","primary-fixed-dim":"#89d5c1","inverse-primary":"#89d5c1","on-secondary-container":"#426b6c","on-tertiary-fixed-variant":"#5d4200","on-tertiary-fixed":"#261900","surface-container-highest":"#d2e7e2","status-diverifikasi-text":"#245A9E","on-primary-fixed":"#00201a","status-ditolak-text":"#B02A2A","status-disetujui-bg":"#E1F3EC","inverse-on-surface":"#e0f5f0","inverse-surface":"#223431","status-selesai-text":"#0F5B49","secondary-fixed-dim":"#a3cfcf","bg-ivory":"#F7F8F5","on-tertiary-container":"#ffd481","surface-card":"#FFFFFF","on-primary-fixed-variant":"#005143","error-container":"#ffdad6","text-muted":"#74817D"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","space-xl":"1.75rem","gutter-desktop":"1rem","space-xs":"0.25rem","space-md":"0.875rem","space-lg":"1.125rem","margin-tablet":"1.5rem","margin-desktop":"1.75rem","margin":"1rem","gutter":"0.875rem"},fontFamily:{"headline-lg":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-xl-mobile":["Inter"],"headline-xl":["Inter"],"letter-legal-body":["Georgia"],"body-md":["Inter"],"headline-sm":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"letter-legal-title":["Georgia"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"label-eyebrow":["Inter"],"label-lg":["Inter"]},fontSize:{"headline-lg":["26px",{lineHeight:"34px",letterSpacing:"-0.023em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"letter-legal-body":["12px",{lineHeight:"22px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"letter-legal-title":["14px",{lineHeight:"20px",fontWeight:"700"}],"headline-md":["18px",{lineHeight:"26px",fontWeight:"600"}],"headline-lg-mobile":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-eyebrow":["10px",{lineHeight:"12px",letterSpacing:"0.15em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}]}}}};</script></head><body class="bg-bg-ivory font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-card z-50 flex flex-col justify-between shadow-[0_8px_28px_rgba(20,55,47,0.06)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-low"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-primary truncate leading-tight">Kecamatan Susukan</span><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider truncate">Sistem Loket Warga</span></div></div><div class="px-space-md py-space-sm"><div class="bg-mint-tag rounded-xl p-space-sm flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-primary">LOKET 02</span><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary mr-1 animate-pulse"></span>Aktif Melayani</span></div><span class="font-label-md text-label-md text-on-surface truncate">Cetak e-KTP &amp; IKD</span></div></div><nav class="flex flex-col gap-1 px-space-md mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="panel-pemanggilan" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span>Panel Pemanggilan</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="antrean-hari-ini" href="#"><span class="material-symbols-outlined text-[20px]">format_list_numbered</span><span>Antrean Hari Ini</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="riwayat-pelayanan" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Riwayat Pelayanan</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="monitoring-blangko" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Monitoring Blangko</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-md text-label-md" data-path="bantuan" href="#"><span class="material-symbols-outlined text-[20px]">help_outline</span><span>Bantuan</span></a></nav></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between bg-surface-card rounded-lg p-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-text-muted text-[18px]">dns</span><span class="font-label-sm text-label-sm text-on-surface-variant">Server IP Disdukcapil</span></div><span class="w-2 h-2 rounded-full bg-primary"></span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-card/95 backdrop-blur-md z-40 flex items-center justify-between px-space-xl shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-bg-ivory px-space-md py-1.5 rounded-lg"><span class="material-symbols-outlined text-primary text-[20px]">badge</span><div class="flex flex-col"><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Operator Tugas</span><span class="font-label-md text-label-md text-on-surface font-semibold">Siti Rohmah, S.AP</span></div></div><div class="h-8 w-px bg-surface-container-high hidden md:block"></div><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">credit_card</span><span class="font-body-sm text-body-sm text-on-surface-variant">Loket 2 — Cetak e-KTP &amp; IKD</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-bg-ivory rounded-lg p-1 gap-1"><button class="flex items-center gap-1 px-space-sm py-1 rounded bg-surface-card text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-sm text-label-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]" title="Test Bel Pemanggilan" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-container">notifications_active</span><span>Tes Bel</span></button><button class="flex items-center gap-1 px-space-sm py-1 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-sm text-label-sm" title="Pengaturan Audio Loket" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">volume_up</span><span>Audio: Speaker 1</span><span class="material-symbols-outlined text-[14px]">expand_more</span></button></div><div class="flex items-center gap-space-xs pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Siti Rohmah</span><span class="font-label-eyebrow text-label-eyebrow text-text-muted">NIP. 19880412...</span></div></div></div></header><main class="w-full pt-16 bg-bg-ivory min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Toast Layer (Level 4 Floating Feedback for Real-Time WhatsApp Signal) -->
+<div class="sticky top-20 z-50 mx-auto w-full max-w-5xl px-space-md transition-all duration-500 transform translate-y-0 opacity-100" id="live-arrival-toast">
+<div class="relative overflow-hidden rounded-xl bg-surface-card shadow-[0_20px_48px_rgba(15,61,62,0.18)] p-space-md sm:p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<!-- 4px Decorative Left Strip Accent -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<!-- Left Content & Event Info -->
+<div class="flex items-start gap-space-md pl-2 sm:pl-3">
+<div class="relative flex-shrink-0 mt-0.5">
+<div class="w-12 h-12 rounded-xl bg-mint-tag flex items-center justify-center text-primary-container shadow-sm">
+<span class="material-symbols-outlined text-[28px] animate-bounce" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</div>
+<span class="absolute -bottom-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-disetujui-text opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-status-disetujui-text text-on-primary text-[9px] font-bold items-center justify-center">WA</span>
+</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+              Sinyal Kehadiran Diterima (WhatsApp Webhook • 09:18:04 WIB)
+            </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-tag text-secondary font-label-eyebrow text-label-eyebrow uppercase">
+<span class="material-symbols-outlined text-[13px]">volume_up</span> Audio Chime 72dB
+            </span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">A-038</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Bpk. Budi Santoso</span>
+<span class="text-text-muted font-body-sm text-body-sm hidden sm:inline">— NIK: 320901******0008</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">near_me</span>
+            Warga telah menekan tombol <strong class="text-on-surface">"✋ Saya Sudah di Ruang Tunggu"</strong>. Berkas SIAK &amp; e-KTP siap cetak di memori.
+          </p>
+</div>
+</div>
+<!-- Right Action CTAs -->
+<div class="flex items-center gap-2 w-full md:w-auto justify-end pl-2 sm:pl-0 flex-shrink-0">
+<button class="flex-1 md:flex-initial h-10 px-4 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all active:scale-95 shadow-[0_4px_16px_rgba(20,55,47,0.12)] flex items-center justify-center gap-2 font-label-md text-label-md" id="btn-call-now" onclick="triggerPanggilA038()" type="button">
+<span class="material-symbols-outlined text-[18px]">campaign</span>
+<span>Panggil A-038 Sekarang</span>
+</button>
+<button class="flex-1 md:flex-initial h-10 px-3.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container transition-all active:scale-95 flex items-center justify-center gap-1.5 font-label-md text-label-md" id="btn-enqueue-after" onclick="queueAfterCurrent()" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">low_priority</span>
+<span>Antrekan Setelah A-039</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container-high text-text-muted hover:text-on-surface hover:bg-surface-container transition-colors flex items-center justify-center" onclick="dismissToast()" title="Tutup Pemberitahuan" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Workspace Canvas (Strict 1360px Bounds) -->
+<div class="w-full max-w-[1360px] mx-auto px-space-md sm:px-space-lg lg:px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- Breadcrumb & Realtime Gateway Telemetry Strip -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-card rounded-xl p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="flex items-center gap-1 text-text-muted font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">meeting_room</span>
+<span>Loket Pelayanan Warga</span>
+</div>
+<span class="text-text-muted">/</span>
+<span class="font-label-md text-label-md text-primary">Loket 02 — Cetak e-KTP &amp; IKD</span>
+<span class="text-text-muted">/</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+          Sesi Pagi: 42/65 Selesai
+        </span>
+</div>
+<!-- Sync Status Badges -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 bg-bg-ivory px-2.5 py-1 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">WA Webhook Gateway:</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Terkoneksi (12ms)</span>
+</div>
+<div class="hidden md:flex items-center gap-1.5 bg-bg-ivory px-2.5 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[15px] text-primary">cloud_done</span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">SIAK Sakinah:</span>
+<span class="font-label-sm text-label-sm text-on-surface">Sinkron 09:18:00</span>
+</div>
+</div>
+</div>
+<!-- Main Dynamic 12-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT/MAIN COLUMN (8 Cols): Loket Status + Active Ticket + Queue Prioritization -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Currently Served Ticket Hero Card (A-039 Ibu Maryati) -->
+<div class="bg-surface-card rounded-2xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] p-space-lg flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-mint-tag opacity-40 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-status-diverifikasi-text mr-1.5 animate-pulse"></span>Sedang Dilayani di Loket
+              </span>
+<span class="text-text-muted font-body-sm text-body-sm">Durasi: 03m 14d</span>
+</div>
+<div class="flex items-center gap-1 bg-bg-ivory px-3 py-1 rounded-lg">
+<span class="material-symbols-outlined text-[16px] text-text-muted">timer</span>
+<span class="font-label-sm text-label-sm text-on-surface">Target Loket: 05:00 / Orang</span>
+</div>
+</div>
+<!-- Hero Ticket Identity -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-md">
+<div class="bg-primary text-on-primary rounded-xl px-4 py-2.5 flex flex-col items-center justify-center shadow-md">
+<span class="font-label-eyebrow text-label-eyebrow text-on-primary-container uppercase tracking-widest">Nomor Antrean</span>
+<span class="font-headline-xl text-headline-xl tracking-tight leading-none my-1 font-bold">A-039</span>
+<span class="font-label-sm text-label-sm opacity-80">Jalur Reguler</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface truncate">Ny. Maryati</h2>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-status-perbaikan-bg text-status-perbaikan-text font-label-sm text-label-sm">
+                    Ganti Rusak / Patah
+                  </span>
+</div>
+<span class="font-body-md text-body-md text-text-muted">NIK: 320901******0042 • Desa Susukan Kulon RT 03/RW 01</span>
+<!-- Quick Service Progress -->
+<div class="flex items-center gap-3 mt-2">
+<div class="flex items-center gap-1 text-status-selesai-text font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Verifikasi Berkas Fisik
+                  </div>
+<span class="text-text-muted">•</span>
+<div class="flex items-center gap-1 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Pencetakan Chip e-KTP
+                  </div>
+</div>
+</div>
+</div>
+<!-- Operator Control for Current Client -->
+<div class="flex sm:flex-col items-stretch gap-2 flex-shrink-0">
+<button class="h-10 px-4 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all flex items-center justify-center gap-1.5 font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Selesaikan A-039</span>
+</button>
+<button class="h-9 px-3 rounded-lg bg-bg-ivory text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5 font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak Lembar Tanda Terima</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Priority Queue Track & Incoming Arrivals (Urutan Antrean Jalur Loket 2) -->
+<div class="bg-surface-card rounded-2xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Urutan Pelayanan Loket 2</h3>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold">
+                  5 Antrean Terjadwal
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Daftar pemohon yang siap dipanggil selanjutnya secara otomatis berdasarkan re-entry real-time.</p>
+</div>
+<!-- Action Filter -->
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded-lg bg-bg-ivory text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Kelola Prioritas</span>
+</button>
+<button class="px-2.5 py-1 rounded-lg bg-bg-ivory text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>Refresh Queue</span>
+</button>
+</div>
+</div>
+<!-- Queue List Cards with Interactive WhatsApp Re-entry Highlight -->
+<div class="flex flex-col gap-space-sm mt-1">
+<!-- HIGHLIGHTED ROW: A-038 Bpk Budi Santoso (Re-entry WhatsApp) -->
+<div class="relative rounded-xl bg-status-disetujui-bg p-space-md transition-all duration-300 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md" id="queue-card-a038">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<!-- Status Glyph -->
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">how_to_reg</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">A-038</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Bpk. Budi Santoso</span>
+<!-- Flash status badge -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-card text-status-disetujui-text font-label-sm text-label-sm shadow-xs font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-disetujui-text animate-ping"></span>
+                      Sudah di Ruang Tunggu (09:18 WIB)
+                    </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-mint-tag text-primary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">chat</span> Via WhatsApp Bot
+                    </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Layanan: <strong>Cetak e-KTP Baru (Hilang)</strong></span>
+<span>•</span>
+<span class="text-status-selesai-text font-semibold">Siap Dipanggil Kembali (Prioritas Terdepan)</span>
+<span>•</span>
+<span class="text-text-muted">Tersimpan di RAM Cetak #02</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Row -->
+<div class="flex items-center gap-2 flex-shrink-0 self-end md:self-center">
+<button class="h-9 px-3.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all flex items-center gap-1.5 font-label-sm text-label-sm shadow-sm active:scale-95" onclick="triggerPanggilA038()" type="button">
+<span class="material-symbols-outlined text-[16px]">mic</span>
+<span>Panggil Sekarang</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-card text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors shadow-xs" title="Lihat Berkas &amp; Detail WA" type="button">
+<span class="material-symbols-outlined text-[18px]">folder_shared</span>
+</button>
+</div>
+</div>
+<!-- Normal Waiting Row: A-040 Sdr. Ridwan -->
+<div class="rounded-xl bg-bg-ivory hover:bg-mint-tag transition-colors p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="font-label-md text-label-md font-bold">03</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">A-040</span>
+<span class="font-label-lg text-label-lg text-on-surface">Sdr. Ridwan Kamiludin</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm">
+                      Menunggu di Bangku B-4
+                    </span>
+</div>
+<div class="flex items-center gap-2 text-text-muted font-body-sm text-body-sm mt-0.5">
+<span>Aktivasi Identitas Kependudukan Digital (IKD)</span>
+<span>•</span>
+<span>Check-in Kios: 08:45 WIB</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<button class="h-8 px-3 rounded-lg bg-surface-card text-text-muted hover:text-on-surface font-label-sm text-label-sm shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">swap_vert</span>
+<span>Tukar Urutan</span>
+</button>
+</div>
+</div>
+<!-- Normal Waiting Row: A-041 Ibu Sunarti -->
+<div class="rounded-xl bg-bg-ivory hover:bg-mint-tag transition-colors p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="font-label-md text-label-md font-bold">04</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">A-041</span>
+<span class="font-label-lg text-label-lg text-on-surface">Ibu Sunarti</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm">
+                      Menunggu
+                    </span>
+</div>
+<div class="flex items-center gap-2 text-text-muted font-body-sm text-body-sm mt-0.5">
+<span>Cetak Perubahan Elemen Data Status Kawin</span>
+<span>•</span>
+<span>Check-in Kios: 08:52 WIB</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<button class="h-8 px-3 rounded-lg bg-surface-card text-text-muted hover:text-on-surface font-label-sm text-label-sm shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">swap_vert</span>
+<span>Tukar Urutan</span>
+</button>
+</div>
+</div>
+<!-- Normal Waiting Row: A-042 Bpk Karnadi -->
+<div class="rounded-xl bg-bg-ivory hover:bg-mint-tag transition-colors p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="font-label-md text-label-md font-bold">05</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">A-042</span>
+<span class="font-label-lg text-label-lg text-on-surface">Bpk. Karnadi</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm">
+                      Menunggu
+                    </span>
+</div>
+<div class="flex items-center gap-2 text-text-muted font-body-sm text-body-sm mt-0.5">
+<span>Rekam Biometrik Baru Pemula (17 Th)</span>
+<span>•</span>
+<span>Check-in Kios: 09:05 WIB</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<button class="h-8 px-3 rounded-lg bg-surface-card text-text-muted hover:text-on-surface font-label-sm text-label-sm shadow-xs flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">swap_vert</span>
+<span>Tukar Urutan</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- WhatsApp Interaction Audit Timeline (Log Notifikasi Real-time A-038) -->
+<div class="bg-surface-card rounded-2xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">mark_chat_read</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Log Alur Bot WhatsApp Warga (A-038)</h3>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Phone: +62 813-2411-XXXX</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="bg-bg-ivory rounded-xl p-space-sm flex flex-col gap-1">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">09:10:12 WIB • Panggilan Terlewat</span>
+<span class="font-label-md text-label-md text-status-ditolak-text font-semibold">Dilewati Petugas Loket 2</span>
+<p class="font-body-sm text-body-sm text-text-muted">3x Bel panggilan tidak dijawab. Sistem mengirim WhatsApp interaktif.</p>
+</div>
+<div class="bg-bg-ivory rounded-xl p-space-sm flex flex-col gap-1">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">09:11:05 WIB • Pesan Terkirim</span>
+<span class="font-label-md text-label-md text-status-diverifikasi-text font-semibold">Pesan WA Diterima Warga</span>
+<p class="font-body-sm text-body-sm text-text-muted">"Halo Pak Budi, nomor A-038 terlewat. Tekan tombol bila sudah tiba."</p>
+</div>
+<div class="bg-status-disetujui-bg rounded-xl p-space-sm flex flex-col gap-1">
+<span class="font-label-eyebrow text-label-eyebrow text-status-disetujui-text uppercase font-bold">09:18:04 WIB • Konfirmasi Masuk</span>
+<span class="font-label-md text-label-md text-primary font-bold">Tombol WhatsApp Ditekan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Warga menekan konfirmasi. Sistem memicu bel chime &amp; kartu prioritas loket.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (4 Cols): Device Health, Document Cache & Station Tools -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Cached Client Record Ready to Print (Berkas SIAK Budi Santoso) -->
+<div class="bg-surface-card rounded-2xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">badge</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Memori Berkas Siap Cetak</h3>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold">
+              Data Cached
+            </span>
+</div>
+<!-- Virtual ID Card Silhouette Preview -->
+<div class="bg-bg-ivory rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-border-line">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Pratinjau KTP-el Pemohon A-038</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">SIAK v8.4.1</span>
+</div>
+<div class="flex gap-space-sm items-center">
+<div class="w-16 h-20 rounded bg-surface-container-high flex flex-col items-center justify-center text-text-muted flex-shrink-0">
+<span class="material-symbols-outlined text-[32px]">person</span>
+<span class="font-label-eyebrow text-label-eyebrow">FOTO PAS</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">BUDI SANTOSO</span>
+<span class="font-body-sm text-body-sm text-text-muted font-mono">3209011406790008</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Cirebon, 14-06-1979</span>
+<span class="font-body-sm text-body-sm text-text-muted truncate">Desa Susukan Wetan RT 02/03</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-card p-2 flex items-center justify-between text-on-surface font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1.5 text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-primary">fingerprint</span>
+                Sidik Jari Telunjuk
+              </span>
+<span class="font-label-sm text-label-sm text-status-disetujui-text font-bold">Valid (100% Match)</span>
+</div>
+<div class="rounded-lg bg-surface-card p-2 flex items-center justify-between text-on-surface font-body-sm text-body-sm">
+<span class="flex items-center gap-1.5 text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-primary">description</span>
+                Surat Kehilangan Polsek
+              </span>
+<span class="font-label-sm text-label-sm text-status-disetujui-text font-bold">Terverifikasi</span>
+</div>
+</div>
+<div class="text-text-muted font-body-sm text-body-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">info</span>
+<span>Data tidak perlu diunduh ulang saat pemohon dipanggil ke loket.</span>
+</div>
+</div>
+<!-- Hardware & Printer Telemetry (Fargo HDP5000) -->
+<div class="bg-surface-card rounded-2xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">print</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mesin Cetak e-KTP Loket 2</h3>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container mr-1"></span>Siap Cetak
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-muted">Tipe Printer</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">HID Fargo HDP5000 (LAN)</span>
+</div>
+<!-- Blangko Stock Progress -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Stok Blangko KTP</span>
+<span class="font-bold text-primary">84 Keping (Aman)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-bg-ivory overflow-hidden">
+<div class="h-full rounded-full bg-primary-container" style="width: 84%;"></div>
+</div>
+</div>
+<!-- Ribbon Gauge -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Sisa Ribbon YMCKK</span>
+<span class="font-bold text-on-surface">74% (~185 Cetakan)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-bg-ivory overflow-hidden">
+<div class="h-full rounded-full bg-secondary" style="width: 74%;"></div>
+</div>
+</div>
+<!-- Film Retransfer & Temperature -->
+<div class="grid grid-cols-2 gap-2 mt-2 pt-2 border-t border-border-line">
+<div class="bg-bg-ivory p-2 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Film HDP</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">91%</span>
+</div>
+<div class="bg-bg-ivory p-2 rounded-lg flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Suhu Roller</span>
+<span class="font-label-md text-label-md text-primary font-bold">42°C (Optimal)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Audio & Chime Announcement Quick Console -->
+<div class="bg-surface-card rounded-2xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">volume_up</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Pengumuman Suara Ruangan</h3>
+</div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">PA SYSTEM v2</span>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full h-10 px-3 rounded-lg bg-mint-tag hover:bg-surface-container transition-colors flex items-center justify-between text-primary font-label-md text-label-md" onclick="playChime()" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+<span>Bunyikan Chime Bel Pemanggilan</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+<button class="w-full h-10 px-3 rounded-lg bg-bg-ivory hover:bg-surface-container-high transition-colors flex items-center justify-between text-on-surface-variant font-label-md text-label-md" type="button">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+<span>Siaran: "Harap Menyiapkan e-KTP &amp; KK"</span>
+</span>
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-text-muted font-body-sm text-body-sm pt-1">
+<span>Volume Monitor Operator:</span>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">volume_down</span>
+<span>80%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function dismissToast() {
+    const toast = document.getElementById('live-arrival-toast');
+    if (toast) {
+      toast.classList.add('opacity-0', '-translate-y-6');
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 500);
+    }
+  }
+
+  function triggerPanggilA038() {
+    playChime();
+    const toast = document.getElementById('live-arrival-toast');
+    const queueCard = document.getElementById('queue-card-a038');
+    
+    if (toast) {
+      toast.classList.add('opacity-0', '-translate-y-6');
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 400);
+    }
+    
+    if (queueCard) {
+      queueCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      queueCard.classList.add('scale-[1.02]');
+      setTimeout(() => {
+        queueCard.classList.remove('scale-[1.02]');
+      }, 800);
+    }
+  }
+
+  function queueAfterCurrent() {
+    const toast = document.getElementById('live-arrival-toast');
+    if (toast) {
+      toast.classList.add('opacity-0', '-translate-y-6');
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 400);
+    }
+    const queueCard = document.getElementById('queue-card-a038');
+    if (queueCard) {
+      queueCard.classList.add('bg-mint-tag');
+    }
+  }
+
+  function playChime() {
+    try {
+      const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const now = audioCtx.currentTime;
+      
+      const osc1 = audioCtx.createOscillator();
+      const gain1 = audioCtx.createGain();
+      osc1.type = 'sine';
+      osc1.frequency.setValueAtTime(587.33, now); // D5
+      gain1.gain.setValueAtTime(0.3, now);
+      gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+      osc1.connect(gain1);
+      gain1.connect(audioCtx.destination);
+      osc1.start(now);
+      osc1.stop(now + 0.6);
+
+      const osc2 = audioCtx.createOscillator();
+      const gain2 = audioCtx.createGain();
+      osc2.type = 'sine';
+      osc2.frequency.setValueAtTime(880, now + 0.2); // A5
+      gain2.gain.setValueAtTime(0.35, now + 0.2);
+      gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.9);
+      osc2.connect(gain2);
+      gain2.connect(audioCtx.destination);
+      osc2.start(now + 0.2);
+      osc2.stop(now + 0.9);
+    } catch(e) {
+      console.log('Audio Context initialized on action');
+    }
+  }
+</script></main></div></body></html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary":"#ffffff","status-ditolak-text":"#B02A2A","inverse-primary":"#89d5c1","surface":"#e9fef9","status-perbaikan-text":"#B45309","status-disetujui-text":"#176B5B","tertiary":"#5e4300","surface-container-high":"#d8ede8","tertiary-container":"#7c5900","surface-container-highest":"#d2e7e2","surface-dim":"#cadeda","tertiary-fixed-dim":"#efbf61","secondary-container":"#beebeb","status-menunggu-text":"#9A6100","on-secondary":"#ffffff","on-secondary-fixed-variant":"#224d4e","on-error-container":"#93000a","bg-ivory":"#F7F8F5","status-disetujui-bg":"#E1F3EC","surface-container-low":"#e3f8f3","outline":"#6f7975","primary-container":"#176b5b","error":"#ba1a1a","on-primary-fixed-variant":"#005143","on-tertiary-fixed":"#261900","on-surface":"#0c1f1c","on-primary-container":"#9ce9d4","primary-fixed":"#a5f1dd","status-diverifikasi-bg":"#E3EEFB","on-secondary-fixed":"#002020","status-selesai-text":"#0F5B49","status-ditolak-bg":"#FBE4E4","inverse-surface":"#223431","on-primary":"#ffffff","surface-tint":"#166a5a","on-primary-fixed":"#00201a","surface-card":"#FFFFFF","on-secondary-container":"#426b6c","status-menunggu-bg":"#FFF3DC","surface-variant":"#d2e7e2","text-muted":"#74817D","status-selesai-bg":"#E1F3EC","surface-container-lowest":"#ffffff","primary":"#005144","inverse-on-surface":"#e0f5f0","secondary-fixed":"#beebeb","error-container":"#ffdad6","on-error":"#ffffff","secondary-fixed-dim":"#a3cfcf","status-perbaikan-bg":"#FDEBD3","status-diverifikasi-text":"#245A9E","secondary":"#3b6566","mint-tag":"#E8F1ED","primary-fixed-dim":"#89d5c1","tertiary-fixed":"#ffdea4","surface-container":"#def2ed","on-tertiary-fixed-variant":"#5d4200","on-tertiary-container":"#ffd481","surface-bright":"#e9fef9","background":"#e9fef9","on-background":"#0c1f1c","border-line":"#E7ECE8","on-surface-variant":"#3f4945","outline-variant":"#bec9c4"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-md":"0.875rem","space-lg":"1.125rem","space-xl":"1.75rem","gutter-desktop":"1rem","margin-desktop":"1.75rem","margin":"1rem","space-sm":"0.5rem","gutter":"0.875rem","margin-tablet":"1.5rem"},"fontFamily":{"letter-legal-title":["Georgia"],"headline-xl-mobile":["Inter"],"letter-legal-body":["Georgia"],"headline-lg":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"body-sm":["Inter"],"label-eyebrow":["Inter"],"headline-xl":["Inter"]},"fontSize":{"letter-legal-title":["14px",{"lineHeight":"20px","fontWeight":"700"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"letter-legal-body":["12px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg":["26px",{"lineHeight":"34px","letterSpacing":"-0.023em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-eyebrow":["10px",{"lineHeight":"12px","letterSpacing":"0.15em","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md antialiased"><aside class="fixed left-0 top-0 h-full w-[244px] bg-surface-card z-50 flex flex-col justify-between shadow-[0_8px_28px_rgba(20,55,47,0.06)]"><div class="flex flex-col"><div class="px-margin-desktop py-space-lg flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Kecamatan Susukan</span><span class="font-headline-sm text-headline-sm text-primary truncate leading-tight">Sistem Loket</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-status-disetujui-text animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Loket 2 Aktif</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-status-disetujui-bg text-status-disetujui-text">Online</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="panel-pemanggilan" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-lg text-label-lg">Panel Pemanggilan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="antrean-hari-ini" href="#"><span class="material-symbols-outlined text-[20px]">format_list_numbered</span><span class="font-label-lg text-label-lg">Antrean Hari Ini</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="riwayat-pelayanan" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Riwayat Pelayanan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="monitoring-blangko" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">Monitoring Blangko</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="bantuan" href="#"><span class="material-symbols-outlined text-[20px]">help_center</span><span class="font-label-lg text-label-lg">Bantuan SOP</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-bg-ivory flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-text-muted">SIAK Disdukcapil</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-status-disetujui-text"><span class="w-1.5 h-1.5 rounded-full bg-status-disetujui-text"></span>Online</span></div><span class="font-body-sm text-body-sm text-on-surface-variant font-mono">192.168.10.24:8080</span><div class="flex items-center justify-between pt-1"><span class="font-label-sm text-label-sm text-text-muted">Latency</span><span class="font-label-sm text-label-sm text-on-surface">14 ms</span></div></div><div class="text-center"><span class="font-label-eyebrow text-label-eyebrow text-text-muted">KANTOR CAMAT SUSUKAN v2.4</span></div></div></aside><div class="pl-[244px]"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/95 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="px-space-sm py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-md text-label-md font-bold tracking-wide">LOKET 2</span><span class="font-body-sm text-body-sm text-text-muted">Cetak e-KTP &amp; IKD Digital</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">volume_up</span><span class="font-label-sm text-label-sm text-primary">Pengeras Suara Aktif</span></div><button class="px-space-sm py-1 rounded bg-surface-card hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">play_circle</span>Tes Bel</button></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Siti Rohmah, S.AP</span><span class="font-label-sm text-label-sm text-text-muted">Operator Pelayanan NIP. 19880412...</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-bg-ivory min-h-screen px-margin-desktop py-space-xl"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg w-full max-w-[1360px] mx-auto pb-space-xl">
+<!-- Breadcrumb & Page Introduction -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)]">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-text-muted">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-primary">Kecamatan Susukan</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm text-text-muted">Sistem Administrasi Kependudukan</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Master Digital Repository</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<h1 class="font-headline-lg text-headline-lg text-primary">Pusat Data Arsip &amp; Validasi Kependudukan</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-disetujui-text"></span> SIAK-Backup Sinkron
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+          Repositori induk pencatatan berkas resmi, pengesahan Tanda Tangan Elektronik (TTE BSrE - BSSN), audit log jejak kepatuhan UU Pelindungan Data Pribadi (UU PDP No. 27/2022).
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-all shadow-sm" id="btnSyncSiak">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+          Sinkronisasi SIAK Pusat
+        </button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-md" id="btnVerifikasiMandiri">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+          Uji Dokumen Mandiri
+        </button>
+</div>
+</div>
+<!-- Metrics Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Total Arsip -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 text-surface-container opacity-50 group-hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[96px]">inventory_2</span>
+</div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Total Terarsip</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">SHA-256</span>
+</div>
+<span class="font-headline-xl text-headline-xl text-primary font-bold mt-1">14.820</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dokumen Sah Terenkripsi</span>
+</div>
+<div class="pt-space-md mt-space-sm relative z-10 flex items-center gap-space-xs text-status-disetujui-text font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>100% Terdaftar BSrE BSSN</span>
+</div>
+</div>
+<!-- Metric 2: Kapasitas Penyimpanan -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col justify-between relative overflow-hidden">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Penyimpanan Server</span>
+<span class="font-label-sm text-label-sm text-text-muted">9.7% Terpakai</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">48.6</span>
+<span class="font-label-md text-label-md text-text-muted">/ 500 GB</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kombinasi SIKD Lokal + Cloud Gov</span>
+</div>
+<div class="pt-space-sm">
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-2 rounded-full" style="width: 9.72%"></div>
+</div>
+<div class="flex justify-between items-center mt-1.5 font-label-sm text-label-sm text-text-muted">
+<span>Sisa 451.4 GB</span>
+<span class="text-status-disetujui-text">Cluster Aman</span>
+</div>
+</div>
+</div>
+<!-- Metric 3: Penerbitan Bulan Ini -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col justify-between relative overflow-hidden">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Penerbitan Mei 2024</span>
+<span class="px-space-xs py-0.5 rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">+18.4%</span>
+</div>
+<span class="font-headline-xl text-headline-xl text-primary font-bold mt-1">1.240</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">e-KTP, KK, Ket. Usaha &amp; Pindah</span>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-text-muted font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span> 780 e-KTP</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span> 460 Surat</span>
+</div>
+</div>
+<!-- Metric 4: Validitas Kriptografi -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col justify-between relative overflow-hidden">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Integritas Digital</span>
+<span class="w-2 h-2 rounded-full bg-status-disetujui-text animate-ping"></span>
+</div>
+<span class="font-headline-xl text-headline-xl text-status-disetujui-text font-bold mt-1">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lolos Uji Integritas Algoritma</span>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-status-disetujui-text">shield_lock</span>
+<span>RFC 3161 TSA Valid &amp; Aktif</span>
+</div>
+</div>
+</div>
+<!-- Multi-Criteria Search & Filter Container -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">manage_search</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Pencarian &amp; Filter Multikriteria</h2>
+</div>
+<div class="flex items-center gap-space-xs text-text-muted font-label-sm text-label-sm">
+<span>Katalog Terpadu 12 Desa se-Kecamatan Susukan</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Input Kata Kunci -->
+<div class="md:col-span-4 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="searchInput">Pencarian Fleksibel</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-muted text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-2 bg-bg-ivory rounded-lg text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(23,107,91,0.2)] transition-all" id="searchInput" placeholder="NIK 16 digit, No. Registrasi, atau Nama Pemohon..." type="text"/>
+</div>
+</div>
+<!-- Filter Desa (12 Desa) -->
+<div class="md:col-span-3 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="filterDesa">Desa / Kelurahan</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-muted text-[18px]">location_on</span>
+<select class="w-full pl-9 pr-8 py-2 bg-bg-ivory rounded-lg text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(23,107,91,0.2)] cursor-pointer" id="filterDesa">
+<option value="">Semua 12 Desa</option>
+<option value="Susukan">Desa Susukan</option>
+<option value="Bojongsari">Desa Bojongsari</option>
+<option value="Banjarsari">Desa Banjarsari</option>
+<option value="Dermasari">Desa Dermasari</option>
+<option value="Gumelem Kulon">Desa Gumelem Kulon</option>
+<option value="Gumelem Wetan">Desa Gumelem Wetan</option>
+<option value="Karangjati">Desa Karangjati</option>
+<option value="Karangsalam">Desa Karangsalam</option>
+<option value="Kedawung">Desa Kedawung</option>
+<option value="Klampok">Desa Klampok</option>
+<option value="Panerusan">Desa Panerusan</option>
+<option value="Pekalongan">Desa Pekalongan</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 pointer-events-none text-text-muted text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Filter Jenis Dokumen -->
+<div class="md:col-span-3 flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface" for="filterJenis">Klasifikasi Berkas</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-muted text-[18px]">category</span>
+<select class="w-full pl-9 pr-8 py-2 bg-bg-ivory rounded-lg text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_rgba(23,107,91,0.2)] cursor-pointer" id="filterJenis">
+<option value="">Semua Jenis Dokumen</option>
+<option value="KTP">KTP-el Pemula / Cetak Ulang</option>
+<option value="SKP">Surat Pengantar Pindah (SKP)</option>
+<option value="SKU">Surat Keterangan Usaha (SKU)</option>
+<option value="KIA">Kartu Identitas Anak (KIA)</option>
+<option value="IKD">Aktivasi IKD Digital</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 pointer-events-none text-text-muted text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Aksi Filter -->
+<div class="md:col-span-2 flex items-end gap-space-xs">
+<button class="w-full py-2 px-space-sm bg-surface-container hover:bg-surface-container-high rounded-lg text-on-surface font-label-md text-label-md transition-all text-center" id="btnResetFilter" type="button">
+            Reset
+          </button>
+</div>
+</div>
+</div>
+<!-- Main Dynamic Section: Split Layout (Tabel Arsip & Panel Inspeksi Kriptografi) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Tabel Arsip Digital (8 Kolom Desktop) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-card rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] overflow-hidden">
+<!-- Table Toolbar -->
+<div class="p-space-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-surface-card">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">folder_special</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Katalog Dokumen Resmi Terbit</h3>
+<span class="font-body-sm text-body-sm text-text-muted">Menampilkan 5 berkas terbaru hasil pemrosesan loket hari ini</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm flex items-center gap-1 transition-all" id="btnExportCsv">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+                Ekspor Log (.CSV)
+              </button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-bg-ivory text-text-muted font-label-eyebrow text-label-eyebrow tracking-wider uppercase">
+<th class="py-3 px-space-md">No. Reg / Dokumen</th>
+<th class="py-3 px-space-md">Pemohon &amp; NIK</th>
+<th class="py-3 px-space-md">Desa</th>
+<th class="py-3 px-space-md">Penandatangan TTE</th>
+<th class="py-3 px-space-md">Tanggal</th>
+<th class="py-3 px-space-md text-right">Aksi &amp; Inspeksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-line font-body-sm text-body-sm" id="tableArchiveBody">
+<!-- Row 1: Sunarti A-041 -->
+<tr class="hover:bg-mint-tag/40 transition-colors cursor-pointer group bg-surface-container-lowest" data-desa="Susukan" data-doc-id="DOC-2024-KTP-0891" data-hash="a3f789d98bc2100e47dafa24177b901cd61245039fbc87ee3b4a2e5891ac34e1" data-jenis="e-KTP Pemula" data-nama="Sunarti" data-nik="3304014908860002" data-pejabat="Drs. H. Wardoyo, M.Si (Camat Susukan)" data-size="1.42 MB (PDF/A-1b)" data-tanggal="27 Mei 2024, 09:42 WIB" data-tsa="TSA-BSSN-20240527-00914">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">REG-SSK/2024/05/0891</span>
+<span class="font-label-sm text-label-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-status-disetujui-text">badge</span>
+                        e-KTP Pemula (Antrean A-041)
+                      </span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sdri. Sunarti</span>
+<div class="flex items-center gap-1 text-text-muted font-mono font-label-sm text-label-sm">
+<span class="nik-masked">330401******0002</span>
+<button class="btn-toggle-nik p-0.5 hover:text-primary" title="Tampilkan/Sembunyikan NIK Lengkap" type="button">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Desa Susukan</span>
+<span class="block font-label-sm text-label-sm text-text-muted">RT 03 / RW 02</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Camat Susukan</span>
+<span class="px-space-xs py-0.5 w-fit rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm text-[10px]">TTE Valid BSrE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-text-muted font-label-sm text-label-sm whitespace-nowrap">
+                    27 Mei 2024<br/>09:42 WIB
+                  </td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="btn-inspect p-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all" title="Buka Detail Integritas Dokumen" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+<button class="btn-download p-1.5 rounded-lg bg-surface-container-low text-secondary hover:bg-secondary hover:text-on-secondary transition-all" title="Unduh Salinan Sah" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Ridwan Hakim A-040 -->
+<tr class="hover:bg-mint-tag/40 transition-colors cursor-pointer group bg-surface-card" data-desa="Gumelem Kulon" data-doc-id="DOC-2024-SKP-0890" data-hash="c718b53298a0021bdf934e86745129ffbc1298491204bc910248aefb0193bb56" data-jenis="Surat Pengantar Pindah (SKP)" data-nama="Ridwan Hakim" data-nik="3304011204940003" data-pejabat="H. Suhardi (Kades Gumelem Kulon) &amp; Camat" data-size="820 KB (PDF/A-1b)" data-tanggal="27 Mei 2024, 09:28 WIB" data-tsa="TSA-BSSN-20240527-00911">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">SKP-SSK/2024/05/0122</span>
+<span class="font-label-sm text-label-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">transfer_within_a_station</span>
+                        Surat Pindah (Antrean A-040)
+                      </span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sdr. Ridwan Hakim</span>
+<div class="flex items-center gap-1 text-text-muted font-mono font-label-sm text-label-sm">
+<span class="nik-masked">330401******0003</span>
+<button class="btn-toggle-nik p-0.5 hover:text-primary" title="Tampilkan/Sembunyikan NIK Lengkap" type="button">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Desa Gumelem Kulon</span>
+<span class="block font-label-sm text-label-sm text-text-muted">Pindah ke Kota Semarang</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Kades &amp; Camat</span>
+<span class="px-space-xs py-0.5 w-fit rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm text-[10px]">TTE Valid BSrE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-text-muted font-label-sm text-label-sm whitespace-nowrap">
+                    27 Mei 2024<br/>09:28 WIB
+                  </td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="btn-inspect p-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all" title="Buka Detail Integritas Dokumen" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+<button class="btn-download p-1.5 rounded-lg bg-surface-container-low text-secondary hover:bg-secondary hover:text-on-secondary transition-all" title="Unduh Salinan Sah" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Budi Santoso A-038 -->
+<tr class="hover:bg-mint-tag/40 transition-colors cursor-pointer group bg-surface-container-lowest" data-desa="Klampok" data-doc-id="DOC-2024-SKU-0888" data-hash="e24177b901cd61245039fbc87ee3b4a2e5891ac34e1a3f789d98bc2100e47dafa" data-jenis="Surat Keterangan Usaha (SKU)" data-nama="Budi Santoso" data-nik="3304011802770001" data-pejabat="Drs. H. Wardoyo, M.Si (Camat Susukan)" data-size="940 KB (PDF/A-1b)" data-tanggal="27 Mei 2024, 08:55 WIB" data-tsa="TSA-BSSN-20240527-00899">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">SKU-SSK/2024/05/0078</span>
+<span class="font-label-sm text-label-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-tertiary-container">store</span>
+                        Ket. Usaha (Antrean A-038)
+                      </span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sdr. Budi Santoso</span>
+<div class="flex items-center gap-1 text-text-muted font-mono font-label-sm text-label-sm">
+<span class="nik-masked">330401******0001</span>
+<button class="btn-toggle-nik p-0.5 hover:text-primary" title="Tampilkan/Sembunyikan NIK Lengkap" type="button">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Desa Klampok</span>
+<span class="block font-label-sm text-label-sm text-text-muted">Usaha Pertanian Organik</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Camat Susukan</span>
+<span class="px-space-xs py-0.5 w-fit rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm text-[10px]">TTE Valid BSrE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-text-muted font-label-sm text-label-sm whitespace-nowrap">
+                    27 Mei 2024<br/>08:55 WIB
+                  </td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="btn-inspect p-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all" title="Buka Detail Integritas Dokumen" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+<button class="btn-download p-1.5 rounded-lg bg-surface-container-low text-secondary hover:bg-secondary hover:text-on-secondary transition-all" title="Unduh Salinan Sah" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Siti Mulyani A-035 -->
+<tr class="hover:bg-mint-tag/40 transition-colors cursor-pointer group bg-surface-card" data-desa="Banjarsari" data-doc-id="DOC-2024-KIA-0885" data-hash="901cd61245039fbc87ee3b4a2e5891ac34e1a3f789d98bc2100e47dafa24177b" data-jenis="Kartu Identitas Anak (KIA)" data-nama="Siti Mulyani (Orang Tua An. Danu)" data-nik="3304015509900004" data-pejabat="Drs. H. Wardoyo, M.Si (Camat Susukan)" data-size="1.10 MB (PDF/A-1b)" data-tanggal="27 Mei 2024, 08:30 WIB" data-tsa="TSA-BSSN-20240527-00870">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">KIA-SSK/2024/05/0045</span>
+<span class="font-label-sm text-label-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-status-diverifikasi-text">child_care</span>
+                        Cetak KIA (Antrean A-035)
+                      </span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ny. Siti Mulyani</span>
+<div class="flex items-center gap-1 text-text-muted font-mono font-label-sm text-label-sm">
+<span class="nik-masked">330401******0004</span>
+<button class="btn-toggle-nik p-0.5 hover:text-primary" title="Tampilkan/Sembunyikan NIK Lengkap" type="button">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Desa Banjarsari</span>
+<span class="block font-label-sm text-label-sm text-text-muted">An. Danu (Usia 6 Th)</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Camat Susukan</span>
+<span class="px-space-xs py-0.5 w-fit rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm text-[10px]">TTE Valid BSrE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-text-muted font-label-sm text-label-sm whitespace-nowrap">
+                    27 Mei 2024<br/>08:30 WIB
+                  </td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="btn-inspect p-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all" title="Buka Detail Integritas Dokumen" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+<button class="btn-download p-1.5 rounded-lg bg-surface-container-low text-secondary hover:bg-secondary hover:text-on-secondary transition-all" title="Unduh Salinan Sah" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Slamet Riyadi A-032 -->
+<tr class="hover:bg-mint-tag/40 transition-colors cursor-pointer group bg-surface-container-lowest" data-desa="Panerusan" data-doc-id="DOC-2024-KTP-0880" data-hash="745129ffbc1298491204bc910248aefb0193bb56c718b53298a0021bdf934e86" data-jenis="e-KTP Penggantian Rusak" data-nama="Slamet Riyadi" data-nik="3304010101700005" data-pejabat="Drs. H. Wardoyo, M.Si (Camat Susukan)" data-size="1.38 MB (PDF/A-1b)" data-tanggal="27 Mei 2024, 08:12 WIB" data-tsa="TSA-BSSN-20240527-00855">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">REG-SSK/2024/05/0880</span>
+<span class="font-label-sm text-label-sm text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-status-disetujui-text">badge</span>
+                        Cetak Ulang e-KTP (Antrean A-032)
+                      </span>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sdr. Slamet Riyadi</span>
+<div class="flex items-center gap-1 text-text-muted font-mono font-label-sm text-label-sm">
+<span class="nik-masked">330401******0005</span>
+<button class="btn-toggle-nik p-0.5 hover:text-primary" title="Tampilkan/Sembunyikan NIK Lengkap" type="button">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+</button>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md">
+<span class="font-label-md text-label-md text-on-surface">Desa Panerusan</span>
+<span class="block font-label-sm text-label-sm text-text-muted">RT 01 / RW 04</span>
+</td>
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Camat Susukan</span>
+<span class="px-space-xs py-0.5 w-fit rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm text-[10px]">TTE Valid BSrE</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-text-muted font-label-sm text-label-sm whitespace-nowrap">
+                    27 Mei 2024<br/>08:12 WIB
+                  </td>
+<td class="py-3 px-space-md text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="btn-inspect p-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all" title="Buka Detail Integritas Dokumen" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+<button class="btn-download p-1.5 rounded-lg bg-surface-container-low text-secondary hover:bg-secondary hover:text-on-secondary transition-all" title="Unduh Salinan Sah" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination -->
+<div class="p-space-md bg-bg-ivory flex flex-col sm:flex-row items-center justify-between gap-space-sm text-text-muted font-label-sm text-label-sm">
+<span>Menampilkan 1 - 5 dari total 14.820 arsip valid</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-card hover:bg-surface-container disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-bold">1</button>
+<button class="px-3 py-1 rounded bg-surface-card hover:bg-surface-container text-on-surface">2</button>
+<button class="px-3 py-1 rounded bg-surface-card hover:bg-surface-container text-on-surface">3</button>
+<span class="px-1">...</span>
+<button class="px-3 py-1 rounded bg-surface-card hover:bg-surface-container text-on-surface">296</button>
+<button class="px-2 py-1 rounded bg-surface-card hover:bg-surface-container">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Virtual Official Letter Paper Preview (Pratinjau Surat Standar Adminduk) -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">description</span>
+<span class="font-headline-sm text-headline-sm text-primary">Pratinjau Format Dokumen Resmi (PDF/A Standar ISO 19005)</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-primary font-mono">STANDAR BLANGKO NASIONAL</span>
+</div>
+<!-- The Physical Paper Preview Card -->
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-lg shadow-sm border-0 relative font-letter-legal-body text-letter-legal-body text-on-surface">
+<!-- Decorative Security Stamp in BG -->
+<div class="absolute right-8 top-12 opacity-5 pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[180px]">verified</span>
+</div>
+<!-- Kop Surat -->
+<div class="flex flex-col items-center text-center pb-4 relative z-10">
+<span class="font-letter-legal-title text-[15px] uppercase font-bold tracking-wider text-primary">Pemerintah Kabupaten Banjarnegara</span>
+<span class="font-letter-legal-title text-[18px] uppercase font-bold tracking-wider text-on-surface">Kecamatan Susukan</span>
+<span class="text-[12px] text-text-muted mt-0.5">Jalan Raya Susukan No. 12, Susukan, Banjarnegara, Jawa Tengah 53475</span>
+<span class="text-[11px] text-text-muted">Laman: kecamatansusukan.banjarnegarakab.go.id • Pos-el: paten@susukan.go.id</span>
+<!-- Double Line Separator -->
+<div class="w-full flex flex-col gap-0.5 mt-3 mb-4">
+<div class="w-full h-[2px] bg-primary"></div>
+<div class="w-full h-[1px] bg-primary"></div>
+</div>
+<!-- Document Title -->
+<div class="flex flex-col items-center mt-2">
+<span class="font-letter-legal-title text-[14px] uppercase underline font-bold tracking-wide text-on-surface" id="previewTitle">SURAT KETERANGAN RESMI PELAYANAN</span>
+<span class="text-[12px] font-mono text-text-muted mt-0.5" id="previewNomor">Nomor Registrasi: REG-SSK/2024/05/0891</span>
+</div>
+</div>
+<!-- Body of Document -->
+<div class="flex flex-col gap-3 py-2 text-justify leading-relaxed relative z-10 text-[13px]">
+<p>
+                Yang bertanda tangan di bawah ini, Camat Susukan, Kabupaten Banjarnegara, menerangkan dengan sebenarnya berdasarkan basis data Sistem Informasi Administrasi Kependudukan (SIAK) Terintegrasi bahwa:
+              </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2 py-2 px-4 bg-bg-ivory rounded-lg font-body-sm text-body-sm">
+<span class="text-text-muted">Nama Lengkap</span>
+<span class="sm:col-span-2 font-semibold text-on-surface" id="previewNama">: Sdri. Sunarti</span>
+<span class="text-text-muted">Nomor Induk Kependudukan (NIK)</span>
+<span class="sm:col-span-2 font-mono text-on-surface" id="previewNik">: 3304014908860002</span>
+<span class="text-text-muted">Desa / Domisili</span>
+<span class="sm:col-span-2 text-on-surface" id="previewDesa">: RT 03 / RW 02, Desa Susukan, Kec. Susukan</span>
+<span class="text-text-muted">Status Dokumen</span>
+<span class="sm:col-span-2 text-status-disetujui-text font-semibold">: DITERBITKAN &amp; TEROTENTIKASI DIGITAL</span>
+</div>
+<p>
+                Dokumen ini telah ditandatangani secara elektronik (TTE) menggunakan sertifikat elektronik yang diterbitkan oleh <strong>Balai Sertifikasi Elektronik (BSrE), Badan Siber dan Sandi Negara (BSSN)</strong>. Dokumen ini sah dan berkekuatan hukum sesuai dengan UU No. 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik jo. UU No. 1 Tahun 2024.
+              </p>
+</div>
+<!-- Official TTE Barcode & Signature Footer -->
+<div class="mt-6 pt-4 flex flex-col sm:flex-row items-end justify-between gap-4 relative z-10">
+<!-- QR Code Seal Simulator -->
+<div class="flex items-center gap-3 p-2 bg-bg-ivory rounded-lg">
+<div class="w-16 h-16 bg-surface-container flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-[36px] text-primary">qr_code_2</span>
+</div>
+<div class="flex flex-col text-[10px] text-text-muted leading-tight font-mono">
+<span class="font-bold text-primary">BSrE BSSN VALIDATED</span>
+<span>ID: BSRE-SSK-78912A</span>
+<span>SCAN UNTUK VERIFIKASI</span>
+<span class="text-[9px] text-status-disetujui-text">SHA256: VALID</span>
+</div>
+</div>
+<!-- Official Signer Stamp -->
+<div class="flex flex-col items-center text-center">
+<span class="text-[12px]">Susukan, 27 Mei 2024</span>
+<span class="text-[12px] font-bold text-on-surface">CAMAT SUSUKAN</span>
+<div class="h-10 flex items-center justify-center my-1">
+<span class="px-2 py-1 rounded bg-status-disetujui-bg text-status-disetujui-text text-[11px] font-mono font-bold">
+                    ✓ DITANDATANGANI SECARA ELEKTRONIK
+                  </span>
+</div>
+<span class="text-[13px] font-bold underline text-on-surface">Drs. H. WARDOYO, M.Si</span>
+<span class="text-[11px] text-text-muted">Pembina Tingkat I • NIP. 197405101999031002</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Panel Inspeksi Kriptografi & UU PDP Log (4 Kolom Desktop) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Panel Inspeksi Keaslian Dokumen X.509 -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">verified_user</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Inspeksi Sertifikat X.509</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-bold">
+              BSrE BSSN
+            </span>
+</div>
+<!-- Status Box -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Hasil Uji Digital</span>
+<span class="font-label-sm text-label-sm text-status-disetujui-text font-bold">Lolos Enkripsi</span>
+</div>
+<div class="flex items-center gap-space-xs text-status-disetujui-text font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-bold">Keaslian Terbukti Mutlak</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-relaxed">
+              Hash berkas cocok persis dengan master registri BSSN. Dokumen belum pernah diubah sejak penandatanganan.
+            </p>
+</div>
+<!-- Detail Sertifikat Fields -->
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Subjek Penandatangan (CN)</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="inspectCn">Drs. H. Wardoyo, M.Si</span>
+<span class="font-label-sm text-label-sm text-text-muted">Camat Susukan, Kab. Banjarnegara</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Penerbit Sertifikat (CA)</span>
+<span class="font-label-md text-label-md text-on-surface">Balai Sertifikasi Elektronik (BSrE) - BSSN</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Stempel Waktu Otoritas (TSA RFC 3161)</span>
+<div class="flex items-center gap-1 font-mono text-[12px] text-on-surface">
+<span class="material-symbols-outlined text-[14px] text-primary">schedule</span>
+<span id="inspectTsa">TSA-BSSN-20240527-00914</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Ringkasan Kriptografis (SHA-256 Digest)</span>
+<div class="p-2 rounded bg-bg-ivory font-mono text-[11px] text-on-surface-variant break-all select-all leading-tight" id="inspectHash">
+                a3f789d98bc2100e47dafa24177b901cd61245039fbc87ee3b4a2e5891ac34e1
+              </div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Format &amp; Masa Retensi</span>
+<div class="flex items-center justify-between text-[12px]">
+<span class="font-mono text-on-surface" id="inspectSize">1.42 MB (PDF/A-1b)</span>
+<span class="text-status-disetujui-text font-semibold">Permanen (Buku Induk)</span>
+</div>
+</div>
+</div>
+<!-- Action Test Hash -->
+<button class="w-full py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center gap-space-xs transition-all" id="btnSalinHash" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+            Salin Hash SHA-256
+          </button>
+</div>
+<!-- Audit Log Akses & Kepatuhan Perlindungan Data Pribadi (UU PDP No. 27/2022) -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-[0_8px_28px_rgba(20,55,47,0.06)] flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Audit Log Akses Dokumen</h3>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-mono text-[10px]">
+              UU PDP PASAL 35
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">
+            Setiap tindakan operator membuka NIK, mengunduh salinan, atau mencetak tercatat permanen pada sistem audit kecamatan.
+          </p>
+<!-- Timeline Log -->
+<div class="flex flex-col gap-space-sm mt-1" id="auditTrailContainer">
+<!-- Event 1 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-2 h-2 rounded-full bg-status-disetujui-text mt-1.5 shrink-0"></div>
+<div class="flex flex-col text-[12px]">
+<div class="flex items-center gap-1 font-semibold text-on-surface">
+<span>Unduh Dokumen Terotentikasi</span>
+</div>
+<span class="text-text-muted">Operator: Siti Rohmah (Loket 2) • IP: 192.168.10.24</span>
+<span class="text-text-muted text-[11px] font-mono">Hari ini, 09:44:12 WIB</span>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></div>
+<div class="flex flex-col text-[12px]">
+<div class="flex items-center gap-1 font-semibold text-on-surface">
+<span>Buka Akses NIK Penuh (Sensor Dilepas)</span>
+</div>
+<span class="text-text-muted">Operator: Siti Rohmah (Tujuan Verifikasi Berkas)</span>
+<span class="text-text-muted text-[11px] font-mono">Hari ini, 09:42:08 WIB</span>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-2 h-2 rounded-full bg-secondary mt-1.5 shrink-0"></div>
+<div class="flex flex-col text-[12px]">
+<div class="flex items-center gap-1 font-semibold text-on-surface">
+<span>Stempel Waktu Digital (RFC 3161) Terbit</span>
+</div>
+<span class="text-text-muted">Sistem Gateway BSrE BSSN Banjarnegara</span>
+<span class="text-text-muted text-[11px] font-mono">Hari ini, 09:41:59 WIB</span>
+</div>
+</div>
+<!-- Event 4 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-2 h-2 rounded-full bg-text-muted mt-1.5 shrink-0"></div>
+<div class="flex flex-col text-[12px]">
+<div class="flex items-center gap-1 font-semibold text-on-surface">
+<span>Registrasi Awal Berkas Loket</span>
+</div>
+<span class="text-text-muted">Input Antrean A-041 (Pemohon Hadir di Kantor)</span>
+<span class="text-text-muted text-[11px] font-mono">Hari ini, 09:30:15 WIB</span>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<button class="w-full py-1.5 rounded-lg bg-bg-ivory hover:bg-surface-container text-text-muted hover:text-on-surface font-label-sm text-label-sm transition-all flex items-center justify-center gap-1" id="btnUnduhLogAudit">
+<span class="material-symbols-outlined text-[16px]">history_edu</span>
+              Unduh Seluruh Jejak Audit ISO 27001
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Dynamic Element -->
+<div class="fixed bottom-6 right-6 transform translate-y-24 opacity-0 transition-all duration-300 z-50 flex items-center gap-3 bg-[#0F3D3E] text-on-primary px-4 py-3 rounded-lg shadow-xl border-l-4 border-[#E8B95B]" id="toastNotification">
+<span class="material-symbols-outlined text-[#E8B95B] text-[20px]" id="toastIcon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-primary" id="toastTitle">Berhasil</span>
+<span class="font-body-sm text-body-sm text-inverse-on-surface text-[12px]" id="toastDesc">Aksi selesai dijalankan.</span>
+</div>
+</div>
+</div>
+<script>
+  (function initArchiveRepository() {
+    // Toast Helper
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastDesc = document.getElementById('toastDesc');
+    const toastIcon = document.getElementById('toastIcon');
+    let toastTimeout;
+
+    function showToast(title, desc, icon = 'check_circle') {
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastTitle.textContent = title;
+      toastDesc.textContent = desc;
+      toastIcon.textContent = icon;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }
+
+    // Toggle NIK Masking Functionality
+    const toggleNikButtons = document.querySelectorAll('.btn-toggle-nik');
+    toggleNikButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const tr = btn.closest('tr');
+        const fullNik = tr.getAttribute('data-nik');
+        const nikSpan = tr.querySelector('.nik-masked');
+        const icon = btn.querySelector('.material-symbols-outlined');
+        
+        if (nikSpan.dataset.revealed === 'true') {
+          nikSpan.textContent = fullNik.slice(0, 6) + '******' + fullNik.slice(12);
+          nikSpan.dataset.revealed = 'false';
+          icon.textContent = 'visibility';
+          showToast('Privasi NIK Terjaga', 'Sensor NIK telah diaktifkan kembali.', 'visibility_off');
+        } else {
+          nikSpan.textContent = fullNik;
+          nikSpan.dataset.revealed = 'true';
+          icon.textContent = 'visibility_off';
+          showToast('Peringatan UU PDP', 'Akses NIK lengkap dicatat ke audit log keamanan.', 'policy');
+          
+          // Log to audit visual
+          const auditContainer = document.getElementById('auditTrailContainer');
+          const newEntry = document.createElement('div');
+          newEntry.className = 'flex items-start gap-space-sm animate-pulse';
+          newEntry.innerHTML = `
+            <div class="w-2 h-2 rounded-full bg-status-perbaikan-text mt-1.5 shrink-0"></div>
+            <div class="flex flex-col text-[12px]">
+              <span class="font-semibold text-on-surface">Pembukaan Masking NIK: ${fullNik}</span>
+              <span class="text-text-muted">Operator: Siti Rohmah (Loket 2)</span>
+              <span class="text-text-muted text-[11px] font-mono">Baru saja</span>
+            </div>
+          `;
+          auditContainer.insertBefore(newEntry, auditContainer.firstChild);
+        }
+      });
+    });
+
+    // Row selection for Document Inspection & Preview Synchronization
+    const tableRows = document.querySelectorAll('#tableArchiveBody tr');
+    tableRows.forEach(row => {
+      row.addEventListener('click', () => {
+        // Remove active highlights
+        tableRows.forEach(r => r.classList.remove('bg-surface-container-high/40'));
+        row.classList.add('bg-surface-container-high/40');
+
+        const nama = row.getAttribute('data-nama');
+        const nik = row.getAttribute('data-nik');
+        const desa = row.getAttribute('data-desa');
+        const jenis = row.getAttribute('data-jenis');
+        const docId = row.getAttribute('data-doc-id');
+        const hash = row.getAttribute('data-hash');
+        const tsa = row.getAttribute('data-tsa');
+        const size = row.getAttribute('data-size');
+        const pejabat = row.getAttribute('data-pejabat');
+
+        // Update Paper Preview
+        document.getElementById('previewTitle').textContent = jenis.toUpperCase();
+        document.getElementById('previewNomor').textContent = 'Nomor Registrasi: ' + docId;
+        document.getElementById('previewNama').textContent = ': ' + nama;
+        document.getElementById('previewNik').textContent = ': ' + nik;
+        document.getElementById('previewDesa').textContent = ': ' + desa + ', Kec. Susukan';
+
+        // Update Inspection Panel
+        document.getElementById('inspectCn').textContent = pejabat;
+        document.getElementById('inspectTsa').textContent = tsa;
+        document.getElementById('inspectHash').textContent = hash;
+        document.getElementById('inspectSize').textContent = size;
+
+        showToast('Memuat Berkas', 'Menampilkan pratinjau & sertifikat untuk: ' + nama, 'folder_open');
+      });
+    });
+
+    // Copy SHA-256 Hash
+    const btnSalinHash = document.getElementById('btnSalinHash');
+    if (btnSalinHash) {
+      btnSalinHash.addEventListener('click', () => {
+        const hashText = document.getElementById('inspectHash').textContent.trim();
+        navigator.clipboard.writeText(hashText).then(() => {
+          showToast('Hash Disalin', 'Checksum SHA-256 berhasil disalin ke papan klip.', 'content_copy');
+        }).catch(() => {
+          showToast('Hash Terseleksi', hashText.slice(0, 16) + '...', 'content_copy');
+        });
+      });
+    }
+
+    // Download Simulated Authentic Copy
+    const downloadButtons = document.querySelectorAll('.btn-download');
+    downloadButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const row = btn.closest('tr');
+        const docName = row.getAttribute('data-nama');
+        showToast('Mengunduh Salinan Terotentikasi', 'PDF bertanda-tangan digital untuk ' + docName + ' sedang diunduh.', 'download_done');
+      });
+    });
+
+    // Inspect buttons
+    const inspectButtons = document.querySelectorAll('.btn-inspect');
+    inspectButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const row = btn.closest('tr');
+        row.click();
+      });
+    });
+
+    // Search and Filtering
+    const searchInput = document.getElementById('searchInput');
+    const filterDesa = document.getElementById('filterDesa');
+    const filterJenis = document.getElementById('filterJenis');
+    const btnResetFilter = document.getElementById('btnResetFilter');
+
+    function applyFilters() {
+      const q = searchInput.value.toLowerCase().trim();
+      const selectedDesa = filterDesa.value.toLowerCase();
+      const selectedJenis = filterJenis.value.toLowerCase();
+
+      tableRows.forEach(row => {
+        const textContent = row.textContent.toLowerCase();
+        const rowDesa = (row.getAttribute('data-desa') || '').toLowerCase();
+        const rowJenis = (row.getAttribute('data-jenis') || '').toLowerCase();
+
+        const matchSearch = !q || textContent.includes(q);
+        const matchDesa = !selectedDesa || rowDesa.includes(selectedDesa);
+        const matchJenis = !selectedJenis || rowJenis.includes(selectedJenis);
+
+        if (matchSearch && matchDesa && matchJenis) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    filterDesa.addEventListener('change', applyFilters);
+    filterJenis.addEventListener('change', applyFilters);
+
+    btnResetFilter.addEventListener('click', () => {
+      searchInput.value = '';
+      filterDesa.value = '';
+      filterJenis.value = '';
+      applyFilters();
+      showToast('Filter Direset', 'Menampilkan seluruh daftar riwayat arsip.', 'refresh');
+    });
+
+    // Action buttons in Header
+    document.getElementById('btnSyncSiak').addEventListener('click', () => {
+      showToast('Sinkronisasi Berhasil', 'Server lokal terhubung dengan SIAK Ditjen Dukcapil Kemendagri.', 'cloud_sync');
+    });
+
+    document.getElementById('btnVerifikasiMandiri').addEventListener('click', () => {
+      showToast('Verifikator Dokumen Siap', 'Silakan seret file PDF bertanda-tangan digital ke panel ini.', 'upload_file');
+    });
+
+    document.getElementById('btnExportCsv').addEventListener('click', () => {
+      showToast('Mengekspor Log Arsip', 'Daftar arsip kependudukan telah diekspor ke format .CSV', 'table_view');
+    });
+
+    document.getElementById('btnUnduhLogAudit').addEventListener('click', () => {
+      showToast('Audit Log Terunduh', 'Rekaman kepatuhan UU PDP ISO 27001 berhasil dicetak.', 'security');
+    });
+
+  })();
+</script></main></div></body></html>

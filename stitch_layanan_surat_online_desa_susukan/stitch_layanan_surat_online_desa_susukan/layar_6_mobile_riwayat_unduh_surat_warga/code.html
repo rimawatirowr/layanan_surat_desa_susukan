@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#F7F8F5;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-on-surface": "#e0f5f0",
+        "surface-container": "#def2ed",
+        "on-primary-fixed-variant": "#005143",
+        "on-tertiary-fixed": "#261900",
+        "error": "#ba1a1a",
+        "primary": "#005144",
+        "status-selesai-bg": "#E1F3EC",
+        "surface-container-high": "#d8ede8",
+        "on-background": "#0c1f1c",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary": "#ffffff",
+        "mint-tag": "#E8F1ED",
+        "surface-variant": "#d2e7e2",
+        "tertiary": "#5e4300",
+        "text-muted": "#74817D",
+        "surface-tint": "#166a5a",
+        "border-line": "#E7ECE8",
+        "status-selesai-text": "#0F5B49",
+        "tertiary-fixed-dim": "#efbf61",
+        "on-secondary-fixed-variant": "#224d4e",
+        "error-container": "#ffdad6",
+        "surface-bright": "#e9fef9",
+        "on-surface-variant": "#3f4945",
+        "primary-container": "#176b5b",
+        "status-perbaikan-bg": "#FDEBD3",
+        "on-tertiary-container": "#ffd481",
+        "on-tertiary": "#ffffff",
+        "status-menunggu-text": "#9A6100",
+        "inverse-primary": "#89d5c1",
+        "status-disetujui-bg": "#E1F3EC",
+        "outline": "#6f7975",
+        "surface-card": "#FFFFFF",
+        "primary-fixed": "#a5f1dd",
+        "on-tertiary-fixed-variant": "#5d4200",
+        "tertiary-container": "#7c5900",
+        "surface-container-low": "#e3f8f3",
+        "secondary-fixed": "#beebeb",
+        "on-secondary-container": "#426b6c",
+        "tertiary-fixed": "#ffdea4",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#9ce9d4",
+        "secondary": "#3b6566",
+        "on-primary-fixed": "#00201a",
+        "status-diverifikasi-bg": "#E3EEFB",
+        "surface-container-highest": "#d2e7e2",
+        "on-secondary-fixed": "#002020",
+        "surface-dim": "#cadeda",
+        "on-error-container": "#93000a",
+        "inverse-surface": "#223431",
+        "on-surface": "#0c1f1c",
+        "bg-ivory": "#F7F8F5",
+        "status-ditolak-bg": "#FBE4E4",
+        "outline-variant": "#bec9c4",
+        "status-ditolak-text": "#B02A2A",
+        "status-diverifikasi-text": "#245A9E",
+        "status-perbaikan-text": "#B45309",
+        "status-disetujui-text": "#176B5B",
+        "surface": "#e9fef9",
+        "primary-fixed-dim": "#89d5c1",
+        "on-error": "#ffffff",
+        "secondary-container": "#beebeb",
+        "status-menunggu-bg": "#FFF3DC",
+        "secondary-fixed-dim": "#a3cfcf",
+        "background": "#e9fef9"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-lg": "1.125rem",
+        "space-xl": "1.75rem",
+        "space-sm": "0.5rem",
+        "gutter": "0.875rem",
+        "space-xs": "0.25rem",
+        "gutter-desktop": "1rem",
+        "margin-tablet": "1.5rem",
+        "margin": "1rem",
+        "margin-desktop": "1.75rem",
+        "space-md": "0.875rem"
+      },
+      "fontFamily": {
+        "letter-legal-title": ["Georgia"],
+        "headline-lg-mobile": ["Inter"],
+        "label-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "headline-xl": ["Inter"],
+        "letter-legal-body": ["Georgia"],
+        "label-lg": ["Inter"],
+        "body-lg": ["Inter"],
+        "label-eyebrow": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "headline-lg": ["Inter"],
+        "body-sm": ["Inter"],
+        "label-md": ["Inter"],
+        "headline-sm": ["Inter"],
+        "headline-md": ["Inter"]
+      },
+      "fontSize": {
+        "letter-legal-title": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+        "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "letter-legal-body": ["12px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "label-eyebrow": ["10px", {"lineHeight": "12px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+        "headline-xl-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.023em", "fontWeight": "700"}],
+        "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+        "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+        "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+        "headline-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-ivory font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,55,47,0.06)] pt-safe"><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">account_balance</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">KAB. CIREBON</span><span class="w-1 h-1 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-sm text-label-sm text-primary font-bold">DESA SUSUKAN</span></div><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Portal Warga</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pemberitahuan" class="relative w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface-card"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin pt-20 pb-28 bg-bg-ivory"><div class="flex flex-col w-full pb-6">
+<!-- Header Title & Identity Profile Card -->
+<section class="flex flex-col gap-space-sm mb-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">ARSIP LAYANAN MANDIRI</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary font-bold">DIGITAL TTE</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">Riwayat Pengajuan Surat</h1>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Buka Pencarian" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-card text-on-surface shadow-sm active:scale-95 transition-transform" id="toggleSearchBtn">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+<button aria-label="Filter Kategori" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-card text-on-surface shadow-sm active:scale-95 transition-transform" id="filterBtn">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Citizen Badge Tile -->
+<div class="bg-surface-card rounded-xl p-3 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Budi Santoso</span>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm text-text-muted truncate">NIK: 320901••••••0012</span>
+<span class="material-symbols-outlined text-status-disetujui-text text-[14px]">verified</span>
+</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold shrink-0">
+        Warga Tetap
+      </span>
+</div>
+<!-- Collapsible Quick Search Input -->
+<div class="hidden flex items-center bg-surface-card rounded-xl px-3 py-1.5 shadow-sm transition-all" id="searchBarContainer">
+<span class="material-symbols-outlined text-text-muted text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface focus:outline-none placeholder:text-text-muted" id="searchInput" placeholder="Cari jenis surat, nomor resi, atau tanggal..." type="text"/>
+<button class="text-text-muted p-1" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</section>
+<!-- Horizontal Pill Tabs (Filter Status) -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 mb-space-md -mx-margin px-margin">
+<button class="filter-tab active-tab shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm font-bold bg-primary text-on-primary shadow-sm transition-colors" data-filter="all">
+      Semua (5)
+    </button>
+<button class="filter-tab shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm font-bold bg-surface-card text-on-surface shadow-sm transition-colors" data-filter="proses">
+      Sedang Diproses (1)
+    </button>
+<button class="filter-tab shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm font-bold bg-surface-card text-on-surface shadow-sm transition-colors" data-filter="revisi">
+      Perlu Revisi (1)
+    </button>
+<button class="filter-tab shrink-0 px-4 py-2 rounded-full font-label-sm text-label-sm font-bold bg-surface-card text-on-surface shadow-sm transition-colors" data-filter="selesai">
+      Selesai / Terbit (3)
+    </button>
+</div>
+<!-- Cards Feed -->
+<div class="flex flex-col gap-space-md">
+<!-- KARTU 1: Status Perlu Perbaikan (Urgent Revision Alert) -->
+<article class="history-card bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col gap-3 relative overflow-hidden" data-status="revisi">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-perbaikan-text"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 mb-0.5">
+<span class="font-letter-legal-title text-letter-legal-title text-on-surface">Surat Pengantar SKCK</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted">No. Reg: #0145/Trantib/IV/2025 • 18 Apr 2025</span>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-status-perbaikan-bg text-status-perbaikan-text font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+          Perlu Perbaikan
+        </span>
+</div>
+<!-- Revision Note Box -->
+<div class="bg-status-perbaikan-bg/70 rounded-xl p-3 flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-status-perbaikan-text">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span class="font-label-sm text-label-sm font-bold">Catatan Petugas Pelayanan Desa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+          “Foto KTP buram dan terpotong di bagian NIK. Mohon foto ulang dengan pencahayaan terang dan pastikan 16 angka NIK terbaca jelas.”
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 h-11 px-4 rounded-xl bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 active:scale-98 transition-transform shadow-sm" onclick="handleRevisiAction()">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+<span>Perbaiki Berkas</span>
+</button>
+<button class="h-11 px-3.5 rounded-xl bg-surface-container text-on-surface-variant font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1" onclick="handleDetailCatatan()">
+<span class="material-symbols-outlined text-[18px]">info</span>
+<span>Detail</span>
+</button>
+</div>
+</article>
+<!-- KARTU 2: Status Sedang Diproses (In-progress with Stepper) -->
+<article class="history-card bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col gap-3 relative overflow-hidden" data-status="proses">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-menunggu-text"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-letter-legal-title text-letter-legal-title text-on-surface">Surat Keterangan Usaha (SKU)</span>
+<span class="font-body-sm text-body-sm text-text-muted">No. Reg: #0144/Ekbang/IV/2025 • 19 Apr 2025</span>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+          Menunggu TTE Kuwu
+        </span>
+</div>
+<!-- Stepper Visual -->
+<div class="bg-bg-ivory rounded-xl p-3 flex flex-col gap-2.5">
+<div class="flex items-center justify-between text-text-muted font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Pengajuan
+          </span>
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verifikasi
+          </span>
+<span class="flex items-center gap-1 text-status-menunggu-text font-bold animate-pulse">
+<span class="material-symbols-outlined text-[14px]">draw</span> TTE Kuwu
+          </span>
+<span class="flex items-center gap-1 text-text-muted">
+<span class="material-symbols-outlined text-[14px]">radio_button_unchecked</span> Terbit
+          </span>
+</div>
+<!-- Progress Bar Track -->
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden flex">
+<div class="w-[75%] h-full bg-primary rounded-full"></div>
+</div>
+<div class="flex items-center justify-between pt-0.5">
+<div class="flex items-center gap-1.5 text-text-muted">
+<span class="material-symbols-outlined text-[15px] text-tertiary">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estimasi siap: <strong>Hari ini, 16:00 WIB</strong></span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Tahap 3/4</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<button class="w-full h-11 px-4 rounded-xl bg-surface-container text-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 active:scale-98 transition-transform" onclick="handlePantauAlur()">
+<span class="material-symbols-outlined text-[18px]">timeline</span>
+<span>Pantau Status Alur Lengkap</span>
+</button>
+</div>
+</article>
+<!-- KARTU 3: Status Selesai / Terbit dengan QR Code Resmi & BSrE -->
+<article class="history-card bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col gap-3.5 relative overflow-hidden" data-status="selesai">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-disetujui-text"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-letter-legal-title text-letter-legal-title text-on-surface">Surat Ket. Tidak Mampu (SKTM)</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted font-mono">No. Resmi: 470/082/Kesra/IV/2025</span>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+          Selesai &amp; Sah
+        </span>
+</div>
+<!-- Legal TTE Stamp Certificate Card -->
+<div class="bg-surface-container-low rounded-xl p-3 flex gap-3 items-center">
+<!-- SVG QR Code Simulator -->
+<div class="w-16 h-16 bg-surface-card rounded-lg p-1.5 flex flex-col items-center justify-center shrink-0 shadow-sm relative group cursor-pointer" onclick="openQrModal('470/082/Kesra/IV/2025')">
+<svg class="w-full h-full text-on-surface" fill="none" viewbox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+<!-- QR Pattern Simulation -->
+<rect fill="currentColor" height="9" rx="1" width="9" x="2" y="2"></rect>
+<rect fill="#FFFFFF" height="5" width="5" x="4" y="4"></rect>
+<rect fill="currentColor" height="2" width="2" x="5.5" y="5.5"></rect>
+<rect fill="currentColor" height="9" rx="1" width="9" x="22" y="2"></rect>
+<rect fill="#FFFFFF" height="5" width="5" x="24" y="4"></rect>
+<rect fill="currentColor" height="2" width="2" x="25.5" y="5.5"></rect>
+<rect fill="currentColor" height="9" rx="1" width="9" x="2" y="22"></rect>
+<rect fill="#FFFFFF" height="5" width="5" x="4" y="24"></rect>
+<rect fill="currentColor" height="2" width="2" x="5.5" y="25.5"></rect>
+<rect fill="currentColor" height="3" width="3" x="13" y="2"></rect>
+<rect fill="currentColor" height="3" width="3" x="17" y="5"></rect>
+<rect fill="currentColor" height="7" rx="1" width="7" x="13" y="13"></rect>
+<rect fill="#FFFFFF" height="3" width="3" x="15" y="15"></rect>
+<rect fill="currentColor" height="5" width="3" x="23" y="13"></rect>
+<rect fill="currentColor" height="3" width="3" x="28" y="15"></rect>
+<rect fill="currentColor" height="4" width="3" x="13" y="22"></rect>
+<rect fill="currentColor" height="3" width="5" x="18" y="25"></rect>
+<rect fill="currentColor" height="3" width="6" x="25" y="22"></rect>
+<rect fill="currentColor" height="4" width="4" x="25" y="27"></rect>
+</svg>
+<span class="font-label-eyebrow text-[8px] text-primary uppercase mt-0.5 tracking-tighter">Pindai QR</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]">security</span>
+<span class="font-label-sm text-label-sm font-bold">BSrE BSSN Tersertifikasi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Ditandatangani secara elektronik oleh <strong>Kuwu H. Ma'ruf, S.Sos.</strong> pada 15 Apr 2025.
+          </p>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted mt-1 truncate">
+            SHA-256: 8F2A • D340 • 99BC • VALID
+          </span>
+</div>
+</div>
+<!-- Action Downloads -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-11 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm active:scale-98 transition-transform" onclick="handleDownloadDoc('SKTM_470_082.pdf')">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Unduh PDF Resmi (Ber-QR)</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="flex-1 h-10 px-3 rounded-xl bg-surface-card text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm active:bg-surface-container transition-colors" onclick="handleShareWA('SKTM')">
+<span class="material-symbols-outlined text-[18px] text-[#25D366]">share</span>
+<span>Kirim WhatsApp</span>
+</button>
+<button class="flex-1 h-10 px-3 rounded-xl bg-surface-card text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm active:bg-surface-container transition-colors" onclick="handlePreviewDoc('SKTM')">
+<span class="material-symbols-outlined text-[18px] text-primary">visibility</span>
+<span>Lihat Surat</span>
+</button>
+</div>
+</div>
+</article>
+<!-- KARTU 4: Status Selesai Arsip Lama -->
+<article class="history-card bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col gap-3 relative overflow-hidden" data-status="selesai">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-status-disetujui-text"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-letter-legal-title text-letter-legal-title text-on-surface">Surat Keterangan Domisili (SKD)</span>
+<span class="font-body-sm text-body-sm text-text-muted">No. Resmi: 474/024/Pemdes/II/2025 • 12 Feb 2025</span>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+          Selesai
+        </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-text-muted bg-bg-ivory rounded-lg px-3 py-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">description</span>
+<span>Dokumen TTE Kuwu Desa Susukan</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">1.2 MB</span>
+</div>
+<div class="flex items-center gap-2 pt-0.5">
+<button class="flex-1 h-10 px-3 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 active:scale-98 transition-transform" onclick="handleDownloadDoc('SKD_474_024.pdf')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh PDF</span>
+</button>
+<button class="h-10 px-3.5 rounded-xl bg-surface-card text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1 shadow-sm" onclick="handlePrintAgain()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Cetak Ulang</span>
+</button>
+</div>
+</article>
+<!-- Empty State Container (Hidden by default, shown on empty search) -->
+<div class="hidden flex-col items-center justify-center py-10 px-4 text-center bg-surface-card rounded-xl shadow-sm" id="emptyStateBox">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-text-muted mb-3">
+<span class="material-symbols-outlined text-[32px]">folder_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Permohonan Tidak Ditemukan</h3>
+<p class="font-body-sm text-body-sm text-text-muted max-w-xs mb-4">
+        Tidak ada pengajuan surat yang cocok dengan filter atau kata kunci pencarian Anda.
+      </p>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold" onclick="resetSearchFilter()">
+        Tampilkan Semua Arsip
+      </button>
+</div>
+</div>
+<!-- Educational Banner: Validitas QR & BSSN -->
+<aside class="mt-space-lg bg-surface-card rounded-xl p-4 shadow-sm flex gap-3.5 items-start">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Verifikasi Keaslian Dokumen</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">
+        Setiap dokumen resmi terbitan <strong>Desa Susukan</strong> dilengkapi <strong>QR Code resmi BSrE BSSN</strong> yang sah secara hukum dan dapat dipindai langsung oleh pihak instansi manapun (Bank, Kampus, Kepolisian, dll).
+      </p>
+<div class="flex items-center gap-1.5 mt-2.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">help_center</span>
+<a class="font-label-sm text-label-sm font-bold underline" href="#">Panduan Cara Cek Keaslian Berkas</a>
+</div>
+</div>
+</aside>
+<!-- Interactive Document Preview Sheet / Modal -->
+<div class="fixed inset-0 z-50 hidden items-end sm:items-center justify-center bg-inverse-surface/50 backdrop-blur-sm p-0 sm:p-4" id="previewModal">
+<div class="w-full max-w-md bg-surface-card rounded-t-2xl sm:rounded-2xl p-space-lg flex flex-col gap-4 max-h-[795px] overflow-y-auto shadow-2xl">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-2">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase font-bold">PRATINJAU DOKUMEN RESMI</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface" id="modalDocTitle">Surat Keterangan Tidak Mampu</h2>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="closePreviewModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Virtual Legal Paper Simulation -->
+<div class="bg-surface-card rounded-lg p-4 shadow-sm flex flex-col gap-2 font-letter-legal-body text-letter-legal-body text-on-surface">
+<!-- Kop Surat -->
+<div class="text-center flex flex-col items-center pb-2">
+<span class="font-letter-legal-title text-letter-legal-title uppercase tracking-wide">PEMERINTAH KABUPATEN CIREBON</span>
+<span class="font-letter-legal-title text-letter-legal-title uppercase">KECAMATAN SUSUKAN</span>
+<span class="font-letter-legal-title text-letter-legal-title uppercase text-primary font-bold">KANTOR KUWU DESA SUSUKAN</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Jl. Ki Bagus Rangin No. 01 Susukan, Cirebon 45166</span>
+<div class="w-full h-0.5 bg-on-surface mt-2 mb-0.5"></div>
+<div class="w-full h-px bg-on-surface"></div>
+</div>
+<div class="text-center my-1">
+<span class="font-letter-legal-title text-letter-legal-title underline uppercase font-bold">SURAT KETERANGAN TIDAK MAMPU</span>
+<p class="font-body-sm text-body-sm text-text-muted font-mono">Nomor: 470/082/Kesra/IV/2025</p>
+</div>
+<p class="mt-1">
+          Yang bertanda tangan di bawah ini, Kuwu Desa Susukan Kecamatan Susukan Kabupaten Cirebon, menerangkan dengan sebenarnya bahwa:
+        </p>
+<div class="grid grid-cols-3 gap-1 pl-2 text-body-sm font-body-sm my-1">
+<span class="text-text-muted">Nama</span>
+<span class="col-span-2 font-bold">: Budi Santoso</span>
+<span class="text-text-muted">NIK</span>
+<span class="col-span-2 font-mono">: 3209011508930012</span>
+<span class="text-text-muted">Alamat</span>
+<span class="col-span-2">: RT 003 / RW 002 Blok Desa</span>
+</div>
+<p>
+          Benar bahwa yang bersangkutan terdaftar dalam Data Terpadu Kesejahteraan Sosial (DTKS) Desa Susukan.
+        </p>
+<!-- Digital Signature Seal Mock -->
+<div class="flex justify-end mt-3">
+<div class="flex flex-col items-center text-center p-2 rounded-lg bg-surface-container-low max-w-[200px]">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">DITANDATANGANI ELEKTRONIK</span>
+<div class="w-12 h-12 my-1 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">KUWU DESA SUSUKAN</span>
+<span class="font-label-eyebrow text-[9px] text-primary">H. MA'RUF, S.Sos.</span>
+</div>
+</div>
+</div>
+<!-- Action Modal -->
+<div class="flex gap-2">
+<button class="flex-1 h-11 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1.5 shadow-sm" onclick="handleDownloadDoc('SKTM_Resmi.pdf')">
+<span class="material-symbols-outlined text-[20px]">file_download</span>
+<span>Unduh File Lengkap</span>
+</button>
+<button class="px-4 h-11 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold" onclick="closePreviewModal()">
+          Tutup
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Ephemeral Notification -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 hidden transition-all duration-300" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-lg flex items-center gap-2.5 max-w-xs w-full">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">task_alt</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Berhasil mengunduh dokumen.</span>
+</div>
+</div>
+</div>
+<script>
+  // DOM Elements
+  const tabs = document.querySelectorAll('.filter-tab');
+  const cards = document.querySelectorAll('.history-card');
+  const emptyState = document.getElementById('emptyStateBox');
+  const searchInput = document.getElementById('searchInput');
+  const searchBarContainer = document.getElementById('searchBarContainer');
+  const toggleSearchBtn = document.getElementById('toggleSearchBtn');
+  const clearSearchBtn = document.getElementById('clearSearchBtn');
+  const previewModal = document.getElementById('previewModal');
+  const toastNotification = document.getElementById('toastNotification');
+  const toastMessage = document.getElementById('toastMessage');
+
+  let currentTab = 'all';
+
+  // Toggle Search Input
+  toggleSearchBtn.addEventListener('click', () => {
+    const isHidden = searchBarContainer.classList.contains('hidden');
+    if (isHidden) {
+      searchBarContainer.classList.remove('hidden');
+      searchInput.focus();
+    } else {
+      searchBarContainer.classList.add('hidden');
+      searchInput.value = '';
+      filterItems();
+    }
+  });
+
+  clearSearchBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    filterItems();
+  });
+
+  // Filter tabs logic
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => {
+        t.classList.remove('bg-primary', 'text-on-primary', 'active-tab');
+        t.classList.add('bg-surface-card', 'text-on-surface');
+      });
+      tab.classList.remove('bg-surface-card', 'text-on-surface');
+      tab.classList.add('bg-primary', 'text-on-primary', 'active-tab');
+
+      currentTab = tab.getAttribute('data-filter');
+      filterItems();
+    });
+  });
+
+  searchInput.addEventListener('input', () => {
+    filterItems();
+  });
+
+  function filterItems() {
+    const query = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const status = card.getAttribute('data-status');
+      const text = card.textContent.toLowerCase();
+
+      const matchesTab = (currentTab === 'all') || (status === currentTab);
+      const matchesSearch = query === '' || text.includes(query);
+
+      if (matchesTab && matchesSearch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    }
+  }
+
+  function resetSearchFilter() {
+    searchInput.value = '';
+    searchBarContainer.classList.add('hidden');
+    tabs[0].click();
+  }
+
+  // Action handlers
+  function showToast(msg) {
+    toastMessage.textContent = msg;
+    toastNotification.classList.remove('hidden');
+    setTimeout(() => {
+      toastNotification.classList.add('hidden');
+    }, 3200);
+  }
+
+  function handleRevisiAction() {
+    showToast("Membuka kamera untuk unggah ulang foto KTP...");
+  }
+
+  function handleDetailCatatan() {
+    showToast("Membuka detail catatan perbaikan berkas dari Operator Desa.");
+  }
+
+  function handlePantauAlur() {
+    showToast("Menampilkan detail riwayat verifikasi Kuwu.");
+  }
+
+  function handleDownloadDoc(filename) {
+    showToast("Mengunduh arsip: " + filename);
+  }
+
+  function handleShareWA(jenis) {
+    const text = encodeURIComponent("Halo, ini salinan resmi " + jenis + " Desa Susukan ber-QR sah BSrE saya.");
+    window.open("https://wa.me/?text=" + text, '_blank');
+  }
+
+  function handlePreviewDoc(docType) {
+    previewModal.classList.remove('hidden');
+    previewModal.classList.add('flex');
+  }
+
+  function closePreviewModal() {
+    previewModal.classList.add('hidden');
+    previewModal.classList.remove('flex');
+  }
+
+  function openQrModal(noResmi) {
+    showToast("Memvalidasi tanda tangan digital BSrE nomor: " + noResmi);
+  }
+
+  function handlePrintAgain() {
+    showToast("Menyiapkan dokumen siap cetak A4...");
+  }
+
+  // Active Bottom Nav Highlight Sync for Riwayat Tab
+  document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      const path = link.getAttribute('data-path');
+      if (path === 'riwayat') {
+        link.classList.remove('text-text-muted');
+        link.classList.add('text-primary', 'font-bold');
+      } else {
+        link.classList.remove('text-primary', 'font-bold');
+        link.classList.add('text-text-muted');
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-card/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(20,55,47,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="ajukan-surat" href="#"><span class="material-symbols-outlined text-[24px]">post_add</span><span class="font-label-sm text-label-sm">Ajukan</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="riwayat" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm">Riwayat</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Akun</span></a></div></nav></body></html>

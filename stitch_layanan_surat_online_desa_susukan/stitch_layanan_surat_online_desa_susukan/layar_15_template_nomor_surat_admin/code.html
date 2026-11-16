@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary-fixed-variant":"#5d4200","background":"#e9fef9","surface-tint":"#166a5a","status-selesai-bg":"#E1F3EC","status-disetujui-text":"#176B5B","on-secondary":"#ffffff","mint-tag":"#E8F1ED","on-error":"#ffffff","on-secondary-fixed-variant":"#224d4e","inverse-on-surface":"#e0f5f0","status-ditolak-text":"#B02A2A","surface-container-highest":"#d2e7e2","surface-variant":"#d2e7e2","status-diverifikasi-text":"#245A9E","status-selesai-text":"#0F5B49","on-surface-variant":"#3f4945","on-tertiary-fixed":"#261900","bg-ivory":"#F7F8F5","on-secondary-container":"#426b6c","status-menunggu-text":"#9A6100","surface-card":"#FFFFFF","status-ditolak-bg":"#FBE4E4","on-background":"#0c1f1c","outline":"#6f7975","on-tertiary-container":"#ffd481","secondary-fixed":"#beebeb","on-tertiary":"#ffffff","surface-container":"#def2ed","status-menunggu-bg":"#FFF3DC","surface-bright":"#e9fef9","tertiary-fixed-dim":"#efbf61","on-surface":"#0c1f1c","text-muted":"#74817D","tertiary":"#5e4300","primary":"#005144","on-primary-container":"#9ce9d4","secondary":"#3b6566","tertiary-container":"#7c5900","primary-container":"#176b5b","tertiary-fixed":"#ffdea4","secondary-fixed-dim":"#a3cfcf","status-perbaikan-text":"#B45309","on-secondary-fixed":"#002020","status-disetujui-bg":"#E1F3EC","outline-variant":"#bec9c4","surface-container-high":"#d8ede8","primary-fixed-dim":"#89d5c1","border-line":"#E7ECE8","error":"#ba1a1a","on-primary-fixed":"#00201a","surface":"#e9fef9","secondary-container":"#beebeb","primary-fixed":"#a5f1dd","status-diverifikasi-bg":"#E3EEFB","surface-container-low":"#e3f8f3","inverse-primary":"#89d5c1","on-primary-fixed-variant":"#005143","error-container":"#ffdad6","on-primary":"#ffffff","surface-dim":"#cadeda","surface-container-lowest":"#ffffff","status-perbaikan-bg":"#FDEBD3","on-error-container":"#93000a","inverse-surface":"#223431"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.875rem","space-lg":"1.125rem","space-sm":"0.5rem","margin":"1rem","space-xl":"1.75rem","margin-desktop":"1.75rem","space-md":"0.875rem","gutter-desktop":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem"},"fontFamily":{"headline-sm":["Inter"],"label-lg":["Inter"],"letter-legal-body":["Georgia"],"label-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-eyebrow":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"headline-lg":["Inter"],"headline-xl-mobile":["Inter"],"headline-lg-mobile":["Inter"],"letter-legal-title":["Georgia"],"headline-xl":["Inter"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"letter-legal-body":["12px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-eyebrow":["10px",{"lineHeight":"12px","letterSpacing":"0.15em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["26px",{"lineHeight":"34px","letterSpacing":"-0.023em","fontWeight":"700"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"letter-legal-title":["14px",{"lineHeight":"20px","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-[244px] bg-primary z-50 flex flex-col justify-between shadow-[0_8px_28px_rgba(20,55,47,0.14)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-xs bg-primary/40"><img alt="Logo Desa Susukan" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/><div class="flex flex-col ml-space-xs"><span class="font-headline-sm text-headline-sm text-surface-container-lowest leading-tight">Desa Susukan</span><span class="font-label-eyebrow text-label-eyebrow text-primary-fixed uppercase tracking-wider">Pelayanan Mandiri</span></div></div><div class="px-space-md py-space-sm"><div class="text-surface-container-highest/60 font-label-eyebrow text-label-eyebrow uppercase px-space-xs mb-space-xs">Layanan Warga</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="dashboard-pelayanan" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-label-lg text-label-lg">Beranda</span></a><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="pengajuan-surat" href="#"><span class="material-symbols-outlined text-lg">post_add</span><span class="font-label-lg text-label-lg">Buat Pengajuan</span></a><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="riwayat-permohonan" href="#"><span class="material-symbols-outlined text-lg">history_edu</span><span class="font-label-lg text-label-lg">Riwayat Surat</span></a><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="arsip-dokumen" href="#"><span class="material-symbols-outlined text-lg">folder_shared</span><span class="font-label-lg text-label-lg">Arsip Dokumen</span></a></nav></div><div class="px-space-md py-space-sm"><div class="text-surface-container-highest/60 font-label-eyebrow text-label-eyebrow uppercase px-space-xs mb-space-xs">Akun &amp; Bantuan</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="profil-warga" href="#"><span class="material-symbols-outlined text-lg">person</span><span class="font-label-lg text-label-lg">Data Keluarga</span></a><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="pusat-bantuan" href="#"><span class="material-symbols-outlined text-lg">help_center</span><span class="font-label-lg text-label-lg">Panduan &amp; FAQ</span></a></nav></div></div><div class="p-space-md bg-primary/30"><div class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-lowest/10"><span class="material-symbols-outlined text-surface-container-lowest text-lg">verified_user</span><div class="flex flex-col"><span class="font-label-md text-label-md text-surface-container-lowest">Layanan Resmi</span><span class="font-label-sm text-label-sm text-surface-container-highest/70">Kabupaten Cirebon</span></div></div></div></aside><div class="pl-[244px]"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/90 backdrop-blur-xl shadow-[0_4px_16px_rgba(20,55,47,0.08)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-xs"><img alt="Logo Desa Susukan" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/><nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-text-muted"><span class="text-on-surface-variant font-label-sm text-label-sm">Sistem</span><span class="material-symbols-outlined text-sm text-outline-variant">chevron_right</span><span class="text-on-surface-variant font-label-sm text-label-sm">Warga</span><span class="material-symbols-outlined text-sm text-outline-variant">chevron_right</span><span class="text-primary font-label-md text-label-md">Layanan Surat</span></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-text-muted text-lg">search</span><input class="h-10 pl-9 pr-14 bg-bg-ivory rounded-lg text-on-surface font-body-sm text-body-sm w-64 focus:outline-none focus:ring-2 focus:ring-primary-container/20" placeholder="Cari jenis surat, NIK..." readonly="" type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 text-[10px] font-label-sm text-text-muted bg-surface-card rounded shadow-sm">Ctrl K</kbd></div><button class="relative p-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEOLFBz59GEECFxTdV3zG28lMNRi3lX71JHYfem_pEj3AVbOms5N5DBnqkQGvHz-XKvYQ_fmBXVz3BlH_yKt6nJAKRvVWJ2-tyYI8LcgZBJwoClQHqZrQJyPd8nkQ7Zn_4uuKFMhTOBIw2AFh3kRb5CXRyJpMCva5orn0Kld_t31QApfAgHD1dKoOd0IFS-IOW2khLiGyEmyVQghQZzuEtfwhUvTGxjlX_FRpUhvw"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Siti Rahayu</span><span class="font-label-sm text-label-sm text-text-muted leading-tight">320901******0004</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-bg-ivory"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1360px] mx-auto px-space-md sm:px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Top Bar Navigation & Header -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-eyebrow text-label-eyebrow text-primary uppercase tracking-widest">
+<span>DATA MASTER PELAYANAN</span>
+<span class="text-text-muted">•</span>
+<span class="text-text-muted">PENGATURAN ADMINISTRASI DESA</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Template &amp; Format Nomor Surat</h1>
+<p class="font-body-md text-body-md text-text-muted">
+            Konfigurasi format penomoran otomatis buku register desa, variabel dinamis blangko surat, dan pratinjau tata letak dokumen berstandar Pemkab Cirebon.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-[42px] px-space-lg rounded-lg bg-surface-card text-on-surface hover:bg-bg-ivory shadow-sm transition-all flex items-center gap-space-xs font-label-lg text-label-lg active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg text-secondary">menu_book</span>
+<span>Buku Register Keluar</span>
+</button>
+<button class="h-[42px] px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary shadow-sm transition-all flex items-center gap-space-xs font-label-lg text-label-lg active:scale-95" type="button">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+<span>+ Tambah Template Baru</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4 Metric Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">TOTAL TEMPLATE</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">file_copy</span>
+</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface">14 Format</div>
+<div class="font-body-sm text-body-sm text-text-muted mt-space-xs flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container inline-block"></span>
+<span>12 Aktif, 2 Draf Cadangan</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">SURAT TERBIT BULAN INI</span>
+<div class="w-9 h-9 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-xl">pin</span>
+</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-primary">142 Nomor</div>
+<div class="font-body-sm text-body-sm text-text-muted mt-space-xs truncate">
+            Urutan Terakhir: <span class="font-label-sm text-label-sm text-on-surface">142/Kesra/IV/2025</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">VARIABEL TERSEDIA</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">code</span>
+</div>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface">24 Tag</div>
+<div class="font-body-sm text-body-sm text-text-muted mt-space-xs truncate">
+<span>{nama}, {nik}, {tgl_lahir}, dll.</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">STATUS PENOMORAN</span>
+<div class="w-9 h-9 rounded-lg bg-status-selesai-bg flex items-center justify-center text-status-selesai-text">
+<span class="material-symbols-outlined text-xl">verified</span>
+</div>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm text-status-selesai-text truncate">Otomatis (Reset Tahunan)</div>
+<div class="font-body-sm text-body-sm text-text-muted mt-space-xs truncate">
+            Berdasarkan Permendagri No. 47/2016
+          </div>
+</div>
+</div>
+</div>
+<!-- Main Content 2-Column Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN (~58%) -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Format Generator Settings Card -->
+<div class="bg-surface-card p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">pattern</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Format Penomoran Surat Otomatis</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+                Ubah pola kode penomoran resmi. Nomor urut akan bertambah secara otomatis setiap surat disetujui Kepala Desa.
+              </p>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm whitespace-nowrap">
+              Format Aktif
+            </span>
+</div>
+<!-- Real-Time Pattern Display -->
+<div class="bg-bg-ivory p-space-lg rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Pratinjau Pola Format Terkini</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-diverifikasi-text animate-pulse"></span> Sinkron SIAK
+              </span>
+</div>
+<div class="p-space-md bg-surface-card rounded-lg flex items-center justify-between flex-wrap gap-space-sm shadow-sm">
+<div class="font-headline-md text-headline-md text-primary tracking-wide">
+                470 / 0143 / Kesra / IV / 2025
+              </div>
+<span class="px-space-sm py-1 rounded bg-mint-tag text-status-disetujui-text font-label-sm text-label-sm">
+                Output Registrasi
+              </span>
+</div>
+</div>
+<!-- Configuration Controls -->
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault()">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="pola-input">Skema Pola Struktur Registrasi</label>
+<div class="relative">
+<input class="w-full h-11 px-space-md bg-bg-ivory rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-card transition-all" id="pola-input" type="text" value="{KODE_KLASIFIKASI} / {NOMOR} / {SEKSI} / {BULAN_ROMAWI} / {TAHUN}"/>
+<span class="absolute right-3 top-3 text-text-muted text-xs font-mono">TEMPLATE_RULE</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Gunakan kurung kurawal untuk mendaftarkan variabel penomoran sistem.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="reset-counter">Siklus Reset Counter</label>
+<select class="h-11 px-space-md bg-bg-ivory rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-card" id="reset-counter">
+<option selected="">Tiap Awal Tahun (1 Januari)</option>
+<option>Tiap Awal Bulan</option>
+<option>Tidak Pernah (Urutan Kontinu)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="digit-counter">Panjang Digit Seri</label>
+<select class="h-11 px-space-md bg-bg-ivory rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-card" id="digit-counter">
+<option selected="">4 Digit (0001)</option>
+<option>3 Digit (001)</option>
+<option>5 Digit (00001)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-text-muted" for="next-number">Nomor Berikutnya</label>
+<input class="h-10 w-28 px-3 bg-bg-ivory rounded-lg font-label-lg text-label-lg text-primary text-center font-mono focus:outline-none" id="next-number" type="text" value="0143"/>
+</div>
+<div class="text-text-muted text-xs max-w-[180px] leading-tight">
+                  Telah melewati verifikasi Buku Register manual.
+                </div>
+</div>
+<button class="w-full sm:w-auto h-[42px] px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-sm active:scale-95 flex items-center justify-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-sm">save</span>
+<span>Simpan Pengaturan Nomor</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Catalog Templates Interactive List -->
+<div class="bg-surface-card p-space-xl rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Katalog Master Template Surat</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Kelola blangko dinamis yang dapat diajukan mandiri oleh warga.</p>
+</div>
+<div class="relative w-full sm:w-60">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-text-muted text-base">search</span>
+<input class="w-full h-9 pl-9 pr-3 bg-bg-ivory rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-low transition-colors" placeholder="Cari kode / nama surat..." type="text"/>
+</div>
+</div>
+<!-- Category Filter Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm">
+              Semua Template (14)
+            </button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory text-on-surface hover:bg-mint-tag font-label-md text-label-md whitespace-nowrap transition-colors">
+              Kependudukan (4)
+            </button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory text-on-surface hover:bg-mint-tag font-label-md text-label-md whitespace-nowrap transition-colors">
+              Kesejahteraan (3)
+            </button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory text-on-surface hover:bg-mint-tag font-label-md text-label-md whitespace-nowrap transition-colors">
+              Usaha &amp; UMKM (3)
+            </button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory text-on-surface hover:bg-mint-tag font-label-md text-label-md whitespace-nowrap transition-colors">
+              Hukum &amp; Umum (4)
+            </button>
+</div>
+<!-- Template Cards List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1: Active Selection -->
+<div class="p-space-md rounded-xl bg-mint-tag/40 hover:bg-mint-tag transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">description</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">SKTM (Surat Keterangan Tidak Mampu)</span>
+<span class="px-2 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">Aktif</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-text-muted font-body-sm text-body-sm flex-wrap">
+<span class="font-mono text-primary font-label-sm text-label-sm">Kode: 470/Kesra</span>
+<span>•</span>
+<span>8 Variabel Tag</span>
+<span>•</span>
+<span>Diedit 12 Apr 2025</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-surface-card hover:bg-surface-container-low text-on-surface font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">edit</span> Ubah Editor
+                </button>
+<button class="h-9 px-space-md rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span> Terpilih
+                </button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-card hover:bg-bg-ivory transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">home_pin</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">SKD (Surat Keterangan Domisili)</span>
+<span class="px-2 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">Aktif</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-text-muted font-body-sm text-body-sm flex-wrap">
+<span class="font-mono text-primary font-label-sm text-label-sm">Kode: 471/Pem</span>
+<span>•</span>
+<span>7 Variabel Tag</span>
+<span>•</span>
+<span>Diedit 10 Apr 2025</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-bg-ivory hover:bg-surface-container-low text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">edit</span> Ubah Editor
+                </button>
+<button class="h-9 px-space-md rounded-lg bg-surface-card hover:bg-mint-tag text-primary font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span> Pratinjau
+                </button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-card hover:bg-bg-ivory transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">storefront</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">SKU (Surat Keterangan Usaha)</span>
+<span class="px-2 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">Aktif</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-text-muted font-body-sm text-body-sm flex-wrap">
+<span class="font-mono text-primary font-label-sm text-label-sm">Kode: 510/Ekbang</span>
+<span>•</span>
+<span>9 Variabel Tag</span>
+<span>•</span>
+<span>Diedit 08 Apr 2025</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-bg-ivory hover:bg-surface-container-low text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">edit</span> Ubah Editor
+                </button>
+<button class="h-9 px-space-md rounded-lg bg-surface-card hover:bg-mint-tag text-primary font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span> Pratinjau
+                </button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-space-md rounded-xl bg-surface-card hover:bg-bg-ivory transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">shield_person</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">Pengantar SKCK Polsek</span>
+<span class="px-2 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">Aktif</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-text-muted font-body-sm text-body-sm flex-wrap">
+<span class="font-mono text-primary font-label-sm text-label-sm">Kode: 331/Trantib</span>
+<span>•</span>
+<span>6 Variabel Tag</span>
+<span>•</span>
+<span>Diedit 02 Apr 2025</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-bg-ivory hover:bg-surface-container-low text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">edit</span> Ubah Editor
+                </button>
+<button class="h-9 px-space-md rounded-lg bg-surface-card hover:bg-mint-tag text-primary font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span> Pratinjau
+                </button>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="p-space-md rounded-xl bg-surface-card hover:bg-bg-ivory transition-all flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">event_busy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface">Surat Keterangan Kematian</span>
+<span class="px-2 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">Aktif</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1 text-text-muted font-body-sm text-body-sm flex-wrap">
+<span class="font-mono text-primary font-label-sm text-label-sm">Kode: 472/Kesra</span>
+<span>•</span>
+<span>10 Variabel Tag</span>
+<span>•</span>
+<span>Diedit 28 Mar 2025</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center shrink-0">
+<button class="h-9 px-space-md rounded-lg bg-bg-ivory hover:bg-surface-container-low text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">edit</span> Ubah Editor
+                </button>
+<button class="h-9 px-space-md rounded-lg bg-surface-card hover:bg-mint-tag text-primary font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">visibility</span> Pratinjau
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Dynamic Variables Palette (Cheat Sheet) -->
+<div class="bg-surface-card p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-lg">data_object</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Palet Variabel Dinamis Cepat</h2>
+</div>
+<span class="text-text-muted font-label-sm text-label-sm">Klik untuk salin</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">
+            Tag variabel di bawah ini otomatis mengambil data kependudukan dari database SIAK Desa Susukan saat warga mengajukan surat.
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{nama_lengkap}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{nik_16}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{tempat_tgl_lahir}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{alamat_lengkap}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{rt_rw}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{keperluan_surat}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{pekerjaan}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{nomor_surat_otomatis}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg bg-bg-ivory hover:bg-mint-tag text-primary font-mono text-xs flex items-center gap-1.5 transition-colors group" type="button">
+<span>{tanggal_surat_hari_ini}</span>
+<span class="material-symbols-outlined text-sm opacity-50 group-hover:opacity-100">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (~42%): LIVE DOCUMENT PREVIEW -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg sticky top-20">
+<!-- Live Document Preview Header Card -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-primary uppercase">PRATINJAU DOKUMEN REAL-TIME</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">SKTM (Tidak Mampu)</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="h-9 px-space-md rounded-lg bg-bg-ivory hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">print</span>
+<span>Cetak Uji (PDF)</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md shadow-sm transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">save</span>
+<span>Simpan Template</span>
+</button>
+</div>
+</div>
+<!-- Physical Paper Preview Container -->
+<div class="relative bg-surface-container-lowest p-6 sm:p-8 rounded shadow-md flex flex-col gap-4 text-on-surface text-xs leading-relaxed select-none">
+<!-- Watermark / Stamp subtle backing -->
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+<span class="material-symbols-outlined text-[240px]">shield</span>
+</div>
+<!-- Kop Surat Resmi -->
+<div class="flex flex-col items-center text-center pb-3 relative">
+<div class="flex items-center justify-center gap-3 w-full mb-1">
+<img class="w-14 h-14 object-contain shrink-0" data-alt="Official governmental heraldic emblem seal of Cirebon Regency Indonesia, crisp vector illustration in deep emerald tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMEue6A-Wu-UDkDyvrQ-ZoaMqX-mwhGpxg5ZP6kTlt2ArA8KGykkfecJInfUAOnItkPHRnX4aU_aRpm4NziwdUpZoW6dyiGltQ7e0OGUHNDvNB2yFgYNgz4nu6CEcugrGfCMkApMJZcAujL4NbBpcmVxdZGiep8cGg889DrGi5N3l0NULtKgkceTwSUdoQZ-U_hDwh0tMWR9Y32QlqP_OGGcSA5L-0r0Y5hIiZXXA"/>
+<div class="flex flex-col leading-tight">
+<span class="font-letter-legal-title text-sm tracking-wide text-on-surface uppercase">PEMERINTAH KABUPATEN CIREBON</span>
+<span class="font-letter-legal-title text-sm tracking-wide text-on-surface uppercase">KECAMATAN SUSUKAN</span>
+<span class="font-letter-legal-title text-base font-bold text-primary uppercase">KANTOR KUWU DESA SUSUKAN</span>
+<span class="font-letter-legal-body text-[10px] text-text-muted mt-0.5">Jalan Raya Susukan No. 01, Kecamatan Susukan, Cirebon - Jawa Barat 45166</span>
+</div>
+</div>
+<!-- Double Rule Standard (Kop Divider) -->
+<div class="w-full flex flex-col gap-[2px] mt-2">
+<div class="w-full h-[2px] bg-on-surface"></div>
+<div class="w-full h-[0.5px] bg-on-surface"></div>
+</div>
+</div>
+<!-- Document Title & Auto Number -->
+<div class="flex flex-col items-center text-center my-1">
+<span class="font-letter-legal-title text-sm uppercase underline decoration-1 underline-offset-4 tracking-wider text-on-surface">
+                SURAT KETERANGAN TIDAK MAMPU
+              </span>
+<span class="font-letter-legal-body text-[11px] text-text-muted mt-1 font-mono">
+                Nomor: 470 / <span class="bg-primary/10 text-primary font-bold px-1 rounded">0143</span> / Kesra / IV / 2025
+              </span>
+</div>
+<!-- Opening Paragraph -->
+<p class="font-letter-legal-body text-justify text-[11px] indent-6 text-on-surface leading-normal">
+              Yang bertanda tangan di bawah ini Kuwu Desa Susukan, Kecamatan Susukan, Kabupaten Cirebon, dengan ini menerangkan bahwa:
+            </p>
+<!-- Resident Identity Block -->
+<div class="flex flex-col gap-1.5 pl-6 font-letter-legal-body text-[11px]">
+<div class="grid grid-cols-12 gap-1">
+<span class="col-span-4 text-text-muted">Nama Lengkap</span>
+<span class="col-span-1">:</span>
+<span class="col-span-7 font-bold text-on-surface bg-mint-tag px-1 rounded inline-block">{nama_lengkap}</span>
+</div>
+<div class="grid grid-cols-12 gap-1">
+<span class="col-span-4 text-text-muted">NIK</span>
+<span class="col-span-1">:</span>
+<span class="col-span-7 font-mono text-on-surface bg-mint-tag px-1 rounded inline-block">{nik_16}</span>
+</div>
+<div class="grid grid-cols-12 gap-1">
+<span class="col-span-4 text-text-muted">Tempat/Tgl Lahir</span>
+<span class="col-span-1">:</span>
+<span class="col-span-7 text-on-surface bg-mint-tag px-1 rounded inline-block">{tempat_tgl_lahir}</span>
+</div>
+<div class="grid grid-cols-12 gap-1">
+<span class="col-span-4 text-text-muted">Pekerjaan</span>
+<span class="col-span-1">:</span>
+<span class="col-span-7 text-on-surface bg-mint-tag px-1 rounded inline-block">{pekerjaan}</span>
+</div>
+<div class="grid grid-cols-12 gap-1">
+<span class="col-span-4 text-text-muted">Alamat Tinggal</span>
+<span class="col-span-1">:</span>
+<span class="col-span-7 text-on-surface bg-mint-tag px-1 rounded inline-block">{alamat_lengkap}, RT {rt_rw}</span>
+</div>
+</div>
+<!-- Statement Context Body -->
+<p class="font-letter-legal-body text-justify text-[11px] indent-6 text-on-surface leading-normal mt-1">
+              Bahwa orang tersebut di atas benar-benar penduduk Desa Susukan dan berdasarkan data DTKS maupun pengamatan lapangan, yang bersangkutan tergolong dalam keluarga pra-sejahtera/tidak mampu untuk:
+            </p>
+<div class="bg-mint-tag/60 p-2 rounded text-center font-letter-legal-title text-xs text-primary font-semibold">
+              "{keperluan_surat}"
+            </div>
+<p class="font-letter-legal-body text-justify text-[11px] indent-6 text-on-surface leading-normal">
+              Demikian surat keterangan ini kami buat dengan sebenarnya agar dapat dipergunakan sebagaimana mestinya.
+            </p>
+<!-- Signature & Digital Stamp Footer -->
+<div class="flex justify-between items-end mt-4 pt-2">
+<!-- Left side note / QR Verification -->
+<div class="flex flex-col items-center gap-1">
+<div class="w-16 h-16 bg-surface-container-low p-1 rounded flex items-center justify-center">
+<img class="w-full h-full object-contain" data-alt="High quality clean QR code badge containing encrypted digital verification hash for local municipal civic certificates" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSKe1SfzPxDXf1ZBUarg1q_QSXqwAKkGaIgCn8rDUKbe6Z2QOq-ZnS09DC01N1z5lsvWFy-BvBJzKOJ8puwiCAoPh0kM_XZ3eG6tktoep-5Vnx8Jqj782dNW9G0exIwNC7aANTs2vZrnqQbVSbU62Sp4Rb1Ndkk_gRJZ1hZJ3KOXo4xj6CXJg0HmqNmdyDHTnHlfHMg8ceehn0Ykeex8ePfhtHYrLrtvV4w0_qnYw"/>
+</div>
+<span class="font-letter-legal-body text-[9px] text-text-muted text-center leading-tight">
+                  TTE BSrE BSSN<br/>Verifikasi Valid
+                </span>
+</div>
+<!-- Right side Official Signature -->
+<div class="flex flex-col items-center text-center min-w-[160px]">
+<span class="font-letter-legal-body text-[11px] text-on-surface">Susukan, {tanggal_surat_hari_ini}</span>
+<span class="font-letter-legal-title text-[11px] text-on-surface uppercase mt-0.5">KUWU DESA SUSUKAN</span>
+<div class="h-14 flex items-center justify-center relative my-1">
+<span class="material-symbols-outlined text-4xl text-primary/40 select-none">draw</span>
+</div>
+<span class="font-letter-legal-title text-xs font-bold text-on-surface underline">H. MA'RUF, S.Sos</span>
+<span class="font-letter-legal-body text-[10px] text-text-muted">NIP. 19740512 200212 1 003</span>
+</div>
+</div>
+</div>
+<!-- Syntax & Compliance Indicator -->
+<div class="p-space-md rounded-xl bg-status-selesai-bg flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-status-selesai-text text-xl">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-status-selesai-text">Validasi Sintaks Berhasil (100% Cocok)</span>
+<span class="font-body-sm text-body-sm text-text-muted">Semua tag terhubung langsung ke skema data pemohon.</span>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-card text-on-surface font-mono text-[10px] font-bold">
+              PERBUP No. 19/2023
+            </span>
+</div>
+<!-- Typography Standard Reference Info -->
+<div class="flex items-center justify-between text-xs text-text-muted px-1">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-sm">font_download</span>
+<span>Font Dokumen Resmi: <strong class="text-on-surface">Georgia Serif</strong> (Standar Nasional)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary">A4 Portrait (210 x 297 mm)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple copy variable micro-interaction
+  document.querySelectorAll('button[class*="font-mono"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const textToCopy = btn.querySelector('span:first-child')?.innerText || '';
+      if (textToCopy) {
+        navigator.clipboard?.writeText(textToCopy);
+        const originalIcon = btn.querySelector('.material-symbols-outlined');
+        if (originalIcon) {
+          const prevText = originalIcon.innerText;
+          originalIcon.innerText = 'done';
+          setTimeout(() => {
+            originalIcon.innerText = prevText;
+          }, 1500);
+        }
+      }
+    });
+  });
+</script></main></div></body></html>

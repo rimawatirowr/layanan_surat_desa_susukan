@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#F7F8F5;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-on-surface": "#e0f5f0",
+        "surface-container": "#def2ed",
+        "on-primary-fixed-variant": "#005143",
+        "on-tertiary-fixed": "#261900",
+        "error": "#ba1a1a",
+        "primary": "#005144",
+        "status-selesai-bg": "#E1F3EC",
+        "surface-container-high": "#d8ede8",
+        "on-background": "#0c1f1c",
+        "surface-container-lowest": "#ffffff",
+        "on-secondary": "#ffffff",
+        "mint-tag": "#E8F1ED",
+        "surface-variant": "#d2e7e2",
+        "tertiary": "#5e4300",
+        "text-muted": "#74817D",
+        "surface-tint": "#166a5a",
+        "border-line": "#E7ECE8",
+        "status-selesai-text": "#0F5B49",
+        "tertiary-fixed-dim": "#efbf61",
+        "on-secondary-fixed-variant": "#224d4e",
+        "error-container": "#ffdad6",
+        "surface-bright": "#e9fef9",
+        "on-surface-variant": "#3f4945",
+        "primary-container": "#176b5b",
+        "status-perbaikan-bg": "#FDEBD3",
+        "on-tertiary-container": "#ffd481",
+        "on-tertiary": "#ffffff",
+        "status-menunggu-text": "#9A6100",
+        "inverse-primary": "#89d5c1",
+        "status-disetujui-bg": "#E1F3EC",
+        "outline": "#6f7975",
+        "surface-card": "#FFFFFF",
+        "primary-fixed": "#a5f1dd",
+        "on-tertiary-fixed-variant": "#5d4200",
+        "tertiary-container": "#7c5900",
+        "surface-container-low": "#e3f8f3",
+        "secondary-fixed": "#beebeb",
+        "on-secondary-container": "#426b6c",
+        "tertiary-fixed": "#ffdea4",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#9ce9d4",
+        "secondary": "#3b6566",
+        "on-primary-fixed": "#00201a",
+        "status-diverifikasi-bg": "#E3EEFB",
+        "surface-container-highest": "#d2e7e2",
+        "on-secondary-fixed": "#002020",
+        "surface-dim": "#cadeda",
+        "on-error-container": "#93000a",
+        "inverse-surface": "#223431",
+        "on-surface": "#0c1f1c",
+        "bg-ivory": "#F7F8F5",
+        "status-ditolak-bg": "#FBE4E4",
+        "outline-variant": "#bec9c4",
+        "status-ditolak-text": "#B02A2A",
+        "status-diverifikasi-text": "#245A9E",
+        "status-perbaikan-text": "#B45309",
+        "status-disetujui-text": "#176B5B",
+        "surface": "#e9fef9",
+        "primary-fixed-dim": "#89d5c1",
+        "on-error": "#ffffff",
+        "secondary-container": "#beebeb",
+        "status-menunggu-bg": "#FFF3DC",
+        "secondary-fixed-dim": "#a3cfcf",
+        "background": "#e9fef9"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-lg": "1.125rem",
+        "space-xl": "1.75rem",
+        "space-sm": "0.5rem",
+        "gutter": "0.875rem",
+        "space-xs": "0.25rem",
+        "gutter-desktop": "1rem",
+        "margin-tablet": "1.5rem",
+        "margin": "1rem",
+        "margin-desktop": "1.75rem",
+        "space-md": "0.875rem"
+      },
+      "fontFamily": {
+        "letter-legal-title": ["Georgia"],
+        "headline-lg-mobile": ["Inter"],
+        "label-sm": ["Inter"],
+        "body-md": ["Inter"],
+        "headline-xl": ["Inter"],
+        "letter-legal-body": ["Georgia"],
+        "label-lg": ["Inter"],
+        "body-lg": ["Inter"],
+        "label-eyebrow": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "headline-lg": ["Inter"],
+        "body-sm": ["Inter"],
+        "label-md": ["Inter"],
+        "headline-sm": ["Inter"],
+        "headline-md": ["Inter"]
+      },
+      "fontSize": {
+        "letter-legal-title": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+        "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "label-sm": ["11px", {"lineHeight": "14px", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "letter-legal-body": ["12px", {"lineHeight": "22px", "fontWeight": "400"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "label-eyebrow": ["10px", {"lineHeight": "12px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+        "headline-xl-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "headline-lg": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.023em", "fontWeight": "700"}],
+        "body-sm": ["13px", {"lineHeight": "18px", "fontWeight": "400"}],
+        "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+        "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+        "headline-md": ["18px", {"lineHeight": "26px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-ivory font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(20,55,47,0.06)] pt-safe"><div class="h-20 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">account_balance</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">KAB. CIREBON</span><span class="w-1 h-1 rounded-full bg-tertiary-fixed-dim"></span><span class="font-label-sm text-label-sm text-primary font-bold">DESA SUSUKAN</span></div><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Portal Warga</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Pemberitahuan" class="relative w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2.5 h-2.5 rounded-full bg-error ring-2 ring-surface-card"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin pt-20 pb-28 bg-bg-ivory"><div class="flex flex-col w-full relative">
+<!-- Top Document Viewer Toolbar (Sticky feel inside slot) -->
+<div class="sticky top-0 z-40 bg-surface-card/95 backdrop-blur-md rounded-2xl shadow-md p-space-md mb-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<button aria-label="Tutup dan kembali" class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary active:scale-95 transition-all" id="btnBack">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Pratinjau Dokumen PDF Resmi</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+              Tersertifikasi TTE BSrE
+            </span>
+</div>
+</div>
+</div>
+<!-- Quick Action Icons -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button aria-label="Unduh Surat" class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary active:scale-95 transition-all" id="quickDownloadBtn">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+<button aria-label="Bagikan Dokumen" class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary active:scale-95 transition-all" id="quickShareBtn">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+</div>
+<!-- Viewer Metric Controls & Digital Hash Badge -->
+<div class="flex items-center justify-between gap-space-xs pt-1">
+<div class="flex items-center gap-1.5 bg-surface-container-low px-2.5 py-1.5 rounded-lg text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">description</span>
+<span>Halaman 1 dari 1</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-md text-label-md text-primary font-bold">100% Fit</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-1.5 rounded-lg text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">lock</span>
+<span class="font-mono text-[10px] tracking-tight">SHA-256 Valid</span>
+</div>
+</div>
+</div>
+<!-- Zoom & Inspection Micro-banner -->
+<div class="flex items-center justify-between px-space-sm py-2 mb-space-sm bg-mint-tag rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">pinch</span>
+<span class="font-body-sm text-body-sm text-primary">Sentuh dua kali atau cubit layar untuk memperbesar rincian kop &amp; QR TTE</span>
+</div>
+<button class="shrink-0 font-label-sm text-label-sm text-primary font-bold px-2 py-1 bg-surface-card rounded-lg shadow-sm" id="zoomToggleBtn">
+      120% Zoom
+    </button>
+</div>
+<!-- Physical A4 Legal Sheet Container -->
+<div class="w-full flex justify-center overflow-x-auto pb-4">
+<div class="w-full max-w-[540px] bg-surface-card rounded-md shadow-xl p-space-md sm:p-space-lg flex flex-col text-on-surface transition-transform duration-300 origin-top" id="pdfCanvas">
+<!-- KOP SURAT RESMI DESA -->
+<div class="flex flex-col items-center text-center pb-space-sm">
+<div class="flex items-center justify-center gap-3 w-full mb-2">
+<!-- Logo Lambang Pemkab Cirebon (Stylized Vector) -->
+<div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center text-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-label-eyebrow text-label-eyebrow tracking-widest text-on-surface font-bold uppercase">Pemerintah Kabupaten Cirebon</span>
+<span class="font-label-md text-label-md tracking-wider text-on-surface font-bold uppercase">Kecamatan Susukan</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold uppercase tracking-tight">Kantor Kuwu Susukan</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5 leading-snug max-w-[320px]">
+              Jl. Ki Ageng Tepak No. 01 Desa Susukan Kec. Susukan Kode Pos 45166
+            </span>
+</div>
+</div>
+<!-- Official Bureaucratic Double Line Divider (Thick & Thin simulated via stacked styled bands) -->
+<div class="w-full flex flex-col gap-[2px] my-1">
+<div class="w-full h-[2.5px] bg-on-surface"></div>
+<div class="w-full h-[1px] bg-on-surface"></div>
+</div>
+</div>
+<!-- JUDUL SURAT RESMI -->
+<div class="flex flex-col items-center text-center my-space-sm">
+<h1 class="font-letter-legal-title text-letter-legal-title text-on-surface tracking-wide uppercase">
+          Surat Keterangan Tidak Mampu (SKTM)
+        </h1>
+<div class="w-48 h-[1px] bg-on-surface my-1"></div>
+<p class="font-body-sm text-body-sm text-text-muted font-mono tracking-tight">
+          Nomor: 470 / 082 / Kesra / IV / 2025
+        </p>
+</div>
+<!-- PEMBUKA NASKAH -->
+<div class="font-letter-legal-body text-letter-legal-body text-on-surface text-justify leading-relaxed mb-space-sm">
+        Yang bertanda tangan di bawah ini Kuwu Desa Susukan Kecamatan Susukan Kabupaten Cirebon, menerangkan dengan sebenarnya bahwa:
+      </div>
+<!-- DATA PEMOHON TABEL RAPI -->
+<div class="bg-bg-ivory rounded-xl p-space-sm mb-space-md flex flex-col gap-2 shadow-sm">
+<div class="grid grid-cols-12 gap-1 items-start">
+<div class="col-span-4 font-body-sm text-body-sm font-semibold text-text-muted">Nama Lengkap</div>
+<div class="col-span-1 text-center font-body-sm text-body-sm text-text-muted">:</div>
+<div class="col-span-7 font-body-sm text-body-sm font-bold text-on-surface uppercase">Budi Santoso</div>
+</div>
+<div class="grid grid-cols-12 gap-1 items-start">
+<div class="col-span-4 font-body-sm text-body-sm font-semibold text-text-muted">NIK</div>
+<div class="col-span-1 text-center font-body-sm text-body-sm text-text-muted">:</div>
+<div class="col-span-7 font-body-sm text-body-sm font-mono font-bold text-primary flex items-center gap-1.5">
+<span>3209011405820012</span>
+<span class="material-symbols-outlined text-[14px] text-primary" title="NIK Terverifikasi">check_circle</span>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-1 items-start">
+<div class="col-span-4 font-body-sm text-body-sm font-semibold text-text-muted">Tempat/Tgl Lahir</div>
+<div class="col-span-1 text-center font-body-sm text-body-sm text-text-muted">:</div>
+<div class="col-span-7 font-body-sm text-body-sm text-on-surface">Cirebon, 14 Mei 1982</div>
+</div>
+<div class="grid grid-cols-12 gap-1 items-start">
+<div class="col-span-4 font-body-sm text-body-sm font-semibold text-text-muted">Jenis Kelamin</div>
+<div class="col-span-1 text-center font-body-sm text-body-sm text-text-muted">:</div>
+<div class="col-span-7 font-body-sm text-body-sm text-on-surface">Laki-laki</div>
+</div>
+<div class="grid grid-cols-12 gap-1 items-start">
+<div class="col-span-4 font-body-sm text-body-sm font-semibold text-text-muted">Agama</div>
+<div class="col-span-1 text-center font-body-sm text-body-sm text-text-muted">:</div>
+<div class="col-span-7 font-body-sm text-body-sm text-on-surface">Islam</div>
+</div>
+<div class="grid grid-cols-12 gap-1 items-start">
+<div class="col-span-4 font-body-sm text-body-sm font-semibold text-text-muted">Pekerjaan</div>
+<div class="col-span-1 text-center font-body-sm text-body-sm text-text-muted">:</div>
+<div class="col-span-7 font-body-sm text-body-sm text-on-surface">Wiraswasta</div>
+</div>
+<div class="grid grid-cols-12 gap-1 items-start">
+<div class="col-span-4 font-body-sm text-body-sm font-semibold text-text-muted">Alamat Domisili</div>
+<div class="col-span-1 text-center font-body-sm text-body-sm text-text-muted">:</div>
+<div class="col-span-7 font-body-sm text-body-sm text-on-surface leading-tight">
+            Dusun Karanganyar RT 03 / RW 01 Desa Susukan, Kec. Susukan, Kab. Cirebon
+          </div>
+</div>
+</div>
+<!-- PARAGRAF PENJELAS SURAT -->
+<div class="font-letter-legal-body text-letter-legal-body text-on-surface space-y-2 text-justify leading-relaxed mb-space-md">
+<p>
+          Bahwa yang bersangkutan di atas adalah benar-benar warga penduduk Desa Susukan dan berdasarkan data sosial ekonomi tergolong dalam keluarga kurang mampu/pra-sejahtera.
+        </p>
+<p>
+          Surat keterangan ini dibuat dan diberikan untuk keperluan: <span class="font-bold text-on-surface font-body-md text-body-md bg-status-menunggu-bg px-1 py-0.5 rounded">Persyaratan Pengajuan Keringanan Biaya Pendidikan / Beasiswa Putera-Puteri Pemohon</span>.
+        </p>
+<p>
+          Demikian surat keterangan ini kami buat dengan sebenarnya agar dapat dipergunakan sebagaimana mestinya.
+        </p>
+</div>
+<!-- PENANGGUNG JAWAB & TTE ELEKTRONIK SECTION -->
+<div class="mt-2 flex flex-col items-end">
+<div class="w-full sm:w-72 flex flex-col items-center text-center">
+<div class="font-body-sm text-body-sm text-on-surface">
+            Susukan, 15 April 2025
+          </div>
+<div class="font-label-md text-label-md font-bold text-on-surface mb-2">
+            Kuwu Desa Susukan
+          </div>
+<!-- KOTAK TANDA TANGAN ELEKTRONIK RESMI DENGAN QR BSrE -->
+<div class="w-full bg-surface-container-low rounded-xl p-2.5 flex items-center gap-3 shadow-sm my-1 text-left">
+<!-- Simulated QR Code Verifikasi BSrE -->
+<div class="w-16 h-16 bg-surface-card rounded-lg p-1 shrink-0 flex flex-col items-center justify-center shadow-inner">
+<svg class="w-full h-full text-primary" fill="currentColor" viewbox="0 0 44 44">
+<!-- Outer framing corners -->
+<rect height="12" rx="1" width="12" x="2" y="2"></rect>
+<rect fill="#FFFFFF" height="8" width="8" x="4" y="4"></rect>
+<rect height="4" width="4" x="6" y="6"></rect>
+<rect height="12" rx="1" width="12" x="30" y="2"></rect>
+<rect fill="#FFFFFF" height="8" width="8" x="32" y="4"></rect>
+<rect height="4" width="4" x="34" y="6"></rect>
+<rect height="12" rx="1" width="12" x="2" y="30"></rect>
+<rect fill="#FFFFFF" height="8" width="8" x="4" y="32"></rect>
+<rect height="4" width="4" x="6" y="34"></rect>
+<!-- Data blocks matrix -->
+<rect height="3" width="8" x="18" y="4"></rect>
+<rect height="4" width="4" x="18" y="10"></rect>
+<rect height="4" width="6" x="26" y="10"></rect>
+<rect height="4" width="6" x="6" y="18"></rect>
+<rect height="4" width="12" x="16" y="18"></rect>
+<rect height="4" width="8" x="32" y="18"></rect>
+<rect height="8" width="4" x="18" y="26"></rect>
+<rect height="4" width="8" x="26" y="26"></rect>
+<rect height="12" width="4" x="36" y="26"></rect>
+<rect height="6" width="6" x="26" y="34"></rect>
+</svg>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-label-eyebrow text-label-eyebrow font-bold uppercase tracking-wider">TTE BSrE Tersertifikasi</span>
+</div>
+<p class="text-[9px] leading-tight text-text-muted mt-0.5">
+                Ditandatangani secara elektronik menggunakan Sertifikat Elektronik Balai Sertifikasi Elektronik (BSrE), BSSN.
+              </p>
+<span class="text-[9px] font-mono text-primary font-semibold mt-1">ID: BSSN-SSK-2025-0482</span>
+</div>
+</div>
+<!-- NAMA PEJABAT RESMI -->
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mt-2 uppercase tracking-wide underline underline-offset-4 decoration-primary">
+            H. MA'RUF, S.Sos.
+          </div>
+<div class="font-body-sm text-body-sm text-text-muted mt-0.5">
+            NIP: 19740612 199903 1 004
+          </div>
+</div>
+</div>
+<!-- FOOTER LEGALITAS & HASH VERIFICATION -->
+<div class="mt-6 pt-3 bg-surface-container-lowest rounded-lg p-2.5 flex flex-col gap-1.5 shadow-sm">
+<div class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-text-muted shrink-0 mt-0.5">info</span>
+<p class="text-[10px] leading-tight text-text-muted italic">
+            UU ITE No. 11/2008 Pasal 5 Ayat 1: "Informasi Elektronik dan/atau Dokumen Elektronik dan/atau hasil cetaknya merupakan alat bukti hukum yang sah."
+          </p>
+</div>
+<div class="flex items-center justify-between text-[9px] text-text-muted font-mono pt-1">
+<span>KODE HASH: 8F2A-D340-99BC-E71A</span>
+<span>DOKUMEN ASLI PEMDES SUSUKAN</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Physical Stamp Security Trust Card -->
+<div class="w-full bg-surface-card rounded-2xl p-space-md shadow-sm mb-space-lg flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-status-selesai-bg text-status-selesai-text flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">gavel</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface">Validitas Hukum Penuh</span>
+<p class="font-body-sm text-body-sm text-text-muted leading-tight">
+        Surat ini telah terbit dan tersimpan permanen di basis data kependudukan desa. Dapat dicetak di kertas HVS A4 atau dilampirkan langsung ke instansi tujuan.
+      </p>
+</div>
+</div>
+<!-- FLOATING BOTTOM ACTION BAR (Thumb Friendly Mobile Bar) -->
+<div class="sticky bottom-0 z-40 bg-surface-card/95 backdrop-blur-xl rounded-2xl shadow-xl p-space-md mb-2 flex flex-col gap-space-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm w-full">
+<!-- Unduh PDF Asli -->
+<button class="w-full h-11 bg-primary text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 shadow-md active:scale-98 transition-all" id="downloadPdfAction">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Unduh PDF Asli (1.2 MB)</span>
+</button>
+<!-- Kirim ke WhatsApp -->
+<button class="w-full h-11 bg-surface-container-lowest text-primary font-label-lg text-label-lg rounded-xl shadow-sm flex items-center justify-center gap-2 active:scale-98 transition-all" id="shareWaAction">
+<span class="material-symbols-outlined text-[20px] text-status-selesai-text">send</span>
+<span>Kirim ke WhatsApp</span>
+</button>
+</div>
+<!-- Official Guarantee Caption -->
+<div class="flex items-center justify-center gap-1.5 text-center px-space-xs">
+<span class="material-symbols-outlined text-[14px] text-status-selesai-text" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-label-sm text-text-muted leading-tight">
+        Dokumen ini sah tanpa tanda tangan basah dan cap stempel fisik.
+      </span>
+</div>
+</div>
+<!-- Interactive Feedback Toast (Ephemeral Feedback Level 4) -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 opacity-0 pointer-events-none transition-all duration-300 max-w-[90vw]" id="toastNotification">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">task_alt</span>
+<span class="font-label-md text-label-md" id="toastMsg">Berhasil mengunduh dokumen SKTM</span>
+</div>
+</div>
+<script>
+  (function() {
+    const pdfCanvas = document.getElementById('pdfCanvas');
+    const zoomToggleBtn = document.getElementById('zoomToggleBtn');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    const downloadPdfAction = document.getElementById('downloadPdfAction');
+    const quickDownloadBtn = document.getElementById('quickDownloadBtn');
+    const shareWaAction = document.getElementById('shareWaAction');
+    const quickShareBtn = document.getElementById('quickShareBtn');
+    const btnBack = document.getElementById('btnBack');
+
+    let isZoomed = false;
+
+    function showToast(message) {
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 2600);
+    }
+
+    if (zoomToggleBtn && pdfCanvas) {
+      zoomToggleBtn.addEventListener('click', () => {
+        isZoomed = !isZoomed;
+        if (isZoomed) {
+          pdfCanvas.style.transform = 'scale(1.18)';
+          zoomToggleBtn.textContent = 'Kembalikan';
+          zoomToggleBtn.classList.add('bg-primary', 'text-on-primary');
+          zoomToggleBtn.classList.remove('bg-surface-card', 'text-primary');
+        } else {
+          pdfCanvas.style.transform = 'scale(1)';
+          zoomToggleBtn.textContent = '120% Zoom';
+          zoomToggleBtn.classList.remove('bg-primary', 'text-on-primary');
+          zoomToggleBtn.classList.add('bg-surface-card', 'text-primary');
+        }
+      });
+    }
+
+    const triggerDownload = () => {
+      showToast('Mengunduh SKTM_BudiSantoso_470-082.pdf...');
+    };
+
+    const triggerShare = () => {
+      showToast('Membuka integrasi dokumen WhatsApp...');
+    };
+
+    if (downloadPdfAction) downloadPdfAction.addEventListener('click', triggerDownload);
+    if (quickDownloadBtn) quickDownloadBtn.addEventListener('click', triggerDownload);
+    if (shareWaAction) shareWaAction.addEventListener('click', triggerShare);
+    if (quickShareBtn) quickShareBtn.addEventListener('click', triggerShare);
+
+    if (btnBack) {
+      btnBack.addEventListener('click', () => {
+        showToast('Kembali ke Layar Riwayat Pengajuan...');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-card/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(20,55,47,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm">Beranda</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="ajukan-surat" href="#"><span class="material-symbols-outlined text-[24px]">post_add</span><span class="font-label-sm text-label-sm">Ajukan</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="riwayat" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm">Riwayat</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-14 text-text-muted transition-colors rounded-xl" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Akun</span></a></div></nav></body></html>

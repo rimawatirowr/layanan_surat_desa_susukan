@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#e9fef9","surface":"#e9fef9","tertiary-container":"#7c5900","surface-tint":"#166a5a","surface-container-lowest":"#ffffff","status-menunggu-bg":"#FFF3DC","surface-dim":"#cadeda","surface-variant":"#d2e7e2","on-error":"#ffffff","outline":"#6f7975","bg-ivory":"#F7F8F5","border-line":"#E7ECE8","tertiary-fixed":"#ffdea4","on-primary-container":"#9ce9d4","on-primary-fixed-variant":"#005143","surface-container-highest":"#d2e7e2","status-selesai-text":"#0F5B49","on-secondary-container":"#426b6c","on-secondary-fixed-variant":"#224d4e","status-ditolak-bg":"#FBE4E4","status-perbaikan-text":"#B45309","on-secondary-fixed":"#002020","on-background":"#0c1f1c","on-secondary":"#ffffff","inverse-on-surface":"#e0f5f0","tertiary":"#5e4300","on-primary":"#ffffff","status-ditolak-text":"#B02A2A","status-diverifikasi-text":"#245A9E","surface-card":"#FFFFFF","primary-fixed-dim":"#89d5c1","primary":"#005144","status-selesai-bg":"#E1F3EC","error-container":"#ffdad6","secondary-fixed":"#beebeb","on-tertiary-container":"#ffd481","status-disetujui-bg":"#E1F3EC","on-surface-variant":"#3f4945","surface-container-low":"#e3f8f3","on-surface":"#0c1f1c","text-muted":"#74817D","status-perbaikan-bg":"#FDEBD3","on-error-container":"#93000a","outline-variant":"#bec9c4","mint-tag":"#E8F1ED","status-diverifikasi-bg":"#E3EEFB","status-disetujui-text":"#176B5B","on-tertiary":"#ffffff","surface-container":"#def2ed","on-tertiary-fixed":"#261900","error":"#ba1a1a","tertiary-fixed-dim":"#efbf61","status-menunggu-text":"#9A6100","secondary-fixed-dim":"#a3cfcf","primary-fixed":"#a5f1dd","inverse-primary":"#89d5c1","surface-container-high":"#d8ede8","secondary-container":"#beebeb","secondary":"#3b6566","on-tertiary-fixed-variant":"#5d4200","primary-container":"#176b5b","inverse-surface":"#223431"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1rem","space-xs":"0.25rem","margin-desktop":"1.75rem","space-md":"0.875rem",margin:"1rem","space-xl":"1.75rem",gutter:"0.875rem","space-lg":"1.125rem","margin-tablet":"1.5rem"},fontFamily:{"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"],"letter-legal-title":["Georgia"],"headline-sm":["Inter"],"label-eyebrow":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"letter-legal-body":["Georgia"],"label-md":["Inter"],"headline-xl-mobile":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"headline-lg-mobile":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["18px",{lineHeight:"26px",fontWeight:"600"}],"letter-legal-title":["14px",{lineHeight:"20px",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"label-eyebrow":["10px",{lineHeight:"12px",letterSpacing:"0.15em",fontWeight:"700"}],"headline-lg":["26px",{lineHeight:"34px",letterSpacing:"-0.023em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"letter-legal-body":["12px",{lineHeight:"22px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}]}}}};</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-[244px] bg-surface-card z-50 flex flex-col justify-between border-r border-border-line shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-border-line"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm font-bold shadow-sm">S</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight leading-none">KEC. SUSUKAN</span><span class="font-label-eyebrow text-label-eyebrow text-text-muted mt-1 uppercase tracking-wider">Portal Administrasi</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Navigasi Utama</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="dashboard-pelayanan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="permohonan-surat" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-lg text-label-lg">Daftar Pengajuan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="verifikasi-berkas" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-lg text-label-lg">Verifikasi Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="arsip-legalisir" href="#"><span class="material-symbols-outlined text-[20px]">folder_shared</span><span class="font-label-lg text-label-lg">Arsip &amp; Legalisir</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="data-penduduk-desa" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-label-lg text-label-lg">Database Warga</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Tata Kelola</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="laporan-statistik" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-lg text-label-lg">Laporan Pelayanan</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="pengaturan-sistem" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Konfigurasi Wilayah</span></a></nav></div></div><div class="p-space-md border-t border-border-line"><div class="bg-surface-container-low rounded-lg p-space-sm flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">gavel</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary font-bold">Paten Susukan</span><span class="font-body-sm text-body-sm text-text-muted">Kab. Banjarnegara</span></div></div></div></aside><div class="pl-[244px] flex flex-col min-h-screen"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/95 backdrop-blur-md z-40 border-b border-border-line px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg flex-1"><div class="flex items-center gap-space-xs text-text-muted font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-text-muted">domain</span><span>Kecamatan Susukan</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="font-label-md text-label-md text-primary font-semibold">Pelayanan Administrasi Terpadu</span></div><div class="relative w-full max-w-xs ml-space-md"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span><input class="w-full h-10 pl-9 pr-space-md rounded-lg bg-bg-ivory border border-border-line font-body-sm text-body-sm text-on-surface placeholder:text-text-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Cari NIK, Nama Warga, No. Resi..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-bg-ivory border border-border-line flex items-center justify-center text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="w-9 h-9 rounded-lg bg-bg-ivory border border-border-line flex items-center justify-center text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="h-6 w-px bg-border-line"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Bambang Hermanto</span><span class="font-label-sm text-label-sm text-text-muted">Operator PATEN Reg. 04</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-bg-ivory flex-1 px-space-xl py-space-xl max-w-[1360px] mx-auto"><div class="flex flex-col w-full gap-space-xl">
+<!-- Header Banner & Action Bar -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-xl shadow-md">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-12 -bottom-12 w-64 h-64 rounded-full bg-tertiary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            SusukanBot Core v2.5 Online
+          </span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Regulasi Ditjen Dukcapil 2025</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Helpdesk &amp; Pusat Pengetahuan Digital</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Pusat simulasi kecerdasan buatan edukasi warga, kurasi repositori SOP perizinan PATEN, dan analisis disparitas informasi publik di wilayah Kecamatan Susukan.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-4 py-2.5 rounded-lg bg-surface-card text-primary font-label-lg text-label-lg shadow-sm hover:bg-mint-tag transition-all active:scale-95" id="btn-sync-regulasi">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Sinkronisasi Regulasi</span>
+</button>
+<button class="flex items-center gap-space-xs px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-primary-container transition-all active:scale-95">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Tambah Artikel SOP</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Key Metrics Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat Card 1 -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Pertanyaan Otomatis</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">4.820</span>
+<span class="font-label-sm text-label-sm text-status-disetujui-text font-bold">+18.2% bln ini</span>
+</div>
+<p class="mt-1 font-body-sm text-body-sm text-text-muted">Ditangani mandiri via SusukanBot</p>
+<div class="mt-space-md w-full bg-surface-container rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[82%]"></div>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Tanpa Eskalasi Loket</span>
+<div class="w-10 h-10 rounded-lg bg-status-selesai-bg flex items-center justify-center text-status-selesai-text">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">88.4%</span>
+<span class="font-label-sm text-label-sm text-text-muted">Target: &gt;85%</span>
+</div>
+<p class="mt-1 font-body-sm text-body-sm text-text-muted">Warga paham tanpa antre manual</p>
+<div class="mt-space-md flex items-center gap-1 font-label-sm text-label-sm text-status-selesai-text">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>Efisiensi loket optimal</span>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Topik Terpopuler</span>
+<div class="w-10 h-10 rounded-lg bg-status-menunggu-bg flex items-center justify-center text-status-menunggu-text">
+<span class="material-symbols-outlined text-[22px]">qr_code_2</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<div class="font-label-lg text-label-lg text-primary font-bold truncate">Aktivasi IKD &amp; e-KTP Rusak</div>
+<p class="mt-1 font-body-sm text-body-sm text-text-muted">61% dari total kueri kependudukan</p>
+</div>
+<div class="mt-space-sm inline-flex items-center px-2 py-0.5 rounded-full bg-mint-tag text-primary font-label-sm text-label-sm font-semibold">
+        1.240 kueri aktif
+      </div>
+</div>
+<!-- Stat Card 4 -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Latensi Respons AI</span>
+<div class="w-10 h-10 rounded-lg bg-status-diverifikasi-bg flex items-center justify-center text-status-diverifikasi-text">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">0.8</span>
+<span class="font-body-md text-body-md text-text-muted">detik</span>
+</div>
+<p class="mt-1 font-body-sm text-body-sm text-text-muted">Sinkron LLM PATEN Lokal Cirebon</p>
+<div class="mt-space-md flex items-center gap-1.5 font-label-sm text-label-sm text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-status-selesai-text"></span>
+<span>Infrastruktur stabil (99.98%)</span>
+</div>
+</div>
+</div>
+<!-- Main Workstation Layout: 12 Columns -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT: Chatbot Simulation Studio (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="bg-surface-card rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Chat Header -->
+<div class="bg-surface-container-high px-space-lg py-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[22px]">robot_2</span>
+</div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-status-selesai-text shadow-sm"></span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">SusukanBot Care</span>
+<span class="px-2 py-0.5 rounded-full bg-mint-tag text-primary font-label-sm text-label-sm font-semibold">PATEN Official</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted">Simulasi dialog edukasi warga real-time</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg text-text-muted hover:bg-surface-container hover:text-primary transition-colors" id="btn-reset-chat" title="Reset percakapan">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+</button>
+<button class="p-2 rounded-lg text-text-muted hover:bg-surface-container hover:text-primary transition-colors" title="Lihat parameter context AI">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Interactive Dialog Canvas -->
+<div class="p-space-lg flex flex-col gap-space-lg bg-bg-ivory max-h-[580px] overflow-y-auto" id="chat-messages-container">
+<!-- Timestamp badge -->
+<div class="flex justify-center">
+<span class="px-3 py-1 rounded-full bg-surface-container text-text-muted font-label-sm text-label-sm">
+              Hari ini, 09:41 WIB • Sesi Pelayanan Warga #SSK-8821
+            </span>
+</div>
+<!-- Citizen Chat Bubble -->
+<div class="flex items-start justify-end gap-space-sm">
+<div class="flex flex-col items-end max-w-[85%]">
+<div class="bg-primary text-on-primary p-space-md rounded-2xl rounded-tr-none shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+                  Halo admin, KTP saya patah dan buram, apakah bisa cetak baru langsung di Kecamatan Susukan tanpa harus jauh-jauh ke Disdukcapil Sumber? Syaratnya apa saja ya?
+                </p>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-text-muted">Warga Desa Kedongdong • 09:41</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-text-muted shrink-0">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+</div>
+<!-- AI Response Bubble -->
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</div>
+<div class="flex flex-col items-start max-w-[90%] gap-space-sm">
+<div class="bg-surface-card p-space-lg rounded-2xl rounded-tl-none shadow-sm text-on-surface flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-status-disetujui-text font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Informasi Resmi Terverifikasi PATEN Susukan</span>
+</div>
+<p class="font-body-md text-body-md leading-relaxed text-on-surface">
+                  Halo Bapak/Ibu Warga Susukan! <strong>Bisa sekali dicetak langsung di Kantor Camat Susukan</strong> tanpa perlu ke Disdukcapil Sumber. Seluruh 12 desa di wilayah kami telah terlayani penuh oleh mesin cetak KTP-el mandiri di Loket Pelayanan Terpadu.
+                </p>
+<!-- Step requirements block -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold">Kelengkapan Berkas yang Wajib Dibawa:</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Fisik KTP lama yang rusak/patah</strong> untuk diserahkan sebagai arsip penarikan.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Fotokopi Kartu Keluarga (KK)</strong> terbaru atau tunjukkan QR Barcode KK Digital.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-status-selesai-text text-[16px] shrink-0 mt-0.5">info</span>
+<span class="text-on-surface"><strong>Bebas Pengantar RT/RW:</strong> Sesuai Perpres No. 96/2018, penggantian KTP rusak <em>tidak memerlukan</em> surat pengantar desa.</span>
+</li>
+</ul>
+</div>
+<!-- SLA & Fee badge -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-mint-tag p-space-sm rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">timer</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Estimasi Cetak</span>
+<span class="font-label-md text-label-md text-primary font-bold">± 10 Menit (Loket 2)</span>
+</div>
+</div>
+<div class="bg-status-selesai-bg p-space-sm rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-status-selesai-text text-[20px]">payments</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-status-selesai-text">Biaya Administrasi</span>
+<span class="font-label-md text-label-md text-status-selesai-text font-bold">GRATIS (Rp 0,-)</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Button Row -->
+<div class="pt-space-xs flex flex-wrap gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all active:scale-95">
+<span class="material-symbols-outlined text-[16px]">confirmation_number</span>
+<span>Ambil Antrean Online</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+<span>Cek Stok Blangko (Sisa: 142 keping)</span>
+</button>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-status-selesai-bg text-status-selesai-text font-label-md text-label-md hover:opacity-90 transition-opacity" href="https://wa.me/6281234567890" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>WA Petugas Loket</span>
+</a>
+</div>
+</div>
+<!-- AI Feedback / Citation -->
+<div class="flex items-center gap-space-sm pl-space-xs font-label-sm text-label-sm text-text-muted">
+<span>Rujukan SOP: <strong>SOP-DUKCAPIL-04/2025</strong></span>
+<span>•</span>
+<span>Akurasi: <strong>99.4%</strong></span>
+<span>•</span>
+<button class="text-primary hover:underline">Salin Jawaban</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat Prompt Input / Tester -->
+<div class="p-space-md bg-surface-card flex flex-col gap-space-xs">
+<div class="flex items-center gap-2 overflow-x-auto pb-1">
+<span class="font-label-sm text-label-sm text-text-muted shrink-0">Pertanyaan Uji Cepat:</span>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-mint-tag hover:text-primary shrink-0 transition-colors" onclick="document.getElementById('sim-input').value='Bagaimana cara urus IUMK warung sembako?'; document.getElementById('sim-input').focus();">
+              Pendaftaran IUMK
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-mint-tag hover:text-primary shrink-0 transition-colors" onclick="document.getElementById('sim-input').value='Apa syarat surat keterangan waris tanah adat?'; document.getElementById('sim-input').focus();">
+              Surat Waris Pertanahan
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-mint-tag hover:text-primary shrink-0 transition-colors" onclick="document.getElementById('sim-input').value='Berapa lama validasi SKTM bantuan KIS PBI?'; document.getElementById('sim-input').focus();">
+              SKTM KIS PBI
+            </button>
+</div>
+<div class="flex items-center gap-space-sm">
+<input class="flex-1 h-11 px-space-md rounded-lg bg-bg-ivory text-on-surface font-body-md text-body-md placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary transition-all" id="sim-input" placeholder="Ketik pertanyaan warga untuk menguji basis pengetahuan AI SusukanBot..." type="text"/>
+<button class="h-11 px-5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container shadow-sm active:scale-95 transition-all" id="btn-send-sim">
+<span>Uji AI</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Regulatory Synchronizer Banner -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-mint-tag flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Sinkronisasi JDIH Kabupaten Cirebon</span>
+<span class="font-body-sm text-body-sm text-text-muted">Perbup No. 12 Tahun 2024 tentang Layanan Administrasi Desa Terpadu aktif.</span>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold">Tersinkron</span>
+</div>
+</div>
+<!-- RIGHT: Knowledge Base & Unresolved Query Logs (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Section A: Knowledge Base Categories & Quick Editor -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">menu_book</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Basis Pengetahuan SOP</h2>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">4 Kategori Aktif</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted -mt-1">
+          Daftar materi referensi yang disuntikkan ke dalam model AI SusukanBot untuk menjawab aduan warga.
+        </p>
+<!-- Category Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Item 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-card flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold">28 SOP</span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold group-hover:text-primary transition-colors">Kependudukan</h3>
+<p class="font-body-sm text-body-sm text-text-muted">e-KTP, KK, KIA, Akta Kelahiran</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-card flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold">14 SOP</span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold group-hover:text-primary transition-colors">Perizinan Usaha</h3>
+<p class="font-body-sm text-body-sm text-text-muted">IUMK, NIB OSS, Izin Reklame</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-card flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[18px]">real_estate_agent</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold">19 SOP</span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold group-hover:text-primary transition-colors">Pertanahan &amp; Waris</h3>
+<p class="font-body-sm text-body-sm text-text-muted">SKKT, Rekomendasi Waris, Hibah</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-8 h-8 rounded-lg bg-surface-card flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-semibold">12 SOP</span>
+</div>
+<div class="mt-space-sm">
+<h3 class="font-label-lg text-label-lg text-on-surface font-bold group-hover:text-primary transition-colors">Bansos &amp; SKTM</h3>
+<p class="font-body-sm text-body-sm text-text-muted">KIS PBI, DTKS, Verifikasi BPNT</p>
+</div>
+</div>
+</div>
+<!-- Inline Fast Knowledge Editor Card -->
+<div class="mt-space-xs p-space-md rounded-lg bg-bg-ivory flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Editor Cepat Regulasi</span>
+<span class="font-label-sm text-label-sm text-status-selesai-text font-semibold">Draft Auto-Saved</span>
+</div>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-card font-label-md text-label-md text-on-surface focus:outline-none focus:ring-1 focus:ring-primary" type="text" value="Pencetakan Ulang KTP-el Rusak Tanpa Pengantar RT"/>
+<textarea class="w-full p-3 rounded-lg bg-surface-card font-body-sm text-body-sm text-on-surface-variant focus:outline-none focus:ring-1 focus:ring-primary resize-none leading-relaxed" rows="3">Instruksi AI: Tekankan kepada warga bahwa loket paten kecamatan gratis biaya 0 rupiah dan syarat hanya membawa fisik KTP lama + copy KK.</textarea>
+<div class="flex justify-end gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-card text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container">Pratinjau</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary-container">Publikasi ke AI Bot</button>
+</div>
+</div>
+</div>
+<!-- Section B: Unresolved Queries Log (Penyuluhan Material) -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-status-perbaikan-text text-[22px]">contact_support</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kueri Belum Terjawab</h2>
+<span class="font-body-sm text-body-sm text-text-muted">Bahan Evaluasi Safari Penyuluhan Kecamatan</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-status-perbaikan-bg text-status-perbaikan-text font-label-sm text-label-sm font-bold">
+            7 Perlu SOP
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant -mt-2">
+          Kueri dengan frekuensi tinggi dari warga yang belum dapat diputuskan otomatis oleh AI karena ketiadaan regulasi teknis.
+        </p>
+<!-- Unresolved List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="p-space-md rounded-lg bg-bg-ivory hover:bg-surface-container-low transition-colors flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-snug">
+                "Syarat mutasi PBB lahan warisan tanpa SPPT asli tahun 1990-an"
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-status-ditolak-bg text-status-ditolak-text font-label-sm text-label-sm font-bold shrink-0">
+                142 Warga
+              </span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-text-muted pt-1">
+<span>Asal: Desa Wiyong &amp; Desa Ujunggebang</span>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-0.5">
+<span>Susun SOP Baru</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md rounded-lg bg-bg-ivory hover:bg-surface-container-low transition-colors flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-snug">
+                "Cara aktivasi Identitas Kependudukan Digital (IKD) jika HP tidak ada NFC"
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm font-bold shrink-0">
+                98 Warga
+              </span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-text-muted pt-1">
+<span>Asal: Desa Bojong Kulon</span>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-0.5">
+<span>Susun SOP Baru</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md rounded-lg bg-bg-ivory hover:bg-surface-container-low transition-colors flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold leading-snug">
+                "Jadwal mobil keliling perekaman biometric lansia sakit di rumah"
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-mint-tag text-primary font-label-sm text-label-sm font-bold shrink-0">
+                64 Warga
+              </span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-text-muted pt-1">
+<span>Asal: Seluruh 12 Desa</span>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline flex items-center gap-0.5">
+<span>Jadwalkan Loket</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Export Action -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh Rekap Materi Penyuluhan Desa (.XLSX)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Educational Toast Notification Element -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="sync-toast">
+<div class="bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-xl flex items-center gap-space-md border-l-4 border-tertiary-fixed">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">task_alt</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold">Sinkronisasi Berhasil</span>
+<span class="font-body-sm text-body-sm text-surface-variant">Model SusukanBot telah diperbarui dengan regulasi Ditjen Dukcapil terbaru 2025.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initSusukanBotHelpdesk() {
+    const input = document.getElementById('sim-input');
+    const sendBtn = document.getElementById('btn-send-sim');
+    const container = document.getElementById('chat-messages-container');
+    const resetBtn = document.getElementById('btn-reset-chat');
+    const syncBtn = document.getElementById('btn-sync-regulasi');
+    const syncToast = document.getElementById('sync-toast');
+
+    function appendUserMessage(text) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'flex items-start justify-end gap-space-sm';
+      wrapper.innerHTML = `
+        <div class="flex flex-col items-end max-w-[85%]">
+          <div class="bg-primary text-on-primary p-space-md rounded-2xl rounded-tr-none shadow-sm">
+            <p class="font-body-md text-body-md leading-relaxed">${escapeHtml(text)}</p>
+          </div>
+          <span class="mt-1 font-label-sm text-label-sm text-text-muted">Operator Tester • Baru saja</span>
+        </div>
+        <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-text-muted shrink-0">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </div>
+      `;
+      container.appendChild(wrapper);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function appendAiLoading() {
+      const loader = document.createElement('div');
+      loader.id = 'ai-typing-indicator';
+      loader.className = 'flex items-start gap-space-sm';
+      loader.innerHTML = `
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-[18px]">smart_toy</span>
+        </div>
+        <div class="bg-surface-card p-space-md rounded-2xl rounded-tl-none shadow-sm text-on-surface flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-primary animate-bounce"></span>
+          <span class="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:0.2s]"></span>
+          <span class="w-2 h-2 rounded-full bg-primary animate-bounce [animation-delay:0.4s]"></span>
+          <span class="font-label-sm text-label-sm text-text-muted ml-2">SusukanBot sedang menganalisis basis regulasi...</span>
+        </div>
+      `;
+      container.appendChild(loader);
+      container.scrollTop = container.scrollHeight;
+      return loader;
+    }
+
+    function generateAiResponse(query) {
+      const q = query.toLowerCase();
+      let responseHtml = '';
+
+      if (q.includes('iumk') || q.includes('usaha') || q.includes('warung')) {
+        responseHtml = `
+          <div class="flex items-center gap-space-xs text-status-disetujui-text font-label-md text-label-md">
+            <span class="material-symbols-outlined text-[18px]">verified_user</span>
+            <span>Standar Pelayanan IUMK / NIB OSS Terverifikasi</span>
+          </div>
+          <p class="font-body-md text-body-md leading-relaxed">
+            Untuk pendaftaran izin usaha mikro/warung di Kecamatan Susukan, kini diterbitkan langsung melalui sistem <strong>OSS RBA Berbasis Risiko</strong> di Loket Pelayanan Terpadu.
+          </p>
+          <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-1 font-body-sm text-body-sm">
+            <span class="font-bold text-primary">Berkas yang diperlukan:</span>
+            <span>• NIK Pemilik Usaha &amp; Foto KTP</span>
+            <span>• Nomor WhatsApp Aktif &amp; Email</span>
+            <span>• Titik Lokasi Usaha di Kecamatan Susukan</span>
+          </div>
+          <div class="flex items-center gap-2 pt-1">
+            <span class="px-2.5 py-1 rounded bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm font-bold">Waktu: 15 Menit Jadi</span>
+            <span class="px-2.5 py-1 rounded bg-mint-tag text-primary font-label-sm text-label-sm font-bold">Biaya: Gratis Rp 0</span>
+          </div>
+        `;
+      } else if (q.includes('waris') || q.includes('tanah')) {
+        responseHtml = `
+          <div class="flex items-center gap-space-xs text-status-disetujui-text font-label-md text-label-md">
+            <span class="material-symbols-outlined text-[18px]">gavel</span>
+            <span>Regulasi Surat Keterangan Waris (Kecamatan Susukan)</span>
+          </div>
+          <p class="font-body-md text-body-md leading-relaxed">
+            Pengesahan surat keterangan waris tanah membutuhkan berkas lengkap yang telah ditandatangani Kepala Desa setempat dan saksi dua orang tetangga batas tanah.
+          </p>
+          <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-1 font-body-sm text-body-sm">
+            <span>• Surat Pengantar dari Balai Desa asal</span>
+            <span>• Surat Kematian Pewaris dari Disdukcapil</span>
+            <span>• FC KTP &amp; KK seluruh ahli waris yang sah</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-text-muted">Proses validasi Seksi Pemerintahan: 1 hari kerja kerja jika berkas lengkap.</p>
+        `;
+      } else {
+        responseHtml = `
+          <div class="flex items-center gap-space-xs text-primary font-label-md text-label-md">
+            <span class="material-symbols-outlined text-[18px]">quick_reference</span>
+            <span>Rangkuman Pengetahuan PATEN</span>
+          </div>
+          <p class="font-body-md text-body-md leading-relaxed">
+            Terima kasih atas pertanyaannya. Layanan PATEN Kecamatan Susukan buka setiap <strong>Senin - Jumat (08.00 - 15.30 WIB)</strong>. Seluruh pengurusan administrasi dasar kependudukan tidak dipungut biaya apapun (Gratis).
+          </p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm">Hubungi Petugas Front Office</button>
+            <button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm">Cek Brosur Jadwal Pelayanan</button>
+          </div>
+        `;
+      }
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'flex items-start gap-space-sm';
+      wrapper.innerHTML = `
+        <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+          <span class="material-symbols-outlined text-[18px]">smart_toy</span>
+        </div>
+        <div class="flex flex-col items-start max-w-[90%] gap-space-sm">
+          <div class="bg-surface-card p-space-lg rounded-2xl rounded-tl-none shadow-sm text-on-surface flex flex-col gap-space-sm">
+            ${responseHtml}
+          </div>
+          <div class="flex items-center gap-space-sm pl-space-xs font-label-sm text-label-sm text-text-muted">
+            <span>Dihasilkan dalam 0.78s</span>
+            <span>•</span>
+            <span class="text-status-selesai-text font-semibold">Tervalidasi Otomatis</span>
+          </div>
+        </div>
+      `;
+      container.appendChild(wrapper);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>'"]/g, 
+        tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag] || tag)
+      );
+    }
+
+    function handleSend() {
+      const val = input.value.trim();
+      if (!val) return;
+      appendUserMessage(val);
+      input.value = '';
+      const loader = appendAiLoading();
+
+      setTimeout(() => {
+        if (loader && loader.parentNode) {
+          loader.parentNode.removeChild(loader);
+        }
+        generateAiResponse(val);
+      }, 700);
+    }
+
+    sendBtn.addEventListener('click', handleSend);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleSend();
+    });
+
+    resetBtn.addEventListener('click', () => {
+      container.innerHTML = `
+        <div class="flex justify-center">
+          <span class="px-3 py-1 rounded-full bg-surface-container text-text-muted font-label-sm text-label-sm">
+            Sesi disetel ulang • Menunggu interaksi baru
+          </span>
+        </div>
+      `;
+    });
+
+    syncBtn.addEventListener('click', () => {
+      syncBtn.disabled = true;
+      syncBtn.classList.add('opacity-70');
+      const icon = syncBtn.querySelector('.material-symbols-outlined');
+      if (icon) icon.classList.add('animate-spin');
+
+      setTimeout(() => {
+        syncBtn.disabled = false;
+        syncBtn.classList.remove('opacity-70');
+        if (icon) icon.classList.remove('animate-spin');
+
+        // Show toast
+        syncToast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+        syncToast.classList.add('opacity-100', 'translate-y-0');
+
+        setTimeout(() => {
+          syncToast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+          syncToast.classList.remove('opacity-100', 'translate-y-0');
+        }, 3500);
+      }, 1000);
+    });
+  })();
+</script></main><footer class="w-full bg-surface-card border-t border-border-line py-space-md px-space-xl mt-auto"><div class="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-text-muted"><span>© 2025 Pemerintah Kecamatan Susukan. Sistem Informasi Administrasi Desa &amp; Kecamatan (SIADIK).</span><div class="flex items-center gap-space-md font-label-sm text-label-sm"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-status-selesai-text inline-block"></span>Server Pelayanan Terhubung</span><a class="hover:text-primary" href="#">Bantuan Teknis</a><a class="hover:text-primary" href="#">Pedoman SPM</a></div></div></footer></div></body></html>

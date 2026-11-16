@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Georgia:ital,wght@0,400;0,700;1,400&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed": "#002020", "tertiary-container": "#7c5900", "background": "#e9fef9", "secondary-container": "#beebeb", "on-error": "#ffffff", "on-tertiary-fixed": "#261900", "status-perbaikan-text": "#B45309", "surface-card": "#FFFFFF", "primary-fixed-dim": "#89d5c1", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#00201a", "error": "#ba1a1a", "border-line": "#E7ECE8", "status-disetujui-text": "#176B5B", "secondary-fixed": "#beebeb", "status-selesai-bg": "#E1F3EC", "status-ditolak-text": "#B02A2A", "status-ditolak-bg": "#FBE4E4", "surface-variant": "#d2e7e2", "status-disetujui-bg": "#E1F3EC", "status-menunggu-bg": "#FFF3DC", "on-surface-variant": "#3f4945", "secondary-fixed-dim": "#a3cfcf", "status-selesai-text": "#0F5B49", "on-primary-container": "#9ce9d4", "on-secondary-container": "#426b6c", "on-error-container": "#93000a", "bg-ivory": "#F7F8F5", "status-menunggu-text": "#9A6100", "tertiary-fixed": "#ffdea4", "surface-container-low": "#e3f8f3", "on-primary": "#ffffff", "on-surface": "#0c1f1c", "on-secondary-fixed-variant": "#224d4e", "on-tertiary": "#ffffff", "secondary": "#3b6566", "tertiary": "#5e4300", "outline-variant": "#bec9c4", "primary-container": "#176b5b", "on-primary-fixed-variant": "#005143", "text-muted": "#74817D", "on-background": "#0c1f1c", "mint-tag": "#E8F1ED", "surface-tint": "#166a5a", "surface-dim": "cadeda", "inverse-primary": "#89d5c1", "surface-container-high": "#d8ede8", "tertiary-fixed-dim": "#efbf61", "outline": "#6f7975", "primary": "#005144", "status-diverifikasi-text": "#245A9E", "status-perbaikan-bg": "#FDEBD3", "surface-container-highest": "#d2e7e2", "status-diverifikasi-bg": "#E3EEFB", "on-tertiary-fixed-variant": "#5d4200", "inverse-surface": "#223431", "surface": "#e9fef9", "primary-fixed": "#a5f1dd", "surface-bright": "#e9fef9", "inverse-on-surface": "#e0f5f0", "on-tertiary-container": "#ffd481", "on-secondary": "#ffffff", "surface-container": "#def2ed", "error-container": "#ffdad6" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "margin-tablet": "1.5rem", "space-xl": "1.75rem", "gutter": "0.875rem", "margin": "1rem", "margin-desktop": "1.75rem", "space-sm": "0.5rem", "space-lg": "1.125rem", "gutter-desktop": "1rem", "space-md": "0.875rem" }, fontFamily: { "headline-lg-mobile": ["Inter"], "letter-legal-body": ["Georgia"], "letter-legal-title": ["Georgia"], "body-md": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "label-eyebrow": ["Inter"], "label-lg": ["Inter"], "headline-xl": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "body-sm": ["Inter"] }, fontSize: { "headline-lg-mobile": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }], "letter-legal-body": ["12px", { lineHeight: "22px", fontWeight: "400" }], "letter-legal-title": ["14px", { lineHeight: "20px", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "14px", fontWeight: "600" }], "headline-md": ["18px", { lineHeight: "26px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-sm": ["16px", { lineHeight: "24px", fontWeight: "600" }], "headline-xl-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-eyebrow": ["10px", { lineHeight: "12px", letterSpacing: "0.15em", fontWeight: "700" }], "label-lg": ["14px", { lineHeight: "20px", fontWeight: "600" }], "headline-xl": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", fontWeight: "600" }], "headline-lg": ["26px", { lineHeight: "34px", letterSpacing: "-0.023em", fontWeight: "700" }], "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-ivory text-on-surface flex flex-col min-h-screen selection:bg-secondary-container"><header class="fixed top-0 inset-x-0 z-50 bg-primary/95 backdrop-blur-xl text-on-primary shadow-[0_1px_8px_rgba(0,0,0,0.06)] pt-safe"><div class="h-16 px-space-xs flex items-center justify-between gap-space-xs"><div class="flex items-center min-w-0 flex-1 gap-1"><button aria-label="Kembali" class="w-11 h-11 flex items-center justify-center rounded-full text-on-primary active:bg-primary-container/40 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="relative flex-shrink-0"><div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden"><span class="material-symbols-outlined text-primary text-[24px]">account_balance</span></div><span class="material-symbols-outlined text-primary-fixed bg-primary rounded-full absolute -bottom-0.5 -right-0.5 text-[14px]">verified</span></div><div class="flex flex-col min-w-0 flex-1 ml-1.5 cursor-pointer"><div class="flex items-center gap-1 min-w-0"><span class="font-label-lg text-label-lg text-on-primary truncate tracking-tight">Layanan Mandiri Desa Susukan</span><span class="material-symbols-outlined text-primary-fixed text-[15px] flex-shrink-0">verified</span></div><span class="font-label-sm text-label-sm text-on-primary-container truncate font-normal opacity-90">Akun Bisnis Resmi</span></div></div><div class="flex items-center flex-shrink-0"><button aria-label="Panggilan Video" class="w-11 h-11 flex items-center justify-center rounded-full text-on-primary active:bg-primary-container/40 transition-colors"><span class="material-symbols-outlined text-[22px]">videocam</span></button><button aria-label="Panggilan Suara" class="w-11 h-11 flex items-center justify-center rounded-full text-on-primary active:bg-primary-container/40 transition-colors"><span class="material-symbols-outlined text-[20px]">call</span></button><button aria-label="Opsi Lainnya" class="w-11 h-11 flex items-center justify-center rounded-full text-on-primary active:bg-primary-container/40 transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-bg-ivory flex-1"><div class="flex flex-col w-full">
+<!-- WhatsApp Subtle Background Ambient Pattern -->
+<div class="relative w-full flex flex-col px-3 py-4 gap-4 overflow-hidden">
+<!-- Ambient Civic Watermark Accent -->
+<div class="absolute -right-24 top-20 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 bottom-32 w-72 h-72 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<!-- Security & Encryption Announcement Banner -->
+<div class="self-center max-w-[88%] bg-surface-container-high/70 backdrop-blur-md px-3.5 py-1.5 rounded-lg shadow-sm flex items-center gap-1.5 text-center">
+<span class="material-symbols-outlined text-[14px] text-tertiary">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Pesan dan panggilan dienkripsi secara end-to-end. Verifikasi resmi Pemerintah Desa Susukan.</span>
+</div>
+<!-- Date Divider -->
+<div class="self-center">
+<span class="font-label-sm text-label-sm bg-surface-card px-3 py-1 rounded-full text-text-muted shadow-sm tracking-wide">Hari Ini</span>
+</div>
+<!-- 1. Outgoing Citizen Message (Green Bubble on Right) -->
+<div class="flex justify-end w-full pl-10">
+<div class="relative bg-primary-container text-on-primary rounded-2xl rounded-tr-xs px-4 py-2.5 shadow-md max-w-[86%]">
+<p class="font-body-md text-body-md text-on-primary leading-snug">
+          KTP saya hurufnya pudar, bagaimana?
+        </p>
+<div class="flex items-center justify-end gap-1 mt-1 text-right">
+<span class="font-label-sm text-label-sm text-on-primary-container opacity-90 font-normal">10:47 WIB</span>
+<!-- Read Ticks (Double Checkmark Blue/Teal) -->
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">done_all</span>
+</div>
+</div>
+</div>
+<!-- 2. Incoming Official WhatsApp Bot / Operator Reply -->
+<div class="flex justify-start w-full pr-4">
+<div class="relative bg-surface-card text-on-surface rounded-2xl rounded-tl-xs shadow-md max-w-full w-full overflow-hidden">
+<!-- Official Institution Header Strip -->
+<div class="bg-surface-container-low px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-md text-label-md text-on-surface">Pemerintah Desa Susukan</span>
+<span class="material-symbols-outlined text-primary-container text-[14px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Kecamatan Susukan, Kab. Cirebon</span>
+</div>
+</div>
+<span class="bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold">Resmi</span>
+</div>
+<!-- Banner Topic Badge -->
+<div class="px-4 pt-3.5 pb-1">
+<div class="bg-status-menunggu-bg text-status-menunggu-text px-3 py-1.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-status-menunggu-text">badge</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">SOLUSI DOKUMEN AUS & PUDAR • DUKCAPIL KAB. CIREBON</span>
+</div>
+</div>
+<!-- Greeting Narrative -->
+<div class="px-4 py-2">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Jangan khawatir, <strong class="font-semibold text-primary">Bapak Budi Santoso</strong>. Jika fisik e-KTP Anda pudar, terkelupas, atau huruf NIK tidak terbaca jelas, Pemerintah Desa Susukan menyediakan <strong>3 Solusi Resmi</strong> agar pengajuan surat Anda tetap diproses tanpa hambatan:
+          </p>
+</div>
+<!-- Solution Cards Container -->
+<div class="px-4 py-1 flex flex-col gap-3">
+<!-- Card Section 1: Solusi 1 (Rekomendasi Utama) -->
+<div class="bg-surface-container-low rounded-xl p-3.5 flex flex-col gap-2 relative overflow-hidden">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold">1</span>
+<span class="font-label-md text-label-md text-primary font-bold">Paling Cepat & Rekomendasi</span>
+</div>
+<span class="bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm px-2 py-0.5 rounded-full font-semibold">Langsung Lolos Verifikasi</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Gunakan Lembar IKD / Foto Kartu Keluarga (KK) Asli
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                NIK Anda akan diverifikasi otomatis via basis data SIAK terpadu desa. Anda cukup mengunggah foto KK asli pada bagian kepala keluarga atau baris nama Anda yang bertanda tangan barcode resmi Dukcapil.
+              </p>
+</div>
+<div class="bg-surface-card rounded-lg p-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-text-muted">Terhubung dengan SIAK Kemendagri & Arsip Desa</span>
+</div>
+</div>
+<!-- Card Section 2: Solusi 2 (Penggantian Cetak Ulang) -->
+<div class="bg-surface-card rounded-xl p-3.5 flex flex-col gap-2 shadow-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center font-bold">2</span>
+<span class="font-label-md text-label-md text-secondary font-bold">Penggantian / Cetak Ulang Gratis</span>
+</div>
+<span class="bg-mint-tag text-status-disetujui-text font-label-sm text-label-sm px-2 py-0.5 rounded-full">Rp0 (Gratis)</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Cetak Ulang e-KTP Baru di Kantor Kecamatan Susukan
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Surat pengantar penggantian KTP rusak dapat diterbitkan instan oleh Kantor Kuwu Susukan tanpa dipungut biaya.
+              </p>
+</div>
+<div class="flex items-center gap-3 pt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span class="font-label-sm text-label-sm text-text-muted">Proses: 10 - 15 Menit</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">local_shipping</span>
+<span class="font-label-sm text-label-sm text-text-muted">Bisa di Mobil Keliling Dukcapil</span>
+</div>
+</div>
+</div>
+<!-- Card Section 3: Solusi 3 (Verifikasi Petugas Desa) -->
+<div class="bg-surface-card rounded-xl p-3.5 flex flex-col gap-2 shadow-xs">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-on-surface-variant text-surface-card font-label-sm text-label-sm flex items-center justify-center font-bold">3</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Verifikasi Manual Petugas Desa</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+                Kunjungi Loket Pelayanan Kantor Kuwu Susukan
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Bawa fisik e-KTP pudar beserta kartu pendukung (SIM / BPJS / Ijazah). Petugas Kasi Pelayanan siap memvalidasi fisik secara manual ke sistem master kependudukan desa.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">access_time</span>
+<span class="font-label-sm text-label-sm font-semibold">Senin - Jumat: 08.00 - 15.00 WIB</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Loket 2 Umum</span>
+</div>
+</div>
+</div>
+<!-- Interactive WhatsApp Action Buttons (WhatsApp Interactive Template Structure) -->
+<div class="p-4 pt-3 flex flex-col gap-2 bg-surface-container-low/50">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider font-semibold">Tindakan Cepat Layanan</span>
+<!-- Primary Action Button -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-2.5 px-3.5 rounded-xl flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-[19px]">description</span>
+<span class="font-label-md text-label-md font-semibold text-center truncate">Unggah Foto Kartu Keluarga (KK) Sebagai Pengganti</span>
+</button>
+<!-- Secondary Action Button -->
+<button class="w-full bg-surface-card hover:bg-surface-container text-on-surface py-2.5 px-3.5 rounded-xl flex items-center justify-center gap-2 shadow-xs active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[19px]">print</span>
+<span class="font-label-md text-label-md font-semibold text-center truncate">Ajukan Surat Pengantar Cetak Ulang KTP</span>
+</button>
+<!-- Tertiary Action Button -->
+<button class="w-full bg-surface-card hover:bg-surface-container text-on-surface py-2 px-3 rounded-xl flex items-center justify-center gap-2 shadow-xs active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-status-perbaikan-text text-[18px]">location_on</span>
+<span class="font-label-md text-label-md text-center truncate">Lokasi Kantor Kuwu Susukan (Maps)</span>
+</button>
+<!-- Quaternary Action Button -->
+<button class="w-full bg-surface-card hover:bg-surface-container text-on-surface py-2 px-3 rounded-xl flex items-center justify-center gap-2 shadow-xs active:scale-[0.99] transition-all" type="button">
+<span class="material-symbols-outlined text-status-diverifikasi-text text-[18px]">support_agent</span>
+<span class="font-label-md text-label-md text-center truncate">Sambungkan ke Petugas Pelayanan (Live Chat)</span>
+</button>
+</div>
+<!-- Bot Footer & Meta Timestamp -->
+<div class="px-4 py-2 bg-surface-card flex items-center justify-between text-text-muted">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px] text-primary">smart_toy</span>
+<span class="font-label-sm text-label-sm">Asisten Virtual Desa Susukan</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm">10:48 WIB</span>
+<span class="material-symbols-outlined text-[13px] text-text-muted">lock</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Suggested Quick Reply Chips (WhatsApp Carousel/Horizontal Scroll) -->
+<div class="flex flex-col gap-1.5 pt-2">
+<div class="flex items-center gap-1 px-1">
+<span class="material-symbols-outlined text-[14px] text-primary">reply</span>
+<span class="font-label-sm text-label-sm text-text-muted font-semibold uppercase tracking-wider">Pilih Balasan Cepat</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 pt-0.5 no-scrollbar">
+<!-- Quick Reply 1 -->
+<button class="flex-shrink-0 bg-surface-card hover:bg-secondary-container/50 active:scale-95 text-on-surface px-3.5 py-2 rounded-full shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-primary text-[16px]">upload_file</span>
+<span class="font-label-md text-label-md font-medium whitespace-nowrap">Saya unggah KK saja sekarang</span>
+</button>
+<!-- Quick Reply 2 -->
+<button class="flex-shrink-0 bg-surface-card hover:bg-secondary-container/50 active:scale-95 text-on-surface px-3.5 py-2 rounded-full shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-tertiary-container text-[16px]">edit_document</span>
+<span class="font-label-md text-label-md font-medium whitespace-nowrap">Mau buat surat ganti KTP rusak</span>
+</button>
+<!-- Quick Reply 3 -->
+<button class="flex-shrink-0 bg-surface-card hover:bg-secondary-container/50 active:scale-95 text-on-surface px-3.5 py-2 rounded-full shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="font-label-md text-label-md font-medium whitespace-nowrap">Terima kasih infonya, Pak! 🙏</span>
+</button>
+</div>
+</div>
+<!-- WhatsApp Bottom Input Bar Simulation -->
+<div class="mt-3 bg-surface-card rounded-2xl p-2 shadow-md flex items-center gap-2">
+<!-- Emoji / Mood Button -->
+<button aria-label="Emoji" class="w-9 h-9 rounded-full flex items-center justify-center text-text-muted hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">mood</span>
+</button>
+<!-- Text Input Placeholder -->
+<div class="flex-1 bg-bg-ivory rounded-xl px-3 py-1.5 flex items-center justify-between">
+<span class="font-body-md text-body-md text-text-muted truncate">Ketik pesan balasan...</span>
+<button aria-label="Lampiran" class="text-text-muted hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px] rotate-45">attach_file</span>
+</button>
+</div>
+<!-- Camera Action -->
+<button aria-label="Kamera" class="w-9 h-9 rounded-full flex items-center justify-center text-text-muted hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">photo_camera</span>
+</button>
+<!-- Voice Note / Send Button -->
+<button aria-label="Kirim Pesan Suara" class="w-10 h-10 rounded-full bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center shadow-sm active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Village Administrative Info Banner Bottom -->
+<div class="text-center py-2 flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-text-muted text-[13px]">shield</span>
+<span class="font-label-sm text-label-sm text-text-muted">Kanal Pelayanan Kependudukan Digital Kuwu Susukan 2025</span>
+</div>
+</div>
+</div></main></body></html>

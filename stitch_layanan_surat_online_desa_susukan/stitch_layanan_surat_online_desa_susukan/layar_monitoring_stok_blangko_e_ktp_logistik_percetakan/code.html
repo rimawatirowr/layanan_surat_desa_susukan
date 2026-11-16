@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary":"#ffffff","status-ditolak-text":"#B02A2A","inverse-primary":"#89d5c1","surface":"#e9fef9","status-perbaikan-text":"#B45309","status-disetujui-text":"#176B5B","tertiary":"#5e4300","surface-container-high":"#d8ede8","tertiary-container":"#7c5900","surface-container-highest":"#d2e7e2","surface-dim":"#cadeda","tertiary-fixed-dim":"#efbf61","secondary-container":"#beebeb","status-menunggu-text":"#9A6100","on-secondary":"#ffffff","on-secondary-fixed-variant":"#224d4e","on-error-container":"#93000a","bg-ivory":"#F7F8F5","status-disetujui-bg":"#E1F3EC","surface-container-low":"#e3f8f3","outline":"#6f7975","primary-container":"#176b5b","error":"#ba1a1a","on-primary-fixed-variant":"#005143","on-tertiary-fixed":"#261900","on-surface":"#0c1f1c","on-primary-container":"#9ce9d4","primary-fixed":"#a5f1dd","status-diverifikasi-bg":"#E3EEFB","on-secondary-fixed":"#002020","status-selesai-text":"#0F5B49","status-ditolak-bg":"#FBE4E4","inverse-surface":"#223431","on-primary":"#ffffff","surface-tint":"#166a5a","on-primary-fixed":"#00201a","surface-card":"#FFFFFF","on-secondary-container":"#426b6c","status-menunggu-bg":"#FFF3DC","surface-variant":"#d2e7e2","text-muted":"#74817D","status-selesai-bg":"#E1F3EC","surface-container-lowest":"#ffffff","primary":"#005144","inverse-on-surface":"#e0f5f0","secondary-fixed":"#beebeb","error-container":"#ffdad6","on-error":"#ffffff","secondary-fixed-dim":"#a3cfcf","status-perbaikan-bg":"#FDEBD3","status-diverifikasi-text":"#245A9E","secondary":"#3b6566","mint-tag":"#E8F1ED","primary-fixed-dim":"#89d5c1","tertiary-fixed":"#ffdea4","surface-container":"#def2ed","on-tertiary-fixed-variant":"#5d4200","on-tertiary-container":"#ffd481","surface-bright":"#e9fef9","background":"#e9fef9","on-background":"#0c1f1c","border-line":"#E7ECE8","on-surface-variant":"#3f4945","outline-variant":"#bec9c4"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-md":"0.875rem","space-lg":"1.125rem","space-xl":"1.75rem","gutter-desktop":"1rem","margin-desktop":"1.75rem","margin":"1rem","space-sm":"0.5rem","gutter":"0.875rem","margin-tablet":"1.5rem"},"fontFamily":{"letter-legal-title":["Georgia"],"headline-xl-mobile":["Inter"],"letter-legal-body":["Georgia"],"headline-lg":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"body-sm":["Inter"],"label-eyebrow":["Inter"],"headline-xl":["Inter"]},"fontSize":{"letter-legal-title":["14px",{"lineHeight":"20px","fontWeight":"700"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"letter-legal-body":["12px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg":["26px",{"lineHeight":"34px","letterSpacing":"-0.023em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-eyebrow":["10px",{"lineHeight":"12px","letterSpacing":"0.15em","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md antialiased"><aside class="fixed left-0 top-0 h-full w-[244px] bg-surface-card z-50 flex flex-col justify-between shadow-[0_8px_28px_rgba(20,55,47,0.06)]"><div class="flex flex-col"><div class="px-margin-desktop py-space-lg flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Kecamatan Susukan</span><span class="font-headline-sm text-headline-sm text-primary truncate leading-tight">Sistem Loket</span></div></div><div class="px-space-md py-space-xs"><div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-status-disetujui-text animate-pulse"></span><span class="font-label-sm text-label-sm text-primary">Loket 2 Aktif</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-status-disetujui-bg text-status-disetujui-text">Online</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-sm" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="panel-pemanggilan" href="#"><span class="material-symbols-outlined text-[20px]">campaign</span><span class="font-label-lg text-label-lg">Panel Pemanggilan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="antrean-hari-ini" href="#"><span class="material-symbols-outlined text-[20px]">format_list_numbered</span><span class="font-label-lg text-label-lg">Antrean Hari Ini</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="riwayat-pelayanan" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-label-lg text-label-lg">Riwayat Pelayanan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="monitoring-blangko" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">Monitoring Blangko</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="bantuan" href="#"><span class="material-symbols-outlined text-[20px]">help_center</span><span class="font-label-lg text-label-lg">Bantuan SOP</span></a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-space-sm rounded-lg bg-bg-ivory flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-text-muted">SIAK Disdukcapil</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-status-disetujui-text"><span class="w-1.5 h-1.5 rounded-full bg-status-disetujui-text"></span>Online</span></div><span class="font-body-sm text-body-sm text-on-surface-variant font-mono">192.168.10.24:8080</span><div class="flex items-center justify-between pt-1"><span class="font-label-sm text-label-sm text-text-muted">Latency</span><span class="font-label-sm text-label-sm text-on-surface">14 ms</span></div></div><div class="text-center"><span class="font-label-eyebrow text-label-eyebrow text-text-muted">KANTOR CAMAT SUSUKAN v2.4</span></div></div></aside><div class="pl-[244px]"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/95 backdrop-blur-xl z-40 flex items-center justify-between px-margin-desktop shadow-[0_4px_16px_rgba(20,55,47,0.08)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="px-space-sm py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-md text-label-md font-bold tracking-wide">LOKET 2</span><span class="font-body-sm text-body-sm text-text-muted">Cetak e-KTP &amp; IKD Digital</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-sm py-1.5 rounded-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">volume_up</span><span class="font-label-sm text-label-sm text-primary">Pengeras Suara Aktif</span></div><button class="px-space-sm py-1 rounded bg-surface-card hover:bg-surface-container-high text-primary font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[14px]">play_circle</span>Tes Bel</button></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Siti Rohmah, S.AP</span><span class="font-label-sm text-label-sm text-text-muted">Operator Pelayanan NIP. 19880412...</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-bg-ivory min-h-screen px-margin-desktop py-space-xl"><div class="flex flex-col w-full gap-space-lg pb-12">
+<!-- Top Headline Strip: Civic Identity & Fast Stock Summary -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-card p-space-lg rounded-xl shadow-sm relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-gradient-to-br from-primary-fixed/30 to-transparent pointer-events-none"></div>
+<div class="flex flex-col gap-1 z-10">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-primary font-bold tracking-widest bg-mint-tag px-2 py-0.5 rounded">Logistik Unit KTP-el</span>
+<span class="text-text-muted font-body-sm text-body-sm">•</span>
+<span class="font-body-sm text-body-sm text-text-muted">Gudang Brankas Loket II • Kec. Susukan, Kab. Cirebon</span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Monitoring Stok &amp; Konsumsi Fargo HDP5000</h1>
+<span class="px-2 py-0.5 rounded bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">Sinkron SIAK 08:32 WIB</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Pencatatan real-time nomor seri RFID e-KTP, ribbon sublimasi warna, film retransfer HDP, dan tata kelola Berita Acara Rekonsiliasi Disdukcapil Sumber.
+      </p>
+</div>
+<!-- Quick Action Cluster -->
+<div class="flex items-center gap-space-sm z-10 shrink-0">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-low text-primary hover:bg-surface-container transition-all flex items-center gap-2 font-label-lg text-label-lg shadow-sm" onclick="document.getElementById('modal-bast').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">note_alt</span>
+<span>Buat BAST Reject</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all flex items-center gap-2 font-label-lg text-label-lg shadow-sm active:scale-95" onclick="document.getElementById('modal-permohonan').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span>Ajukan Droping Blangko</span>
+</button>
+</div>
+</div>
+<!-- Primary Metric Bento Grid: Physical Stock, Quota, Consumables -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Stok Fisik Blangko Bagus -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-muted uppercase">Stok Siap Cetak (Good)</span>
+<span class="font-headline-xl text-headline-xl text-primary mt-1">428 <span class="font-label-lg text-label-lg text-on-surface-variant font-normal">keping</span></span>
+</div>
+<div class="w-11 h-11 rounded-lg bg-mint-tag flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">contactless</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-text-muted">Kapasitas Box Khusus</span>
+<span class="text-primary font-bold">85.6%</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 85.6%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-status-disetujui-text"></span>
+          Cukup untuk ± 8 hari pelayanan normal
+        </span>
+</div>
+</div>
+<!-- Card 2: Alokasi Dinas Dukcapil -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-muted uppercase">Alokasi Induk Dinas</span>
+<span class="font-headline-xl text-headline-xl text-on-surface mt-1">1,000 <span class="font-label-lg text-label-lg text-text-muted font-normal">keping</span></span>
+</div>
+<div class="w-11 h-11 rounded-lg bg-status-diverifikasi-bg text-status-diverifikasi-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">domain</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-text-muted">Realisasi Pengambilan</span>
+<span class="text-status-diverifikasi-text font-bold">572 / 1.000</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-status-diverifikasi-text h-full rounded-full" style="width: 57.2%;"></div>
+</div>
+<span class="font-body-sm text-body-sm text-text-muted mt-1">Sisa jatah TA 2025: 428 keping</span>
+</div>
+</div>
+<!-- Card 3: Blangko Rusak / Reject -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-muted uppercase">Blangko Reject / Rusak</span>
+<span class="font-headline-xl text-headline-xl text-status-ditolak-text mt-1">14 <span class="font-label-lg text-label-lg text-text-muted font-normal">keping</span></span>
+</div>
+<div class="w-11 h-11 rounded-lg bg-status-ditolak-bg text-status-ditolak-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">sim_card_download</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-1">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-status-ditolak-text font-medium">9 Chip Gagal • 5 Film Jammed</span>
+</div>
+<div class="flex items-center justify-between text-text-muted font-label-sm text-label-sm pt-2">
+<span>Menunggu BAST Retur</span>
+<span class="px-2 py-0.5 rounded bg-status-perbaikan-bg text-status-perbaikan-text font-bold">Segel Box B-02</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Kit Fargo HDP5000 Logistik -->
+<div class="bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-muted uppercase">Ribbon &amp; Film Fargo</span>
+<span class="font-headline-xl text-headline-xl text-on-surface mt-1">64% <span class="font-label-lg text-label-lg text-text-muted font-normal">sisa roll</span></span>
+</div>
+<div class="w-11 h-11 rounded-lg bg-status-menunggu-bg text-status-menunggu-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">print</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-disetujui-text"></span> Ribbon YMCK (084051)
+          </span>
+<span class="font-bold text-primary">320 print</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-status-disetujui-text"></span> Retransfer Film (084053)
+          </span>
+<span class="font-bold text-primary">488 print</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Middle Section: Visual Split (Consumption Analytics & Ribbon Monitor) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left 7 cols: SVG Trend Grafik Konsumsi Harian & Chip Range -->
+<div class="lg:col-span-7 bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Analisis Efisiensi Produksi</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Tren Pencetakan KTP-el 7 Hari Terakhir</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-text-muted">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span> Berhasil
+          </span>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-text-muted">
+<span class="w-3 h-3 rounded-full bg-status-ditolak-text"></span> Rusak
+          </span>
+<span class="px-2 py-1 rounded bg-bg-ivory text-on-surface-variant font-label-sm text-label-sm font-mono">Total: 298 Keping</span>
+</div>
+</div>
+<!-- Inline SVG Chart -->
+<div class="w-full bg-bg-ivory/50 rounded-lg p-space-md">
+<svg class="w-full h-48 overflow-visible" preserveaspectratio="none" viewbox="0 0 540 160">
+<defs>
+<lineargradient id="primaryArea" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#176b5b" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#176b5b" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#E7ECE8" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="540" y1="30" y2="30"></line>
+<line stroke="#E7ECE8" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="540" y1="70" y2="70"></line>
+<line stroke="#E7ECE8" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="540" y1="110" y2="110"></line>
+<line stroke="#E7ECE8" stroke-width="1" x1="0" x2="540" y1="150" y2="150"></line>
+<!-- Area under curve -->
+<polygon fill="url(#primaryArea)" points="20,150 20,85 100,60 180,95 260,40 340,30 420,50 500,25 500,150"></polygon>
+<!-- Main Production Line (Green) -->
+<polyline fill="none" points="20,85 100,60 180,95 260,40 340,30 420,50 500,25" stroke="#176b5b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></polyline>
+<!-- Reject Points (Red Dots) -->
+<circle class="hover:scale-125 transition-transform" cx="20" cy="85" fill="#176b5b" r="4"></circle>
+<circle cx="100" cy="60" fill="#176b5b" r="4"></circle>
+<circle cx="180" cy="95" fill="#176b5b" r="4"></circle>
+<circle cx="260" cy="40" fill="#176b5b" r="4"></circle>
+<circle cx="340" cy="30" fill="#176b5b" r="4"></circle>
+<circle cx="420" cy="50" fill="#176b5b" r="4"></circle>
+<circle cx="500" cy="25" fill="#176b5b" r="4"></circle>
+<!-- Reject mini bar indicators -->
+<rect fill="#B02A2A" height="10" rx="2" width="6" x="97" y="140"></rect>
+<rect fill="#B02A2A" height="15" rx="2" width="6" x="257" y="135"></rect>
+<rect fill="#B02A2A" height="8" rx="2" width="6" x="417" y="142"></rect>
+<!-- Text Labels -->
+<text fill="#74817D" font-family="Inter" font-size="10" text-anchor="middle" x="20" y="140">Sen (38)</text>
+<text fill="#74817D" font-family="Inter" font-size="10" text-anchor="middle" x="100" y="140">Sel (48)</text>
+<text fill="#74817D" font-family="Inter" font-size="10" text-anchor="middle" x="180" y="140">Rab (32)</text>
+<text fill="#74817D" font-family="Inter" font-size="10" text-anchor="middle" x="260" y="140">Kam (58)</text>
+<text fill="#74817D" font-family="Inter" font-size="10" text-anchor="middle" x="340" y="140">Jum (62)</text>
+<text fill="#74817D" font-family="Inter" font-size="10" text-anchor="middle" x="420" y="140">Sab (52)</text>
+<text fill="#74817D" font-family="Inter" font-size="10" text-anchor="middle" x="500" y="140">Hari Ini (68)</text>
+</svg>
+</div>
+<!-- Batch RFID Active Chip Metadata -->
+<div class="mt-4 pt-3 flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">SERI CHIP AKTIF PENGGUNAAN</span>
+<span class="font-body-sm text-body-sm font-mono text-on-surface font-semibold">32.09.24.2025.040001 <span class="text-text-muted">s/d</span> 32.09.24.2025.040500</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-card text-on-surface-variant font-label-sm text-label-sm shadow-xs">Pabrikan: PT Len Industri</span>
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span> Audit Seri
+          </button>
+</div>
+</div>
+</div>
+<!-- Right 5 cols: Fargo HDP5000 Hardware Diagnostics & Consumables Cartridge -->
+<div class="lg:col-span-5 bg-surface-card p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Unit Fargo HDP5000</h2>
+<span class="font-label-sm text-label-sm text-text-muted font-mono">S/N: HDP5K-SSK-002 • Loket 2</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-disetujui-text animate-pulse"></span> Siap Cetak
+          </span>
+</div>
+<!-- Ribbon Gauge Graphic and Details -->
+<div class="mt-4 flex flex-col gap-3">
+<!-- Ribbon YMCK -->
+<div class="p-space-sm rounded-lg bg-bg-ivory flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">palette</span> Ribbon Full Color YMCK
+              </span>
+<span class="font-mono text-label-sm text-label-sm text-primary font-bold">64% (320 / 500)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 64%;"></div>
+</div>
+<div class="flex justify-between text-text-muted font-body-sm text-body-sm">
+<span>Part No: 084051</span>
+<span>Prediksi Habis: 4 Hari</span>
+</div>
+</div>
+<!-- Retransfer Film -->
+<div class="p-space-sm rounded-lg bg-bg-ivory flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">layers</span> HDP Retransfer Clear Film
+              </span>
+<span class="font-mono text-label-sm text-label-sm text-primary font-bold">32% (488 / 1500)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 32.5%;"></div>
+</div>
+<div class="flex justify-between text-text-muted font-body-sm text-body-sm">
+<span>Part No: 084053</span>
+<span class="text-status-perbaikan-text font-medium">Perlu Penggantian Roll Pekan Depan</span>
+</div>
+</div>
+<!-- Cleaning Roller & Head State -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Head Temp</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">178°C <span class="font-label-sm text-label-sm text-status-disetujui-text">Optimal</span></span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Siklus Pembersihan</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">1.420 <span class="font-label-sm text-label-sm text-text-muted">print</span></span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<button class="font-label-md text-label-md text-primary hover:text-primary-container flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span> Kalibrasi Posisi Sensor
+        </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-all flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">cleaning_services</span> Reset Roll Pembersih
+        </button>
+</div>
+</div>
+</div>
+<!-- Operational Flow Data Section: Tabs / Table of Physical Batches & Reject Log -->
+<div class="bg-surface-card rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Logistik Masuk &amp; Mutasi Terkini</span>
+<h2 class="font-headline-md text-headline-md text-primary">Daftar Bundle Blangko &amp; Nomor Seri RFID</h2>
+</div>
+<!-- Filters & Search -->
+<div class="flex flex-wrap items-center gap-2">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-text-muted text-[18px]">search</span>
+<input class="h-10 pl-9 pr-3 rounded-lg bg-bg-ivory text-body-sm font-body-sm text-on-surface focus:outline-none focus:ring-1 focus:ring-primary w-48 sm:w-60" placeholder="Cari No. Dus / Serial..." type="text"/>
+</div>
+<select class="h-10 px-3 rounded-lg bg-bg-ivory text-body-sm font-body-sm text-on-surface-variant focus:outline-none">
+<option>Semua Status Bundle</option>
+<option>Aktif Digunakan</option>
+<option>Tersimpan di Brankas</option>
+<option>Telah Habis Tercetak</option>
+</select>
+<button class="h-10 px-3 rounded-lg bg-surface-container text-primary hover:bg-surface-container-high transition-all flex items-center gap-1 font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span> Unduh XLS
+        </button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left text-body-sm font-body-sm">
+<thead>
+<tr class="bg-bg-ivory text-text-muted font-label-eyebrow text-label-eyebrow uppercase tracking-wider">
+<th class="py-3 px-4">Kode Dus / BAST</th>
+<th class="py-3 px-4">Rentang Serial RFID (16 Digit)</th>
+<th class="py-3 px-4">Penerimaan</th>
+<th class="py-3 px-4 text-center">Isi Asal</th>
+<th class="py-3 px-4 text-center">Tersisa</th>
+<th class="py-3 px-4 text-center">Reject</th>
+<th class="py-3 px-4">Status Box</th>
+<th class="py-3 px-4 text-right">Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-line">
+<!-- Row 1: Sedang Aktif -->
+<tr class="hover:bg-mint-tag/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-bold text-primary">BOX-2025-04</span>
+<span class="text-text-muted text-label-sm font-label-sm">BAST. 042/DISDUK/II/2025</span>
+</div>
+</td>
+<td class="py-3 px-4 font-mono text-on-surface">
+              320924-2025040001 <span class="text-text-muted">s/d</span> 320924-2025040500
+            </td>
+<td class="py-3 px-4">
+<span class="text-on-surface">12 Feb 2025</span>
+<span class="block text-text-muted text-label-sm font-label-sm">Kurir Dinas Cirebon</span>
+</td>
+<td class="py-3 px-4 text-center font-semibold">500</td>
+<td class="py-3 px-4 text-center font-bold text-primary">228</td>
+<td class="py-3 px-4 text-center text-status-ditolak-text font-bold">4</td>
+<td class="py-3 px-4">
+<span class="px-2.5 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-disetujui-text"></span> Aktif di Tray
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="p-1.5 rounded hover:bg-surface-container text-primary" title="Detail Box" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Masih Disegel di Brankas -->
+<tr class="hover:bg-mint-tag/40 transition-colors">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-bold text-on-surface">BOX-2025-05</span>
+<span class="text-text-muted text-label-sm font-label-sm">BAST. 042/DISDUK/II/2025</span>
+</div>
+</td>
+<td class="py-3 px-4 font-mono text-on-surface">
+              320924-2025040501 <span class="text-text-muted">s/d</span> 320924-2025041000
+            </td>
+<td class="py-3 px-4">
+<span class="text-on-surface">12 Feb 2025</span>
+<span class="block text-text-muted text-label-sm font-label-sm">Kurir Dinas Cirebon</span>
+</td>
+<td class="py-3 px-4 text-center font-semibold">500</td>
+<td class="py-3 px-4 text-center font-bold text-on-surface">200</td>
+<td class="py-3 px-4 text-center text-text-muted font-bold">0</td>
+<td class="py-3 px-4">
+<span class="px-2.5 py-0.5 rounded-full bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-sm text-label-sm font-bold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">lock</span> Segel Brankas
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="p-1.5 rounded hover:bg-surface-container text-primary" title="Buka Segel Box" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_open</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Riwayat Box Terdahulu (Selesai Rekonsiliasi) -->
+<tr class="hover:bg-mint-tag/40 transition-colors opacity-80">
+<td class="py-3 px-4">
+<div class="flex flex-col">
+<span class="font-mono text-text-muted">BOX-2025-03</span>
+<span class="text-text-muted text-label-sm font-label-sm">BAST. 018/DISDUK/I/2025</span>
+</div>
+</td>
+<td class="py-3 px-4 font-mono text-text-muted">
+              320924-2025030001 <span class="text-text-muted">s/d</span> 320924-2025030500
+            </td>
+<td class="py-3 px-4">
+<span class="text-on-surface">18 Jan 2025</span>
+<span class="block text-text-muted text-label-sm font-label-sm">Dinas Cirebon</span>
+</td>
+<td class="py-3 px-4 text-center text-text-muted">500</td>
+<td class="py-3 px-4 text-center font-mono font-bold text-text-muted">0</td>
+<td class="py-3 px-4 text-center text-status-ditolak-text font-bold">10</td>
+<td class="py-3 px-4">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-text-muted font-label-sm text-label-sm font-medium">
+                Habis &amp; Ter-BAST
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="p-1.5 rounded hover:bg-surface-container text-text-muted" title="Arsip BAST" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Bottom Section: Official BAST History & Submission Workflow Tracker -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left 7 Cols: Riwayat Pengajuan Droping ke Disdukcapil Sumber -->
+<div class="lg:col-span-7 bg-surface-card rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Disdukcapil Sumber, Kab. Cirebon</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Riwayat Usulan Penambahan Blangko (Droping)</h3>
+</div>
+<span class="px-2 py-1 rounded bg-bg-ivory text-label-sm font-label-sm text-on-surface-variant font-mono">Total Diajukan: 4 Kali</span>
+</div>
+<!-- Timeline Flow Tracker for Recent Request -->
+<div class="mt-4 p-space-md rounded-lg bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-primary">Surat Permohonan: 470/118-Kec/II/2025</span>
+<span class="px-2 py-0.5 rounded bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm font-bold">Menunggu Pengambilan</span>
+</div>
+<span class="font-mono text-label-sm text-label-sm text-text-muted">14 Feb 2025</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Usulan tambahan <strong>500 keping blangko</strong> dan <strong>1 roll ribbon YMCK</strong> untuk persiapan lonjakan perekaman pemilih pemula Kecamatan Susukan.
+          </p>
+<!-- 4-step progress mini line -->
+<div class="grid grid-cols-4 gap-2 pt-2">
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full rounded-full bg-primary"></div>
+<span class="font-label-sm text-label-sm text-primary font-bold">1. Diajukan</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full rounded-full bg-primary"></div>
+<span class="font-label-sm text-label-sm text-primary font-bold">2. Disetujui Kabid</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full rounded-full bg-primary animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-primary font-bold">3. Siap Ambil</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="h-1.5 w-full rounded-full bg-border-line"></div>
+<span class="font-label-sm text-label-sm text-text-muted">4. Diterima Loket</span>
+</div>
+</div>
+</div>
+<!-- Historic list -->
+<div class="mt-4 flex flex-col divide-y divide-border-line text-body-sm font-body-sm">
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Surat Pengajuan: 470/041-Kec/I/2025</span>
+<span class="text-text-muted text-label-sm font-label-sm">Jumlah: 1.000 Keping (Teralokasi Penuh)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-text-muted">20 Jan 2025</span>
+<span class="px-2 py-0.5 rounded bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm font-bold">Selesai Distribusi</span>
+</div>
+</div>
+<div class="py-2.5 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Surat Pengajuan: 470/982-Kec/XI/2024</span>
+<span class="text-text-muted text-label-sm font-label-sm">Jumlah: 750 Keping + 2 Roll Film HDP</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm text-text-muted">28 Nov 2024</span>
+<span class="px-2 py-0.5 rounded bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm font-bold">Selesai Distribusi</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-4 flex justify-end">
+<button class="text-primary hover:text-primary-container font-label-sm text-label-sm flex items-center gap-1" type="button">
+          Lihat Seluruh Arsip Pengajuan Permohonan <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right 5 Cols: Berita Acara Pemusnahan / Retur Blangko Rusak (BAST Preview) -->
+<div class="lg:col-span-5 bg-surface-card rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-text-muted">Pertanggungjawaban Fisik</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Pratinjau Draft BAST Reject</h3>
+</div>
+<span class="material-symbols-outlined text-text-muted text-[20px]">verified</span>
+</div>
+<!-- Official Legal Paper Virtual Card -->
+<div class="bg-bg-ivory rounded-lg p-space-md shadow-xs flex flex-col gap-2 relative">
+<!-- Kop Surat Mini -->
+<div class="text-center pb-2 border-b border-border-line">
+<h4 class="font-letter-legal-title text-letter-legal-title uppercase tracking-wide text-primary">Pemerintah Kabupaten Cirebon</h4>
+<p class="font-letter-legal-body text-letter-legal-body font-bold text-on-surface">Kecamatan Susukan - Loket Adminduk</p>
+<p class="text-[10px] text-text-muted font-mono leading-tight">Jalan Prof. Moh. Yamin No. 12, Susukan 45166</p>
+</div>
+<div class="pt-1 text-center">
+<span class="font-letter-legal-title text-[11px] font-bold underline text-on-surface">BERITA ACARA RETUR BLANGKO RUSAK</span>
+<p class="text-[10px] text-text-muted font-mono">Nomor: 470 / 08 / BAST-BLG / II / 2025</p>
+</div>
+<p class="font-letter-legal-body text-letter-legal-body text-on-surface-variant leading-relaxed text-justify pt-1">
+            Pada hari ini, <strong>Jumat</strong> tanggal <strong>Empat Belas</strong> bulan <strong>Februari</strong> tahun <strong>Dua Ribu Dua Puluh Lima</strong>, bertempat di Loket II Pelayanan Adminduk Kecamatan Susukan, telah direkapitulasi blangko KTP-el kondisi rusak/gagal cetak sejumlah <strong>14 (Empat Belas) keping</strong> untuk diserahkan ke Dinas Kependudukan dan Pencatatan Sipil Kabupaten Cirebon.
+          </p>
+<!-- List of Rejects Summary -->
+<div class="bg-surface-card p-2 rounded text-label-sm font-label-sm text-on-surface flex flex-col gap-1 font-mono">
+<div class="flex justify-between">
+<span>• Chip RFID Unreadable:</span>
+<span class="font-bold text-status-ditolak-text">9 Keping</span>
+</div>
+<div class="flex justify-between">
+<span>• Film Kerut / Defect Print:</span>
+<span class="font-bold text-status-ditolak-text">5 Keping</span>
+</div>
+</div>
+<!-- Signatures Snippet -->
+<div class="grid grid-cols-2 pt-2 text-[10px] text-center font-sans">
+<div>
+<span class="text-text-muted">Operator Loket II,</span>
+<div class="h-6"></div>
+<span class="font-bold text-on-surface block underline">Siti Rohmah, S.AP</span>
+<span class="text-text-muted text-[9px]">NIP. 19880412 201101 2 003</span>
+</div>
+<div>
+<span class="text-text-muted">Kasi Pelayanan Umum,</span>
+<div class="h-6"></div>
+<span class="font-bold text-on-surface block underline">H. Suwanda, S.Sos</span>
+<span class="text-text-muted text-[9px]">NIP. 19740615 199803 1 004</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action buttons -->
+<div class="pt-4 flex items-center justify-between gap-2">
+<button class="w-1/2 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span> Edit Nomor Seri
+        </button>
+<button class="w-1/2 py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-all flex items-center justify-center gap-1 shadow-sm" onclick="alert('Mencetak 3 rangkap BAST Resmi untuk penyerahan Disdukcapil...')" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span> Cetak BAST Fisik
+        </button>
+</div>
+</div>
+</div>
+<!-- Modal 1: Form Berita Acara Reject / Rusak (BAST Resmi) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="modal-bast">
+<div class="bg-surface-card rounded-2xl shadow-xl max-w-xl w-full p-space-lg flex flex-col gap-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-status-ditolak-bg text-status-ditolak-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">sim_card_download</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Input Blangko Rusak / Gagal Cetak</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Pencatatan nomor seri RFID untuk BAST pemusnahan resmi</p>
+</div>
+</div>
+<button class="text-text-muted hover:text-on-surface p-1 rounded-lg" onclick="document.getElementById('modal-bast').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Data blangko reject berhasil disimpan ke antrean BAST.'); document.getElementById('modal-bast').classList.add('hidden');">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Nomor Seri Chip RFID (16 Digit)</label>
+<input class="h-11 px-3 rounded-lg bg-bg-ivory text-body-md font-mono text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none" placeholder="Contoh: 3209242025040182" required="" type="text"/>
+<span class="font-body-sm text-body-sm text-text-muted">Gunakan barcode scanner atau ketikkan nomor seri pada kartu fisik.</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Penyebab Kerusakan</label>
+<select class="h-11 px-3 rounded-lg bg-bg-ivory text-body-md font-body-md text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none">
+<option>Chip Tidak Terbaca (SIAK Error)</option>
+<option>Film Nyangkut (Retransfer Jam)</option>
+<option>Pita Warna Terbakar / Belang</option>
+<option>Fisik Kartu Bending / Melengkung</option>
+<option>Salah Cetak Data Warga (Operator)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Asal Box Penyimpanan</label>
+<select class="h-11 px-3 rounded-lg bg-bg-ivory text-body-md font-body-md text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none">
+<option>BOX-2025-04 (Tray Aktif)</option>
+<option>BOX-2025-05 (Brankas)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">NIK Warga Terdampak (Jika Gagal Saat Cetak)</label>
+<input class="h-11 px-3 rounded-lg bg-bg-ivory text-body-md font-mono text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none" placeholder="320901******0008" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Keterangan Tambahan Petugas</label>
+<textarea class="p-3 rounded-lg bg-bg-ivory text-body-md font-body-md text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none" placeholder="Catatan kondisi error printer Fargo HDP5000..." rows="2"></textarea>
+</div>
+<div class="pt-2 flex items-center justify-end gap-space-sm">
+<button class="h-10 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg" onclick="document.getElementById('modal-bast').classList.add('hidden')" type="button">
+            Batal
+          </button>
+<button class="h-10 px-5 rounded-lg bg-status-ditolak-bg text-status-ditolak-text hover:bg-red-200 font-label-lg text-label-lg font-bold" type="submit">
+            Simpan Masuk BAST Reject
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Modal 2: Form Pengajuan Droping Blangko ke Dukcapil Cirebon -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="modal-permohonan">
+<div class="bg-surface-card rounded-2xl shadow-xl max-w-xl w-full p-space-lg flex flex-col gap-space-md max-h-[921px] overflow-y-auto">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-mint-tag text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">add_business</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Permohonan Droping Blangko &amp; Tinta</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Kirimkan nota dinas digital ke Seksi Identitas Disdukcapil</p>
+</div>
+</div>
+<button class="text-text-muted hover:text-on-surface p-1 rounded-lg" onclick="document.getElementById('modal-permohonan').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Nota permohonan logistik terkirim ke sistem Disdukcapil Cirebon.'); document.getElementById('modal-permohonan').classList.add('hidden');">
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Jumlah Blangko Diminta</label>
+<div class="relative">
+<input class="h-11 w-full px-3 rounded-lg bg-bg-ivory text-body-md font-mono text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none" max="2000" min="100" step="100" type="number" value="500"/>
+<span class="absolute right-3 top-2.5 text-text-muted text-label-sm font-label-sm">keping</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Prioritas Kebutuhan</label>
+<select class="h-11 px-3 rounded-lg bg-bg-ivory text-body-md font-body-md text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none">
+<option>Reguler Pelayanan Loket</option>
+<option>Perekaman Jemput Bola Desa</option>
+<option>Persiapan Rekam KTP Pemula</option>
+<option>Darurat Bencana / Pemekaran</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-2 p-3 bg-surface-container-low rounded-lg">
+<span class="font-label-md text-label-md text-primary font-bold">Permintaan Konsumabel Printer Tambahan:</span>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span>Ribbon YMCK Fargo (1 Roll)</span>
+</label>
+<label class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span>Retransfer Film HDP (1 Roll)</span>
+</label>
+<label class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span>Kit Pembersih (Cleaning Card)</span>
+</label>
+<label class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span>Amplop Pelindung KTP-el</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Petugas Pengambil dari Kecamatan</label>
+<input class="h-11 px-3 rounded-lg bg-bg-ivory text-body-md font-body-md text-on-surface border-0 focus:ring-2 focus:ring-primary focus:outline-none" type="text" value="Ahmad Farhan (Staf Pelayanan Umum)"/>
+</div>
+<div class="pt-2 flex items-center justify-end gap-space-sm">
+<button class="h-10 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg" onclick="document.getElementById('modal-permohonan').classList.add('hidden')" type="button">
+            Tutup
+          </button>
+<button class="h-10 px-5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg font-bold" type="submit">
+            Kirim Nota Usulan
+          </button>
+</div>
+</form>
+</div>
+</div>
+</div></main></div></body></html>

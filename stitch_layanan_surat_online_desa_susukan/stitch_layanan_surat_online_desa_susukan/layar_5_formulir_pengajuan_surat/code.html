@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary-fixed-variant":"#5d4200","background":"#e9fef9","surface-tint":"#166a5a","status-selesai-bg":"#E1F3EC","status-disetujui-text":"#176B5B","on-secondary":"#ffffff","mint-tag":"#E8F1ED","on-error":"#ffffff","on-secondary-fixed-variant":"#224d4e","inverse-on-surface":"#e0f5f0","status-ditolak-text":"#B02A2A","surface-container-highest":"#d2e7e2","surface-variant":"#d2e7e2","status-diverifikasi-text":"#245A9E","status-selesai-text":"#0F5B49","on-surface-variant":"#3f4945","on-tertiary-fixed":"#261900","bg-ivory":"#F7F8F5","on-secondary-container":"#426b6c","status-menunggu-text":"#9A6100","surface-card":"#FFFFFF","status-ditolak-bg":"#FBE4E4","on-background":"#0c1f1c","outline":"#6f7975","on-tertiary-container":"#ffd481","secondary-fixed":"#beebeb","on-tertiary":"#ffffff","surface-container":"#def2ed","status-menunggu-bg":"#FFF3DC","surface-bright":"#e9fef9","tertiary-fixed-dim":"#efbf61","on-surface":"#0c1f1c","text-muted":"#74817D","tertiary":"#5e4300","primary":"#005144","on-primary-container":"#9ce9d4","secondary":"#3b6566","tertiary-container":"#7c5900","primary-container":"#176b5b","tertiary-fixed":"#ffdea4","secondary-fixed-dim":"#a3cfcf","status-perbaikan-text":"#B45309","on-secondary-fixed":"#002020","status-disetujui-bg":"#E1F3EC","outline-variant":"#bec9c4","surface-container-high":"#d8ede8","primary-fixed-dim":"#89d5c1","border-line":"#E7ECE8","error":"#ba1a1a","on-primary-fixed":"#00201a","surface":"#e9fef9","secondary-container":"#beebeb","primary-fixed":"#a5f1dd","status-diverifikasi-bg":"#E3EEFB","surface-container-low":"#e3f8f3","inverse-primary":"#89d5c1","on-primary-fixed-variant":"#005143","error-container":"#ffdad6","on-primary":"#ffffff","surface-dim":"#cadeda","surface-container-lowest":"#ffffff","status-perbaikan-bg":"#FDEBD3","on-error-container":"#93000a","inverse-surface":"#223431"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.875rem","space-lg":"1.125rem","space-sm":"0.5rem","margin":"1rem","space-xl":"1.75rem","margin-desktop":"1.75rem","space-md":"0.875rem","gutter-desktop":"1rem","space-xs":"0.25rem","margin-tablet":"1.5rem"},"fontFamily":{"headline-sm":["Inter"],"label-lg":["Inter"],"letter-legal-body":["Georgia"],"label-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-eyebrow":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"headline-lg":["Inter"],"headline-xl-mobile":["Inter"],"headline-lg-mobile":["Inter"],"letter-legal-title":["Georgia"],"headline-xl":["Inter"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"letter-legal-body":["12px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-eyebrow":["10px",{"lineHeight":"12px","letterSpacing":"0.15em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["26px",{"lineHeight":"34px","letterSpacing":"-0.023em","fontWeight":"700"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"letter-legal-title":["14px",{"lineHeight":"20px","fontWeight":"700"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-[244px] bg-primary z-50 flex flex-col justify-between shadow-[0_8px_28px_rgba(20,55,47,0.14)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-xs bg-primary/40"><img alt="Logo Desa Susukan" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/><div class="flex flex-col ml-space-xs"><span class="font-headline-sm text-headline-sm text-surface-container-lowest leading-tight">Desa Susukan</span><span class="font-label-eyebrow text-label-eyebrow text-primary-fixed uppercase tracking-wider">Pelayanan Mandiri</span></div></div><div class="px-space-md py-space-sm"><div class="text-surface-container-highest/60 font-label-eyebrow text-label-eyebrow uppercase px-space-xs mb-space-xs">Layanan Warga</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="dashboard-pelayanan" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span class="font-label-lg text-label-lg">Beranda</span></a><a aria-current="page" class="flex items-center gap-space-xs px-space-xs py-space-xs transition-colors bg-primary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="pengajuan-surat" href="#"><span class="material-symbols-outlined text-lg">post_add</span><span class="font-label-lg text-label-lg">Buat Pengajuan</span></a><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="riwayat-permohonan" href="#"><span class="material-symbols-outlined text-lg">history_edu</span><span class="font-label-lg text-label-lg">Riwayat Surat</span></a><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="arsip-dokumen" href="#"><span class="material-symbols-outlined text-lg">folder_shared</span><span class="font-label-lg text-label-lg">Arsip Dokumen</span></a></nav></div><div class="px-space-md py-space-sm"><div class="text-surface-container-highest/60 font-label-eyebrow text-label-eyebrow uppercase px-space-xs mb-space-xs">Akun &amp; Bantuan</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="profil-warga" href="#"><span class="material-symbols-outlined text-lg">person</span><span class="font-label-lg text-label-lg">Data Keluarga</span></a><a class="flex items-center gap-space-xs px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg" data-path="pusat-bantuan" href="#"><span class="material-symbols-outlined text-lg">help_center</span><span class="font-label-lg text-label-lg">Panduan &amp; FAQ</span></a></nav></div></div><div class="p-space-md bg-primary/30"><div class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-lowest/10"><span class="material-symbols-outlined text-surface-container-lowest text-lg">verified_user</span><div class="flex flex-col"><span class="font-label-md text-label-md text-surface-container-lowest">Layanan Resmi</span><span class="font-label-sm text-label-sm text-surface-container-highest/70">Kabupaten Cirebon</span></div></div></div></aside><div class="pl-[244px]"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/90 backdrop-blur-xl shadow-[0_4px_16px_rgba(20,55,47,0.08)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-xs"><img alt="Logo Desa Susukan" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/><nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-text-muted"><span class="text-on-surface-variant font-label-sm text-label-sm">Sistem</span><span class="material-symbols-outlined text-sm text-outline-variant">chevron_right</span><span class="text-on-surface-variant font-label-sm text-label-sm">Warga</span><span class="material-symbols-outlined text-sm text-outline-variant">chevron_right</span><span class="text-primary font-label-md text-label-md">Layanan Surat</span></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-text-muted text-lg">search</span><input class="h-10 pl-9 pr-14 bg-bg-ivory rounded-lg text-on-surface font-body-sm text-body-sm w-64 focus:outline-none focus:ring-2 focus:ring-primary-container/20" placeholder="Cari jenis surat, NIK..." readonly="" type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 text-[10px] font-label-sm text-text-muted bg-surface-card rounded shadow-sm">Ctrl K</kbd></div><button class="relative p-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEOLFBz59GEECFxTdV3zG28lMNRi3lX71JHYfem_pEj3AVbOms5N5DBnqkQGvHz-XKvYQ_fmBXVz3BlH_yKt6nJAKRvVWJ2-tyYI8LcgZBJwoClQHqZrQJyPd8nkQ7Zn_4uuKFMhTOBIw2AFh3kRb5CXRyJpMCva5orn0Kld_t31QApfAgHD1dKoOd0IFS-IOW2khLiGyEmyVQghQZzuEtfwhUvTGxjlX_FRpUhvw"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Siti Rahayu</span><span class="font-label-sm text-label-sm text-text-muted leading-tight">320901******0004</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-bg-ivory"><div class="flex flex-col w-full">
+<div class="max-w-[1360px] mx-auto w-full px-space-md md:px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Top Context & Header Banner -->
+<section class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary via-primary-container to-secondary p-space-xl text-on-primary shadow-xl">
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-primary-fixed-dim/10 blur-2xl pointer-events-none"></div>
+<div class="absolute right-32 bottom-0 w-48 h-48 rounded-full bg-secondary-fixed/10 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs w-fit bg-primary-fixed/20 backdrop-blur-md px-3 py-1 rounded-full text-primary-fixed">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-on-primary">PERMOHONAN BARU</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl tracking-tight text-surface-container-lowest mt-space-xs">Formulir Pengajuan Surat Online</h1>
+<p class="font-body-md text-body-md text-surface-container-highest/90">Isi data pemohon dan unggah berkas persyaratan yang dibutuhkan untuk pemrosesan legalitas desa secara terpadu.</p>
+</div>
+<div class="hidden lg:flex items-center gap-space-md bg-surface-container-lowest/10 backdrop-blur-sm p-space-md rounded-lg">
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-surface-container-highest/80">ID Sesi Warga</span>
+<span class="font-label-md text-label-md text-surface-container-lowest tracking-wider font-mono">DS-SSK-2024-8841</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest/30"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-container-lowest">Validasi NIK</span>
+<span class="font-label-eyebrow text-label-eyebrow text-primary-fixed uppercase">Terverifikasi Dukcapil</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Two-Column Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column (65% / 8 Cols): Interactive Form -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg">
+<form class="bg-surface-card rounded-xl shadow-md p-space-lg md:p-space-xl flex flex-col gap-space-xl" id="permohonanForm" onsubmit="event.preventDefault(); handleFormSubmit();">
+<!-- Section 1: Pilihan Jenis Surat -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5" for="jenisSurat">
+<span class="material-symbols-outlined text-primary text-lg">description</span>
+                Pilihan Jenis Surat
+              </label>
+<span class="font-label-sm text-label-sm text-text-muted">Wajib Diisi</span>
+</div>
+<div class="relative">
+<select class="w-full bg-bg-ivory text-on-surface font-body-md text-body-md rounded-lg py-3 px-4 appearance-none focus:outline-none focus:bg-surface-container-low shadow-sm transition-all cursor-pointer" id="jenisSurat" onchange="updatePersyaratanView(this.value)">
+<option selected="" value="domisili">Surat Keterangan Domisili (SKD)</option>
+<option value="sktm">SKTM - Surat Keterangan Tidak Mampu</option>
+<option value="skck">Surat Pengantar SKCK</option>
+<option value="sku">Surat Keterangan Usaha (SKU)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-text-muted">arrow_drop_down</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Dokumen resmi yang diterbitkan dan ditandatangani oleh Kepala Desa Susukan atau pejabat berwenang.</p>
+</div>
+<!-- Section 2: Pemohon -->
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">badge</span>
+              Pihak Pemohon
+            </label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<label class="relative flex items-start gap-space-md p-space-md rounded-lg bg-bg-ivory cursor-pointer transition-all hover:bg-surface-container-low">
+<input checked="" class="mt-1 w-4 h-4 accent-primary" name="pemohonType" onchange="toggleFamilyDropdown(false)" type="radio" value="diri_sendiri"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Untuk Diri Sendiri</span>
+<span class="font-body-sm text-body-sm text-text-muted">Siti Aminah (320901******0004)</span>
+<span class="font-label-eyebrow text-label-eyebrow text-status-disetujui-text uppercase mt-1">Kepala Keluarga / Warga Aktif</span>
+</div>
+</label>
+<label class="relative flex items-start gap-space-md p-space-md rounded-lg bg-bg-ivory cursor-pointer transition-all hover:bg-surface-container-low">
+<input class="mt-1 w-4 h-4 accent-primary" name="pemohonType" onchange="toggleFamilyDropdown(true)" type="radio" value="keluarga"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Anggota Keluarga dalam KK</span>
+<span class="font-body-sm text-body-sm text-text-muted">Pilih anggota berdasarkan data Kartu Keluarga</span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase mt-1">3 Pilihan Terdaftar</span>
+</div>
+</label>
+</div>
+<!-- Nested Family Member Selector (Hidden by default) -->
+<div class="hidden flex-col gap-space-xs mt-space-xs p-space-md bg-surface-container-low rounded-lg transition-all" id="familySelectContainer">
+<label class="font-label-md text-label-md text-on-surface" for="anggotaKeluarga">Pilih Nama Anggota Keluarga</label>
+<select class="w-full bg-surface-card text-on-surface font-body-sm text-body-sm rounded-lg py-2.5 px-3 focus:outline-none shadow-sm" id="anggotaKeluarga">
+<option value="1">Ahmad Subagja - Anak Kandung (320901******0008)</option>
+<option value="2">Dewi Sartika - Ibu (320901******0002)</option>
+<option value="3">Budi Setiawan - Suami (320901******0003)</option>
+</select>
+</div>
+</div>
+<!-- Section 3: Keperluan Surat -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5" for="keperluanSurat">
+<span class="material-symbols-outlined text-primary text-lg">edit_note</span>
+                Keperluan Surat
+              </label>
+<span class="font-label-sm text-label-sm text-text-muted" id="charCount">0 / 250 karakter</span>
+</div>
+<textarea class="w-full bg-bg-ivory text-on-surface font-body-md text-body-md rounded-lg p-space-md focus:outline-none focus:bg-surface-container-low shadow-sm resize-none transition-colors" id="keperluanSurat" maxlength="250" oninput="updateCharCount(this)" placeholder="Contoh: Persyaratan pendaftaran beasiswa anak atau administrasi bank" rows="3"></textarea>
+<p class="font-body-sm text-body-sm text-text-muted">Sebutkan tujuan surat sejelas mungkin agar staf desa dapat mencantumkan redaksi yang sah secara hukum.</p>
+</div>
+<!-- Section 4: Unggah Berkas Persyaratan -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-lg">cloud_upload</span>
+                Unggah Berkas Persyaratan
+              </label>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Maks. 2MB per berkas</span>
+</div>
+<div class="group relative flex flex-col items-center justify-center p-space-xl bg-bg-ivory hover:bg-mint-tag transition-all rounded-xl cursor-pointer text-center" id="dropZone" onclick="triggerFileInput()">
+<input accept=".jpg,.jpeg,.png,.pdf" class="hidden" id="fileInput" multiple="" onchange="handleFileSelect(event)" type="file"/>
+<div class="w-14 h-14 rounded-full bg-primary-fixed/40 group-hover:bg-primary-fixed flex items-center justify-center text-primary mb-space-sm transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-2xl">drive_folder_upload</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Unggah KTP / KK / Surat Pengantar RT</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Tarik berkas ke sini atau <span class="text-primary font-semibold underline">pilih dari perangkat</span></p>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase mt-space-sm tracking-wider">Format Didukung: JPG, PNG, atau PDF</span>
+</div>
+<!-- File Uploaded List Container -->
+<div class="flex flex-col gap-space-xs mt-space-xs" id="fileList">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-lg">image</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">KTP_SitiAminah_Elektronik.jpg</span>
+<span class="font-body-sm text-body-sm text-text-muted">1.2 MB • Tersedia dari Profil</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text uppercase">Otomatis Terlampir</span>
+<button class="p-1 text-text-muted hover:text-error transition-colors" title="Ganti berkas" type="button">
+<span class="material-symbols-outlined text-sm">cached</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 5: Checkbox Persetujuan UU PDP -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-start gap-space-md">
+<div class="flex items-center h-5 mt-0.5">
+<input class="w-4 h-4 rounded accent-primary cursor-pointer" id="persetujuanCheckbox" required="" type="checkbox"/>
+</div>
+<label class="font-body-sm text-body-sm text-on-surface select-none cursor-pointer" for="persetujuanCheckbox">
+              Saya menyatakan bahwa data dan berkas yang dilampirkan adalah benar dan sah. Saya bersedia bertanggung jawab secara hukum sesuai ketentuan Undang-Undang Perlindungan Data Pribadi (UU PDP No. 27/2022) dan administrasi kependudukan yang berlaku.
+            </label>
+</div>
+<!-- Section 6: Action Buttons -->
+<div class="flex flex-col-reverse sm:flex-row items-center justify-end gap-space-md pt-space-xs">
+<button class="w-full sm:w-auto h-[42px] px-6 rounded-lg bg-bg-ivory hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors flex items-center justify-center gap-2" onclick="showDraftNotification()" type="button">
+<span class="material-symbols-outlined text-lg">bookmark</span>
+              Simpan Draf
+            </button>
+<button class="w-full sm:w-auto h-[42px] px-8 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg transition-all shadow-md hover:shadow-lg active:scale-95 flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-lg">send</span>
+              Kirim Pengajuan Surat
+            </button>
+</div>
+</form>
+</section>
+<!-- Right Column (35% / 4 Cols): Persyaratan & Estimasi Information Block -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg sticky top-20">
+<!-- Main Info Card -->
+<div class="bg-surface-card rounded-xl shadow-md p-space-lg flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">fact_check</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Persyaratan &amp; Estimasi</h2>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-status-disetujui-text"></span>
+</div>
+<!-- Estimasi Box -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-text-muted">Estimasi Pemrosesan</span>
+<span class="font-headline-sm text-headline-sm text-primary">1x24 Jam Hari Kerja</span>
+<span class="font-body-sm text-body-sm text-text-muted">Senin - Jumat (08:00 - 15:30 WIB)</span>
+</div>
+</div>
+<!-- Dynamic Checklist Based on Letter Selection -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Dokumen Diperlukan</span>
+<ul class="flex flex-col gap-space-sm" id="persyaratanList">
+<!-- Dynamically populated or static baseline -->
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-disetujui-text text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Fotokopi / Scan e-KTP Pemohon</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-disetujui-text text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Kartu Keluarga (KK) Desa Susukan</span>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-status-disetujui-text text-base mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface" id="dynamicRequirementItem">Surat Pengantar RT / RW Setempat</span>
+</li>
+</ul>
+</div>
+<!-- Notification Note Card -->
+<div class="p-space-md rounded-lg bg-mint-tag flex items-start gap-space-sm text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-primary text-xl shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">mark_chat_unread</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Notifikasi Pengiriman</span>
+<p class="font-body-sm text-body-sm leading-relaxed text-on-surface-variant">
+                Pemberitahuan &amp; salinan surat digital akan otomatis dikirimkan ke nomor WhatsApp Anda yang terdaftar <span class="font-semibold text-primary">(+62 812-****-8891)</span>.
+              </p>
+</div>
+</div>
+<!-- Flow Timeline Micro Indicator -->
+<div class="pt-space-xs flex flex-col gap-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase">Tahapan Pemrosesan</span>
+<div class="flex items-center justify-between text-center pt-2">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center">1</div>
+<span class="font-label-sm text-label-sm text-primary mt-1">Ajukan</span>
+</div>
+<div class="h-0.5 w-6 bg-primary-fixed-dim"></div>
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center">2</div>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">Verifikasi</span>
+</div>
+<div class="h-0.5 w-6 bg-surface-container-high"></div>
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center">3</div>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">TTE Kades</span>
+</div>
+<div class="h-0.5 w-6 bg-surface-container-high"></div>
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center justify-center">4</div>
+<span class="font-label-sm text-label-sm text-text-muted mt-1">Unduh</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Help Quick Contact -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex items-center gap-space-md">
+<div class="w-9 h-9 rounded-full bg-status-diverifikasi-bg text-status-diverifikasi-text flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Butuh bantuan formulir?</span>
+<span class="font-body-sm text-body-sm text-text-muted">Hubungi Petugas Pelayanan Desa Susukan via Live Chat WhatsApp.</span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Toast Notification Modal Layer (Ephemeral) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-primary text-on-primary px-space-lg py-space-md rounded-xl shadow-2xl flex items-center gap-space-md">
+<span class="material-symbols-outlined text-tertiary-fixed text-2xl" id="toastIcon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md" id="toastTitle">Berhasil Disimpan</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest" id="toastMessage">Draf pengajuan surat Anda tersimpan di akun.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function updateCharCount(textarea) {
+    const counter = document.getElementById('charCount');
+    counter.textContent = `${textarea.value.length} / 250 karakter`;
+  }
+
+  function toggleFamilyDropdown(isFamily) {
+    const container = document.getElementById('familySelectContainer');
+    if (isFamily) {
+      container.classList.remove('hidden');
+      container.classList.add('flex');
+    } else {
+      container.classList.add('hidden');
+      container.classList.remove('flex');
+    }
+  }
+
+  function updatePersyaratanView(val) {
+    const dynamicReq = document.getElementById('dynamicRequirementItem');
+    if (val === 'domisili') {
+      dynamicReq.textContent = 'Surat Pengantar RT / RW Setempat';
+    } else if (val === 'sktm') {
+      dynamicReq.textContent = 'Foto Rumah (Tampak Depan) & Surat Pernyataan';
+    } else if (val === 'skck') {
+      dynamicReq.textContent = 'Pas Foto Formal 4x6 (Latar Merah) & Pengantar RT';
+    } else if (val === 'sku') {
+      dynamicReq.textContent = 'Foto Tempat Usaha & Surat Keterangan RT/RW';
+    }
+  }
+
+  function triggerFileInput() {
+    document.getElementById('fileInput').click();
+  }
+
+  function handleFileSelect(event) {
+    const files = event.target.files;
+    if (!files || files.length === 0) return;
+    
+    const fileList = document.getElementById('fileList');
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      const fileSize = (file.size / (1024 * 1024)).toFixed(1);
+      
+      const fileItem = document.createElement('div');
+      fileItem.className = 'flex items-center justify-between p-space-sm bg-surface-container-low rounded-lg animate-fadeIn';
+      fileItem.innerHTML = `
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-primary text-lg">attach_file</span>
+          <div class="flex flex-col">
+            <span class="font-label-sm text-label-sm text-on-surface truncate max-w-[200px] md:max-w-xs">${file.name}</span>
+            <span class="font-body-sm text-body-sm text-text-muted">${fileSize} MB • Berhasil Diunggah</span>
+          </div>
+        </div>
+        <button type="button" onclick="this.parentElement.remove()" class="p-1 text-text-muted hover:text-error transition-colors">
+          <span class="material-symbols-outlined text-sm">delete</span>
+        </button>
+      `;
+      fileList.appendChild(fileItem);
+    }
+    showToast('Berkas Ditambahkan', `${files.length} berkas berhasil diunggah.`);
+  }
+
+  function showDraftNotification() {
+    showToast('Draf Disimpan', 'Draf permohonan telah disimpan secara lokal.');
+  }
+
+  function handleFormSubmit() {
+    const jenis = document.getElementById('jenisSurat').options[document.getElementById('jenisSurat').selectedIndex].text;
+    showToast('Pengajuan Terkirim!', `Surat ${jenis} berhasil diajukan dan sedang diproses.`);
+    setTimeout(() => {
+      document.getElementById('keperluanSurat').value = '';
+      updateCharCount(document.getElementById('keperluanSurat'));
+      document.getElementById('persetujuanCheckbox').checked = false;
+    }, 1500);
+  }
+
+  function showToast(title, message) {
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMsg = document.getElementById('toastMessage');
+    
+    toastTitle.textContent = title;
+    toastMsg.textContent = message;
+    
+    toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3500);
+  }
+</script></main></div></body></html>

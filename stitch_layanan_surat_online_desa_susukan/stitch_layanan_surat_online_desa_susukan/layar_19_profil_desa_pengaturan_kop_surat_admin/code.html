@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"border-line":"#E7ECE8","on-background":"#0c1f1c","background":"#e9fef9","bg-ivory":"#F7F8F5","error-container":"#ffdad6","on-tertiary-fixed":"#261900","inverse-surface":"#223431","on-tertiary-fixed-variant":"#5d4200","inverse-primary":"#89d5c1","secondary-fixed":"#beebeb","status-disetujui-text":"#176B5B","status-perbaikan-bg":"#FDEBD3","status-perbaikan-text":"#B45309","on-surface-variant":"#3f4945","on-secondary":"#ffffff","on-tertiary":"#ffffff","on-error":"#ffffff","status-selesai-bg":"#E1F3EC","error":"#ba1a1a","outline":"#6f7975","status-diverifikasi-bg":"#E3EEFB","tertiary-fixed":"#ffdea4","surface-container-highest":"#d2e7e2","tertiary":"#5e4300","status-ditolak-text":"#B02A2A","on-primary-fixed":"#00201a","tertiary-fixed-dim":"#efbf61","surface-container-low":"#e3f8f3","surface-dim":"#cadeda","primary-fixed":"#a5f1dd","secondary-container":"#beebeb","surface-variant":"#d2e7e2","on-surface":"#0c1f1c","status-disetujui-bg":"#E1F3EC","on-error-container":"#93000a","outline-variant":"#bec9c4","status-ditolak-bg":"#FBE4E4","primary-fixed-dim":"#89d5c1","on-primary-fixed-variant":"#005143","on-secondary-fixed":"#002020","surface":"#e9fef9","primary":"#005144","on-secondary-fixed-variant":"#224d4e","surface-card":"#FFFFFF","on-primary":"#ffffff","status-selesai-text":"#0F5B49","primary-container":"#176b5b","secondary-fixed-dim":"#a3cfcf","tertiary-container":"#7c5900","status-diverifikasi-text":"#245A9E","surface-container-lowest":"#ffffff","status-menunggu-bg":"#FFF3DC","surface-bright":"#e9fef9","secondary":"#3b6566","on-primary-container":"#9ce9d4","text-muted":"#74817D","surface-container-high":"#d8ede8","surface-container":"#def2ed","inverse-on-surface":"#e0f5f0","on-tertiary-container":"#ffd481","mint-tag":"#E8F1ED","on-secondary-container":"#426b6c","surface-tint":"#166a5a","status-menunggu-text":"#9A6100"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.125rem","gutter-desktop":"1rem","margin":"1rem","margin-desktop":"1.75rem","space-md":"0.875rem","gutter":"0.875rem","space-xs":"0.25rem","space-xl":"1.75rem","space-sm":"0.5rem","margin-tablet":"1.5rem"},"fontFamily":{"letter-legal-title":["Georgia"],"headline-sm":["Inter"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-xl":["Inter"],"label-lg":["Inter"],"label-md":["Inter"],"label-eyebrow":["Inter"],"headline-lg-mobile":["Inter"],"label-sm":["Inter"],"headline-lg":["Inter"],"letter-legal-body":["Georgia"],"headline-xl-mobile":["Inter"],"headline-md":["Inter"],"body-md":["Inter"]},"fontSize":{"letter-legal-title":["14px",{"lineHeight":"20px","fontWeight":"700"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-eyebrow":["10px",{"lineHeight":"12px","letterSpacing":"0.15em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","fontWeight":"600"}],"headline-lg":["26px",{"lineHeight":"34px","letterSpacing":"-0.023em","fontWeight":"700"}],"letter-legal-body":["12px",{"lineHeight":"22px","fontWeight":"400"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}]}}}};</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md"><aside class="fixed left-0 top-0 h-full w-[244px] bg-primary z-50 flex flex-col justify-between shadow-[0_8px_28px_rgba(20,55,47,0.14)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-xs bg-primary/40"><img alt="Logo Desa Susukan" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/><div class="flex flex-col ml-space-xs"><span class="font-headline-sm text-headline-sm text-surface-container-lowest leading-tight">Desa Susukan</span><span class="font-label-eyebrow text-label-eyebrow text-primary-fixed uppercase tracking-wider">Pelayanan Mandiri</span></div></div><div class="px-space-md py-space-sm"><div class="text-surface-container-highest/60 font-label-eyebrow text-label-eyebrow uppercase px-space-xs mb-space-xs">Administrasi Desa</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg font-label-lg text-label-lg" data-path="layar-16-laporan-buku-register-admin" href="#">Laporan &amp; Buku Register</a><a class="flex items-center px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg font-label-lg text-label-lg" data-path="layar-17-komunikasi-whatsapp-log-notifikasi-admin" href="#">WhatsApp &amp; Log Notifikasi</a></nav></div><div class="px-space-md py-space-sm"><div class="text-surface-container-highest/60 font-label-eyebrow text-label-eyebrow uppercase px-space-xs mb-space-xs">Layanan Warga</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg font-label-lg text-label-lg" data-path="dashboard-pelayanan" href="#">Beranda Layanan</a><a class="flex items-center px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg font-label-lg text-label-lg" data-path="riwayat-permohonan" href="#">Riwayat Permohonan</a><a class="flex items-center px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg font-label-lg text-label-lg" data-path="arsip-dokumen" href="#">Arsip Dokumen</a></nav></div><div class="px-space-md py-space-sm"><div class="text-surface-container-highest/60 font-label-eyebrow text-label-eyebrow uppercase px-space-xs mb-space-xs">Akun &amp; Bantuan</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a class="flex items-center px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg font-label-lg text-label-lg" data-path="profil-warga" href="#">Data Keluarga</a><a class="flex items-center px-space-xs py-space-xs text-surface-container-lowest/80 hover:bg-surface-container-high/20 hover:text-surface-container-lowest transition-colors rounded-lg font-label-lg text-label-lg" data-path="pusat-bantuan" href="#">Panduan &amp; FAQ</a></nav></div></div><div class="p-space-md bg-primary/30"><div class="flex items-center gap-space-xs p-space-xs rounded-lg bg-surface-container-lowest/10"><span class="material-symbols-outlined text-surface-container-lowest text-lg">verified_user</span><div class="flex flex-col"><span class="font-label-md text-label-md text-surface-container-lowest">Layanan Resmi</span><span class="font-label-sm text-label-sm text-surface-container-highest/70">Kabupaten Cirebon</span></div></div></div></aside><div class="pl-[244px]"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/90 backdrop-blur-xl shadow-[0_4px_16px_rgba(20,55,47,0.08)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-xs"><img alt="Logo Desa Susukan" class="h-8 w-auto object-contain md:hidden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/><nav class="flex items-center gap-space-xs font-label-sm text-label-sm text-text-muted"><span class="text-on-surface-variant font-label-sm text-label-sm">Sistem</span><span class="material-symbols-outlined text-sm text-outline-variant">chevron_right</span><span class="text-on-surface-variant font-label-sm text-label-sm">Admin Desa</span><span class="material-symbols-outlined text-sm text-outline-variant">chevron_right</span><span class="text-primary font-label-md text-label-md">Komunikasi &amp; Log WhatsApp</span></nav></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-text-muted text-lg">search</span><input class="h-10 pl-9 pr-14 bg-bg-ivory rounded-lg text-on-surface font-body-sm text-body-sm w-64 focus:outline-none focus:ring-2 focus:ring-primary-container/20" placeholder="Cari template, NIK, nomor WA..." readonly="" type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 text-[10px] font-label-sm text-text-muted bg-surface-card rounded shadow-sm">Ctrl K</kbd></div><button class="relative p-2 text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile Siti Rahayu" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEOLFBz59GEECFxTdV3zG28lMNRi3lX71JHYfem_pEj3AVbOms5N5DBnqkQGvHz-XKvYQ_fmBXVz3BlH_yKt6nJAKRvVWJ2-tyYI8LcgZBJwoClQHqZrQJyPd8nkQ7Zn_4uuKFMhTOBIw2AFh3kRb5CXRyJpMCva5orn0Kld_t31QApfAgHD1dKoOd0IFS-IOW2khLiGyEmyVQghQZzuEtfwhUvTGxjlX_FRpUhvw"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Siti Rahayu</span><span class="font-label-sm text-label-sm text-text-muted leading-tight">Administrator Desa</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-bg-ivory"><div class="flex flex-col w-full">
+<div class="px-space-xl py-space-lg flex flex-col gap-space-lg max-w-[1360px] mx-auto w-full">
+<!-- Top Action & Title Row -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-mint-tag text-primary font-label-eyebrow text-label-eyebrow uppercase tracking-wider">
+            Identitas Desa &amp; Administrasi Resmi
+          </span>
+<span class="text-text-muted text-xs">•</span>
+<span class="text-text-muted font-label-sm text-label-sm">Permendagri No. 47/2016</span>
+<span class="text-text-muted text-xs">•</span>
+<span class="text-primary-container font-label-sm text-label-sm font-semibold">BSrE Terintegrasi</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+          Profil Desa &amp; Format Kop Surat Resmi
+        </h1>
+<p class="font-body-md text-body-md text-text-muted max-w-2xl">
+          Kelola identitas baku pemerintahan desa, konfigurasi tata letak kop surat dinas, data pejabat penandatangan legalitas, serta cadangan basis data sistem.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-[42px] px-5 rounded-[10px] bg-surface-card border border-border-line text-on-surface hover:bg-bg-ivory font-label-lg text-label-lg flex items-center gap-2 transition-all shadow-sm" id="btn-quick-json" type="button">
+<span class="material-symbols-outlined text-text-muted text-lg">download</span>
+<span>Unduh Backup JSON</span>
+</button>
+<button class="h-[42px] px-6 rounded-[10px] bg-primary text-on-primary hover:bg-[#125649] active:scale-[0.98] font-label-lg text-label-lg flex items-center gap-2 transition-all shadow-[0_8px_20px_rgba(23,107,91,0.22)]" id="btn-save-all" type="button">
+<span class="material-symbols-outlined text-lg">verified</span>
+<span>Simpan Semua Perubahan</span>
+</button>
+</div>
+</div>
+<!-- 4 Summary KPI Indicator Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-status-disetujui-bg flex items-center justify-center text-status-disetujui-text">
+<span class="material-symbols-outlined text-xl">account_balance</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+            Terverifikasi
+          </span>
+</div>
+<div class="mt-space-md">
+<p class="font-label-sm text-label-sm text-text-muted uppercase">Status Profil Wilayah</p>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Pemerintah Desa Aktif</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Kode Kemendagri: 32.09.21.2005</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-status-diverifikasi-bg flex items-center justify-center text-status-diverifikasi-text">
+<span class="material-symbols-outlined text-xl">draw</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-sm text-label-sm">
+            2 Penandatangan
+          </span>
+</div>
+<div class="mt-space-md">
+<p class="font-label-sm text-label-sm text-text-muted uppercase">Pejabat Pengesah</p>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Kuwu &amp; Sekdes</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1 truncate">Sertifikat Digital BSrE Aktif</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-mint-tag flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">article</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-mint-tag text-primary font-label-sm text-label-sm">
+            Sesuai Standar
+          </span>
+</div>
+<div class="mt-space-md">
+<p class="font-label-sm text-label-sm text-text-muted uppercase">Integritas Kop Surat</p>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Format A4 Double-Line</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Margin 2.0 cm Serif Resmi</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-[10px] bg-[#FFF3DC] flex items-center justify-center text-[#9A6100]">
+<span class="material-symbols-outlined text-xl">cloud_sync</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-[#FFF3DC] text-[#9A6100] font-label-sm text-label-sm">
+            4.2 MB .JSON
+          </span>
+</div>
+<div class="mt-space-md">
+<p class="font-label-sm text-label-sm text-text-muted uppercase">Cadangan Terakhir</p>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-0.5">Hari Ini, 04:00 WIB</p>
+<p class="font-body-sm text-body-sm text-text-muted mt-1">Snapshot Otomatis 24 Jam</p>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex items-center gap-space-xs border-b border-border-line overflow-x-auto pb-1">
+<button class="tab-btn px-4 py-2.5 rounded-t-lg font-label-lg text-label-lg flex items-center gap-2 border-b-2 border-primary text-primary bg-surface-card shadow-sm transition-all" data-tab="tab-identitas" type="button">
+<span class="material-symbols-outlined text-lg">domain</span>
+<span>Identitas &amp; Wilayah Desa</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-t-lg font-label-lg text-label-lg flex items-center gap-2 border-b-2 border-transparent text-text-muted hover:text-on-surface hover:bg-surface-card/60 transition-all" data-tab="tab-kop" type="button">
+<span class="material-symbols-outlined text-lg">branding_watermark</span>
+<span>Konfigurasi Kop Surat &amp; Pratinjau</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-t-lg font-label-lg text-label-lg flex items-center gap-2 border-b-2 border-transparent text-text-muted hover:text-on-surface hover:bg-surface-card/60 transition-all" data-tab="tab-pejabat" type="button">
+<span class="material-symbols-outlined text-lg">badge</span>
+<span>Pejabat &amp; Spesimen TTE</span>
+</button>
+<button class="tab-btn px-4 py-2.5 rounded-t-lg font-label-lg text-label-lg flex items-center gap-2 border-b-2 border-transparent text-text-muted hover:text-on-surface hover:bg-surface-card/60 transition-all" data-tab="tab-backup" type="button">
+<span class="material-symbols-outlined text-lg">save</span>
+<span>Cadangan Data &amp; Backup JSON</span>
+</button>
+</div>
+<!-- Main Grid Content (7:5 Split) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Form Controls (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Section 1: Identitas Resmi Pemerintah Desa -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line">
+<div class="flex items-center justify-between pb-space-md border-b border-border-line">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-mint-tag text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">location_city</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Identitas Baku Pemerintah Desa</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Data ini tertera pada kepala surat dan stempel register resmi</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-bg-ivory text-text-muted border border-border-line">
+              Kemendagri RI
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-kabupaten">
+                Nama Pemerintah Kabupaten
+              </label>
+<input class="w-full h-11 px-3.5 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-kabupaten" type="text" value="Pemerintah Kabupaten Cirebon"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-kecamatan">
+                Nama Kecamatan
+              </label>
+<input class="w-full h-11 px-3.5 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-kecamatan" type="text" value="Kecamatan Susukan"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-desa">
+                Nama Kantor / Instansi Pelayanan
+              </label>
+<input class="w-full h-11 px-3.5 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-desa" type="text" value="KANTOR KUWU DESA SUSUKAN"/>
+</div>
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-alamat">
+                Alamat Lengkap Kantor Desa
+              </label>
+<textarea class="w-full p-3 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-alamat" rows="2">Jalan Raya Susukan No. 01, Kecamatan Susukan, Kabupaten Cirebon, Jawa Barat</textarea>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-kodepos">
+                Kode Pos Wilayah
+              </label>
+<input class="w-full h-11 px-3.5 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-kodepos" type="text" value="45166"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-telepon">
+                Telepon Kantor
+              </label>
+<input class="w-full h-11 px-3.5 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-telepon" type="text" value="(0231) 8301234"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-email">
+                Alamat Pos Elektronik (Email)
+              </label>
+<input class="w-full h-11 px-3.5 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-email" type="email" value="pelayanan@susukan.desa.id"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1.5" for="input-web">
+                Situs Web Resmi
+              </label>
+<input class="w-full h-11 px-3.5 bg-bg-ivory border border-border-line rounded-[10px] font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all" id="input-web" type="url" value="https://susukan.desa.id"/>
+</div>
+</div>
+</div>
+<!-- Section 2: Logo & Lambang Dinas -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line">
+<div class="flex items-center justify-between pb-space-md border-b border-border-line">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-mint-tag text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">shield</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Logo &amp; Spesimen Stempel Dinas</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Aset grafis resolusi tinggi untuk blanko surat resmi</p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm">
+              Format SVG / PNG Siap Cetak
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-md">
+<!-- Logo Pemkab Cirebon -->
+<div class="p-4 rounded-[12px] bg-bg-ivory border border-border-line flex flex-col justify-between">
+<div class="flex items-start gap-3">
+<div class="w-16 h-20 bg-surface-card rounded-lg border border-border-line p-1 flex items-center justify-center shadow-sm shrink-0">
+<img alt="Logo Pemkab Cirebon" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Lambang Kabupaten Cirebon</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Digunakan pada Kop Surat Resmi sisi kiri atas (Margin 20mm).</span>
+<span class="font-label-sm text-label-sm text-primary mt-2">Dimensi: 512 × 640 px (Transparan)</span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-border-line flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Status: Aktif Default</span>
+<button class="h-8 px-3 rounded-lg bg-surface-card border border-border-line font-label-sm text-label-sm text-on-surface hover:bg-bg-ivory transition-colors" type="button">
+                  Ganti Logo
+                </button>
+</div>
+</div>
+<!-- Stempel Basah / Digital BSrE -->
+<div class="p-4 rounded-[12px] bg-bg-ivory border border-border-line flex flex-col justify-between">
+<div class="flex items-start gap-3">
+<div class="w-20 h-20 bg-surface-card rounded-full border border-border-line p-2 flex items-center justify-center shadow-sm shrink-0 relative overflow-hidden">
+<div class="w-full h-full rounded-full border-2 border-dashed border-[#176B5B] flex flex-col items-center justify-center text-center p-1">
+<span class="text-[7px] font-bold text-primary uppercase leading-tight">KUWU DESA SUSUKAN</span>
+<span class="material-symbols-outlined text-primary text-xs my-0.5">verified_user</span>
+<span class="text-[6px] font-semibold text-primary uppercase leading-tight">KAB. CIREBON</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Cap Stempel Dinas Kuwu</span>
+<span class="font-body-sm text-body-sm text-text-muted mt-0.5">Stempel kedinasan digital berotentikasi BSrE BSSN dengan QR valid.</span>
+<span class="font-label-sm text-label-sm text-status-disetujui-text mt-2 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span> Tervalidasi BSrE
+                  </span>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-border-line flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-text-muted">Masa Berlaku: Des 2026</span>
+<button class="h-8 px-3 rounded-lg bg-surface-card border border-border-line font-label-sm text-label-sm text-on-surface hover:bg-bg-ivory transition-colors" type="button">
+                  Perbarui Stempel
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Pejabat Penandatangan Resmi -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line">
+<div class="flex items-center justify-between pb-space-md border-b border-border-line">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-mint-tag text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">person_check</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pejabat Penandatangan Sah (Kaki Surat)</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Konfigurasi nama, NIP, serta hierarki wewenang penandatanganan</p>
+</div>
+</div>
+<button class="text-primary font-label-sm text-label-sm hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-sm">add</span> Tambah Pelaksana Tugas
+            </button>
+</div>
+<div class="flex flex-col gap-space-md mt-space-md">
+<!-- Kuwu Card -->
+<div class="p-4 rounded-[12px] bg-bg-ivory border border-border-line flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-sm shrink-0">
+                  KW
+                </div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-label-lg text-label-lg text-on-surface">H. MA'RUF, S.Sos.</h3>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">
+                      Penandatangan Utama
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Jabatan: Kuwu Desa Susukan • NIP: 19740512 200212 1 003</p>
+<div class="flex items-center gap-2 mt-1.5 text-xs text-status-disetujui-text">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Tersertifikasi Balai Sertifikasi Elektronik (BSrE BSSN)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="h-9 px-3 rounded-lg bg-surface-card border border-border-line font-label-sm text-label-sm text-on-surface hover:bg-bg-ivory" type="button">
+                  Ubah Data
+                </button>
+<button class="h-9 w-9 rounded-lg bg-surface-card border border-border-line text-text-muted hover:text-primary flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-base">qr_code_scanner</span>
+</button>
+</div>
+</div>
+<!-- Sekretaris Desa Card -->
+<div class="p-4 rounded-[12px] bg-bg-ivory border border-border-line flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-primary flex items-center justify-center font-bold text-sm shrink-0">
+                  SD
+                </div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-label-lg text-label-lg text-on-surface">AHMAD FAUZI, S.AP.</h3>
+<span class="px-2 py-0.5 rounded-full bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-sm text-label-sm">
+                      a.n. Kuwu (Surat Rutin)
+                    </span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Jabatan: Sekretaris Desa • NIP: 19820315 200801 1 007</p>
+<div class="flex items-center gap-2 mt-1.5 text-xs text-text-muted">
+<span class="material-symbols-outlined text-sm text-status-disetujui-text">check_circle</span>
+<span>Wewenang SK Kuwu No. 141/04/Des/2024</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="h-9 px-3 rounded-lg bg-surface-card border border-border-line font-label-sm text-label-sm text-on-surface hover:bg-bg-ivory" type="button">
+                  Ubah Data
+                </button>
+<button class="h-9 w-9 rounded-lg bg-surface-card border border-border-line text-text-muted hover:text-primary flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-base">qr_code_scanner</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Real-Time Preview & Backup System (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Live Physical Letter Preview Card -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line sticky top-20">
+<div class="flex items-center justify-between pb-space-md border-b border-border-line">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">visibility</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pratinjau Kop Surat Resmi</h2>
+</div>
+<span class="text-[11px] font-semibold text-text-muted bg-bg-ivory px-2 py-0.5 rounded border border-border-line">
+              Kertas A4 (210×297 mm)
+            </span>
+</div>
+<!-- Paper Blank Container (Physical White Sheet) -->
+<div class="mt-space-md p-5 bg-surface-card rounded-[8px] border border-border-line shadow-[0_4px_16px_rgba(20,55,47,0.08)] relative overflow-hidden">
+<!-- Simulated Official Letter Header -->
+<div class="flex items-center gap-3">
+<img alt="Lambang Pemkab Cirebon" class="h-16 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAekzdajeA7g87FXzRzwOaKUmzYupWZCr47PlBJRaPAZT-H_r3FTxCyd6pLLRMGlTzAOQMxkZZPr2GUK9PgZHYkutBCuLut7AMREr76WEIiH69vZA9u2p5yJFhcqgLVv70bQRPPpVLxP0Fuc821-8UcYRDxQPkCFM9mXQfESe4ufRFcwOgtn_h7Yfv8GX_FivqoAujFBpHR0OEywbSnEzN8udgk4xHLuc4KxCoMUwQ"/>
+<div class="flex flex-col text-center flex-1">
+<span class="font-letter-legal-title text-[12px] font-bold tracking-wider text-on-surface leading-tight uppercase" id="preview-kab">
+                  PEMERINTAH KABUPATEN CIREBON
+                </span>
+<span class="font-letter-legal-title text-[11px] font-bold tracking-wider text-on-surface leading-tight uppercase" id="preview-kec">
+                  KECAMATAN SUSUKAN
+                </span>
+<span class="font-letter-legal-title text-[13px] font-bold tracking-widest text-primary leading-tight uppercase mt-0.5" id="preview-instansi">
+                  KANTOR KUWU DESA SUSUKAN
+                </span>
+<span class="font-letter-legal-body text-[9px] text-on-surface-variant leading-tight mt-1" id="preview-alamat">
+                  Jalan Raya Susukan No. 01, Kec. Susukan, Kab. Cirebon 45166
+                </span>
+<span class="font-letter-legal-body text-[8.5px] text-text-muted leading-tight" id="preview-kontak">
+                  Surel: pelayanan@susukan.desa.id • Laman: susukan.desa.id
+                </span>
+</div>
+</div>
+<!-- Double Line Separator Standard (Permendagri) -->
+<div class="mt-2.5" id="kop-double-line">
+<div class="w-full h-[2.5px] bg-on-surface"></div>
+<div class="w-full h-[0.75px] bg-on-surface mt-[1.5px]"></div>
+</div>
+<!-- Letter Body Dummy Simulation -->
+<div class="mt-4 pt-2 flex flex-col gap-2">
+<div class="flex justify-between items-start text-[10px] font-letter-legal-body text-on-surface-variant">
+<div>
+<p>Nomor : 470 / <span class="font-semibold text-primary">082</span> / Pemdes / IV / 2025</p>
+<p>Lamp. : -</p>
+<p>Perihal : <span class="font-semibold text-on-surface">Surat Keterangan Usaha (SKU)</span></p>
+</div>
+<div class="text-right">
+<p>Susukan, 19 April 2025</p>
+<p class="font-semibold mt-1">Kepada Yth,</p>
+<p>Kepala Kantor Bank BJB</p>
+</div>
+</div>
+<!-- Content Lines Simulation -->
+<div class="mt-3 flex flex-col gap-1.5 opacity-60">
+<div class="w-full h-1.5 bg-border-line rounded"></div>
+<div class="w-11/12 h-1.5 bg-border-line rounded"></div>
+<div class="w-10/12 h-1.5 bg-border-line rounded"></div>
+</div>
+<!-- Footer Signature Area Preview -->
+<div class="mt-5 flex justify-end">
+<div class="text-center w-48 flex flex-col items-center">
+<p class="text-[9px] font-letter-legal-body">Kuwu Desa Susukan,</p>
+<div class="my-1.5 p-1 bg-mint-tag/60 rounded flex items-center justify-center gap-1 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-xs">verified</span>
+<span class="text-[7.5px] font-bold text-primary tracking-tight">TTE BSrE BSSN VALID</span>
+</div>
+<p class="text-[9.5px] font-bold font-letter-legal-title underline text-on-surface mt-0.5">H. MA'RUF, S.Sos.</p>
+<p class="text-[8px] font-letter-legal-body text-text-muted">NIP. 19740512 200212 1 003</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Kop Customization Switches -->
+<div class="mt-space-md flex flex-col gap-2.5 pt-space-sm border-t border-border-line">
+<label class="flex items-center justify-between cursor-pointer p-2 rounded-lg hover:bg-bg-ivory">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-text-muted">horizontal_rule</span>
+                Garis Ganda Resmi (Double Line Permendagri)
+              </span>
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="toggle-double-line" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer p-2 rounded-lg hover:bg-bg-ivory">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-text-muted">contact_mail</span>
+                Sertakan Kode Pos &amp; Email di Kop
+              </span>
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="toggle-kontak" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between cursor-pointer p-2 rounded-lg hover:bg-bg-ivory">
+<span class="font-label-sm text-label-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-text-muted">check_indeterminate_small</span>
+                Gunakan Tipografi Georgia Serif Legal
+              </span>
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary accent-primary" id="toggle-font" type="checkbox"/>
+</label>
+</div>
+<button class="w-full mt-space-md h-10 rounded-[10px] bg-bg-ivory border border-border-line text-on-surface font-label-md text-label-md hover:bg-surface-card hover:border-primary flex items-center justify-center gap-2 transition-all" id="btn-print-test" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+<span>Cetak Lembar Uji Kop Surat (PDF)</span>
+</button>
+</div>
+<!-- Section Backup & Restore JSON (DESIGN.md Part 7 Compliance) -->
+<div class="p-space-lg rounded-[16px] bg-surface-card shadow-[0_8px_28px_rgba(20,55,47,0.06)] border border-border-line">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-[#FFF3DC] text-[#9A6100] flex items-center justify-center">
+<span class="material-symbols-outlined text-base">database</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cadangan Data Sistem</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Sesuai Standar DESIGN.md (Backup JSON Bebas Password)</p>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-3.5 rounded-[12px] bg-bg-ivory border border-border-line flex flex-col gap-2">
+<div class="flex items-center justify-between text-xs">
+<span class="text-text-muted">Arsip Terakhir:</span>
+<span class="font-semibold text-on-surface">19 Apr 2025, 04:00 WIB</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="text-text-muted">Cakupan Data:</span>
+<span class="text-primary font-medium">Warga, Penomoran Surat &amp; Template</span>
+</div>
+<div class="flex items-center justify-between text-xs">
+<span class="text-text-muted">Enkripsi Kunci:</span>
+<span class="text-status-disetujui-text font-medium">Bebas Kata Sandi (Plain Struct JSON)</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-2.5">
+<button class="w-full h-11 rounded-[10px] bg-primary text-on-primary font-label-md text-label-md hover:bg-[#125649] flex items-center justify-center gap-2 shadow-sm transition-all" id="btn-download-json-action" type="button">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>Unduh Berkas Cadangan (.JSON)</span>
+</button>
+<button class="w-full h-11 rounded-[10px] bg-surface-card border border-border-line text-on-surface font-label-md text-label-md hover:bg-bg-ivory flex items-center justify-center gap-2 transition-all" id="btn-restore-action" type="button">
+<span class="material-symbols-outlined text-base">settings_backup_restore</span>
+<span>Pulihkan Basis Data dari File JSON</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted mt-3 text-center text-xs">
+            *Pemulihan data otomatis memvalidasi struktur schema v2.4 tanpa menimpa log audit aktif.
+          </p>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Level 4 Floating Feedback) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-[#0F3D3E] text-on-primary px-5 py-3 rounded-[12px] shadow-[0_12px_32px_rgba(0,0,0,0.22)] border-l-4 border-[#E8B95B] flex items-center gap-3 transition-all duration-300 opacity-0 pointer-events-none translate-y-4" id="toast-feedback">
+<span class="material-symbols-outlined text-[#E8B95B] text-xl">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold" id="toast-title">Perubahan Disimpan</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest/80" id="toast-desc">Konfigurasi profil desa dan kop surat berhasil diperbarui.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Dynamic Input to Kop Preview Binding
+    const kabInput = document.getElementById('input-kabupaten');
+    const kecInput = document.getElementById('input-kecamatan');
+    const instansiInput = document.getElementById('input-desa');
+    const alamatInput = document.getElementById('input-alamat');
+    const kodeposInput = document.getElementById('input-kodepos');
+    const emailInput = document.getElementById('input-email');
+    const webInput = document.getElementById('input-web');
+
+    const previewKab = document.getElementById('preview-kab');
+    const previewKec = document.getElementById('preview-kec');
+    const previewInstansi = document.getElementById('preview-instansi');
+    const previewAlamat = document.getElementById('preview-alamat');
+    const previewKontak = document.getElementById('preview-kontak');
+
+    function updatePreview() {
+      if (previewKab && kabInput) previewKab.textContent = kabInput.value.toUpperCase();
+      if (previewKec && kecInput) previewKec.textContent = kecInput.value.toUpperCase();
+      if (previewInstansi && instansiInput) previewInstansi.textContent = instansiInput.value.toUpperCase();
+      if (previewAlamat && alamatInput && kodeposInput) {
+        previewAlamat.textContent = alamatInput.value + ' ' + kodeposInput.value;
+      }
+      if (previewKontak && emailInput && webInput) {
+        previewKontak.textContent = 'Surel: ' + emailInput.value + ' • Laman: ' + webInput.value.replace('https://', '');
+      }
+    }
+
+    [kabInput, kecInput, instansiInput, alamatInput, kodeposInput, emailInput, webInput].forEach(el => {
+      if (el) el.addEventListener('input', updatePreview);
+    });
+
+    // Toggle Double Line
+    const toggleDoubleLine = document.getElementById('toggle-double-line');
+    const kopDoubleLine = document.getElementById('kop-double-line');
+    if (toggleDoubleLine && kopDoubleLine) {
+      toggleDoubleLine.addEventListener('change', function() {
+        kopDoubleLine.style.display = this.checked ? 'block' : 'none';
+      });
+    }
+
+    // Toggle Kontak Text
+    const toggleKontak = document.getElementById('toggle-kontak');
+    if (toggleKontak && previewKontak) {
+      toggleKontak.addEventListener('change', function() {
+        previewKontak.style.display = this.checked ? 'block' : 'none';
+      });
+    }
+
+    // Toggle Serif Font
+    const toggleFont = document.getElementById('toggle-font');
+    if (toggleFont) {
+      toggleFont.addEventListener('change', function() {
+        const kopContainer = previewKab.parentElement;
+        if (this.checked) {
+          kopContainer.classList.add('font-letter-legal-title');
+          kopContainer.classList.remove('font-headline-sm');
+        } else {
+          kopContainer.classList.remove('font-letter-legal-title');
+          kopContainer.classList.add('font-headline-sm');
+        }
+      });
+    }
+
+    // Toast Trigger Helper
+    const toast = document.getElementById('toast-feedback');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+
+    function showToast(title, desc) {
+      if (!toast) return;
+      if (toastTitle) toastTitle.textContent = title;
+      if (toastDesc) toastDesc.textContent = desc;
+
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 3500);
+    }
+
+    // Action Handlers
+    const btnSave = document.getElementById('btn-save-all');
+    if (btnSave) {
+      btnSave.addEventListener('click', () => {
+        showToast('Perubahan Disimpan!', 'Format kop surat & profil desa telah diperbarui dan aktif di blanko PDF.');
+      });
+    }
+
+    const btnQuickJson = document.getElementById('btn-quick-json');
+    const btnDownloadAction = document.getElementById('btn-download-json-action');
+    function triggerDownload() {
+      const exportData = {
+        desa: "Susukan",
+        kodeKemendagri: "32.09.21.2005",
+        timestamp: new Date().toISOString(),
+        pejabat: [
+          { nama: "H. MA'RUF, S.Sos.", nip: "19740512 200212 1 003", jabatan: "Kuwu" },
+          { nama: "AHMAD FAUZI, S.AP.", nip: "19820315 200801 1 007", jabatan: "Sekdes" }
+        ],
+        kopConfig: {
+          garisGanda: true,
+          font: "Georgia",
+          telepon: "(0231) 8301234",
+          email: "pelayanan@susukan.desa.id"
+        }
+      };
+      const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `backup-desa-susukan-${new Date().toISOString().slice(0,10)}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast('Cadangan Diunduh', 'Berkas JSON master berhasil disimpan ke penyimpanan lokal.');
+    }
+
+    if (btnQuickJson) btnQuickJson.addEventListener('click', triggerDownload);
+    if (btnDownloadAction) btnDownloadAction.addEventListener('click', triggerDownload);
+
+    const btnRestore = document.getElementById('btn-restore-action');
+    if (btnRestore) {
+      btnRestore.addEventListener('click', () => {
+        showToast('Siap Memulihkan Data', 'Silakan pilih berkas cadangan .JSON yang sah dari komputer Anda.');
+      });
+    }
+
+    const btnPrint = document.getElementById('btn-print-test');
+    if (btnPrint) {
+      btnPrint.addEventListener('click', () => {
+        window.print();
+      });
+    }
+
+    // Tab Switching Interactivity
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => {
+          b.classList.remove('border-primary', 'text-primary', 'bg-surface-card', 'shadow-sm');
+          b.classList.add('border-transparent', 'text-text-muted');
+        });
+        btn.classList.add('border-primary', 'text-primary', 'bg-surface-card', 'shadow-sm');
+        btn.classList.remove('border-transparent', 'text-text-muted');
+      });
+    });
+
+  })();
+</script></main></div></body></html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Georgia:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#e9fef9","surface":"#e9fef9","tertiary-container":"#7c5900","surface-tint":"#166a5a","surface-container-lowest":"#ffffff","status-menunggu-bg":"#FFF3DC","surface-dim":"#cadeda","surface-variant":"#d2e7e2","on-error":"#ffffff","outline":"#6f7975","bg-ivory":"#F7F8F5","border-line":"#E7ECE8","tertiary-fixed":"#ffdea4","on-primary-container":"#9ce9d4","on-primary-fixed-variant":"#005143","surface-container-highest":"#d2e7e2","status-selesai-text":"#0F5B49","on-secondary-container":"#426b6c","on-secondary-fixed-variant":"#224d4e","status-ditolak-bg":"#FBE4E4","status-perbaikan-text":"#B45309","on-secondary-fixed":"#002020","on-background":"#0c1f1c","on-secondary":"#ffffff","inverse-on-surface":"#e0f5f0","tertiary":"#5e4300","on-primary":"#ffffff","status-ditolak-text":"#B02A2A","status-diverifikasi-text":"#245A9E","surface-card":"#FFFFFF","primary-fixed-dim":"#89d5c1","primary":"#005144","status-selesai-bg":"#E1F3EC","error-container":"#ffdad6","secondary-fixed":"#beebeb","on-tertiary-container":"#ffd481","status-disetujui-bg":"#E1F3EC","on-surface-variant":"#3f4945","surface-container-low":"#e3f8f3","on-surface":"#0c1f1c","text-muted":"#74817D","status-perbaikan-bg":"#FDEBD3","on-error-container":"#93000a","outline-variant":"#bec9c4","mint-tag":"#E8F1ED","status-diverifikasi-bg":"#E3EEFB","status-disetujui-text":"#176B5B","on-tertiary":"#ffffff","surface-container":"#def2ed","on-tertiary-fixed":"#261900","error":"#ba1a1a","tertiary-fixed-dim":"#efbf61","status-menunggu-text":"#9A6100","secondary-fixed-dim":"#a3cfcf","primary-fixed":"#a5f1dd","inverse-primary":"#89d5c1","surface-container-high":"#d8ede8","secondary-container":"#beebeb","secondary":"#3b6566","on-tertiary-fixed-variant":"#5d4200","primary-container":"#176b5b","inverse-surface":"#223431"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem","gutter-desktop":"1rem","space-xs":"0.25rem","margin-desktop":"1.75rem","space-md":"0.875rem",margin:"1rem","space-xl":"1.75rem",gutter:"0.875rem","space-lg":"1.125rem","margin-tablet":"1.5rem"},fontFamily:{"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"],"letter-legal-title":["Georgia"],"headline-sm":["Inter"],"label-eyebrow":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-xl":["Inter"],"letter-legal-body":["Georgia"],"label-md":["Inter"],"headline-xl-mobile":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"]},fontSize:{"label-sm":["11px",{lineHeight:"14px",fontWeight:"600"}],"headline-lg-mobile":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-md":["18px",{lineHeight:"26px",fontWeight:"600"}],"letter-legal-title":["14px",{lineHeight:"20px",fontWeight:"700"}],"headline-sm":["16px",{lineHeight:"24px",fontWeight:"600"}],"label-eyebrow":["10px",{lineHeight:"12px",letterSpacing:"0.15em",fontWeight:"700"}],"headline-lg":["26px",{lineHeight:"34px",letterSpacing:"-0.023em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-xl":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"letter-legal-body":["12px",{lineHeight:"22px",fontWeight:"400"}],"label-md":["12px",{lineHeight:"16px",fontWeight:"600"}],"headline-xl-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",fontWeight:"400"}],"label-lg":["14px",{lineHeight:"20px",fontWeight:"600"}]}}}};</script></head><body class="bg-bg-ivory text-on-surface font-body-md text-body-md antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-[244px] bg-surface-card z-50 flex flex-col justify-between border-r border-border-line shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-border-line"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm text-headline-sm font-bold shadow-sm">S</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight leading-none">KEC. SUSUKAN</span><span class="font-label-eyebrow text-label-eyebrow text-text-muted mt-1 uppercase tracking-wider">Portal Administrasi</span></div></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Navigasi Utama</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="dashboard-pelayanan" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-lg text-label-lg">Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="permohonan-surat" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="font-label-lg text-label-lg">Daftar Pengajuan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="verifikasi-berkas" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="font-label-lg text-label-lg">Verifikasi Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="arsip-legalisir" href="#"><span class="material-symbols-outlined text-[20px]">folder_shared</span><span class="font-label-lg text-label-lg">Arsip &amp; Legalisir</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="data-penduduk-desa" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-label-lg text-label-lg">Database Warga</span></a></nav></div><div class="px-space-md py-space-sm"><div class="px-space-sm py-space-xs font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Tata Kelola</div><nav class="flex flex-col gap-1 mt-1" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="laporan-statistik" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-lg text-label-lg">Laporan Pelayanan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-all" data-path="pengaturan-sistem" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-label-lg text-label-lg">Konfigurasi Wilayah</span></a></nav></div></div><div class="p-space-md border-t border-border-line"><div class="bg-surface-container-low rounded-lg p-space-sm flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">gavel</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-primary font-bold">Paten Susukan</span><span class="font-body-sm text-body-sm text-text-muted">Kab. Banjarnegara</span></div></div></div></aside><div class="pl-[244px] flex flex-col min-h-screen"><header class="fixed top-0 left-[244px] right-0 h-16 bg-surface-card/95 backdrop-blur-md z-40 border-b border-border-line px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg flex-1"><div class="flex items-center gap-space-xs text-text-muted font-body-sm text-body-sm"><span class="material-symbols-outlined text-[18px] text-text-muted">domain</span><span>Kecamatan Susukan</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="font-label-md text-label-md text-primary font-semibold">Pelayanan Administrasi Terpadu</span></div><div class="relative w-full max-w-xs ml-space-md"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-text-muted text-[18px]">search</span><input class="w-full h-10 pl-9 pr-space-md rounded-lg bg-bg-ivory border border-border-line font-body-sm text-body-sm text-on-surface placeholder:text-text-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Cari NIK, Nama Warga, No. Resi..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="w-9 h-9 rounded-lg bg-bg-ivory border border-border-line flex items-center justify-center text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="w-9 h-9 rounded-lg bg-bg-ivory border border-border-line flex items-center justify-center text-on-surface-variant hover:bg-mint-tag hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="h-6 w-px bg-border-line"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Bambang Hermanto</span><span class="font-label-sm text-label-sm text-text-muted">Operator PATEN Reg. 04</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-bg-ivory flex-1 px-space-xl py-space-xl max-w-[1360px] mx-auto"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Banner / Strategic Header -->
+<section class="relative overflow-hidden rounded-xl bg-surface-card p-space-xl shadow-md">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute right-40 -bottom-20 w-64 h-64 rounded-full bg-tertiary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2.5 py-1 rounded-full bg-mint-tag text-status-disetujui-text font-label-eyebrow text-label-eyebrow tracking-widest uppercase">
+            PATEN KECAMATAN SUSUKAN
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-eyebrow text-label-eyebrow tracking-widest uppercase flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+            Siklus Evaluasi Triwulan II
+          </span>
+<span class="font-body-sm text-body-sm text-text-muted">Periode Aktif: 01 - 30 April 2025</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight font-bold mt-1">
+          Evaluasi Kinerja Pegawai &amp; Petugas Loket
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Monitoring terpusat Key Performance Indicator (KPI), standar kepatuhan Standar Pelayanan Minimal (SPM), dan validasi integritas pelayanan publik 15 desa wilayah Kecamatan Susukan.
+        </p>
+</div>
+<!-- Quick Context Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<button class="h-10 px-4 rounded-lg bg-surface-container-low text-primary font-label-lg text-label-lg hover:bg-mint-tag transition-all flex items-center gap-2 shadow-sm" id="btn-adjust-sla" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Atur Target SLA</span>
+</button>
+<button class="h-10 px-4 rounded-lg bg-surface-card text-on-surface font-label-lg text-label-lg hover:bg-bg-ivory transition-all flex items-center gap-2 shadow-sm" id="btn-export-report" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Unduh Laporan BKD</span>
+</button>
+<button class="h-10 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all flex items-center gap-2 shadow-sm" id="btn-camat-award" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span>Kirim Apresiasi Camat</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Executive KPI Metrics Overview (4 Pillars) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Skor Kepuasan -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Indeks Kepuasan (SKM)</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">4.92</span>
+<span class="font-label-md text-label-md text-text-muted">/ 5.00</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-status-selesai-bg text-status-selesai-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-status-disetujui-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +0.08 vs Maret
+        </span>
+<span class="font-body-sm text-body-sm text-text-muted">Kategori: Sangat Baik (A)</span>
+</div>
+</div>
+<!-- Metric 2: Volume Berkas -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Berkas Terselesaikan</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">1.842</span>
+<span class="font-label-md text-label-md text-text-muted">dokumen</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-mint-tag text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-disetujui-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> 104.2% dari target
+        </span>
+<span class="font-body-sm text-body-sm text-text-muted">100% Digital TTE</span>
+</div>
+</div>
+<!-- Metric 3: Rata-rata Durasi Layanan (SLA) -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Kecepatan Layanan Rata-Rata</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">02m 45s</span>
+<span class="font-label-md text-label-md text-text-muted">/ pemohon</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-status-diverifikasi-bg text-status-diverifikasi-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">timer</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-disetujui-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">speed</span> 1m 15s lebih cepat
+        </span>
+<span class="font-body-sm text-body-sm text-text-muted">Batas SPM: 04m 00s</span>
+</div>
+</div>
+<!-- Metric 4: Kedisiplinan -->
+<div class="bg-surface-card rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase tracking-wider">Presensi &amp; Kepatuhan Jam</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">99.4%</span>
+<span class="font-label-md text-label-md text-text-muted">tepat waktu</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-status-menunggu-bg text-status-menunggu-text flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-status-disetujui-text flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 0 Pelanggaran Etik
+        </span>
+<span class="font-body-sm text-body-sm text-text-muted">Biometrik Terverifikasi</span>
+</div>
+</div>
+</section>
+<!-- Hero Spotlight & Visual Radar Analysis (Asymmetric Bento 7:5) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Left Hero: Petugas Teladan Bulan Ini (7 cols) -->
+<div class="lg:col-span-7 bg-surface-card rounded-xl p-space-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 right-0 w-60 h-60 bg-status-selesai-bg/40 rounded-full blur-2xl pointer-events-none -mr-16 -mt-16"></div>
+<div class="flex items-center justify-between gap-space-sm mb-4">
+<div class="flex items-center gap-2">
+<span class="flex h-3 w-3 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-selesai-text opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-status-selesai-text"></span>
+</span>
+<span class="font-label-eyebrow text-label-eyebrow tracking-widest text-primary uppercase">PENGHARGAAN APARATUR SIPIL</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+          Petugas Teladan Bulan Ini (Rank #1)
+        </span>
+</div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-space-lg my-2">
+<div class="relative shrink-0">
+<div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden bg-mint-tag shadow-md relative">
+<img class="w-full h-full object-cover" data-alt="Official portrait of an Indonesian female civil servant wearing neat institutional khaki batik hijab, smiling warmly in modern government subdistrict PATEN office Susukan Banjarnegara" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkKoDPGEMff7cxUXBC3RSjpMKqdc9PeirDl6sme-eYVfJejb2ew35v2B2GwWFo_VcDw-CEH24F_w_4y31YRJO6TmsJRUWRLH5NNH6xWjeEgzfqCggcWBJZOLyVLQcb8gaiONiE_a1EmitlG6D-_Q_MNl8_q9JH3FfkQvUNjo6kcDEP46QOAlZfF7pPGHwk749MELxJR-yC7od-E3zjp-4YPX3BJOpJ1-PFLbu_V2A"/>
+</div>
+<div class="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shadow">
+            1st
+          </div>
+</div>
+<div class="flex flex-col flex-1 text-center sm:text-left">
+<div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Siti Rohmah, S.AP</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm">NIP: 19920814 201902 2 004</span>
+</div>
+<p class="font-body-md text-body-md text-text-muted mt-0.5">Penata Muda - Operator Loket 2 (e-KTP, Rekam Biometrik &amp; Aktivasi IKD)</p>
+<div class="flex items-center justify-center sm:justify-start gap-1 text-status-menunggu-text my-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold ml-1">5.0 / 5.0</span>
+<span class="font-body-sm text-body-sm text-text-muted ml-1">(268 ulasan warga)</span>
+</div>
+<div class="grid grid-cols-3 gap-2 mt-3 pt-3 bg-bg-ivory rounded-lg p-space-sm text-center">
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block">Volume Berkas</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">412</span>
+<span class="font-label-sm text-label-sm text-text-muted block">dokumen</span>
+</div>
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block">Rerata SLA</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">02m 14s</span>
+<span class="font-label-sm text-label-sm text-text-muted block">tercepat di loket</span>
+</div>
+<div>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block">Komplain Terdaftar</span>
+<span class="font-headline-sm text-headline-sm text-status-disetujui-text font-bold">0</span>
+<span class="font-label-sm text-label-sm text-text-muted block">Nol aduan</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm bg-mint-tag/60 rounded-lg px-space-md py-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">military_tech</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-semibold">Rekomendasi Tukin Ekstra Kelas A &amp; Piagam Teladan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lolos verifikasi otomatis sistem merit Menpan-RB.</span>
+</div>
+</div>
+<button class="h-9 px-4 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition-all self-end sm:self-center shrink-0">
+          Lihat Profil Lengkap
+        </button>
+</div>
+</div>
+<!-- Right Card: 5-Pillar Radar Visual & Quality Compliance (5 cols) -->
+<div class="lg:col-span-5 bg-surface-card rounded-xl p-space-xl shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<div class="flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Evaluasi 5 Pilar Kinerja</h3>
+<span class="font-body-sm text-body-sm text-text-muted">Analisis indeks gabungan seluruh personel loket</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm">
+          Rata-rata 96.1%
+        </span>
+</div>
+<!-- Compact Inline SVG Radar Chart -->
+<div class="relative w-full flex items-center justify-center py-2">
+<svg class="w-full max-w-[280px] h-auto overflow-visible text-primary" viewbox="0 0 320 280">
+<!-- Background Web Levels -->
+<polygon fill="none" points="160,20 280,105 235,240 85,240 40,105" stroke="currentColor" stroke-opacity="0.1" stroke-width="1"></polygon>
+<polygon fill="none" points="160,50 250,114 216,215 104,215 70,114" stroke="currentColor" stroke-opacity="0.15" stroke-width="1"></polygon>
+<polygon fill="none" points="160,80 220,123 197,190 123,190 100,123" stroke="currentColor" stroke-opacity="0.2" stroke-width="1"></polygon>
+<!-- Axes -->
+<line stroke="currentColor" stroke-opacity="0.15" stroke-width="1" x1="160" x2="160" y1="140" y2="20"></line>
+<line stroke="currentColor" stroke-opacity="0.15" stroke-width="1" x1="160" x2="280" y1="140" y2="105"></line>
+<line stroke="currentColor" stroke-opacity="0.15" stroke-width="1" x1="160" x2="235" y1="140" y2="240"></line>
+<line stroke="currentColor" stroke-opacity="0.15" stroke-width="1" x1="160" x2="85" y1="140" y2="240"></line>
+<line stroke="currentColor" stroke-opacity="0.15" stroke-width="1" x1="160" x2="40" y1="140" y2="105"></line>
+<!-- Target Baseline Polygon -->
+<polygon fill="none" points="160,45 255,110 220,220 100,220 65,110" stroke="#E8B95B" stroke-dasharray="3 3" stroke-width="1.5"></polygon>
+<!-- Actual Current Performance Fill Polygon -->
+<polygon fill="currentColor" fill-opacity="0.22" points="160,26 272,107 232,236 88,235 44,106" stroke="currentColor" stroke-width="2.5"></polygon>
+<!-- Data Points -->
+<circle cx="160" cy="26" fill="#005144" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="272" cy="107" fill="#005144" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="232" cy="236" fill="#005144" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="88" cy="235" fill="#005144" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="44" cy="106" fill="#005144" r="4.5" stroke="#ffffff" stroke-width="1.5"></circle>
+<!-- Axis Labels -->
+<text class="font-label-eyebrow text-label-eyebrow fill-current" font-weight="700" text-anchor="middle" x="160" y="10">KECEPATAN SLA (97%)</text>
+<text class="font-label-eyebrow text-label-eyebrow fill-current" font-weight="700" text-anchor="start" x="290" y="110">KETELITIAN SIAK (96%)</text>
+<text class="font-label-eyebrow text-label-eyebrow fill-current" font-weight="700" text-anchor="middle" x="235" y="260">INTEGRITAS BEBAS PUNGLI (100%)</text>
+<text class="font-label-eyebrow text-label-eyebrow fill-current" font-weight="700" text-anchor="middle" x="85" y="260">KEDISIPLINAN (99%)</text>
+<text class="font-label-eyebrow text-label-eyebrow fill-current" font-weight="700" text-anchor="end" x="30" y="110">KERAMAHAN 5S (95%)</text>
+</svg>
+</div>
+<div class="bg-bg-ivory rounded-lg p-space-sm flex items-center justify-between text-on-surface-variant mt-2">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary inline-block"></span>
+<span class="font-label-sm text-label-sm">Capaian Realisasi PATEN</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-status-perbaikan-text inline-block"></span>
+<span class="font-label-sm text-label-sm text-text-muted">Target Standar SPM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Leaderboard Table Section -->
+<section class="bg-surface-card rounded-xl p-space-xl shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">leaderboard</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Peringkat Kinerja Aparatur Loket</h2>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Kalkulasi terpadu berdasarkan durasi pelayanan, zero error data kependudukan, dan review publik.</p>
+</div>
+<div class="flex items-center gap-2 self-start sm:self-auto">
+<span class="font-label-sm text-label-sm text-text-muted">Urutkan:</span>
+<select class="h-9 px-3 rounded-lg bg-bg-ivory text-on-surface font-label-sm text-label-sm focus:outline-none focus:ring-1 focus:ring-primary">
+<option>Skor Kinerja Tertinggi</option>
+<option>Volume Berkas Terbanyak</option>
+<option>Durasi SLA Tercepat</option>
+<option>Survei Kepuasan Warga</option>
+</select>
+</div>
+</div>
+<!-- Data Table Container with Horizontal Scroll Isolation -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-bg-ivory text-text-muted font-label-eyebrow text-label-eyebrow uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Peringkat &amp; Petugas</th>
+<th class="py-3 px-4">Pos Penugasan</th>
+<th class="py-3 px-4 text-center">Volume Berkas</th>
+<th class="py-3 px-4 text-center">Rerata SLA</th>
+<th class="py-3 px-4 text-center">Kepuasan Warga</th>
+<th class="py-3 px-4 text-center">Skor Akhir KPI</th>
+<th class="py-3 px-4 text-center rounded-r-lg">Status Tindakan</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-y divide-border-line">
+<!-- Rank 1: Siti Rohmah -->
+<tr class="hover:bg-mint-tag/60 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">1</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary font-bold">Siti Rohmah, S.AP</span>
+<span class="font-label-sm text-label-sm text-text-muted">NIP. 19920814 201902 2 004</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold">
+                Loket 2 - e-KTP &amp; IKD
+              </span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">412</span>
+<span class="font-body-sm text-body-sm text-text-muted block">berkas</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-status-disetujui-text">02m 14s</span>
+<span class="font-label-eyebrow text-label-eyebrow text-status-disetujui-text uppercase block">Sangat Cepat</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1 text-status-menunggu-text">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.98</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Nol Komplain</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">98.6%</span>
+<div class="w-20 bg-bg-ivory rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 98.6%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-3 py-1 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-sm text-label-sm font-semibold inline-block">
+                Petugas Teladan
+              </span>
+</td>
+</tr>
+<!-- Rank 2: Ahmad Subekti -->
+<tr class="hover:bg-mint-tag/60 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-bg-ivory text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">2</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Ahmad Subekti</span>
+<span class="font-label-sm text-label-sm text-text-muted">NIP. 19880419 201403 1 002</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-full bg-mint-tag text-on-surface font-label-sm text-label-sm">
+                Loket 1 - Kartu Keluarga &amp; Mutasi
+              </span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">385</span>
+<span class="font-body-sm text-body-sm text-text-muted block">berkas</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">03m 02s</span>
+<span class="font-label-eyebrow text-label-eyebrow text-status-disetujui-text uppercase block">Sesuai SPM</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1 text-status-menunggu-text">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.91</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">1 Catatan Revisi</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">96.2%</span>
+<div class="w-20 bg-bg-ivory rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 96.2%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold inline-block">
+                Kinerja Prima
+              </span>
+</td>
+</tr>
+<!-- Rank 3: Rifa'i, S.Kom -->
+<tr class="hover:bg-mint-tag/60 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-bg-ivory text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">3</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Rifa'i, S.Kom</span>
+<span class="font-label-sm text-label-sm text-text-muted">NIP. 19950210 202201 1 003</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-full bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-sm text-label-sm">
+                Armada Keliling &amp; Desa 3T
+              </span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">294</span>
+<span class="font-body-sm text-body-sm text-text-muted block">jemput bola</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">03m 48s</span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted uppercase block">Kondisi Lapangan</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1 text-status-menunggu-text">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.94</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Apresiasi Tinggi</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">95.8%</span>
+<div class="w-20 bg-bg-ivory rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 95.8%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-semibold inline-block">
+                Pengabdian Khusus
+              </span>
+</td>
+</tr>
+<!-- Rank 4: Maryati, A.Md -->
+<tr class="hover:bg-mint-tag/60 transition-colors group">
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-bg-ivory text-on-surface font-label-sm text-label-sm font-bold flex items-center justify-center shrink-0">4</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Maryati, A.Md</span>
+<span class="font-label-sm text-label-sm text-text-muted">NIP. 19900305 201704 2 001</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="px-2.5 py-1 rounded-full bg-mint-tag text-on-surface font-label-sm text-label-sm">
+                Loket 3 - Legalisir &amp; Pengantar Kades
+              </span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">420</span>
+<span class="font-body-sm text-body-sm text-text-muted block">berkas</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">02m 35s</span>
+<span class="font-label-eyebrow text-label-eyebrow text-status-disetujui-text uppercase block">Sangat Baik</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="flex items-center justify-center gap-1 text-status-menunggu-text">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.87</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Tinggi Volume</span>
+</td>
+<td class="py-4 px-4 text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">94.5%</span>
+<div class="w-20 bg-bg-ivory rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 94.5%;"></div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold inline-block">
+                Memenuhi Syarat
+              </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Summary -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-2 text-text-muted font-body-sm text-body-sm">
+<span>Menampilkan 4 dari 12 petugas aktif PATEN Kecamatan Susukan</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded bg-bg-ivory hover:bg-mint-tag text-on-surface text-label-sm font-semibold transition">Sebelumnya</button>
+<button class="px-3 py-1.5 rounded bg-primary text-on-primary text-label-sm font-semibold">1</button>
+<button class="px-3 py-1.5 rounded bg-bg-ivory hover:bg-mint-tag text-on-surface text-label-sm font-semibold transition">2</button>
+<button class="px-3 py-1.5 rounded bg-bg-ivory hover:bg-mint-tag text-on-surface text-label-sm font-semibold transition">Selanjutnya</button>
+</div>
+</div>
+</section>
+<!-- Split Panel: Insentif & Sertifikasi Kemenpan-RB vs Real-Time Citizen Feedback -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Rekomendasi Tukin & Penghargaan Kemenpan-RB (6 cols) -->
+<div class="lg:col-span-6 bg-surface-card rounded-xl p-space-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-border-line pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Rekomendasi Insentif &amp; Kepegawaian</h3>
+<span class="font-body-sm text-body-sm text-text-muted">Kepatuhan Sistem Merit BKD &amp; Kemenpan-RB RI</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-status-selesai-bg text-status-selesai-text font-label-eyebrow text-label-eyebrow font-bold uppercase">
+          Terverifikasi BKD
+        </span>
+</div>
+<!-- Incentive Item 1 -->
+<div class="bg-bg-ivory rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Tunjangan Kinerja Daerah (Tukin) Kelas Maksimal</span>
+<span class="font-body-sm text-body-sm text-text-muted">Untuk Petugas dengan Capaian KPI Di atas 95.0%</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm font-bold">
+            3 Pegawai Diajukan
+          </span>
+</div>
+<div class="flex items-center gap-2 mt-2 pt-2 border-t border-border-line">
+<div class="flex -space-x-2 overflow-hidden">
+<span class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-card bg-primary text-on-primary text-[10px] font-bold text-center leading-6">SR</span>
+<span class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-card bg-primary text-on-primary text-[10px] font-bold text-center leading-6">AS</span>
+<span class="inline-block h-6 w-6 rounded-full ring-2 ring-surface-card bg-primary text-on-primary text-[10px] font-bold text-center leading-6">RF</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Siti Rohmah, Ahmad Subekti, Rifa'i</span>
+</div>
+</div>
+<!-- Incentive Item 2 -->
+<div class="bg-bg-ivory rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Nominasi Satyalancana Karya Satya &amp; ASN Berprestasi</span>
+<span class="font-body-sm text-body-sm text-text-muted">Pengabdian tanpa cela pelayanan publik perdesaan</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-status-menunggu-bg text-status-menunggu-text font-label-sm text-label-sm font-bold">
+            1 Berkas Siap
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Kandidat terpilih: <strong>Siti Rohmah, S.AP</strong> atas rekor zero-complaint selama 24 bulan berturut-turut di Kecamatan Susukan.
+        </p>
+</div>
+<!-- Quick Action Submission -->
+<div class="mt-2 flex items-center justify-between p-space-sm bg-mint-tag rounded-lg">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">info</span> Sinkronisasi Berkas SAPK BKN Siap Kirim
+        </span>
+<button class="h-8 px-3 rounded bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary-container transition" id="btn-sync-bkn">
+          Kirim Usulan Resmi
+        </button>
+</div>
+</div>
+<!-- Right Column: Real-time Citizen Feedback / Survei Kepuasan (SKM) (6 cols) -->
+<div class="lg:col-span-6 bg-surface-card rounded-xl p-space-xl shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-border-line pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">forum</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Umpan Balik Warga Terverifikasi</h3>
+<span class="font-body-sm text-body-sm text-text-muted">Hasil kuesioner digital &amp; barcode loket fisik PATEN</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-status-disetujui-text font-bold">
+          100% NIK Valid
+        </span>
+</div>
+<!-- Feedback List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Feedback 1 -->
+<div class="p-space-md bg-bg-ivory rounded-xl flex flex-col gap-1 hover:bg-mint-tag/40 transition">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Kusworo (Desa Karangjati)</span>
+<span class="px-2 py-0.2 rounded bg-surface-container-low text-primary font-label-eyebrow text-label-eyebrow">Loket 2</span>
+</div>
+<div class="flex text-status-menunggu-text">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Pelayanan Bu Siti ramah sekali waktu bantu lansia aktivasi KTP digital di HP. Cepat dan tidak dipungut biaya sepeser pun!"
+          </p>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">26 April 2025 • Verifikasi Barcode No: SKM-2901</span>
+</div>
+<!-- Feedback 2 -->
+<div class="p-space-md bg-bg-ivory rounded-xl flex flex-col gap-1 hover:bg-mint-tag/40 transition">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Tri Wahyuni (Desa Gumelem Kulon)</span>
+<span class="px-2 py-0.2 rounded bg-status-diverifikasi-bg text-status-diverifikasi-text font-label-eyebrow text-label-eyebrow">Armada Keliling</span>
+</div>
+<div class="flex text-status-menunggu-text">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Pak Rifa'i jemput bola ke balai desa pegunungan sangat membantu warga pelosok yang susah ke kantor kecamatan."
+          </p>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">24 April 2025 • Verifikasi Barcode No: SKM-2877</span>
+</div>
+<!-- Feedback 3 -->
+<div class="p-space-md bg-bg-ivory rounded-xl flex flex-col gap-1 hover:bg-mint-tag/40 transition">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Drs. Mulyono (Desa Susukan)</span>
+<span class="px-2 py-0.2 rounded bg-surface-container-low text-primary font-label-eyebrow text-label-eyebrow">Loket 1</span>
+</div>
+<div class="flex text-status-menunggu-text">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px] text-border-line">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+            "Penerbitan Kartu Keluarga cepat, hanya saja antrean jam 09.00 sempat padat di depan loket fotokopi."
+          </p>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">21 April 2025 • Verifikasi Barcode No: SKM-2794</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Audit & Camat Affirmation Notice Bar -->
+<section class="bg-primary text-on-primary rounded-xl p-space-xl shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-primary-container rounded-full opacity-50 pointer-events-none"></div>
+<div class="flex items-start gap-space-md relative z-10">
+<div class="w-12 h-12 rounded-xl bg-on-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px] text-tertiary-fixed">campaign</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-eyebrow text-label-eyebrow text-tertiary-fixed uppercase tracking-wider">Amanat Pembina Pelayanan Publik</span>
+<h4 class="font-headline-md text-headline-md font-bold text-on-primary mt-0.5">Komitmen Integritas Zona Bebas Pungli PATEN Susukan</h4>
+<p class="font-body-md text-body-md text-on-primary-container max-w-2xl mt-1">
+          "Setiap detik kecepatan dan senyuman petugas loket adalah wujud kehadiran negara yang bermartabat bagi warga Susukan. Pertahankan standar nilai kepuasan di atas 95%."
+        </p>
+<span class="font-label-sm text-label-sm text-on-primary mt-2 font-semibold">
+          — Drs. Suroso, M.Si (Camat Susukan, Kab. Banjarnegara)
+        </span>
+</div>
+</div>
+<div class="relative z-10 shrink-0 flex items-center gap-space-sm w-full md:w-auto">
+<button class="w-full md:w-auto h-11 px-5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg font-bold hover:bg-tertiary-fixed-dim transition flex items-center justify-center gap-2 shadow" id="btn-broadcast-praise" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">send</span>
+        Kirim Pesan Apresiasi ke Monitor Loket
+      </button>
+</div>
+</section>
+<!-- Interactive Feedback Toast Container (Client Action) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="action-toast">
+<div class="bg-primary text-on-primary px-5 py-3 rounded-xl shadow-xl flex items-center gap-3 border-l-4 border-tertiary-fixed">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toast-message">Laporan siap diunduh!</span>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const toast = document.getElementById('action-toast');
+    const toastMsg = document.getElementById('toast-message');
+
+    function showNotification(text) {
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = text;
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 3200);
+    }
+
+    const btnExport = document.getElementById('btn-export-report');
+    if (btnExport) {
+      btnExport.addEventListener('click', () => {
+        showNotification('Memproses Berkas Evaluasi BKD (Format Excel/PDF Terverifikasi)...');
+      });
+    }
+
+    const btnAdjust = document.getElementById('btn-adjust-sla');
+    if (btnAdjust) {
+      btnAdjust.addEventListener('click', () => {
+        showNotification('Panel Pengaturan Target SLA Loket Dibuka.');
+      });
+    }
+
+    const btnCamat = document.getElementById('btn-camat-award');
+    if (btnCamat) {
+      btnCamat.addEventListener('click', () => {
+        showNotification('Piagam Apresiasi Camat Sukses Dikirimkan ke Siti Rohmah, S.AP!');
+      });
+    }
+
+    const btnSync = document.getElementById('btn-sync-bkn');
+    if (btnSync) {
+      btnSync.addEventListener('click', () => {
+        showNotification('3 Rekomendasi Tukin berhasil disinkronkan ke Server BKD Kab. Banjarnegara.');
+      });
+    }
+
+    const btnBroadcast = document.getElementById('btn-broadcast-praise');
+    if (btnBroadcast) {
+      btnBroadcast.addEventListener('click', () => {
+        showNotification('Amanat Apresiasi Camat telah disiarkan ke Running Text TV Loket PATEN.');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-card border-t border-border-line py-space-md px-space-xl mt-auto"><div class="max-w-[1360px] mx-auto flex flex-col md:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-text-muted"><span>© 2025 Pemerintah Kecamatan Susukan. Sistem Informasi Administrasi Desa &amp; Kecamatan (SIADIK).</span><div class="flex items-center gap-space-md font-label-sm text-label-sm"><span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-status-selesai-text inline-block"></span>Server Pelayanan Terhubung</span><a class="hover:text-primary" href="#">Bantuan Teknis</a><a class="hover:text-primary" href="#">Pedoman SPM</a></div></div></footer></div></body></html>

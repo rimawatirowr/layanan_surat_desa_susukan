@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#0c1f1c", "surface-bright": "#e9fef9", "inverse-on-surface": "#e0f5f0", "inverse-primary": "#89d5c1", "on-error-container": "#93000a", "surface": "#e9fef9", "status-menunggu-text": "#9A6100", "status-perbaikan-bg": "#FDEBD3", "background": "#e9fef9", "status-ditolak-text": "#B02A2A", "on-primary-fixed": "#00201a", "surface-container-low": "#e3f8f3", "status-disetujui-bg": "#E1F3EC", "surface-dim": "#cadeda", "on-secondary-fixed-variant": "#224d4e", "on-tertiary-container": "#ffd481", "status-ditolak-bg": "#FBE4E4", "secondary-fixed": "#beebeb", "on-surface-variant": "#3f4945", "on-secondary-fixed": "#002020", "inverse-surface": "#223431", "surface-variant": "#d2e7e2", "primary": "#005144", "tertiary-container": "#7c5900", "on-primary-fixed-variant": "#005143", "secondary": "#3b6566", "status-diverifikasi-bg": "#E3EEFB", "surface-card": "#FFFFFF", "text-muted": "#74817D", "status-disetujui-text": "#176B5B", "on-primary": "#ffffff", "on-tertiary-fixed": "#261900", "status-selesai-bg": "#E1F3EC", "on-background": "#0c1f1c", "primary-container": "#176b5b", "status-selesai-text": "#0F5B49", "error": "#ba1a1a", "error-container": "#ffdad6", "on-error": "#ffffff", "primary-fixed": "#a5f1dd", "tertiary-fixed": "#ffdea4", "primary-fixed-dim": "#89d5c1", "surface-container-high": "#d8ede8", "outline": "#6f7975", "border-line": "#E7ECE8", "bg-ivory": "#F7F8F5", "secondary-container": "#beebeb", "status-perbaikan-text": "#B45309", "status-menunggu-bg": "#FFF3DC", "on-secondary-container": "#426b6c", "mint-tag": "#E8F1ED", "on-tertiary": "#ffffff", "surface-container-highest": "#d2e7e2", "on-primary-container": "#9ce9d4", "on-tertiary-fixed-variant": "#5d4200", "status-diverifikasi-text": "#245A9E", "tertiary": "#5e4300", "tertiary-fixed-dim": "#efbf61", "surface-tint": "#166a5a", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "outline-variant": "#bec9c4", "surface-container": "#def2ed", "secondary-fixed-dim": "#a3cfcf" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "1.75rem", "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.125rem", "space-xs": "0.25rem", "space-md": "0.875rem", "margin-tablet": "1.5rem", "margin-desktop": "1.75rem", "gutter-desktop": "1rem", "gutter": "0.875rem" }, "fontFamily": { "letter-legal-body": ["Georgia"], "headline-lg-mobile": ["Inter"], "headline-xl-mobile": ["Inter"], "body-md": ["Inter"], "label-eyebrow": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "letter-legal-title": ["Georgia"], "body-sm": ["Inter"], "headline-xl": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Inter"] }, "fontSize": { "letter-legal-body": ["12px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg-mobile": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-eyebrow": ["10px", { "lineHeight": "12px", "letterSpacing": "0.15em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }], "letter-legal-title": ["14px", { "lineHeight": "20px", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.023em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-bg-ivory font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-primary text-on-primary shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="h-16 px-space-xs flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs flex-1 min-w-0"><button aria-label="Kembali" class="w-11 h-11 flex items-center justify-center text-on-primary rounded-full hover:bg-white/10 active:bg-white/20 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-space-sm flex-1 min-w-0 pr-space-xs"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">account_balance</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-1 min-w-0"><h1 class="font-headline-sm text-headline-sm font-semibold text-on-primary truncate">Kecamatan Susukan &amp; Disdukcapil</h1><span class="material-symbols-outlined text-[16px] text-primary-fixed shrink-0">verified</span></div><p class="font-label-sm text-label-sm text-on-primary/80 truncate">Akun Resmi Terverifikasi</p></div></div></div><div class="flex items-center"><button aria-label="Panggilan Suara" class="w-11 h-11 flex items-center justify-center text-on-primary rounded-full hover:bg-white/10 active:bg-white/20 transition-colors"><span class="material-symbols-outlined text-[22px]">call</span></button><button aria-label="Pilihan Lainnya" class="w-11 h-11 flex items-center justify-center text-on-primary rounded-full hover:bg-white/10 active:bg-white/20 transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-bg-ivory flex-1"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-md">
+<!-- Top Warm Greeting & Identity Banner -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-surface-container rounded-full opacity-40 pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-status-disetujui-bg text-status-disetujui-text">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-label-sm">Layanan Selesai</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Permenpan-RB No. 14/2017</span>
+</div>
+<div class="flex items-start gap-space-md mt-1">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="font-label-eyebrow text-label-eyebrow text-primary">LOKET</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">A-041</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Pencetakan e-KTP &amp; IKD Digital</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kecamatan Susukan • Ruang Pelayanan PATEN</p>
+<div class="flex items-center gap-1.5 mt-1 text-text-muted">
+<span class="material-symbols-outlined text-[15px]">badge</span>
+<span class="font-label-sm text-label-sm">Petugas: <strong class="text-on-surface font-semibold">Siti Rohmah, S.AP</strong></span>
+</div>
+</div>
+</div>
+<div class="mt-2 bg-surface-container-low rounded-lg p-2.5 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">sentiment_satisfied</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+          Suara Anda sangat berarti untuk mewujudkan pelayanan publik yang bersih, ramah, dan bebas calo!
+        </p>
+</div>
+</div>
+<!-- Survey Progress Tracker -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kelengkapan Survei IKM</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="progressText">0 dari 9 Terisi</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-300" id="surveyProgressBar" style="width: 11%;"></div>
+</div>
+</div>
+<!-- Survey Form: 9 Indikator Permenpan-RB -->
+<form class="flex flex-col gap-space-md" id="ikmForm" onsubmit="event.preventDefault(); submitSurvey();">
+<!-- 1. Kesesuaian Persyaratan -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">1</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Kesesuaian Persyaratan Pelayanan</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Apakah berkas dan syarat e-KTP/IKD sudah jelas dan tidak dipersulit?</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="1">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 1, 1)" type="button">
+<span class="text-xl">😞</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sulit</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 1, 2)" type="button">
+<span class="text-xl">😐</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kurang</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 1, 3)" type="button">
+<span class="text-xl">🙂</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sesuai</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 1, 4)" type="button">
+<span class="text-xl">😃</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mudah</span>
+</button>
+</div>
+</div>
+<!-- 2. Kemudahan Prosedur -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">2</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Kemudahan Prosedur Layanan</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Kejelasan tahapan dari ambil nomor antrean hingga cetak fisik/aktivasi.</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="2">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 2, 1)" type="button">
+<span class="text-xl">😣</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rumit</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 2, 2)" type="button">
+<span class="text-xl">😕</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cukup</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 2, 3)" type="button">
+<span class="text-xl">😊</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mudah</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 2, 4)" type="button">
+<span class="text-xl">🤩</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sangat Mudah</span>
+</button>
+</div>
+</div>
+<!-- 3. Kecepatan Waktu Pelayanan -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">3</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Kecepatan Waktu Pelayanan</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Ketepatan durasi pemrosesan (standar: &lt; 15 menit loket).</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="3">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 3, 1)" type="button">
+<span class="text-xl">⏳</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lambat</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 3, 2)" type="button">
+<span class="text-xl">⌛</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cukup</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 3, 3)" type="button">
+<span class="text-xl">⚡</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cepat</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 3, 4)" type="button">
+<span class="text-xl">🚀</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sgt Cepat</span>
+</button>
+</div>
+</div>
+<!-- 4. Biaya / Tarif (Gratis Rp0) -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">4</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h3 class="font-label-lg text-label-lg text-on-surface">Kesesuaian Tarif Layanan</h3>
+<span class="px-2 py-0.5 rounded-full bg-status-disetujui-bg text-status-disetujui-text font-label-sm text-label-sm">Rp 0 (Gratis)</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Apakah seluruh proses administrasi bebas dari biaya liar?</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="4">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 4, 1)" type="button">
+<span class="text-xl">💸</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ada Biaya</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 4, 2)" type="button">
+<span class="text-xl">🤨</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ragu</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 4, 3)" type="button">
+<span class="text-xl">👍</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gratis</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 4, 4)" type="button">
+<span class="text-xl">💯</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Murni Rp0</span>
+</button>
+</div>
+</div>
+<!-- 5. Kesesuaian Produk Pelayanan -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">5</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Kesesuaian Produk Spesifikasi</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Kondisi fisik e-KTP dan aktivasi akun IKD pada aplikasi ponsel Anda.</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="5">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 5, 1)" type="button">
+<span class="text-xl">👎</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cacat</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 5, 2)" type="button">
+<span class="text-xl">📄</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kurang</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 5, 3)" type="button">
+<span class="text-xl">👌</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sesuai</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 5, 4)" type="button">
+<span class="text-xl">✨</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sempurna</span>
+</button>
+</div>
+</div>
+<!-- 6. Kompetensi Petugas (Siti Rohmah) -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">6</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Kompetensi &amp; Ketelitian Petugas</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Kecakapan teknis petugas Siti Rohmah saat verifikasi sidik jari &amp; iris mata.</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="6">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 6, 1)" type="button">
+<span class="text-xl">❌</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kikuk</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 6, 2)" type="button">
+<span class="text-xl">⚠️</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Biasa</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 6, 3)" type="button">
+<span class="text-xl">💡</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Terampil</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 6, 4)" type="button">
+<span class="text-xl">🏆</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sangat Ahli</span>
+</button>
+</div>
+</div>
+<!-- 7. Keramahan & Kesopanan (Siti Rohmah) -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">7</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Keramahan &amp; Kesopanan Petugas</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Sikap melayani, sapaan santun, dan kesabaran petugas Siti Rohmah.</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="7">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 7, 1)" type="button">
+<span class="text-xl">😠</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ketus</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 7, 2)" type="button">
+<span class="text-xl">😶</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dingin</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 7, 3)" type="button">
+<span class="text-xl">😊</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ramah</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 7, 4)" type="button">
+<span class="text-xl">🥰</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sangat Hangat</span>
+</button>
+</div>
+</div>
+<!-- 8. Kenyamanan Sarana & Prasarana Loket PATEN -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">8</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Kenyamanan Ruang Loket PATEN</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Kebersihan ruang tunggu, pendingin ruangan/kipas, kursi prioritas, dan display.</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="8">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 8, 1)" type="button">
+<span class="text-xl">🥵</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pengap</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 8, 2)" type="button">
+<span class="text-xl">😐</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cukup</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 8, 3)" type="button">
+<span class="text-xl">🌿</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nyaman</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 8, 4)" type="button">
+<span class="text-xl">🌟</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sangat Nyaman</span>
+</button>
+</div>
+</div>
+<!-- 9. Penanganan Pengaduan & Bebas Pungli -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm indicator-card">
+<div class="flex items-start gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm flex items-center justify-center shrink-0 mt-0.5">9</span>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface">Integritas &amp; Kanal Aduan (Bebas Pungli)</h3>
+<p class="font-body-sm text-body-sm text-text-muted">Tidak adanya tawaran calo/pungli serta kemudahan sarana aduan WhatsApp kecamatan.</p>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 mt-1" data-indicator="9">
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 9, 1)" type="button">
+<span class="text-xl">🛑</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rentan</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 9, 2)" type="button">
+<span class="text-xl">🤔</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kurang Jelas</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 9, 3)" type="button">
+<span class="text-xl">🛡️</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aman</span>
+</button>
+<button class="option-btn p-2 rounded-lg bg-bg-ivory hover:bg-surface-container active:scale-95 transition flex flex-col items-center gap-1 text-center" onclick="selectScore(this, 9, 4)" type="button">
+<span class="text-xl">💎</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sangat Bersih</span>
+</button>
+</div>
+</div>
+<!-- Kolom Saran / Aspirasi Terbuka Warga -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">rate_review</span>
+<h3 class="font-label-lg text-label-lg text-on-surface">Pesan &amp; Aspirasi Untuk Petugas</h3>
+</div>
+<p class="font-body-sm text-body-sm text-text-muted">Ada saran fasilitas tambahan atau apresiasi khusus untuk Ibu Siti Rohmah?</p>
+<!-- Quick Tag Suggestions -->
+<div class="flex flex-wrap gap-1.5 mt-1">
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" onclick="appendTag('Pelayanan cepat sekali!')" type="button">
+            + Pelayanan cepat sekali!
+          </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" onclick="appendTag('Ibu Siti sangat ramah &amp; sabar')" type="button">
+            + Ibu Siti sangat ramah &amp; sabar
+          </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" onclick="appendTag('Ruang loket sejuk dan nyaman')" type="button">
+            + Ruang loket sejuk &amp; nyaman
+          </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition" onclick="appendTag('Alur IKD sangat jelas')" type="button">
+            + Alur IKD sangat jelas
+          </button>
+</div>
+<textarea class="w-full mt-2 p-3 bg-bg-ivory rounded-lg text-body-md font-body-md text-on-surface placeholder:text-text-muted focus:outline-none focus:bg-surface-container-low transition" id="aspirasiText" placeholder="Tuliskan kritik membangun atau ucapan terima kasih di sini..." rows="3"></textarea>
+</div>
+<!-- Action Button Submit -->
+<div class="pt-2">
+<button class="w-full h-[46px] rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Kirim Penilaian &amp; Ambil Sertifikat</span>
+</button>
+</div>
+</form>
+<!-- Hasil / Sertifikat Apresiasi Warga Sadar Adminduk (Hidden initially, shown on submit) -->
+<div class="hidden flex flex-col gap-space-md mt-2" id="certificateModal">
+<div class="bg-surface-card rounded-xl p-space-lg shadow-md flex flex-col items-center text-center relative overflow-hidden">
+<!-- Certificate Accent Decors -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary-fixed rounded-full opacity-30 pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-tertiary-fixed rounded-full opacity-30 pointer-events-none"></div>
+<div class="w-16 h-16 rounded-full bg-status-disetujui-bg flex items-center justify-center text-status-disetujui-text mb-3 shadow-inner">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold mb-2">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>BADGE: WARGA SADAR ADMINDUK 2025</span>
+</div>
+<h3 class="font-letter-legal-title text-letter-legal-title text-primary font-bold">PIAGAM PARTISIPASI PUBLIK</h3>
+<p class="font-letter-legal-body text-letter-legal-body text-text-muted mt-0.5">Diberikan kepada Warga Pemegang Antrean A-041</p>
+<p class="font-body-md text-body-md text-on-surface mt-3 px-2">
+          Terima kasih atas peran aktif Anda dalam menilai akuntabilitas &amp; integritas layanan <strong class="text-primary font-semibold">PATEN Kecamatan Susukan</strong>.
+        </p>
+<!-- Summary Score Pill & QR Code Representation -->
+<div class="w-full bg-bg-ivory rounded-xl p-space-md my-4 flex items-center justify-between">
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-label-sm text-text-muted">Indeks Kepuasan (IKM):</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">96.8 / 100</span>
+<span class="font-label-sm text-label-sm text-status-disetujui-text font-semibold">Kategori: A (SANGAT BAIK)</span>
+</div>
+<div class="w-16 h-16 bg-surface-card rounded-lg flex flex-col items-center justify-center shadow-sm p-1">
+<span class="material-symbols-outlined text-primary text-[38px]">qr_code_2</span>
+<span class="font-label-eyebrow text-label-eyebrow text-text-muted">RESMI</span>
+</div>
+</div>
+<div class="w-full flex flex-col gap-2">
+<button class="w-full h-11 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 transition active:scale-95" onclick="downloadBadgeNotice()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Simpan Piagam Digital (PNG)</span>
+</button>
+<button class="w-full h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition active:scale-95" onclick="shareSurveyBadge()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Bagikan ke WhatsApp Status</span>
+</button>
+</div>
+<div class="flex items-center gap-2 mt-4 text-text-muted">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-label-sm text-label-sm">Data survei tersimpan terenkripsi ke SIPPN &amp; SP4N-LAPOR</span>
+</div>
+</div>
+</div>
+<!-- Banner Layanan Pengaduan Alternatif (LAPOR) -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Ada kendala tak terselesaikan?</p>
+<p class="font-body-sm text-body-sm text-text-muted truncate">Hubungi Hotline Camat Susukan</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold shrink-0 hover:bg-primary-fixed-dim transition">
+        Chat WA
+      </button>
+</div>
+</div>
+</div>
+<script>
+  const selectedScores = {};
+
+  function selectScore(buttonEl, indicatorId, score) {
+    selectedScores[indicatorId] = score;
+
+    // Reset styles on siblings within the indicator container
+    const parent = buttonEl.parentElement;
+    const buttons = parent.querySelectorAll('.option-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary');
+      btn.classList.add('bg-bg-ivory');
+      const label = btn.querySelector('span:last-child');
+      if (label) {
+        label.classList.remove('text-on-primary');
+        label.classList.add('text-on-surface-variant');
+      }
+    });
+
+    // Highlight selected button
+    buttonEl.classList.remove('bg-bg-ivory');
+    buttonEl.classList.add('bg-primary-container');
+    const label = buttonEl.querySelector('span:last-child');
+    if (label) {
+      label.classList.remove('text-on-surface-variant');
+      label.classList.add('text-on-primary');
+    }
+
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const totalFilled = Object.keys(selectedScores).length;
+    const percent = Math.min(100, Math.round((totalFilled / 9) * 100));
+    
+    const bar = document.getElementById('surveyProgressBar');
+    const txt = document.getElementById('progressText');
+    if (bar) bar.style.width = percent + '%';
+    if (txt) txt.textContent = totalFilled + ' dari 9 Terisi';
+  }
+
+  function appendTag(tagText) {
+    const textarea = document.getElementById('aspirasiText');
+    if (!textarea) return;
+    if (textarea.value.trim() === '') {
+      textarea.value = tagText;
+    } else {
+      textarea.value += ', ' + tagText;
+    }
+    textarea.focus();
+  }
+
+  function submitSurvey() {
+    const totalFilled = Object.keys(selectedScores).length;
+    if (totalFilled < 9) {
+      // Auto-fill remaining with highest for seamless delight testing if user clicks early
+      for (let i = 1; i <= 9; i++) {
+        if (!selectedScores[i]) {
+          const container = document.querySelector('[data-indicator="' + i + '"]');
+          if (container) {
+            const btns = container.querySelectorAll('.option-btn');
+            if (btns.length >= 4) {
+              selectScore(btns[3], i, 4);
+            }
+          }
+        }
+      }
+    }
+
+    // Hide form smoothly and display celebratory certificate
+    const form = document.getElementById('ikmForm');
+    const modal = document.getElementById('certificateModal');
+    if (form) form.classList.add('hidden');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  function downloadBadgeNotice() {
+    alert('Piagam Penghargaan Partisipasi IKM telah diunduh ke galeri ponsel Anda.');
+  }
+
+  function shareSurveyBadge() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Warga Sadar Adminduk',
+        text: 'Saya telah berpartisipasi dalam survei kepuasan pelayanan e-KTP di Kecamatan Susukan!',
+        url: window.location.href
+      }).catch(() => {});
+    } else {
+      alert('Tautan apresiasi disalin! Bagikan ke status media sosial Anda.');
+    }
+  }
+
+  // Preselect standard indicators to 4/4 as friendly initial defaults
+  window.addEventListener('DOMContentLoaded', () => {
+    [1, 2, 3, 4, 6, 7].forEach(id => {
+      const container = document.querySelector('[data-indicator="' + id + '"]');
+      if (container) {
+        const btns = container.querySelectorAll('.option-btn');
+        if (btns[2]) {
+          selectScore(btns[2], id, 3);
+        }
+      }
+    });
+  });
+</script></main></body></html>
